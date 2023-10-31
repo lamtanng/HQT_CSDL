@@ -16,6 +16,8 @@ namespace DemoDoAn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+
             Application.Run(new Login());
         }
     }

@@ -15,14 +15,15 @@ namespace DemoDoAn
         //lay ds lop
         public DataTable LayDanhSachLop()
         {
-            string sqlStr = string.Format("SELECT *FROM LOPHOC inner join KHOAHOC on LOPHOC.MaKH = KHOAHOC.MaKH");
+            string sqlStr = string.Format("SELECT *FROM LOPHOC inner join KHOAHOC on LOPHOC.MaKhoaHoc = KHOAHOC.MaKhoaHoc");
             return dbConn.LayDanhSach(sqlStr);
         }
 
         //xep lop
         public void XepLop(LopHoc lop)
         {
-            string sqlStr = string.Format("Update LOPHOC Set SoBuoiTrongTuan = '{0}', DiemTBQuaMon = '{1}', GiangVien = '{2}', SoHocVien = '{3}', NgayBatDau = '{4}', NgayKetThuc = '{5}', XacNhan = 0 Where MaLop = '{6}'",lop.SOBUOITRONGTUAN, 8.0, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP  );
+            //string sqlStr = string.Format("Update LOPHOC Set SoBuoiTrongTuan = '{0}', DiemTBQuaMon = '{1}', GiangVien = '{2}', SoHocVien = '{3}', NgayBatDau = '{4}', NgayKetThuc = '{5}', XacNhan = 0 Where MaLop = '{6}'",lop.SOBUOITRONGTUAN, 8.0, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP  );
+            string sqlStr = "";
             dbConn.ThucThi(sqlStr);
         }
 
@@ -37,8 +38,9 @@ namespace DemoDoAn
         //cap nhat thong tin lop hoc
         public void capNhatThongTinLop(LopHoc lop)
         {
-            string sqlStr = string.Format("update LOPHOC Set SoBuoiTrongTuan = '{0}', GiangVien = '{1}', SoHocVien = '{2}', NgayBatDau ='{3}', NgayKetThuc = '{4}' where MaLop = '{5}'",
-                                            lop.SOBUOITRONGTUAN, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP);
+            //string sqlStr = string.Format("update LOPHOC Set SoBuoiTrongTuan = '{0}', GiangVien = '{1}', SoHocVien = '{2}', NgayBatDau ='{3}', NgayKetThuc = '{4}' where MaLop = '{5}'",
+            //                                lop.SOBUOITRONGTUAN, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP);
+            string sqlStr = "";
              dbConn.ThucThi(sqlStr);
         }
 

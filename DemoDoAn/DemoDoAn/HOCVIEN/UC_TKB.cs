@@ -906,8 +906,8 @@ namespace DemoDoAn.HOCVIEN
                 lopHoc.TENLOP = dataGrViewDSL1.Rows[r].Cells["TenMon1"].Value.ToString().Trim();
                 lopHoc.KHOAHOC = dataGrViewDSL1.Rows[r].Cells["TenKH1"].Value.ToString().Trim();
                 lopHoc.HOCPHI = dataGrViewDSL1.Rows[r].Cells["HocPhi1"].Value.ToString().Trim();
-                lopHoc.GIANGVIEN = dataGrViewDSL1.Rows[r].Cells["HOTEN1"].Value.ToString().Trim();
-                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD(lopHoc.KHOAHOC.ToString(), lopHoc.TENLOP.ToString(), lopHoc.HOCPHI.ToString(), lopHoc.GIANGVIEN.ToString()));
+               // lopHoc.GIANGVIEN = dataGrViewDSL1.Rows[r].Cells["HOTEN1"].Value.ToString().Trim();
+                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD(lopHoc.KHOAHOC.ToString(), lopHoc.TENLOP.ToString(), lopHoc.HOCPHI.ToString(), ""));
             }
         }
 

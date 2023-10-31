@@ -183,8 +183,8 @@ namespace DemoDoAn.HOCVIEN
                 lopHoc.TENLOP = dataGrView_DSLop.Rows[r].Cells["TenMon_DSL"].Value.ToString().Trim();
                 lopHoc.KHOAHOC = dataGrView_DSLop.Rows[r].Cells["TenKH_DSL"].Value.ToString().Trim();
                 lopHoc.HOCPHI = dataGrView_DSLop.Rows[r].Cells["HocPhi_DSL"].Value.ToString().Trim();
-                lopHoc.GIANGVIEN = dataGrView_DSLop.Rows[r].Cells["HOTEN_DSL"].Value.ToString().Trim();
-                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD(lopHoc.KHOAHOC.ToString(), lopHoc.TENLOP.ToString(), lopHoc.HOCPHI.ToString(), lopHoc.GIANGVIEN.ToString()));
+                //lopHoc.GIANGVIEN = dataGrView_DSLop.Rows[r].Cells["HOTEN_DSL"].Value.ToString().Trim();
+                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD(lopHoc.KHOAHOC.ToString(), lopHoc.TENLOP.ToString(), lopHoc.HOCPHI.ToString(),""));
             }
         }
 

@@ -26,7 +26,7 @@ namespace DemoDoAn.ChildPage
             SoHocVien,
             TongSoBuoiHoc,
             MaKhoaHoc
-
+                //
         }
 
         public UC_GM_CLASS()

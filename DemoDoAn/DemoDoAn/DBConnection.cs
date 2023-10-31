@@ -14,7 +14,7 @@ namespace DemoDoAn
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.cnnStr);
         
-        //Main cm
+        //Mới vãi nè
         //lấy danh sách của các bảng có sẵn
         public DataTable LayDanhSach(string sqlStr)
         {

@@ -20,12 +20,12 @@ namespace DemoDoAn.ChildPage
 
         enum nameCol_DSL
         {
-            MaLop,
-            TenMon,
+            MaLopHoc,
+            TenLopHoc,
             HocPhi,
             SoHocVien,
-            NgayBatDau,
-            NgayKetThuc
+            TongSoBuoiHoc,
+            MaKhoaHoc
 
         }
 
@@ -73,7 +73,7 @@ namespace DemoDoAn.ChildPage
             
             dtLopHoc.Rows.Clear();
             dtLopHoc = lopDao.LayDanhSachLop();
-            dtLopHoc = dtLopHoc.AsEnumerable().OrderByDescending(row => row.Field<int>("TTMoLop")).CopyToDataTable();
+            //dtLopHoc = dtLopHoc.AsEnumerable().OrderByDescending(row => row.Field<int>("TTMoLop")).CopyToDataTable();
             LoadForm(dataGrView_DSL, dtLopHoc);
             
             //ẩn full các cột     
@@ -97,7 +97,7 @@ namespace DemoDoAn.ChildPage
             }
 
             //them cojt trang thai, xoa
-            addCollums(dataGrView_DSL, "Trạng thái", "TrangThaiIcon");
+            //addCollums(dataGrView_DSL, "Trạng thái", "TrangThaiIcon");
             addCollums(dataGrView_DSL, "Xóa", "XoaIcon");
             dataGrView_DSL.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //dataGrView_DSL.Sort(dataGrView_DSL.Columns["TrangThaiIcon"], ListSortDirection.Descending);
@@ -208,32 +208,32 @@ namespace DemoDoAn.ChildPage
                 if (MessageBox.Show("Bạn muốn xóa lớp học?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     row = dtg.Rows[e.RowIndex];
-                    lopDao.Xoa(Convert.ToString(row.Cells["MaLop"].Value));
+                    lopDao.Xoa(Convert.ToString(row.Cells["MaLopHoc"].Value));
                     resetDataGrView();
                     taiDSL();
                 }
             }
-            else if (dtg.Columns[e.ColumnIndex].Name == "TrangThaiIcon")
-            {
-                row = dtg.Rows[e.RowIndex];
-                if (MessageBox.Show("Bạn muốn thay đổi trạng thái lớp?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    //check KH còn hoạt động khong:
-                    if (Convert.ToInt32(row.Cells["TrangThaiKH"].Value) == 1)
-                    {
-                        //cap nhat trang thai dong mo lop
-                        capNhatTTLopDtg(e.RowIndex);
-                        lopDao.capNhatTrangThai(row.Cells["MaLop"].Value.ToString().Trim(), Convert.ToInt32(row.Cells["TTMoLop"].Value));
-                        resetDataGrView();
-                        taiDSL();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Khóa học đã ngưng hoạt động!");
-                    }
+            //else if (dtg.Columns[e.ColumnIndex].Name == "TrangThaiIcon")
+            //{
+            //    row = dtg.Rows[e.RowIndex];
+            //    if (MessageBox.Show("Bạn muốn thay đổi trạng thái lớp?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //    {
+            //        //check KH còn hoạt động khong:
+            //        if (Convert.ToInt32(row.Cells["TrangThaiKH"].Value) == 1)
+            //        {
+            //            //cap nhat trang thai dong mo lop
+            //            capNhatTTLopDtg(e.RowIndex);
+            //            lopDao.capNhatTrangThai(row.Cells["MaLop"].Value.ToString().Trim(), Convert.ToInt32(row.Cells["TTMoLop"].Value));
+            //            resetDataGrView();
+            //            taiDSL();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Khóa học đã ngưng hoạt động!");
+            //        }
                     
-                }
-            }
+            //    }
+            //}
         }
 
         //capnhat trang thai tren datagridview
@@ -253,7 +253,7 @@ namespace DemoDoAn.ChildPage
         private void resetDataGrView()
         {
             dataGrView_DSL.Columns.Remove("XoaIcon");
-            dataGrView_DSL.Columns.Remove("TrangThaiIcon");
+            //dataGrView_DSL.Columns.Remove("TrangThaiIcon");
             for (int i = dataGrView_DSL.Rows.Count - 1; i >= 0; i--)
             {
                 dataGrView_DSL.Rows.RemoveAt(i);
@@ -268,10 +268,10 @@ namespace DemoDoAn.ChildPage
 
 
             //img for TrangThai
-            if (row.Cells["TrangThaiIcon"].Value == null)
-                if (Convert.ToInt32(row.Cells["TTMoLop"].Value) == 0)
-                    row.Cells["TrangThaiIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\Offline.png");
-                else row.Cells["TrangThaiIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\OnlineTT_1.png");
+            //if (row.Cells["TrangThaiIcon"].Value == null)
+            //    if (Convert.ToInt32(row.Cells["TTMoLop"].Value) == 0)
+            //        row.Cells["TrangThaiIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\Offline.png");
+            //    else row.Cells["TrangThaiIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\OnlineTT_1.png");
             //img for Xoa
             if (row.Cells["XoaIcon"].Value == null)
                 row.Cells["XoaIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\delete.png");

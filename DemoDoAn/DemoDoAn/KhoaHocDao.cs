@@ -17,12 +17,12 @@ namespace DemoDoAn
         }
         public void Them(KhoaHoc kh)
         {
-            string sqlStr = string.Format("INSERT INTO KHOAHOC( TenKH,TrangThai) VALUES (N'{0}', N'{1}')",kh.Tenkhoahoc, kh.Trangthai);
+            string sqlStr = string.Format("INSERT INTO KHOAHOC (MaKhoaHoc, TenKhoaHoc) VALUES ('{0}', '{1}');", kh.Makhoahoc, kh.Tenkhoahoc);
             dbConn.ThucThi(sqlStr);
         }
         public void Xoa(KhoaHoc kh)
         {
-            string sqlStr = string.Format("DELETE FROM KHOAHOC WHERE MaKH = '{0}'", kh.Makhoahoc);
+            string sqlStr = string.Format("DELETE FROM KHOAHOC WHERE MaKhoaHoc = '{0}'", kh.Makhoahoc);
             dbConn.ThucThi(sqlStr);
         }
         public void CapNhat(KhoaHoc kh)

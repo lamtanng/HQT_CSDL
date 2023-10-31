@@ -51,7 +51,7 @@ namespace DemoDoAn
             }
             catch (Exception ex)
             {
-                MessageBox.Show("that bai");
+                MessageBox.Show(ex.Message);
             }
             finally
             {

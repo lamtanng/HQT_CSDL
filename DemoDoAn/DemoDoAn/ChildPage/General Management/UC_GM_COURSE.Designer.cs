@@ -43,8 +43,8 @@
             this.lbl_DanhMucKhoaHoc = new System.Windows.Forms.Label();
             this.dataGrView_DSKhoaHoc = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKhoaHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKhoaHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer_LoadTrangThai = new System.Windows.Forms.Timer(this.components);
             this.txt_Search = new System.Windows.Forms.TextBox();
@@ -56,6 +56,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_TongThu = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btn_TitleQLNV = new CustomControls.RJControls.RJButton();
@@ -93,7 +94,6 @@
             this.rjCircularPictureBox4 = new CustomControls.RJControls.RJCircularPictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -187,8 +187,8 @@
             this.dataGrView_DSKhoaHoc.ColumnHeadersHeight = 50;
             this.dataGrView_DSKhoaHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
-            this.MaKH,
-            this.TenKH,
+            this.MaKhoaHoc,
+            this.TenKhoaHoc,
             this.TrangThai});
             this.dataGrView_DSKhoaHoc.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -237,32 +237,31 @@
             this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
             // 
-            // MaKH
+            // MaKhoaHoc
             // 
-            this.MaKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKhoaHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaKhoaHoc.DataPropertyName = "MaKhoaHoc";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.MaKH.DefaultCellStyle = dataGridViewCellStyle4;
-            this.MaKH.FillWeight = 82.57979F;
-            this.MaKH.HeaderText = "ID";
-            this.MaKH.MinimumWidth = 6;
-            this.MaKH.Name = "MaKH";
+            this.MaKhoaHoc.DefaultCellStyle = dataGridViewCellStyle4;
+            this.MaKhoaHoc.FillWeight = 82.57979F;
+            this.MaKhoaHoc.HeaderText = "ID";
+            this.MaKhoaHoc.MinimumWidth = 6;
+            this.MaKhoaHoc.Name = "MaKhoaHoc";
             // 
-            // TenKH
+            // TenKhoaHoc
             // 
-            this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.TenKH.DataPropertyName = "TenKH";
+            this.TenKhoaHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.TenKhoaHoc.DataPropertyName = "TenKhoaHoc";
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.TenKH.DefaultCellStyle = dataGridViewCellStyle5;
-            this.TenKH.FillWeight = 82.57979F;
-            this.TenKH.HeaderText = "Name";
-            this.TenKH.MinimumWidth = 6;
-            this.TenKH.Name = "TenKH";
-            this.TenKH.Width = 80;
+            this.TenKhoaHoc.DefaultCellStyle = dataGridViewCellStyle5;
+            this.TenKhoaHoc.FillWeight = 82.57979F;
+            this.TenKhoaHoc.HeaderText = "Name";
+            this.TenKhoaHoc.MinimumWidth = 6;
+            this.TenKhoaHoc.Name = "TenKhoaHoc";
+            this.TenKhoaHoc.Width = 80;
             // 
             // TrangThai
             // 
-            this.TrangThai.DataPropertyName = "TrangThai";
             this.TrangThai.HeaderText = "Trạng Thái";
             this.TrangThai.MinimumWidth = 6;
             this.TrangThai.Name = "TrangThai";
@@ -415,6 +414,26 @@
             this.btn_TongThu.TabIndex = 124;
             this.btn_TongThu.TextColor = System.Drawing.Color.White;
             this.btn_TongThu.UseVisualStyleBackColor = false;
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.White;
+            this.rjButton2.BorderRadius = 25;
+            this.rjButton2.BorderSize = 1;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(457, 64);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(407, 153);
+            this.rjButton2.TabIndex = 124;
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -828,6 +847,7 @@
             this.rjButton4.TabIndex = 124;
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // label10
             // 
@@ -930,26 +950,6 @@
             this.label9.Size = new System.Drawing.Size(67, 22);
             this.label9.TabIndex = 127;
             this.label9.Text = "50 total";
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.White;
-            this.rjButton2.BorderRadius = 25;
-            this.rjButton2.BorderSize = 1;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(457, 64);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(407, 153);
-            this.rjButton2.TabIndex = 124;
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -1102,10 +1102,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btnTaoKhoaHoc;
         private CustomControls.RJControls.RJButton rjButton1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -1146,5 +1142,9 @@
         private System.Windows.Forms.Panel panel6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private CustomControls.RJControls.RJButton rjButton7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKhoaHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKhoaHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
     }
 }

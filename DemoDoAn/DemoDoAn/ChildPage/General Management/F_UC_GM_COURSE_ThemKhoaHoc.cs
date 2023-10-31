@@ -29,8 +29,8 @@ namespace DemoDoAn.ChildPage.General_Management
         {
             if (isEmpty_Search == true)
             {
-                txt_TennKhoaHoc.Text = String.Empty;
-                txt_TennKhoaHoc.Font = new Font(txt_TennKhoaHoc.Font, FontStyle.Regular);
+                txt_TenKhoaHoc.Text = String.Empty;
+                txt_TenKhoaHoc.Font = new Font(txt_TenKhoaHoc.Font, FontStyle.Regular);
                 //txt_TennKhoaHoc.ForeColor = Color.White;
                 isEmpty_Search = false;
             }
@@ -97,8 +97,9 @@ namespace DemoDoAn.ChildPage.General_Management
             {
                 if (checkTrangThai())
                 {
-                    KhoaHoc khoa = new KhoaHoc("", txt_TennKhoaHoc.Text, btn_TrangThai.Text);
+                    KhoaHoc khoa = new KhoaHoc( txt_MaKhoaHoc.Text.Trim(), txt_TenKhoaHoc.Text.Trim(), "true");
                     khoahocDAO.Them(khoa);
+                    this.Close();
                 }
                 else
                 {
@@ -109,13 +110,17 @@ namespace DemoDoAn.ChildPage.General_Management
             {
                 MessageBox.Show("Không hoàn thành!");
             }
+            finally
+            {
+                
+            }
 
         }
         //ktra trang thai
         private bool checkTrangThai()
         {
-            if (btn_TrangThai.Text.ToString() != @"Hoạt Động" && btn_TrangThai.Text.ToString() != @"Đã Đầy")
-                return false;
+            //if (btn_TrangThai.Text.ToString() != @"Hoạt Động" && btn_TrangThai.Text.ToString() != @"Đã Đầy")
+            //    return false;
             return true;
         }
 

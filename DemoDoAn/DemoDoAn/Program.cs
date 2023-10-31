@@ -14,6 +14,7 @@ namespace DemoDoAn
         [STAThread]
         static void Main()
         {
+            // controler
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

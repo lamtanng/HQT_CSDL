@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.txt_TennKhoaHoc = new System.Windows.Forms.TextBox();
+            this.txt_TenKhoaHoc = new System.Windows.Forms.TextBox();
             this.fLPnl_TrangThai = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_TrangThaiTitle = new System.Windows.Forms.Panel();
             this.pnl_ThanhNgangTrangThai = new System.Windows.Forms.Panel();
@@ -47,24 +47,29 @@
             this.lbl_TT_KhoaHoc = new System.Windows.Forms.Label();
             this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txt_MaKhoaHoc = new System.Windows.Forms.TextBox();
+            this.lbl_MaKhoaHoc = new System.Windows.Forms.Label();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.fLPnl_TrangThai.SuspendLayout();
             this.pnl_TrangThaiTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txt_TennKhoaHoc
+            // txt_TenKhoaHoc
             // 
-            this.txt_TennKhoaHoc.BackColor = System.Drawing.Color.White;
-            this.txt_TennKhoaHoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_TennKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F);
-            this.txt_TennKhoaHoc.ForeColor = System.Drawing.Color.DarkGray;
-            this.txt_TennKhoaHoc.Location = new System.Drawing.Point(14, 34);
-            this.txt_TennKhoaHoc.Name = "txt_TennKhoaHoc";
-            this.txt_TennKhoaHoc.Size = new System.Drawing.Size(324, 24);
-            this.txt_TennKhoaHoc.TabIndex = 22;
+            this.txt_TenKhoaHoc.BackColor = System.Drawing.Color.White;
+            this.txt_TenKhoaHoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_TenKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F);
+            this.txt_TenKhoaHoc.ForeColor = System.Drawing.Color.DarkGray;
+            this.txt_TenKhoaHoc.Location = new System.Drawing.Point(14, 34);
+            this.txt_TenKhoaHoc.Name = "txt_TenKhoaHoc";
+            this.txt_TenKhoaHoc.Size = new System.Drawing.Size(324, 24);
+            this.txt_TenKhoaHoc.TabIndex = 22;
             // 
             // fLPnl_TrangThai
             // 
@@ -246,7 +251,7 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.fLPnl_TrangThai);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(81, 200);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(68, 258);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(357, 213);
             this.flowLayoutPanel1.TabIndex = 194;
@@ -263,10 +268,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.txt_TennKhoaHoc);
+            this.panel2.Controls.Add(this.txt_TenKhoaHoc);
             this.panel2.Controls.Add(this.lbl_TT_KhoaHoc);
             this.panel2.Controls.Add(this.rjButton4);
-            this.panel2.Location = new System.Drawing.Point(81, 121);
+            this.panel2.Location = new System.Drawing.Point(68, 179);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(357, 82);
             this.panel2.TabIndex = 183;
@@ -279,9 +284,9 @@
             this.lbl_TT_KhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.lbl_TT_KhoaHoc.Location = new System.Drawing.Point(4, 1);
             this.lbl_TT_KhoaHoc.Name = "lbl_TT_KhoaHoc";
-            this.lbl_TT_KhoaHoc.Size = new System.Drawing.Size(63, 22);
+            this.lbl_TT_KhoaHoc.Size = new System.Drawing.Size(111, 22);
             this.lbl_TT_KhoaHoc.TabIndex = 128;
-            this.lbl_TT_KhoaHoc.Text = "Course";
+            this.lbl_TT_KhoaHoc.Text = "Tên khóa học";
             // 
             // rjButton4
             // 
@@ -312,13 +317,69 @@
             this.guna2BorderlessForm1.ShadowColor = System.Drawing.Color.DarkGray;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.txt_MaKhoaHoc);
+            this.panel3.Controls.Add(this.lbl_MaKhoaHoc);
+            this.panel3.Controls.Add(this.rjButton1);
+            this.panel3.Location = new System.Drawing.Point(68, 97);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(357, 82);
+            this.panel3.TabIndex = 186;
+            // 
+            // txt_MaKhoaHoc
+            // 
+            this.txt_MaKhoaHoc.BackColor = System.Drawing.Color.White;
+            this.txt_MaKhoaHoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_MaKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F);
+            this.txt_MaKhoaHoc.ForeColor = System.Drawing.Color.DarkGray;
+            this.txt_MaKhoaHoc.Location = new System.Drawing.Point(14, 34);
+            this.txt_MaKhoaHoc.Name = "txt_MaKhoaHoc";
+            this.txt_MaKhoaHoc.Size = new System.Drawing.Size(324, 24);
+            this.txt_MaKhoaHoc.TabIndex = 22;
+            // 
+            // lbl_MaKhoaHoc
+            // 
+            this.lbl_MaKhoaHoc.AutoSize = true;
+            this.lbl_MaKhoaHoc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_MaKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
+            this.lbl_MaKhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
+            this.lbl_MaKhoaHoc.Location = new System.Drawing.Point(4, 1);
+            this.lbl_MaKhoaHoc.Name = "lbl_MaKhoaHoc";
+            this.lbl_MaKhoaHoc.Size = new System.Drawing.Size(35, 22);
+            this.lbl_MaKhoaHoc.TabIndex = 128;
+            this.lbl_MaKhoaHoc.Text = "Mã";
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.White;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton1.BorderRadius = 10;
+            this.rjButton1.BorderSize = 1;
+            this.rjButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(4, 24);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(347, 43);
+            this.rjButton1.TabIndex = 185;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
             // F_UC_GM_COURSE_ThemKhoaHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(497, 455);
+            this.ClientSize = new System.Drawing.Size(497, 572);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lbl_QuanLiKhoaHoc);
@@ -334,13 +395,15 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txt_TennKhoaHoc;
+        private System.Windows.Forms.TextBox txt_TenKhoaHoc;
         private System.Windows.Forms.FlowLayoutPanel fLPnl_TrangThai;
         private System.Windows.Forms.Panel pnl_TrangThaiTitle;
         private System.Windows.Forms.Panel pnl_ThanhNgangTrangThai;
@@ -358,5 +421,9 @@
         private System.Windows.Forms.Label lbl_TT_KhoaHoc;
         private CustomControls.RJControls.RJButton rjButton4;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txt_MaKhoaHoc;
+        private System.Windows.Forms.Label lbl_MaKhoaHoc;
+        private CustomControls.RJControls.RJButton rjButton1;
     }
 }

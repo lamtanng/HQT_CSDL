@@ -258,12 +258,13 @@ namespace DemoDoAn.ChildPage.Student
         {
             hv.HSID = gvid;
             hv.HOTEN = hoten;
-            hv.CMND = cmnd;
+            //hv.CMND = cmnd;
+            hv.CCCD = cmnd;
             hv.NGAYSINH = ngaysinh;
             hv.GIOITINH = gioitinh;
             hv.SDT = sdt;
             hv.DIACHI = diachi;
-            hv.EMAIL = email;
+            //hv.EMAIL = email;
             hv.ACCID = accid;
             hv.USERNAME = username;
             hv.PASSWORD = password;

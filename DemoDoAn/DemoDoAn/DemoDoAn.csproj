@@ -273,9 +273,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
-    <Compile Include="AdminDao.cs" />
+    <Compile Include="DAO\AdminDao.cs" />
     <Compile Include="BangLuong.cs" />
-    <Compile Include="BangLuongDao.cs" />
+    <Compile Include="DAO\BangLuongDao.cs" />
     <Compile Include="bieuDoChart.cs" />
     <Compile Include="CheckError.cs" />
     <Compile Include="ChildForm\F_UpdateHV.cs">
@@ -362,7 +362,7 @@
     <Compile Include="ChildPage\HOPTHU\UC_CHITIETTHU.Designer.cs">
       <DependentUpon>UC_CHITIETTHU.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\HocTap\BangDiemDAO.cs" />
+    <Compile Include="DAO\BangDiemDAO.cs" />
     <Compile Include="ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -528,7 +528,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Custom Control\cusTextbox.cs" />
-    <Compile Include="DanhSachLopDao.cs" />
+    <Compile Include="DAO\DanhSachLopDao.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="DEMO_TTTADataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -558,8 +558,8 @@
     <Compile Include="GIANGVIEN\UC_XACNHANLOP_CHILD.Designer.cs">
       <DependentUpon>UC_XACNHANLOP_CHILD.cs</DependentUpon>
     </Compile>
-    <Compile Include="GiaoVienDao.cs" />
-    <Compile Include="HocSinhDao.cs" />
+    <Compile Include="DAO\GiaoVienDao.cs" />
+    <Compile Include="DAO\HocSinhDao.cs" />
     <Compile Include="FORM\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -568,10 +568,10 @@
     </Compile>
     <Compile Include="GiaoVien.cs" />
     <Compile Include="HocSinh.cs" />
-    <Compile Include="HOCVIEN\Class\DangKiLopDao.cs" />
+    <Compile Include="DAO\DangKiLopDao.cs" />
     <Compile Include="HOCVIEN\Class\HamThu.cs" />
-    <Compile Include="HOCVIEN\Class\HamThuDAO.cs" />
-    <Compile Include="HOCVIEN\Class\TKBDao.cs" />
+    <Compile Include="DAO\HamThuDAO.cs" />
+    <Compile Include="DAO\TKBDao.cs" />
     <Compile Include="HOCVIEN\F_HAMTHU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -651,22 +651,22 @@
       <DependentUpon>UC_TKB.cs</DependentUpon>
     </Compile>
     <Compile Include="KhoaHoc.cs" />
-    <Compile Include="KhoaHocDao.cs" />
-    <Compile Include="LichHocDao.cs" />
-    <Compile Include="LoginDAO.cs" />
+    <Compile Include="DAO\KhoaHocDao.cs" />
+    <Compile Include="DAO\LichHocDao.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="Login_Page.cs" />
     <Compile Include="LopHoc.cs" />
-    <Compile Include="LopHocDao.cs" />
+    <Compile Include="DAO\LopHocDao.cs" />
     <Compile Include="LopHocMoi.cs" />
-    <Compile Include="LopHocMoiDao.cs" />
+    <Compile Include="DAO\LopHocMoiDao.cs" />
     <Compile Include="NhanVien.cs" />
-    <Compile Include="NhanVienDao.cs" />
+    <Compile Include="DAO\NhanVienDao.cs" />
     <Compile Include="PhieuChi.cs" />
-    <Compile Include="PhieuChiDao.cs" />
+    <Compile Include="DAO\PhieuChiDao.cs" />
     <Compile Include="PhieuThu.cs" />
-    <Compile Include="PhieuThuDao.cs" />
+    <Compile Include="DAO\PhieuThuDao.cs" />
     <Compile Include="PhongHoc.cs" />
-    <Compile Include="PhongHocDao.cs" />
+    <Compile Include="DAO\PhongHocDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FORM\SignUp.cs">
@@ -675,7 +675,7 @@
     <Compile Include="FORM\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKeDao.cs" />
+    <Compile Include="DAO\ThongKeDao.cs" />
     <Compile Include="TTTADataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

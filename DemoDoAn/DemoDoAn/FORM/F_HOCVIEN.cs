@@ -21,6 +21,10 @@ namespace DemoDoAn.FORM
             this.chucVu = chucVu;   
         }
 
+        public F_HOCVIEN()
+        {
+        }
+
         //ẩn menu con
         private void hideSubMenu()
         {

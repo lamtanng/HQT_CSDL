@@ -26,14 +26,14 @@ namespace DemoDoAn
         public DataTable Lay_MSSV(string username)
         {
             //string thuocTinh = "HVID";
-            string sqlStr = string.Format("SELECT * FROM FULL_THONGTIN Where USERNAME = '{0}'", username);
+            string sqlStr = string.Format("SELECT * FROM HOCVIEN Where TenDangNhap = '{0}'", username);
             return dbConn.LayDanhSach(sqlStr);
         }
 
         //load thong tin ca nhan hoc vien
         public DataTable LoadThongTin(string AccID)
         {
-            string sqlStr = string.Format("SELECT *FROM HOCVIEN WHERE HVID = '{0}'", AccID);
+            string sqlStr = string.Format("SELECT *FROM HOCVIEN WHERE MaHocVien = '{0}'", AccID);
             return dbConn.LayDanhSach(sqlStr);
         }
         
@@ -69,7 +69,7 @@ namespace DemoDoAn
         public void themHocVien(HocSinh hv, string accID)
         {
             string sqlStr = string.Format("INSERT INTO HOCVIEN(ACCID, HOTEN, GIOITINH, NGAYSINH, DIACHI, SDT, CMND, EMAIL, TienTaiKhoan) VALUES\r\n('{0}', N'{1}', N'{2}', '{3}', N'{4}', '{5}','{6}', '{7}', '{8}')",
-                                        accID, hv.HOTEN, hv.GIOITINH, hv.NGAYSINH, hv.DIACHI, hv.SDT, hv.CMND, hv.EMAIL, hv.TIEN);
+                                        accID, hv.HOTEN, hv.GIOITINH, hv.NGAYSINH, hv.DIACHI, hv.SDT, hv.CCCD, hv.USERNAME);
             dbConn.ThucThi(sqlStr);
         }
 
@@ -77,7 +77,7 @@ namespace DemoDoAn
         public void CapNhatThongTin(HocSinh hs)
         {
             string sqlStr = string.Format("UPDATE HOCVIEN SET HOTEN = N'{0}', GIOITINH =N'{1}', NGAYSINH = '{2}', DIACHI = N'{3}', SDT = '{4}', CMND = '{5}', EMAIL = '{6}' WHERE HOCVIEN.HVID = '{7}'",
-                                            hs.HOTEN, hs.GIOITINH, hs.NGAYSINH, hs.DIACHI, hs.SDT, hs.CMND, hs.EMAIL, hs.HSID);
+                                            hs.HOTEN, hs.GIOITINH, hs.NGAYSINH, hs.DIACHI, hs.SDT, hs.CCCD, hs.USERNAME, hs.HSID);
             dbConn.ThucThi(sqlStr);
         }
 

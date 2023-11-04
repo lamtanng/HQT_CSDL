@@ -31,7 +31,7 @@ namespace DemoDoAn.ChildPage.Student
             string re_password = txt_RePass.Text.ToString().Trim();
             string hvid = "";
             string hoten = txt_Ten.Text.ToString().Trim();
-            string cmnd = txt_CCCD.Text.ToString().Trim();
+            string cccd = txt_CCCD.Text.ToString().Trim();
             DateTime ngaysinh = dPTime_NgaySinh.Value;
             string gioitinh = txt_GioiTinh.Text.ToString().Trim();
             string sdt = txt_SDT.Text.ToString().Trim();
@@ -39,7 +39,7 @@ namespace DemoDoAn.ChildPage.Student
             string email = txt_Email.Text.ToString().Trim();
             int tien = 0;
             HocSinh taiKhoanHV = new HocSinh(accID, username, password);
-            HocSinh thongTinHV = new HocSinh(hvid, hoten, cmnd, gioitinh, ngaysinh, sdt, email, diachi, tien);
+            HocSinh thongTinHV = new HocSinh(hvid, hoten, gioitinh, ngaysinh, diachi, sdt, cccd, username);
             //check thong tin rong
             if (kiemTraThongTin(taiKhoanHV, thongTinHV, re_password))
             {
@@ -57,7 +57,7 @@ namespace DemoDoAn.ChildPage.Student
                         taiKhoanHV.ACCID = dt_accID.Rows[0][0].ToString();
 
                         //lưu thông tin với accID đó
-                        hvDao.themHocVien(thongTinHV, taiKhoanHV.ACCID);
+                        // hvDao.themHocVien(thongTinHV, taiKhoanHV.ACCID);
                         this.Close();
                     }
                     else
@@ -103,7 +103,7 @@ namespace DemoDoAn.ChildPage.Student
         //check thong tin rong
         private bool kiemTraThongTin(HocSinh taiKhoanHV, HocSinh thongTinHV, string rePass)
         {
-            if (String.IsNullOrEmpty(taiKhoanHV.USERNAME) || String.IsNullOrEmpty(taiKhoanHV.PASSWORD) || String.IsNullOrEmpty(rePass) || String.IsNullOrEmpty(thongTinHV.HOTEN) || String.IsNullOrEmpty(thongTinHV.GIOITINH) || String.IsNullOrEmpty(thongTinHV.NGAYSINH.ToString()) || String.IsNullOrEmpty(thongTinHV.CMND) || String.IsNullOrEmpty(thongTinHV.SDT) || String.IsNullOrEmpty(thongTinHV.EMAIL) || String.IsNullOrEmpty(thongTinHV.DIACHI))
+            if (String.IsNullOrEmpty(taiKhoanHV.USERNAME) || String.IsNullOrEmpty(taiKhoanHV.PASSWORD) || String.IsNullOrEmpty(rePass) || String.IsNullOrEmpty(thongTinHV.HOTEN) || String.IsNullOrEmpty(thongTinHV.GIOITINH) || String.IsNullOrEmpty(thongTinHV.NGAYSINH.ToString()) || String.IsNullOrEmpty(thongTinHV.CCCD) || String.IsNullOrEmpty(thongTinHV.SDT) /*|| String.IsNullOrEmpty(thongTinHV.EMAIL)*/ || String.IsNullOrEmpty(thongTinHV.DIACHI))
             { return false; }
             return true;
         }

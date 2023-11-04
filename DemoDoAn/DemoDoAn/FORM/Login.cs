@@ -112,7 +112,7 @@ namespace DemoDoAn
         //tai bang account
         private void taiTaiKhoan()
         {
-            dtTaiKhoan = logDAO.loadAccount();
+            dtTaiKhoan = logDAO.Login(txt_Username.Text.Trim(), txt_Password.Text.Trim());
         }
 
         //click login
@@ -143,10 +143,10 @@ namespace DemoDoAn
             password = txt_Password.Text.ToString();
 
             //check acc co ton tai khong
-            int r = isEmptyAccount(userName, password);
+            int r = dtTaiKhoan.Rows.Count;
             if (r >= 0)
             {
-                String quyenNguoiDung = dtTaiKhoan.Rows[r]["QuyenNguoiDung"].ToString().Trim();
+                String quyenNguoiDung = dtTaiKhoan.Rows[0]["QuyenNguoiDung"].ToString().Trim();
                 if (Convert.ToInt16(quyenNguoiDung) == 0)
                 {
                     F_Addmin admin = new F_Addmin();
@@ -182,7 +182,7 @@ namespace DemoDoAn
             for (int r = 0; r < dtTaiKhoan.Rows.Count; r++)
             {
                 DataRow row = dtTaiKhoan.Rows[r];
-                if (row["TenDangNhap"].ToString().Trim() == username.Trim() && row["MatKhau"].ToString().Trim() == pass.Trim())
+                //if (row["TenDangNhap"].ToString().Trim() == username.Trim() && row["MatKhau"].ToString().Trim() == pass.Trim())
                     return r;
             }
             return -1;

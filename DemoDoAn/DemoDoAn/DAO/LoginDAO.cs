@@ -29,9 +29,9 @@ namespace DemoDoAn
         }
 
         //check acc
-        public DataTable Login(string username, string password, string accTable)
+        public DataTable Login(string username, string password)
         {
-            string sqlStr = string.Format("Select * From {0} Where username = '{1}' and pass = '{2}'",  accTable, username, password);
+            string sqlStr = string.Format("Select * From dbo.func_kiemTraDangNhap('{1}', '{2}')", username, password);
             return dbConn.LayDanhSach(sqlStr);
         }
 

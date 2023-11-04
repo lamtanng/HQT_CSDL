@@ -200,7 +200,7 @@ namespace DemoDoAn.ChildPage.Student
             dataGrView_BangDiem.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         //load bang hoc phi
-        private void taiBangHocPhi(DataGridView dtg,string hvID)
+        private void taiBangHocPhi(DataGridView dtg, string hvID)
         {
             LoadForm(dataGrView_BangHocPhi, tkbDao.loadDSL(hvID));
             for (int i = 0; i < dtg.Columns.Count; i++)
@@ -247,7 +247,7 @@ namespace DemoDoAn.ChildPage.Student
                 capNhatHV.ShowDialog();
                 taiDSHV();
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Học viên không xác định!");
 
@@ -258,12 +258,13 @@ namespace DemoDoAn.ChildPage.Student
         {
             hv.HSID = gvid;
             hv.HOTEN = hoten;
-            hv.CMND = cmnd;
+            //hv.CMND = cmnd;
+            hv.CCCD = cmnd;
             hv.NGAYSINH = ngaysinh;
             hv.GIOITINH = gioitinh;
             hv.SDT = sdt;
             hv.DIACHI = diachi;
-            hv.EMAIL = email;
+            //hv.EMAIL = email;
             hv.ACCID = accid;
             hv.USERNAME = username;
             hv.PASSWORD = password;

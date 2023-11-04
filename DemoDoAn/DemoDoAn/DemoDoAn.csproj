@@ -567,7 +567,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoVien.cs" />
-    <Compile Include="HocSinh.cs" />
+    <Compile Include="MODELS\HocSinh.cs" />
     <Compile Include="DAO\DangKiLopDao.cs" />
     <Compile Include="HOCVIEN\Class\HamThu.cs" />
     <Compile Include="DAO\HamThuDAO.cs" />

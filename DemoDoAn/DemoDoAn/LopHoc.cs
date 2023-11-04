@@ -19,7 +19,7 @@ namespace DemoDoAn
         private int soHocVien;
         //private string tengon;
         //private string phong;
-        private string giangvien;
+        //private string giangvien;
         //private string noidung;
         //private string trangthai;
         //private string thu;
@@ -51,26 +51,26 @@ namespace DemoDoAn
         public LopHoc() { }
         public LopHoc(string malop, string tenlop, string trangthai, string khoahoc, int SoHocVien, DateTime ngayBatDau, DateTime ngayKetThuc, string hocphi, string giangvien, string SoBuoiTrongTuan, string tengon)
         {
-            this.giangvien = giangvien;
-            //this.trangthai = trangthai;
             this.malop = malop;
             this.tenlop = tenlop;
-            //this.tengon = tengon;
             this.hocphi = hocphi;
             this.khoahoc = khoahoc;
             this.soHocVien = SoHocVien;
+            this.SoBuoiTrongTuan = SoBuoiTrongTuan;
+            //this.giangvien = giangvien;
+            //this.trangthai = trangthai;
+            //this.tengon = tengon;
             //this.ngayBatDau = ngayBatDau;
             //this.ngayKetThuc = ngayKetThuc;
-            this.SoBuoiTrongTuan = SoBuoiTrongTuan;
         }
         //2.Load thong tin lop hoc de DKI
-        public LopHoc(string thu, string ca, string gioBatDau, string gioKetThuc)
-        {
-            //this.thu = thu;
-            //this.ca = ca;
-            //this.gioBatDau = gioBatDau;
-            //this.gioKetThuc = gioKetThuc;
-        }
+        //public LopHoc(string thu, string ca, string gioBatDau, string gioKetThuc)
+        //{
+        //    this.thu = thu;
+        //    this.ca = ca;
+        //    this.gioBatDau = gioBatDau;
+        //    this.gioKetThuc = gioKetThuc;
+        //}
         //3. Load thong tin lop hoc HV đã đăng kí
         public LopHoc(string malop, string tenlop, DateTime ngayBatDau, DateTime ngayKetThuc, string giangvien, string trangthai)
         {
@@ -78,7 +78,7 @@ namespace DemoDoAn
             this.tenlop = tenlop;
             //this.ngayBatDau = ngayBatDau;
             //this.ngayKetThuc = ngayKetThuc;
-            this.giangvien = giangvien;
+            //this.giangvien = giangvien;
             //this.trangthai = trangthai;
         }
         //4.tao lop moi

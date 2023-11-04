@@ -28,7 +28,7 @@ namespace DemoDoAn
         public Login()
         {
             InitializeComponent();
-            taiTaiKhoan();
+            
         }
 
         #region DOHOA
@@ -118,27 +118,7 @@ namespace DemoDoAn
         //click login
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            Login_Page logIn = new Login_Page(txt_Username.Text, txt_Password.Text, cbb_CheckType.SelectedIndex.ToString());
-
-            if (string.IsNullOrEmpty(logIn.username))
-            {
-                errorProvider1.BlinkStyle = ErrorBlinkStyle.NeverBlink;
-                errorProvider1.SetError(pnl_ErrorUserName, "No Fill !");
-            }
-            else
-            {
-                errorProvider1.Clear();
-            }
-            if (string.IsNullOrEmpty(txt_Password.Text))
-            {
-                errorProvider1.BlinkStyle = ErrorBlinkStyle.NeverBlink;
-                errorProvider1.SetError(pnl_ErrorPassword, "No Fill !");
-            }
-            else
-            {
-                errorProvider1.Clear();
-            }
-
+            taiTaiKhoan();
             userName = txt_Username.Text.ToString();
             password = txt_Password.Text.ToString();
 
@@ -182,7 +162,7 @@ namespace DemoDoAn
             for (int r = 0; r < dtTaiKhoan.Rows.Count; r++)
             {
                 DataRow row = dtTaiKhoan.Rows[r];
-                //if (row["TenDangNhap"].ToString().Trim() == username.Trim() && row["MatKhau"].ToString().Trim() == pass.Trim())
+                if (row["TenDangNhap"].ToString().Trim() == username.Trim() && row["MatKhau"].ToString().Trim() == pass.Trim())
                     return r;
             }
             return -1;

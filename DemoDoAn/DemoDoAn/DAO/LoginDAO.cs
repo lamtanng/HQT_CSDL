@@ -31,7 +31,7 @@ namespace DemoDoAn
         //check acc
         public DataTable Login(string username, string password)
         {
-            string sqlStr = string.Format("Select * From dbo.func_kiemTraDangNhap('{1}', '{2}')", username, password);
+            string sqlStr = string.Format("Select * From dbo.func_kiemTraDangNhap('{0}', '{1}')", username, password);
             return dbConn.LayDanhSach(sqlStr);
         }
 

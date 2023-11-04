@@ -46,7 +46,7 @@ namespace DemoDoAn.ChildPage.Student
 
         private void btn_HoanThanh_Click(object sender, EventArgs e)
         {
-            HocSinh taiKhoanHV = new HocSinh(hv.ACCID, hv.USERNAME, txt_Pass.Text.ToString().Trim());
+            HocSinh taiKhoanHV = new HocSinh(hv.SDT, hv.USERNAME, txt_Pass.Text.ToString().Trim());
             HocSinh thongTinHV = new HocSinh(txt_Ma.Text.ToString(), txt_Ten.Text.ToString(), txt_GioiTinh.Text.ToString(), dPTime_NgaySinh.Value, txt_DiaChi.Text.ToString(), txt_SDT.Text.ToString(), txt_CCCD.Text.ToString(), txt_UserName.Text.ToString());
             //cap nhat tai khoan
             hvDao.CapNhatTaiKhoan(taiKhoanHV);

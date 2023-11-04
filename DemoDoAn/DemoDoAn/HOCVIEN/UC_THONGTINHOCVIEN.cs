@@ -71,7 +71,7 @@ namespace DemoDoAn.HOCVIEN
                                                     dt.Rows[0]["username"].ToString(), dt.Rows[0]["pass"].ToString());
                         dPTime_NgaySinhUpd.Value = gv.NGAYSINH;
                         btn_Email.Text = gv.EMAIL.ToString().Trim();
-                        btn_CCCD.Text = gv.CMND.ToString().Trim();
+                        btn_CCCD.Text = gv.EMAIL.ToString().Trim();
                         btn_SDT.Text = gv.SDT.ToString().Trim();
                         btn_DiaChi.Text = gv.DIACHI.ToString().Trim();
                         lbl_HoTen.Text = gv.HOTEN.ToString().Trim();
@@ -81,7 +81,7 @@ namespace DemoDoAn.HOCVIEN
                         //
                         txt_NgaySinhUpd.Text = gv.NGAYSINH.ToString("dd/MM/yyyy");
                         txt_NameUpd.Text = gv.EMAIL.ToString().Trim();
-                        txt_CCCDUpd.Text = gv.CMND.ToString().Trim();
+                        txt_CCCDUpd.Text = "";
                         txt_SDTUpd.Text = gv.SDT.ToString().Trim();
                         txt_DiaChiUpd.Text = gv.DIACHI.ToString().Trim();
                         txt_GioiTinhUpd.Text = gv.GIOITINH.ToString().Trim();

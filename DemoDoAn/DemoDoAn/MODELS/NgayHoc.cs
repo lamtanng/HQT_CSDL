@@ -8,17 +8,17 @@ namespace DemoDoAn.MODELS
 {
     internal class NgayHoc
     {
-        DateTime ngayHoc;
+        DateTime ngay;
 
         public NgayHoc()
         {
         }
 
-        public NgayHoc(DateTime ngayHoc)
+        public NgayHoc(DateTime ngay)
         {
-            this.NgayHoc = ngayHoc;
+            this.Ngay = ngay;
         }
 
-        public DateTime NgayHoc { get => ngayHoc; set => ngayHoc = value; }
+        public DateTime Ngay { get => ngay; set => ngay = value; }
     }
 }

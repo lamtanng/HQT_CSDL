@@ -65,11 +65,11 @@ namespace DemoDoAn
         //    this.tien = tien;
         //   // this.avarta = avarta;
         //}
-        //public HocSinh(string accid, string username, string password)
-        //{
+        public HocSinh(string accid, string username, string password)
+        {
         //    this.accid = accid;
         //    this.username = username;
         //    this.password = password;
-        //}
+        }
     }
 }

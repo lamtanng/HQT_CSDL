@@ -265,9 +265,9 @@ namespace DemoDoAn.ChildPage.Student
             hv.SDT = sdt;
             hv.DIACHI = diachi;
             //hv.EMAIL = email;
-            hv.ACCID = accid;
+            hv.USERNAME = accid;
             hv.USERNAME = username;
-            hv.PASSWORD = password;
+            hv.CCCD = password;
             return hv;
         }
 
@@ -380,7 +380,7 @@ namespace DemoDoAn.ChildPage.Student
                 if (dtg.Columns[e.ColumnIndex].HeaderText == "Xóa")
                 {
                     //xóa tài khoản -> tự động xóa thông tin
-                    hocsinhDao.xoaTaiKhoan(hv.ACCID);
+                    hocsinhDao.xoaTaiKhoan(hv.USERNAME);
                     taiDSHV();
                 }
             }

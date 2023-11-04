@@ -54,7 +54,6 @@
             this.dataGrView_DSL = new System.Windows.Forms.DataGridView();
             this.btn_BangHocPhi = new CustomControls.RJControls.RJButton();
             this.lOPHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dEMO_TTTADataSet1 = new DemoDoAn.DEMO_TTTADataSet1();
             this.pnl_LopPhiCaoNhat = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -70,7 +69,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_LopPhiCaoNhat = new CustomControls.RJControls.RJButton();
             this.dEMOTTTADataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lOPHOCTableAdapter = new DemoDoAn.DEMO_TTTADataSet1TableAdapters.LOPHOCTableAdapter();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btn_TitleQLNV = new CustomControls.RJControls.RJButton();
             this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,7 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnTaoLopMoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).BeginInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).BeginInit();
             this.pnl_LopPhiCaoNhat.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -349,12 +347,12 @@
             // lOPHOCBindingSource
             // 
             this.lOPHOCBindingSource.DataMember = "LOPHOC";
-            this.lOPHOCBindingSource.DataSource = this.dEMO_TTTADataSet1;
+            //this.lOPHOCBindingSource.DataSource = this.dEMO_TTTADataSet1;
             // 
             // dEMO_TTTADataSet1
             // 
-            this.dEMO_TTTADataSet1.DataSetName = "DEMO_TTTADataSet1";
-            this.dEMO_TTTADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.dEMO_TTTADataSet1.DataSetName = "DEMO_TTTADataSet1";
+            //this.dEMO_TTTADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pnl_LopPhiCaoNhat
             // 
@@ -538,7 +536,7 @@
             // 
             // lOPHOCTableAdapter
             // 
-            this.lOPHOCTableAdapter.ClearBeforeFill = true;
+            //this.lOPHOCTableAdapter.ClearBeforeFill = true;
             // 
             // pictureBox9
             // 
@@ -643,7 +641,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnTaoLopMoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).EndInit();
             this.pnl_LopPhiCaoNhat.ResumeLayout(false);
             this.pnl_LopPhiCaoNhat.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -672,9 +670,7 @@
         private System.Windows.Forms.Panel pnl_LopPhiCaoNhat;
         private CustomControls.RJControls.RJButton btn_LopPhiCaoNhat;
         private System.Windows.Forms.BindingSource lOPHOCBindingSource;
-        private DEMO_TTTADataSet1 dEMO_TTTADataSet1;
         private System.Windows.Forms.BindingSource dEMOTTTADataSetBindingSource;
-        private DEMO_TTTADataSet1TableAdapters.LOPHOCTableAdapter lOPHOCTableAdapter;
         private System.Windows.Forms.DataGridView dataGrView_DSL;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox btnTaoLopMoi;

@@ -27,7 +27,7 @@ namespace DemoDoAn
         }
         public void CapNhat(KhoaHoc kh)
         {
-            string sqlStr = string.Format("UPDATE KHOAHOC SET TenKH = N'{0}', TrangThaiKH = {1} WHERE MaKH = '{2}'", kh.Tenkhoahoc, Convert.ToInt32(kh.Trangthai), kh.Makhoahoc);
+            string sqlStr = string.Format("");
             dbConn.ThucThi(sqlStr);
         }
         public DataTable timKiem(string duLieu)

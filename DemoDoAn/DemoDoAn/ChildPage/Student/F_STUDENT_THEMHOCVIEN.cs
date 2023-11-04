@@ -54,7 +54,7 @@ namespace DemoDoAn.ChildPage.Student
                         //lấy acc id
                         DataTable dt_accID = new DataTable();
                         dt_accID = hvDao.LayAccID(taiKhoanHV.USERNAME);
-                        taiKhoanHV.ACCID = dt_accID.Rows[0][0].ToString();
+                        taiKhoanHV.USERNAME = dt_accID.Rows[0][0].ToString();
 
                         //lưu thông tin với accID đó
                         // hvDao.themHocVien(thongTinHV, taiKhoanHV.ACCID);
@@ -103,7 +103,7 @@ namespace DemoDoAn.ChildPage.Student
         //check thong tin rong
         private bool kiemTraThongTin(HocSinh taiKhoanHV, HocSinh thongTinHV, string rePass)
         {
-            if (String.IsNullOrEmpty(taiKhoanHV.USERNAME) || String.IsNullOrEmpty(taiKhoanHV.PASSWORD) || String.IsNullOrEmpty(rePass) || String.IsNullOrEmpty(thongTinHV.HOTEN) || String.IsNullOrEmpty(thongTinHV.GIOITINH) || String.IsNullOrEmpty(thongTinHV.NGAYSINH.ToString()) || String.IsNullOrEmpty(thongTinHV.CCCD) || String.IsNullOrEmpty(thongTinHV.SDT) /*|| String.IsNullOrEmpty(thongTinHV.EMAIL)*/ || String.IsNullOrEmpty(thongTinHV.DIACHI))
+            if (String.IsNullOrEmpty(taiKhoanHV.USERNAME) || String.IsNullOrEmpty(taiKhoanHV.USERNAME) || String.IsNullOrEmpty(rePass) || String.IsNullOrEmpty(thongTinHV.HOTEN) || String.IsNullOrEmpty(thongTinHV.GIOITINH) || String.IsNullOrEmpty(thongTinHV.NGAYSINH.ToString()) || String.IsNullOrEmpty(thongTinHV.CCCD) || String.IsNullOrEmpty(thongTinHV.SDT) /*|| String.IsNullOrEmpty(thongTinHV.EMAIL)*/ || String.IsNullOrEmpty(thongTinHV.DIACHI))
             { return false; }
             return true;
         }

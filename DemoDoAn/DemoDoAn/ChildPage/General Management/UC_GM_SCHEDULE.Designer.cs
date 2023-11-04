@@ -39,7 +39,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dEMO_TTTADataSet1 = new DemoDoAn.DEMO_TTTADataSet1();
+            //this.dEMO_TTTADataSet1 = new DemoDoAn.DEMO_TTTADataSet1();
             this.btn_BangHocPhi = new CustomControls.RJControls.RJButton();
             this.pnl_LopPhiCaoNhat = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.btn_LopPhiCaoNhat = new CustomControls.RJControls.RJButton();
-            this.lOPHOCTableAdapter = new DemoDoAn.DEMO_TTTADataSet1TableAdapters.LOPHOCTableAdapter();
+            //his.lOPHOCTableAdapter = new DemoDoAn.DEMO_TTTADataSet1TableAdapters.LOPHOCTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.rjButton5 = new CustomControls.RJControls.RJButton();
@@ -85,7 +85,7 @@
             this.lbl_QuanLiKhoaHoc = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btn_TitleQLNV = new CustomControls.RJControls.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).BeginInit();
             this.pnl_LopPhiCaoNhat.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOPHOCBindingSource)).BeginInit();
@@ -100,8 +100,8 @@
             // 
             // dEMO_TTTADataSet1
             // 
-            this.dEMO_TTTADataSet1.DataSetName = "DEMO_TTTADataSet1";
-            this.dEMO_TTTADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           // this.dEMO_TTTADataSet1.DataSetName = "DEMO_TTTADataSet1";
+            //this.dEMO_TTTADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_BangHocPhi
             // 
@@ -238,7 +238,7 @@
             // 
             // lOPHOCTableAdapter
             // 
-            this.lOPHOCTableAdapter.ClearBeforeFill = true;
+           //this.lOPHOCTableAdapter.ClearBeforeFill = true;
             // 
             // panel1
             // 
@@ -356,7 +356,7 @@
             // lOPHOCBindingSource
             // 
             this.lOPHOCBindingSource.DataMember = "LOPHOC";
-            this.lOPHOCBindingSource.DataSource = this.dEMO_TTTADataSet1;
+            //this.lOPHOCBindingSource.DataSource = this.dEMO_TTTADataSet1;
             // 
             // imgList_BtnTimKiem
             // 
@@ -714,7 +714,7 @@
             this.Name = "UC_GM_SCHEDULE";
             this.Size = new System.Drawing.Size(1468, 817);
             this.Load += new System.EventHandler(this.UC_GM_SCHEDULE_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).EndInit();
+           //(System.ComponentModel.ISupportInitialize)(this.dEMO_TTTADataSet1)).EndInit();
             this.pnl_LopPhiCaoNhat.ResumeLayout(false);
             this.pnl_LopPhiCaoNhat.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -734,7 +734,6 @@
         }
 
         #endregion
-        private DEMO_TTTADataSet1 dEMO_TTTADataSet1;
         private CustomControls.RJControls.RJButton btn_BangHocPhi;
         private System.Windows.Forms.Panel pnl_LopPhiCaoNhat;
         private System.Windows.Forms.Label label1;
@@ -744,7 +743,6 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private CustomControls.RJControls.RJButton btn_LopPhiCaoNhat;
         private System.Windows.Forms.BindingSource dEMOTTTADataSetBindingSource;
-        private DEMO_TTTADataSet1TableAdapters.LOPHOCTableAdapter lOPHOCTableAdapter;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private CustomControls.RJControls.RJButton rjButton5;

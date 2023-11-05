@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DemoDoAn.DAO;
+using DemoDoAn.MODELS;
+using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +15,10 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_ROOM
 {
     public partial class F_GM_ROOM_ADDNEWROOM : Form
     {
-        PhongHocDao phongHocDao=new PhongHocDao();
+        LopHocDao lopHocDao = new LopHocDao();
+        KhoaHocDao khoaHocDao = new KhoaHocDao();
+        DataTable dtKhoaHoc = new DataTable("KhoaHoc");
+        //PhongHocDao phongHocDao=new PhongHocDao();
         public F_GM_ROOM_ADDNEWROOM()
         {
             InitializeComponent();
@@ -77,10 +83,39 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_ROOM
         }
         #endregion
 
+        //load khoa hoc len cbb
+        private void loadCbbKhoaHoc()
+        {
+            dtKhoaHoc.Rows.Clear();
+            dtKhoaHoc = khoaHocDao.LayKhoaHoc();
+            //duyet lui chứ mỗi lần xóa bị lỗi
+            //int rows = dtKhoaHoc.Rows.Count;
+            //for (int r = rows - 1; r >= 0; r--)
+            //{
+            //    DataRow row = dtKhoaHoc.Rows[r];
+            //    if (Convert.ToInt32(row["TrangThaiKH"]) == 0)
+            //        dtKhoaHoc.Rows.Remove(row);
+            //}
+            loadCombobox(gCbb_KhoaHoc, dtKhoaHoc, "TenKhoaHoc", "MaKhoaHoc");
+        }
+
+        //load combobox
+        private void loadCombobox(Guna2ComboBox cbb, DataTable dt, string displayMember, string valueMember)
+        {
+            cbb.DataSource = dt;
+            cbb.DisplayMember = displayMember;
+            cbb.ValueMember = valueMember;
+        }
+
         private void btn_HoanThanh_Click(object sender, EventArgs e)
         {
-            PhongHoc ph = new PhongHoc(txt_TenPhongHoc.Text, btn_TrangThai.Text);
-            phongHocDao.TaoPhong(ph);
+            LopHoc lopHoc = new LopHoc(txt_MaLopHoc.Text.ToString(), ((DataRowView)gCbb_KhoaHoc.SelectedItem)["MaKhoaHoc"].ToString(), txt_TenLopHoc.Text.ToString(), Convert.ToInt32(txt_TongSoBuoiHoc.Text.ToString()), Convert.ToInt32(txt_HocPhi.Text.ToString()));
+            lopHocDao.ThemLopHoc(lopHoc);
+        }
+
+        private void F_GM_ROOM_ADDNEWROOM_Load(object sender, EventArgs e)
+        {
+            loadCbbKhoaHoc();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using DemoDoAn.ChildPage.HocTap;
 using DemoDoAn.GIANGVIEN;
 using DemoDoAn.HOCVIEN.Class;
+using DemoDoAn.MODELS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -96,7 +97,7 @@ namespace DemoDoAn.HOCVIEN
         TKBDao tkbDao = new TKBDao();
         HocSinhDao hsDao = new HocSinhDao();
         BangDiemDAO bangDiemDao = new BangDiemDAO();
-        LopHocDao lopDao = new LopHocDao();
+        NhomHocDao lopDao = new NhomHocDao();
         GiaoVienDao gvDao = new GiaoVienDao();
         DangKiLopDao dklDao = new DangKiLopDao();
 
@@ -420,7 +421,7 @@ namespace DemoDoAn.HOCVIEN
         //private void loadCbb_KhoaHoc()
         //{
         //    dtKhoaHoc.Rows.Clear();
-        //    dtKhoaHoc = lopDao.LayDanhSachLop();
+        //    dtKhoaHoc = lopDao.LayDanhSachNhom();
 
         //    //duyet lui chứ mỗi lần xóa bị lỗi
         //    int rows = dtKhoaHoc.Rows.Count;
@@ -743,7 +744,7 @@ namespace DemoDoAn.HOCVIEN
         DanhSachLopDao dslDao1 = new DanhSachLopDao();
         HocSinhDao hsDao1 = new HocSinhDao();
         GiaoVienDao gvDao1 = new GiaoVienDao();
-        LopHocDao lhDao1 = new LopHocDao();
+        NhomHocDao lhDao1 = new NhomHocDao();
 
         DataTable dtDSLFull1 = new DataTable();
         //DataTable dtLopDaDay = new DataTable();
@@ -900,14 +901,14 @@ namespace DemoDoAn.HOCVIEN
         //tai dsl noi bat
         private void taiDSLNoiBat1()
         {
-            LopHoc lopHoc = new LopHoc();
+            NhomHoc nhom = new NhomHoc();
             for (int r = 0; r < dataGrViewDSL1.Rows.Count; r++)
             {
-                lopHoc.TENLOP = dataGrViewDSL1.Rows[r].Cells["TenMon1"].Value.ToString().Trim();
-                lopHoc.KHOAHOC = dataGrViewDSL1.Rows[r].Cells["TenKH1"].Value.ToString().Trim();
-                lopHoc.HOCPHI = dataGrViewDSL1.Rows[r].Cells["HocPhi1"].Value.ToString().Trim();
-               // lopHoc.GIANGVIEN = dataGrViewDSL1.Rows[r].Cells["HOTEN1"].Value.ToString().Trim();
-                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD(lopHoc.KHOAHOC.ToString(), lopHoc.TENLOP.ToString(), lopHoc.HOCPHI.ToString(), ""));
+                nhom.MaLop = dataGrViewDSL1.Rows[r].Cells["TenMon1"].Value.ToString().Trim();
+                nhom.MaGiaoVien = dataGrViewDSL1.Rows[r].Cells["TenKH1"].Value.ToString().Trim();
+                nhom.MaPhongHoc = dataGrViewDSL1.Rows[r].Cells["HocPhi1"].Value.ToString().Trim();
+               // nhom.GIANGVIEN = dataGrViewDSL1.Rows[r].Cells["HOTEN1"].Value.ToString().Trim();
+                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD("Fail", "Fail","Fail", ""));
             }
         }
 
@@ -999,7 +1000,7 @@ namespace DemoDoAn.HOCVIEN
                     if (kiemTraTrungLich(maLop, ref lopTrungLich) == true)
                     {
                         //cap nhat giang vien day + cap nhat trang thai XacNhan day = 1
-                        lhDao1.capNhatGiangVienChoLop(maLop, ID);
+                        lhDao1.capNhatGiangVienChoNhom(maLop, ID);
                         gvDao1.xacNhanDay(maLop, 1);
                         taiDSLFull1();
                         taiDSLDangDay1();

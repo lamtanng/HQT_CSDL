@@ -16,7 +16,7 @@ namespace DemoDoAn.ChildPage
 {
     public partial class UC_STUDENT_XEPLOP : UserControl
     {
-        LopHocDao LopHocDao = new LopHocDao();
+        NhomHocDao LopHocDao = new NhomHocDao();
         BangDiemDAO bangDiemDao = new BangDiemDAO();
         HocSinhDao hvDao = new HocSinhDao();
         DanhSachLopDao dslDao = new DanhSachLopDao();
@@ -168,7 +168,7 @@ namespace DemoDoAn.ChildPage
         private void loadCbb_KhoaHoc()
         {
             dtKhoaHoc.Rows.Clear();
-            dtKhoaHoc = LopHocDao.LayDanhSachLop();
+            dtKhoaHoc = LopHocDao.LayDanhSachNhom();
             //duyet lui chứ mỗi lần xóa bị lỗi
             int rows = dtKhoaHoc.Rows.Count;
             for (int r = rows - 1; r >= 0; r--)

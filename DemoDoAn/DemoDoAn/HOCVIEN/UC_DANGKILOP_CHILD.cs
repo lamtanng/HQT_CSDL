@@ -18,7 +18,7 @@ namespace DemoDoAn.HOCVIEN
         string STT, maLop, tenLop, giangVien, trangThai;
         DateTime ngayBD, ngayKT;
 
-        LopHocDao lhDao = new LopHocDao();
+        NhomHocDao lhDao = new NhomHocDao();
         GiaoVienDao gvDao = new GiaoVienDao();
         DangKiLopDao dklDao = new DangKiLopDao();
         HocSinhDao hsDao = new HocSinhDao();    
@@ -81,7 +81,7 @@ namespace DemoDoAn.HOCVIEN
                 else if(chucVu == 2)
                 {
                     //xoa gv day lop
-                    lhDao.capNhatGiangVienChoLop(maLop, null);
+                    lhDao.capNhatGiangVienChoNhom(maLop, null);
                     //cap nhat trang thai XacNhan
                     gvDao.xacNhanDay(maLop, 0);
                 }

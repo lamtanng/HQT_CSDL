@@ -1,4 +1,5 @@
 ﻿using DemoDoAn.Custom_Control;
+using DemoDoAn.MODELS;
 //using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 {
     public partial class F_GM_CLASS_XepLop : Form
     {
-        LopHocDao LopHocDao = new LopHocDao();
+        NhomHocDao LopHocDao = new NhomHocDao();
         LichHocDao LichHocDao = new LichHocDao();
         DataTable dtKhoaHoc = new DataTable();
         DataTable dtLichHoc = new DataTable();
@@ -103,7 +104,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 
         private void F_GM_CLASS_XepLop_Load(object sender, EventArgs e)
         {
-            dtKhoaHoc = LopHocDao.LayDanhSachLop();
+            dtKhoaHoc = LopHocDao.LayDanhSachNhom();
             //load combobox
             loadCbb_GioHoc();
             loadLichHoc();
@@ -137,12 +138,12 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
                     string phong = ((DataRowView)cbb_PhongHoc.SelectedItem)["Phong"].ToString();
 
                     //xep lop
-                    LopHoc lop = new LopHoc(malop, tenlop, trangThai, maKH, soHV, ngayBD, ngayKT, "", GvID, soBuoi, tenlop);
-                    LopHocDao.XepLop(lop);
+                    NhomHoc lop = new NhomHoc(malop, tenlop, trangThai, maKH, soHV, ngayBD, ngayKT, "", GvID, soBuoi, tenlop);
+                    LopHocDao.XepNhom(lop);
 
 
                     //DataTable checkLich = new DataTable();
-                    //checkLich = LopHocDao.checkLichHoc(maLop);
+                    //checkLich = NhomHocDao.checkLichHoc(maLop);
 
                     //xoa lich hoc cu
                     LichHocDao.xoaLichHoc(malop);

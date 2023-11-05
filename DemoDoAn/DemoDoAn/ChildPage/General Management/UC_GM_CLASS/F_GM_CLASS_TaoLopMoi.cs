@@ -1,4 +1,5 @@
 ﻿using DemoDoAn.Custom_Control;
+using DemoDoAn.MODELS;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 {
     public partial class F_GM_CLASS_TaoLopMoi : Form
     {
-        LopHocDao lopHocDao = new LopHocDao();
+        NhomHocDao lopHocDao = new NhomHocDao();
         KhoaHocDao khoaHocDao = new KhoaHocDao();
         DataTable dtKhoaHoc = new DataTable("KhoaHoc");
 
@@ -111,7 +112,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         {
             string maKH = ((DataRowView)gCbb_KhoaHoc.SelectedItem)["MaKH"].ToString();
             string tengon = rutGonTen(txt_TenLopMoi.Text.ToString());
-            LopHoc lop = new LopHoc(maKH, txt_TenLopMoi.Text.ToString(), txt_HocPhi.Text.ToString());
+            NhomHoc lop = new NhomHoc(maKH, txt_TenLopMoi.Text.ToString(), txt_HocPhi.Text.ToString());
             lopHocDao.themLopHoc(lop, tengon);
             this.Close();
         }

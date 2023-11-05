@@ -12,7 +12,7 @@ namespace DemoDoAn.ChildPage.HocTap
 {
     public partial class UC_HOCTAP_QLDiem : UserControl
     {
-        LopHocDao LopHocDao = new LopHocDao();
+        NhomHocDao LopHocDao = new NhomHocDao();
         BangDiemDAO bangDiemDao = new BangDiemDAO();
         DataTable dtBangDiem = new DataTable();
         DataTable dtKhoaHoc = new DataTable();
@@ -128,7 +128,7 @@ namespace DemoDoAn.ChildPage.HocTap
         private void loadCbb_KhoaHoc()
         {
             dtKhoaHoc.Rows.Clear();
-            dtKhoaHoc = LopHocDao.LayDanhSachLop();
+            dtKhoaHoc = LopHocDao.LayDanhSachNhom();
 
             //duyet lui chứ mỗi lần xóa bị lỗi
             int rows = dtKhoaHoc.Rows.Count;

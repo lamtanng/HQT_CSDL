@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace DemoDoAn
+namespace DemoDoAn.MODELS
 {
     public class HocSinh
     {
@@ -67,9 +67,9 @@ namespace DemoDoAn
         //}
         public HocSinh(string accid, string username, string password)
         {
-        //    this.accid = accid;
-        //    this.username = username;
-        //    this.password = password;
+            //    this.accid = accid;
+            //    this.username = username;
+            //    this.password = password;
         }
     }
 }

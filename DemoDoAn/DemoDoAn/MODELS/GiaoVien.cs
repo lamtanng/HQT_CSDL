@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace DemoDoAn
+namespace DemoDoAn.MODELS
 {
     public class GiaoVien
     {
@@ -35,12 +35,12 @@ namespace DemoDoAn
         //public string PASSWORD { get { return password; } set { password = value; } }
         //public string ACCID { get { return accid; } set { accid = value; } }
         //public string CMND { get { return cmnd; } set { cmnd = value; } }
-     //   public Image AVARTAR { get { return avarta; } }
+        //   public Image AVARTAR { get { return avarta; } }
 
         public GiaoVien()
         { }
 
-        public GiaoVien(string gvid, string hoten, string cmnd, DateTime ngaysinh, string gioitinh, string sdt, string diachi,string email, string accid, string username, string password)
+        public GiaoVien(string gvid, string hoten, string cmnd, DateTime ngaysinh, string gioitinh, string sdt, string diachi, string email, string accid, string username, string password)
         {
             this.gvid = gvid;
             this.hoten = hoten;

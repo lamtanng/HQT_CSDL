@@ -14,19 +14,21 @@ namespace DemoDoAn.ChildPage
 {
     public partial class UC_GM_CLASS : UserControl
     {
-        LopHocDao lopDao = new LopHocDao();
+        NhomHocDao nhomDao = new NhomHocDao();
         KhoaHocDao khoaHocDao = new KhoaHocDao();
-        DataTable dtLopHoc = new DataTable();
+        DataTable dtNhomHoc = new DataTable();
 
         enum nameCol_DSL
         {
-            MaLopHoc,
+            MaNhomHoc,
             TenLopHoc,
-            HocPhi,
-            SoHocVien,
-            TongSoBuoiHoc,
-            MaKhoaHoc
-                //
+            TongHocVien,
+            GiaoVien,
+            PhongHoc,
+            Ca,
+            NgayBatDau,
+            NgayKetThuc
+                
         }
 
         public UC_GM_CLASS()
@@ -71,10 +73,10 @@ namespace DemoDoAn.ChildPage
         private void taiDSL()
         {
             
-            dtLopHoc.Rows.Clear();
-            dtLopHoc = lopDao.LayDanhSachLop();
-            //dtLopHoc = dtLopHoc.AsEnumerable().OrderByDescending(row => row.Field<int>("TTMoLop")).CopyToDataTable();
-            LoadForm(dataGrView_DSL, dtLopHoc);
+            dtNhomHoc.Rows.Clear();
+            dtNhomHoc = nhomDao.LayDanhSachNhom();
+            //dtNhomHoc = dtNhomHoc.AsEnumerable().OrderByDescending(row => row.Field<int>("TrangThaiMoDangKy")).CopyToDataTable();
+            LoadForm(dataGrView_DSL, dtNhomHoc);
             
             //ẩn full các cột     
             for (int i = 0; i < dataGrView_DSL.Columns.Count; i++)
@@ -97,10 +99,10 @@ namespace DemoDoAn.ChildPage
             }
 
             //them cojt trang thai, xoa
-            //addCollums(dataGrView_DSL, "Trạng thái", "TrangThaiIcon");
+            addCollums(dataGrView_DSL, "Mở đăng ký", "TrangThaiMoDangKyIcon");
             addCollums(dataGrView_DSL, "Xóa", "XoaIcon");
             dataGrView_DSL.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            //dataGrView_DSL.Sort(dataGrView_DSL.Columns["TrangThaiIcon"], ListSortDirection.Descending);
+            //dataGrView_DSL.Sort(dataGrView_DSL.Columns["TrangThaiMoDangKyIcon"], ListSortDirection.Descending);
         }
         //load dtg
         private void LoadForm(DataGridView dtg, DataTable dt)
@@ -208,12 +210,12 @@ namespace DemoDoAn.ChildPage
                 if (MessageBox.Show("Bạn muốn xóa lớp học?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     row = dtg.Rows[e.RowIndex];
-                    lopDao.Xoa(Convert.ToString(row.Cells["MaLopHoc"].Value));
+                    nhomDao.Xoa(Convert.ToString(row.Cells["MaNhomHoc"].Value));
                     resetDataGrView();
                     taiDSL();
                 }
             }
-            //else if (dtg.Columns[e.ColumnIndex].Name == "TrangThaiIcon")
+            //else if (dtg.Columns[e.ColumnIndex].Name == "TrangThaiMoDangKyIcon")
             //{
             //    row = dtg.Rows[e.RowIndex];
             //    if (MessageBox.Show("Bạn muốn thay đổi trạng thái lớp?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -223,7 +225,7 @@ namespace DemoDoAn.ChildPage
             //        {
             //            //cap nhat trang thai dong mo lop
             //            capNhatTTLopDtg(e.RowIndex);
-            //            lopDao.capNhatTrangThai(row.Cells["MaLop"].Value.ToString().Trim(), Convert.ToInt32(row.Cells["TTMoLop"].Value));
+            //            nhomDao.capNhatTrangThai(row.Cells["MaLop"].Value.ToString().Trim(), Convert.ToInt32(row.Cells["TrangThaiMoDangKy"].Value));
             //            resetDataGrView();
             //            taiDSL();
             //        }
@@ -239,13 +241,13 @@ namespace DemoDoAn.ChildPage
         //capnhat trang thai tren datagridview
         private void capNhatTTLopDtg(int r)
         {
-            if (Convert.ToInt32( dataGrView_DSL.Rows[r].Cells["TTMoLop"].Value) == 0)
+            if (Convert.ToInt32(dataGrView_DSL.Rows[r].Cells["TrangThaiMoDangKy"].Value) == 0)
             {
-                dataGrView_DSL.Rows[r].Cells["TTMoLop"].Value = 1;
+                dataGrView_DSL.Rows[r].Cells["TrangThaiMoDangKy"].Value = 1;
             }
             else
             {
-                dataGrView_DSL.Rows[r].Cells["TTMoLop"].Value = 0;
+                dataGrView_DSL.Rows[r].Cells["TrangThaiMoDangKy"].Value = 0;
             }
         }
 
@@ -253,7 +255,7 @@ namespace DemoDoAn.ChildPage
         private void resetDataGrView()
         {
             dataGrView_DSL.Columns.Remove("XoaIcon");
-            //dataGrView_DSL.Columns.Remove("TrangThaiIcon");
+            //dataGrView_DSL.Columns.Remove("TrangThaiMoDangKyIcon");
             for (int i = dataGrView_DSL.Rows.Count - 1; i >= 0; i--)
             {
                 dataGrView_DSL.Rows.RemoveAt(i);
@@ -264,14 +266,13 @@ namespace DemoDoAn.ChildPage
         private void dataGrView_DSL_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             DataGridViewRow row = dataGrView_DSL.Rows[e.RowIndex];
-            DataRow dtRow = dtLopHoc.Rows[e.RowIndex];
-
+            // DataRow dtRow = dtNhomHoc.Rows[e.RowIndex];
 
             //img for TrangThai
-            //if (row.Cells["TrangThaiIcon"].Value == null)
-            //    if (Convert.ToInt32(row.Cells["TTMoLop"].Value) == 0)
-            //        row.Cells["TrangThaiIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\Offline.png");
-            //    else row.Cells["TrangThaiIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\OnlineTT_1.png");
+            if (row.Cells["TrangThaiMoDangKyIcon"].Value == null)
+                if (Convert.ToInt32(row.Cells["TrangThaiMoDangKy"].Value) == 0)
+                    row.Cells["TrangThaiMoDangKyIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\Offline.png");
+                else row.Cells["TrangThaiMoDangKyIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\OnlineTT_1.png");
             //img for Xoa
             if (row.Cells["XoaIcon"].Value == null)
                 row.Cells["XoaIcon"].Value = new Bitmap(Application.StartupPath + "\\Resources\\delete.png");

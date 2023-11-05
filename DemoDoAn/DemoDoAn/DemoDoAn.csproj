@@ -648,11 +648,12 @@
     <Compile Include="DAO\LichHocDao.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="Login_Page.cs" />
-    <Compile Include="LopHoc.cs" />
-    <Compile Include="DAO\LopHocDao.cs" />
+    <Compile Include="MODELS\NhomHoc.cs" />
+    <Compile Include="DAO\NhomHocDao.cs" />
     <Compile Include="LopHocMoi.cs" />
     <Compile Include="DAO\LopHocMoiDao.cs" />
     <Compile Include="MODELS\HocVao.cs" />
+    <Compile Include="MODELS\LopHoc.cs" />
     <Compile Include="MODELS\NgayHoc.cs" />
     <Compile Include="MODELS\PhongHoc.cs" />
     <Compile Include="MODELS\PhuTrach.cs" />

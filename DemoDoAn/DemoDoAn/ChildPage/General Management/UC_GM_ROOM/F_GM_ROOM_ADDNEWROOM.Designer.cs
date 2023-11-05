@@ -35,6 +35,7 @@
             this.pBox_TenLopMoi = new System.Windows.Forms.PictureBox();
             this.txt_TennKhoaHoc = new System.Windows.Forms.TextBox();
             this.lbl_TT_KhoaHoc = new System.Windows.Forms.Label();
+            this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.lbl_QuanLiKhoaHoc = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
@@ -56,20 +57,19 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txt_HocPhi = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txt_MaLopHoc = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_TenLopMoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,11 +106,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.txt_TenLopHoc);
             this.panel2.Controls.Add(this.pBox_TenLopMoi);
+            this.panel2.Controls.Add(this.rjButton4);
+            this.panel2.Controls.Add(this.txt_TenLopHoc);
             this.panel2.Controls.Add(this.txt_TennKhoaHoc);
             this.panel2.Controls.Add(this.lbl_TT_KhoaHoc);
-            this.panel2.Controls.Add(this.rjButton4);
             this.panel2.Location = new System.Drawing.Point(97, 351);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
@@ -149,9 +149,31 @@
             this.lbl_TT_KhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.lbl_TT_KhoaHoc.Location = new System.Drawing.Point(4, 1);
             this.lbl_TT_KhoaHoc.Name = "lbl_TT_KhoaHoc";
-            this.lbl_TT_KhoaHoc.Size = new System.Drawing.Size(57, 27);
+            this.lbl_TT_KhoaHoc.Size = new System.Drawing.Size(174, 41);
             this.lbl_TT_KhoaHoc.TabIndex = 128;
-            this.lbl_TT_KhoaHoc.Text = "Class";
+            this.lbl_TT_KhoaHoc.Text = "Tên lớp học";
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.BackColor = System.Drawing.Color.White;
+            this.rjButton4.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton4.BorderRadius = 10;
+            this.rjButton4.BorderSize = 1;
+            this.rjButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Location = new System.Drawing.Point(4, 31);
+            this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(390, 54);
+            this.rjButton4.TabIndex = 185;
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
             // 
             // lbl_QuanLiKhoaHoc
             // 
@@ -160,9 +182,9 @@
             this.lbl_QuanLiKhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(113)))), ((int)(((byte)(245)))));
             this.lbl_QuanLiKhoaHoc.Location = new System.Drawing.Point(89, 37);
             this.lbl_QuanLiKhoaHoc.Name = "lbl_QuanLiKhoaHoc";
-            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(320, 46);
+            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(311, 69);
             this.lbl_QuanLiKhoaHoc.TabIndex = 194;
-            this.lbl_QuanLiKhoaHoc.Text = "Create a new room";
+            this.lbl_QuanLiKhoaHoc.Text = "Tạo lớp mới";
             // 
             // pictureBox1
             // 
@@ -225,9 +247,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.label2.Location = new System.Drawing.Point(4, 1);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 27);
+            this.label2.Size = new System.Drawing.Size(189, 41);
             this.label2.TabIndex = 128;
-            this.label2.Text = "Coures";
+            this.label2.Text = "Mã khóa học";
             // 
             // panel4
             // 
@@ -406,11 +428,11 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.txt_TongSoBuoiHoc);
             this.panel6.Controls.Add(this.pictureBox2);
+            this.panel6.Controls.Add(this.rjButton1);
+            this.panel6.Controls.Add(this.txt_TongSoBuoiHoc);
             this.panel6.Controls.Add(this.textBox2);
             this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.rjButton1);
             this.panel6.Location = new System.Drawing.Point(97, 461);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
@@ -461,18 +483,40 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.label1.Location = new System.Drawing.Point(4, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 27);
+            this.label1.Size = new System.Drawing.Size(254, 41);
             this.label1.TabIndex = 128;
-            this.label1.Text = "Class";
+            this.label1.Text = "Tổng số buổi học";
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.White;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton1.BorderRadius = 10;
+            this.rjButton1.BorderSize = 1;
+            this.rjButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(4, 31);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(390, 54);
+            this.rjButton1.TabIndex = 185;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.txt_HocPhi);
             this.panel7.Controls.Add(this.pictureBox3);
+            this.panel7.Controls.Add(this.rjButton2);
+            this.panel7.Controls.Add(this.txt_HocPhi);
             this.panel7.Controls.Add(this.textBox4);
             this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.rjButton2);
             this.panel7.Location = new System.Drawing.Point(97, 571);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel7.Name = "panel7";
@@ -523,18 +567,40 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.label3.Location = new System.Drawing.Point(4, 1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 27);
+            this.label3.Size = new System.Drawing.Size(123, 41);
             this.label3.TabIndex = 128;
-            this.label3.Text = "Class";
+            this.label3.Text = "Học phí";
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.White;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton2.BorderRadius = 10;
+            this.rjButton2.BorderSize = 1;
+            this.rjButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(4, 31);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(390, 54);
+            this.rjButton2.TabIndex = 185;
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Controls.Add(this.txt_MaLopHoc);
             this.panel8.Controls.Add(this.pictureBox4);
+            this.panel8.Controls.Add(this.rjButton3);
+            this.panel8.Controls.Add(this.txt_MaLopHoc);
             this.panel8.Controls.Add(this.textBox3);
             this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.rjButton3);
             this.panel8.Location = new System.Drawing.Point(97, 131);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel8.Name = "panel8";
@@ -585,9 +651,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.label4.Location = new System.Drawing.Point(4, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 27);
+            this.label4.Size = new System.Drawing.Size(168, 41);
             this.label4.TabIndex = 128;
-            this.label4.Text = "Class";
+            this.label4.Text = "Mã lớp học";
             // 
             // rjButton3
             // 
@@ -610,72 +676,6 @@
             this.rjButton3.TabIndex = 185;
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.BackColor = System.Drawing.Color.White;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton2.BorderRadius = 10;
-            this.rjButton2.BorderSize = 1;
-            this.rjButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(4, 31);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(390, 54);
-            this.rjButton2.TabIndex = 185;
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.White;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 1;
-            this.rjButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(4, 31);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(390, 54);
-            this.rjButton1.TabIndex = 185;
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // rjButton4
-            // 
-            this.rjButton4.BackColor = System.Drawing.Color.White;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton4.BorderRadius = 10;
-            this.rjButton4.BorderSize = 1;
-            this.rjButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(4, 31);
-            this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(390, 54);
-            this.rjButton4.TabIndex = 185;
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
             // 
             // F_GM_ROOM_ADDNEWROOM
             // 

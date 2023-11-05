@@ -82,7 +82,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_ROOM
             SelectBtn(fLPnl_TrangThai, btn_TrangThai, btn_TT_HoatDong, select_TrangThai);
         }
         #endregion
-
+        /
         //load khoa hoc len cbb
         private void loadCbbKhoaHoc()
         {

@@ -24,7 +24,7 @@ namespace DemoDoAn.HOCVIEN.Class
         //load ds lớp đã đăng kí
         public DataTable loadDSL(string hvID)
         {
-            string sqlStr = string.Format("Select * from BANGHOCPHI Where HVID = '{0}'", hvID);
+            string sqlStr = string.Format("Select * from V_TRANGTHAIHOCVIEN Where MaHocVien = '{0}'", hvID);
                 return dbConn.LayDanhSach(sqlStr);
         }
 

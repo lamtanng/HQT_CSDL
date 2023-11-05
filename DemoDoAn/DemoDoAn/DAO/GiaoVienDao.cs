@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDoAn.MODELS;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -40,8 +41,7 @@ namespace DemoDoAn
         }
         public void Them(GiaoVien gv)
         {
-            string sqlStr = string.Format("INSERT INTO GIANGVIEN(AccID, HOTEN, GIOITINH, NGAYSINH, DIACHI, SDT, CMND, EMAIL) VALUES ('{0}', N'{1}', N'{2}', '{3}', N'{4}', '{5}', '{6}','{7}')",
-                                           gv.ACCID, gv.HOTEN, gv.GIOITINH, gv.NGAYSINH, gv.DIACHI, gv.SDT, gv.CMND, gv.EMAIL);
+            string sqlStr = string.Format("");
             dbConn.ThucThi(sqlStr);
         }
 
@@ -70,9 +70,9 @@ namespace DemoDoAn
         {
             //cap nhat thong tin ca nhan
             string sqlStr = string.Format("UPDATE GIANGVIEN SET HOTEN = N'{0}', GIOITINH = N'{1}', NGAYSINH = '{2}', DIACHI = N'{3}', SDT = '{4}', CMND = '{5}', EMAIL = '{6}' WHERE GvID = '{7}'",
-                                        gv.HOTEN, gv.GIOITINH, gv.NGAYSINH, gv.DIACHI, gv.SDT, gv.CMND, gv.EMAIL, gv.GVID);
+                                        gv.HOTEN, gv.GIOITINH, gv.NGAYSINH, gv.DIACHI, gv.SDT, gv.EMAIL, gv.EMAIL, gv.GVID);
             //cap nhat thong tin acc
-            string sqlStr1 = string.Format("Update ACCOUNTS_TEACHER Set pass = '{0}' Where username = '{1}'", gv.PASSWORD, gv.USERNAME);
+            string sqlStr1 = string.Format("Update ACCOUNTS_TEACHER Set pass = '{0}' Where username = '{1}'", gv.DIACHI, gv.USERNAME);
             dbConn.ThucThi(sqlStr);
             dbConn.ThucThi(sqlStr1);
         }

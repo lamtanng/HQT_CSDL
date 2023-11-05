@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DemoDoAn
 {
-    internal class CheckError
+    internal class KiemTraLoi
     {
         public bool IsEmail(string email)
         {

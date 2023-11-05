@@ -114,9 +114,9 @@
             this.Xoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.btn_QLDSGiangVien = new CustomControls.RJControls.RJButton();
             this.gIAOVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tTTADataSet = new DemoDoAn.TTTADataSet();
+            //this.tTTADataSet = new DemoDoAn.TTTADataSet();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.gIAOVIENTableAdapter = new DemoDoAn.TTTADataSetTableAdapters.GIAOVIENTableAdapter();
+            //this.gIAOVIENTableAdapter = new DemoDoAn.TTTADataSetTableAdapters.GIAOVIENTableAdapter();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnl_QLForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -135,7 +135,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_CacLopDay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_QLForm
@@ -1176,12 +1176,12 @@
             // gIAOVIENBindingSource
             // 
             this.gIAOVIENBindingSource.DataMember = "GIAOVIEN";
-            this.gIAOVIENBindingSource.DataSource = this.tTTADataSet;
+            //this.gIAOVIENBindingSource.DataSource = this.tTTADataSet;
             // 
             // tTTADataSet
             // 
-            this.tTTADataSet.DataSetName = "TTTADataSet";
-            this.tTTADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.tTTADataSet.DataSetName = "TTTADataSet";
+            //this.tTTADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewImageColumn1
             // 
@@ -1193,7 +1193,7 @@
             // 
             // gIAOVIENTableAdapter
             // 
-            this.gIAOVIENTableAdapter.ClearBeforeFill = true;
+            //this.gIAOVIENTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewImageColumn2
             // 
@@ -1236,7 +1236,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_CacLopDay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).EndInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1257,7 +1257,7 @@
         private System.Windows.Forms.Label lbl_GioiTinh;
         private System.Windows.Forms.DataGridView dataGrView_DSGV;
         private System.Windows.Forms.BindingSource gIAOVIENBindingSource;
-        private TTTADataSet tTTADataSet;
+        //private TTTADataSet tTTADataSet;
         private CustomControls.RJControls.RJButton btn_PhanCach;
         private CustomControls.RJControls.RJButton btn_CacLopDay;
         private CustomControls.RJControls.RJCircularPictureBox picBox_AVT;
@@ -1266,7 +1266,7 @@
         private CustomControls.RJControls.RJButton btn_QLDSGiangVien;
         private System.Windows.Forms.Label lblcccd;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private TTTADataSetTableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
+       //private TTTADataSetTableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_DanhMucKhoaHoc;

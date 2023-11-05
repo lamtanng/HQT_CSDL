@@ -1,5 +1,6 @@
 ﻿using DemoDoAn.ChildPage.General_Management.UC_GM_CLASS;
 using DemoDoAn.ChildPage.Personnel;
+using DemoDoAn.MODELS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -135,7 +136,7 @@ namespace DemoDoAn.ChildPage
                 if (dtg.Columns[e.ColumnIndex].HeaderText == "Xóa")
                 {
                     //xoa acc -> tự động xóa thông tin -> set ON DELETE CASCADE
-                    giaoVienDao.xoaTaiKhoan(gv.ACCID);
+                    giaoVienDao.xoaTaiKhoan("");
                     LoadForm(dataGrView_DSGV, giaoVienDao.LayDanhSachGiaoVien());
                 }
             }
@@ -151,15 +152,15 @@ namespace DemoDoAn.ChildPage
         {
             gv.GVID = gvid;
             gv.HOTEN = hoten;
-            gv.CMND = cmnd;
+            gv.EMAIL = cmnd;
             gv.NGAYSINH = ngaysinh;
             gv.GIOITINH = gioitinh;
             gv.SDT = sdt;
             gv.DIACHI = diachi;
             gv.EMAIL = email;
-            gv.ACCID = accid;
+            gv.EMAIL = accid;
             gv.USERNAME = username;
-            gv.PASSWORD = password;
+            gv.EMAIL = password;
             return gv;
         }
 

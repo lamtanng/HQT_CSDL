@@ -12,7 +12,7 @@ namespace DemoDoAn.GIANGVIEN
 {
     public partial class UC_XACNHANLOP_CHILD : UserControl
     {
-        LopHocDao lhDao = new LopHocDao();
+        NhomHocDao lhDao = new NhomHocDao();
         GiaoVienDao gvDao = new GiaoVienDao();
         string tenLH, maLH, phong, giobd, giokt, thu, ngaybd, ngaykt;
 
@@ -64,7 +64,7 @@ namespace DemoDoAn.GIANGVIEN
         private void btn_Huy_Click(object sender, EventArgs e)
         {
             //xoa giang vien
-            lhDao.capNhatGiangVienChoLop(maLH, null);
+            lhDao.capNhatGiangVienChoNhom(maLH, null);
             EventHandler handler = DeleteClicked;
             if (handler != null)
             {

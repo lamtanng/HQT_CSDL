@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDoAn.MODELS;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,19 +9,19 @@ using System.Windows.Forms;
 
 namespace DemoDoAn
 {
-    internal class LopHocDao
+    internal class NhomHocDao
     {
         DBConnection dbConn = new DBConnection();
 
         //lay ds lop
-        public DataTable LayDanhSachLop()
+        public DataTable LayDanhSachNhom()
         {
-            string sqlStr = string.Format("SELECT *FROM LOPHOC inner join KHOAHOC on LOPHOC.MaKhoaHoc = KHOAHOC.MaKhoaHoc");
+            string sqlStr = string.Format("EXEC dbo.proc_LayDanhSachNhom");
             return dbConn.LayDanhSach(sqlStr);
         }
 
         //xep lop
-        public void XepLop(LopHoc lop)
+        public void XepNhom(NhomHoc lop)
         {
             //string sqlStr = string.Format("Update LOPHOC Set SoBuoiTrongTuan = '{0}', DiemTBQuaMon = '{1}', GiangVien = '{2}', SoHocVien = '{3}', NgayBatDau = '{4}', NgayKetThuc = '{5}', XacNhan = 0 Where MaLop = '{6}'",lop.SOBUOITRONGTUAN, 8.0, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP  );
             string sqlStr = "";
@@ -28,15 +29,14 @@ namespace DemoDoAn
         }
 
         //tao lop moi
-        public void themLopHoc(LopHoc lop, string tengon)
+        public void themLopHoc(NhomHoc lop, string tengon)
         {
-            string sqlStr = string.Format("INSERT INTO LOPHOC(MaKH, TenMon, TenMonGon, HocPhi) VALUES ('{0}', N'{1}', '{2}', '{3}')",
-                                            lop.KHOAHOC, lop.TENLOP, tengon, lop.HOCPHI);
+            string sqlStr = string.Format("");
             dbConn.ThucThi(sqlStr);
         }
 
         //cap nhat thong tin lop hoc
-        public void capNhatThongTinLop(LopHoc lop)
+        public void capNhatThongTinLop(NhomHoc lop)
         {
             //string sqlStr = string.Format("update LOPHOC Set SoBuoiTrongTuan = '{0}', GiangVien = '{1}', SoHocVien = '{2}', NgayBatDau ='{3}', NgayKetThuc = '{4}' where MaLop = '{5}'",
             //                                lop.SOBUOITRONGTUAN, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP);
@@ -95,7 +95,7 @@ namespace DemoDoAn
         }
 
         //capnhat giang vien day 
-        public void capNhatGiangVienChoLop(string malop, string gvid)
+        public void capNhatGiangVienChoNhom(string malop, string gvid)
         {
             string sqlStr = "";
             if (string.IsNullOrEmpty(gvid))

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pnl_LoginRight = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Login = new CustomControls.RJControls.RJButton();
@@ -51,7 +49,6 @@
             this.lbl_Login = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnl_LoginLeft = new System.Windows.Forms.Panel();
             this.rbtn_HV = new DemoDoAn.Custom_Control.RJRadioButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.pnl_LoginLeft.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -372,11 +368,6 @@
             this.panel1.TabIndex = 4;
             this.panel1.Visible = false;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
-            // 
             // pnl_LoginLeft
             // 
             this.pnl_LoginLeft.BackgroundImage = global::DemoDoAn.Properties.Resources.Login_LEFT;
@@ -540,7 +531,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.pnl_LoginLeft.ResumeLayout(false);
             this.pnl_LoginLeft.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -570,7 +560,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Panel pnl_ErrorUserName;
         private System.Windows.Forms.Panel pnl_ErrorPassword;
         private Custom_Control.RJRadioButton rbtn_HV;

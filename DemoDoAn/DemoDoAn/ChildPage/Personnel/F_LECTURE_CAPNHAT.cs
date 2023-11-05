@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDoAn.MODELS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +34,7 @@ namespace DemoDoAn.ChildPage.Personnel
             txt_Ten.Text = gv.HOTEN.ToString().Trim();
             txt_GioiTinh.Text = gv.GIOITINH.ToString().Trim();
             dPTime_NgaySinh.Value = gv.NGAYSINH;
-            txt_CCCD.Text = gv.CMND.ToString().Trim();
+            txt_CCCD.Text = gv.EMAIL.ToString().Trim();
             txt_SDT.Text = gv.SDT.ToString().Trim();
             txt_Email.Text = gv.EMAIL.ToString().Trim();
             txt_DiaChi.Text = gv.DIACHI.ToString().Trim();
@@ -49,7 +50,7 @@ namespace DemoDoAn.ChildPage.Personnel
         //cap nhat
         private void btn_HoanThanh_Click(object sender, EventArgs e)
         {
-            GiaoVien gvCapNhat = new GiaoVien(txt_Ma.Text.ToString(), txt_Ten.Text.ToString(), txt_CCCD.Text.ToString(), dPTime_NgaySinh.Value, txt_GioiTinh.Text.ToString(), txt_SDT.Text.ToString(), txt_DiaChi.Text.ToString(), txt_Email.Text.ToString(), gv.ACCID,txt_UserName.Text.ToString(), txt_Pass.Text.ToString());
+            GiaoVien gvCapNhat = new GiaoVien(txt_Ma.Text.ToString(), txt_Ten.Text.ToString(), txt_CCCD.Text.ToString(), dPTime_NgaySinh.Value, txt_GioiTinh.Text.ToString(), txt_SDT.Text.ToString(), txt_DiaChi.Text.ToString(), txt_Email.Text.ToString(), gv.DIACHI,txt_UserName.Text.ToString(), txt_Pass.Text.ToString());
             gvDao.CapNhat(gvCapNhat);
             this.Close();
         }

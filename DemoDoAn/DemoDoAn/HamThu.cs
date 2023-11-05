@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDoAn.HOCVIEN.Class
+namespace DemoDoAn
 {
     internal class HamThu
     {
@@ -25,8 +25,8 @@ namespace DemoDoAn.HOCVIEN.Class
         public string IDNhan { get { return idnhan; } set { idnhan = value; } }
         public string Tieude { get { return tieude; } set { tieude = value; } }
         public DateTime Gio { get { return gio; } set { gio = value; } }
-        public bool Danhdau { get { return danhdau; } set {  danhdau = value;} }
-        public string Noidung { get { return noidung; } set {noidung = value; } }
+        public bool Danhdau { get { return danhdau; } set { danhdau = value; } }
+        public string Noidung { get { return noidung; } set { noidung = value; } }
         public DateTime Ngay { get { return ngay; } set { ngay = value; } }
         public string ChucVu { get { return chucvu; } set { chucvu = value; } }
 

@@ -67,7 +67,7 @@ namespace DemoDoAn.ChildPage.QLThuChi
             }
         }
 
-        //lay malop
+        //lay maNhom
         private void cbb_LopHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
             try

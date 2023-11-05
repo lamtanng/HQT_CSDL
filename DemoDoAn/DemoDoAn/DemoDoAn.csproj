@@ -277,7 +277,7 @@
     <Compile Include="BangLuong.cs" />
     <Compile Include="DAO\BangLuongDao.cs" />
     <Compile Include="bieuDoChart.cs" />
-    <Compile Include="CheckError.cs" />
+    <Compile Include="KiemTraLoi.cs" />
     <Compile Include="ChildForm\F_UpdateHV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -530,16 +530,6 @@
     <Compile Include="Custom Control\cusTextbox.cs" />
     <Compile Include="DAO\DanhSachLopDao.cs" />
     <Compile Include="DBConnection.cs" />
-    <Compile Include="DEMO_TTTADataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DEMO_TTTADataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DEMO_TTTADataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DEMO_TTTADataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FORM\F_Addmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -566,10 +556,13 @@
     <Compile Include="FORM\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="GiaoVien.cs" />
-    <Compile Include="HocSinh.cs" />
+    <Compile Include="MODELS\GiaoVien.cs" />
+    <Compile Include="MODELS\BangDiemDanh.cs" />
+    <Compile Include="MODELS\CaHoc.cs" />
+    <Compile Include="MODELS\DanhSachNhom.cs" />
+    <Compile Include="MODELS\HocSinh.cs" />
     <Compile Include="DAO\DangKiLopDao.cs" />
-    <Compile Include="HOCVIEN\Class\HamThu.cs" />
+    <Compile Include="HamThu.cs" />
     <Compile Include="DAO\HamThuDAO.cs" />
     <Compile Include="DAO\TKBDao.cs" />
     <Compile Include="HOCVIEN\F_HAMTHU.cs">
@@ -650,15 +643,24 @@
     <Compile Include="HOCVIEN\UC_TKB.Designer.cs">
       <DependentUpon>UC_TKB.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhoaHoc.cs" />
+    <Compile Include="MODELS\KhoaHoc.cs" />
     <Compile Include="DAO\KhoaHocDao.cs" />
     <Compile Include="DAO\LichHocDao.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="Login_Page.cs" />
-    <Compile Include="LopHoc.cs" />
-    <Compile Include="DAO\LopHocDao.cs" />
+    <Compile Include="MODELS\NhomHoc.cs" />
+    <Compile Include="DAO\NhomHocDao.cs" />
     <Compile Include="LopHocMoi.cs" />
     <Compile Include="DAO\LopHocMoiDao.cs" />
+    <Compile Include="MODELS\HocVao.cs" />
+    <Compile Include="MODELS\LopHoc.cs" />
+    <Compile Include="MODELS\NgayHoc.cs" />
+    <Compile Include="MODELS\PhongHoc.cs" />
+    <Compile Include="MODELS\PhuTrach.cs" />
+    <Compile Include="MODELS\TaiKhoan.cs" />
+    <Compile Include="MODELS\ThongBao.cs" />
+    <Compile Include="MODELS\ThuTrongTuan.cs" />
+    <Compile Include="MODELS\TruyenTin.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="DAO\NhanVienDao.cs" />
     <Compile Include="PhieuChi.cs" />
@@ -676,11 +678,6 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\ThongKeDao.cs" />
-    <Compile Include="TTTADataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TTTADataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="XuatExcel.cs" />
     <EmbeddedResource Include="ChildForm\F_UpdateHV.resx">
       <DependentUpon>F_UpdateHV.cs</DependentUpon>
@@ -860,28 +857,6 @@
     <EmbeddedResource Include="FORM\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DEMO_TTTADataSet.xsc">
-      <DependentUpon>DEMO_TTTADataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DEMO_TTTADataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DEMO_TTTADataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DEMO_TTTADataSet.xss">
-      <DependentUpon>DEMO_TTTADataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DEMO_TTTADataSet1.xsc">
-      <DependentUpon>DEMO_TTTADataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DEMO_TTTADataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DEMO_TTTADataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DEMO_TTTADataSet1.xss">
-      <DependentUpon>DEMO_TTTADataSet1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -892,17 +867,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TTTADataSet.xsc">
-      <DependentUpon>TTTADataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TTTADataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TTTADataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TTTADataSet.xss">
-      <DependentUpon>TTTADataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -1104,7 +1068,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="HOCVIEN\Class\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

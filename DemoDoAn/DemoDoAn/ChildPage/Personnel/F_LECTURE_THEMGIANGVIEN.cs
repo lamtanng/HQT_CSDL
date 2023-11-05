@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDoAn.MODELS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -129,7 +130,7 @@ namespace DemoDoAn.ChildPage.Personnel
         //check thong tin rong
         private bool kiemTraThongTin(GiaoVien gv, string rePass)
         {
-            if(String.IsNullOrEmpty(gv.USERNAME) || String.IsNullOrEmpty(gv.PASSWORD) || String.IsNullOrEmpty(rePass) || String.IsNullOrEmpty(gv.HOTEN) || String.IsNullOrEmpty(gv.GIOITINH) || String.IsNullOrEmpty(gv.NGAYSINH.ToString()) || String.IsNullOrEmpty(gv.CMND) || String.IsNullOrEmpty(gv.SDT) || String.IsNullOrEmpty(gv.EMAIL) || String.IsNullOrEmpty(gv.DIACHI))
+            if(String.IsNullOrEmpty(gv.USERNAME) || String.IsNullOrEmpty(gv.USERNAME) || String.IsNullOrEmpty(rePass) || String.IsNullOrEmpty(gv.HOTEN) || String.IsNullOrEmpty(gv.GIOITINH) || String.IsNullOrEmpty(gv.NGAYSINH.ToString()) || String.IsNullOrEmpty(gv.EMAIL) || String.IsNullOrEmpty(gv.SDT) || String.IsNullOrEmpty(gv.EMAIL) || String.IsNullOrEmpty(gv.DIACHI))
             { return false; }
             return true;
         }

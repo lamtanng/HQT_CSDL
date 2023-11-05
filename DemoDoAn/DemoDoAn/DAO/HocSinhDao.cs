@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDoAn.MODELS;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -84,7 +85,7 @@ namespace DemoDoAn
         //cap nhat tai khoan hv
         public void CapNhatTaiKhoan(HocSinh hv)
         {
-            string sqlStr = string.Format("Update ACCOUNTS_STUDENT Set pass = '{0}' Where username ='{1}'", hv.PASSWORD, hv.USERNAME);
+            string sqlStr = string.Format("Update ACCOUNTS_STUDENT Set pass = '{0}' Where username ='{1}'", hv.SDT, hv.USERNAME);
             dbConn.ThucThi(sqlStr);
         }
 

@@ -1,4 +1,5 @@
 ﻿using DemoDoAn.ChildPage.General_Management.UC_GM_CLASS;
+using DemoDoAn.MODELS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ namespace DemoDoAn.ChildPage.General_Management
     public partial class UC_GM_COURSE : UserControl
     {
         KhoaHocDao khoaHocDAO = new KhoaHocDao();
-        LopHocDao LopHocDao = new LopHocDao();
+        NhomHocDao LopHocDao = new NhomHocDao();
         DataTable dtKhoaHoc = new DataTable();
         DataTable dtDSL = new DataTable();
         KhoaHoc khoahoc = new KhoaHoc();       
@@ -67,7 +68,7 @@ namespace DemoDoAn.ChildPage.General_Management
         //tai DSL de cap nhat trang thai theo KH
         private void taiDSL()
         {
-            dtDSL = LopHocDao.LayDanhSachLop();
+            dtDSL = LopHocDao.LayDanhSachNhom();
         }
 
         //tai DSKhoaHoc
@@ -165,7 +166,7 @@ namespace DemoDoAn.ChildPage.General_Management
             //            DataRow dtrow = dtDSL.Rows[i];
             //            if (dtrow["MaKH"].ToString() == row.Cells["MaKH"].Value.ToString())
             //            {
-            //                LopHocDao.capNhatTrangThai(dtrow["MaLop"].ToString(), Convert.ToInt32(row.Cells["TrangThaiKH"].Value));
+            //                NhomHocDao.capNhatTrangThai(dtrow["MaLop"].ToString(), Convert.ToInt32(row.Cells["TrangThaiKH"].Value));
             //            }
             //        }
             //        resetDataGrView();

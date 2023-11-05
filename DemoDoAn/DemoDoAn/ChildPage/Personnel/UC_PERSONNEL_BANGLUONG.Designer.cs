@@ -35,11 +35,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGrView_DSGV = new System.Windows.Forms.DataGridView();
             this.gIAOVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tTTADataSet = new DemoDoAn.TTTADataSet();
+            //this.tTTADataSet = new DemoDoAn.TTTADataSet();
             this.lbl_QLGV = new System.Windows.Forms.Label();
             this.lbl_DanhMucGiangVien = new System.Windows.Forms.Label();
             this.pnl_ThanhNgang_TitlePage = new System.Windows.Forms.Panel();
-            this.gIAOVIENTableAdapter = new DemoDoAn.TTTADataSetTableAdapters.GIAOVIENTableAdapter();
+            //this.gIAOVIENTableAdapter = new DemoDoAn.TTTADataSetTableAdapters.GIAOVIENTableAdapter();
             this.pnl_QLForm = new System.Windows.Forms.Panel();
             this.pnl_GioiTinh = new System.Windows.Forms.Panel();
             this.lblGioiTinh = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@
             this.aVATARDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).BeginInit();
             this.pnl_QLForm.SuspendLayout();
             this.pnl_GioiTinh.SuspendLayout();
             this.pnl_NhapMaGV.SuspendLayout();
@@ -160,12 +160,12 @@
             // gIAOVIENBindingSource
             // 
             this.gIAOVIENBindingSource.DataMember = "GIAOVIEN";
-            this.gIAOVIENBindingSource.DataSource = this.tTTADataSet;
+            //this.gIAOVIENBindingSource.DataSource = this.tTTADataSet;
             // 
             // tTTADataSet
             // 
-            this.tTTADataSet.DataSetName = "TTTADataSet";
-            this.tTTADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           // this.tTTADataSet.DataSetName = "TTTADataSet";
+            //this.tTTADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lbl_QLGV
             // 
@@ -202,7 +202,7 @@
             // 
             // gIAOVIENTableAdapter
             // 
-            this.gIAOVIENTableAdapter.ClearBeforeFill = true;
+           //this.gIAOVIENTableAdapter.ClearBeforeFill = true;
             // 
             // pnl_QLForm
             // 
@@ -631,7 +631,7 @@
             this.Size = new System.Drawing.Size(1479, 896);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.tTTADataSet)).EndInit();
             this.pnl_QLForm.ResumeLayout(false);
             this.pnl_QLForm.PerformLayout();
             this.pnl_GioiTinh.ResumeLayout(false);
@@ -650,14 +650,14 @@
         private CustomControls.RJControls.RJButton btn_Reset;
         private System.Windows.Forms.DataGridView dataGrView_DSGV;
         private System.Windows.Forms.BindingSource gIAOVIENBindingSource;
-        private TTTADataSet tTTADataSet;
+        //private TTTADataSet tTTADataSet;
         private CustomControls.RJControls.RJButton btn_PhanCach;
         private CustomControls.RJControls.RJButton btn_QLDSGiangVien;
         private System.Windows.Forms.Label lbl_QLGV;
         private System.Windows.Forms.Label lbl_DanhMucGiangVien;
         private CustomControls.RJControls.RJButton btn_TitleQLGiangVien;
         private System.Windows.Forms.Panel pnl_ThanhNgang_TitlePage;
-        private TTTADataSetTableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
+        //private TTTADataSetTableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.TextBox txt_TenGV;

@@ -2,6 +2,7 @@
 using DemoDoAn.ChildPage.General_Management.UC_GM_CLASS;
 using DemoDoAn.ChildPage.HocTap;
 using DemoDoAn.HOCVIEN.Class;
+using DemoDoAn.MODELS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -265,9 +266,9 @@ namespace DemoDoAn.ChildPage.Student
             hv.SDT = sdt;
             hv.DIACHI = diachi;
             //hv.EMAIL = email;
-            hv.ACCID = accid;
+            hv.USERNAME = accid;
             hv.USERNAME = username;
-            hv.PASSWORD = password;
+            hv.CCCD = password;
             return hv;
         }
 
@@ -380,7 +381,7 @@ namespace DemoDoAn.ChildPage.Student
                 if (dtg.Columns[e.ColumnIndex].HeaderText == "Xóa")
                 {
                     //xóa tài khoản -> tự động xóa thông tin
-                    hocsinhDao.xoaTaiKhoan(hv.ACCID);
+                    hocsinhDao.xoaTaiKhoan(hv.USERNAME);
                     taiDSHV();
                 }
             }

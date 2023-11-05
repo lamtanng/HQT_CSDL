@@ -40,7 +40,7 @@ namespace DemoDoAn.MODELS
         public GiaoVien()
         { }
 
-        public GiaoVien(string gvid, string hoten, string cmnd, DateTime ngaysinh, string gioitinh, string sdt, string diachi, string email, string accid, string username, string password)
+        public GiaoVien(string gvid, string hoten,  DateTime ngaysinh, string gioitinh, string sdt, string diachi, string email,  string username)
         {
             this.gvid = gvid;
             this.hoten = hoten;

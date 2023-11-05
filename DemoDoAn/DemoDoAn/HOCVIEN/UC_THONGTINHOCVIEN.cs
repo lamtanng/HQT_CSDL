@@ -32,7 +32,7 @@ namespace DemoDoAn.HOCVIEN
             //lay ID va chuc vu: 
             DataTable dt_ID = new DataTable();
             dt_ID = hsDao.Lay_MSSV(Login.userName);
-            hvID = dt_ID.Rows[0]["MaHocVien"].ToString();
+            hvID = dt_ID.Rows[0]["Ma"].ToString();
 
             //Học viên || Giảng Viên
             if (chucVu == 1) //la hoc vien
@@ -64,28 +64,28 @@ namespace DemoDoAn.HOCVIEN
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     DataRow row = dt.Rows[i];
-                    if (row["GvID"].ToString().Trim() == hvID.ToString())
+                    if (row["MaGiaoVien"].ToString().Trim() == hvID.ToString())
                     {
-                        GiaoVien gv = new GiaoVien(dt.Rows[0]["GvID"].ToString(), dt.Rows[0]["HOTEN"].ToString(), dt.Rows[0]["CMND"].ToString(),
-                                                    (DateTime)dt.Rows[0]["NGAYSINH"], dt.Rows[0]["GIOITINH"].ToString(), dt.Rows[0]["SDT"].ToString(),
-                                                    dt.Rows[0]["DIACHI"].ToString(), dt.Rows[0]["EMAIL"].ToString(), dt.Rows[0]["AccID_Tea"].ToString(),
-                                                    dt.Rows[0]["username"].ToString(), dt.Rows[0]["pass"].ToString());
+                        GiaoVien gv = new GiaoVien(dt.Rows[0]["MaGiaoVien"].ToString(), dt.Rows[0]["HoTen"].ToString(), 
+                                                    (DateTime)dt.Rows[0]["NgaySinh"], dt.Rows[0]["GioiTinh"].ToString(), dt.Rows[0]["DiaChi"].ToString(), dt.Rows[0]["SoDienThoai"].ToString(),
+                                                    dt.Rows[0]["Email"].ToString(), dt.Rows[0]["TenDangNhap"].ToString());
                         dPTime_NgaySinhUpd.Value = gv.NGAYSINH;
-                        btn_Email.Text = gv.EMAIL.ToString().Trim();
+                        //btn_Email.Text = hs.EMAIL.ToString().Trim();
                         btn_CCCD.Text = gv.EMAIL.ToString().Trim();
                         btn_SDT.Text = gv.SDT.ToString().Trim();
                         btn_DiaChi.Text = gv.DIACHI.ToString().Trim();
                         lbl_HoTen.Text = gv.HOTEN.ToString().Trim();
                         lbl_GioiTinh.Text = gv.GIOITINH.ToString().Trim();
                         lbl_MaHV.Text = gv.GVID.ToString().Trim();
-                        //lbl_TaiKhoan.Text = gv.TIEN.ToString().Trim();
+                        //lbl_TaiKhoan.Text = hs.TIEN.ToString().Trim();
                         //
                         txt_NgaySinhUpd.Text = gv.NGAYSINH.ToString("dd/MM/yyyy");
-                        txt_NameUpd.Text = gv.EMAIL.ToString().Trim();
-                        txt_CCCDUpd.Text = "";
+                        //txt_EmailUpd.Text = hs.EMAIL.ToString().Trim();
+                        txt_CCCDUpd.Text = gv.EMAIL.ToString().Trim();
                         txt_SDTUpd.Text = gv.SDT.ToString().Trim();
                         txt_DiaChiUpd.Text = gv.DIACHI.ToString().Trim();
                         txt_GioiTinhUpd.Text = gv.GIOITINH.ToString().Trim();
+                        txt_NameUpd.Text = gv.HOTEN.ToString().Trim();
                     }
                 }
             }

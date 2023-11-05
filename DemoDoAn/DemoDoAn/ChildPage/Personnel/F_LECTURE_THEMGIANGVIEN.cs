@@ -52,7 +52,7 @@ namespace DemoDoAn.ChildPage.Personnel
             string sdt = txt_SDT.Text.ToString().Trim();
             string diachi = txt_DiaChi.Text.ToString().Trim();
             string email = txt_Email.Text.ToString().Trim();
-            GiaoVien gv = new GiaoVien(gvid, hoten, cmnd, ngaysinh, gioitinh, sdt, diachi, email, accID, username, password);
+            GiaoVien gv = new GiaoVien(gvid, hoten, ngaysinh, gioitinh, sdt, diachi, email, username);
             //check thong tin rong
             if(kiemTraThongTin(gv, re_password))
             {
@@ -70,7 +70,7 @@ namespace DemoDoAn.ChildPage.Personnel
                         accID = dt_accID.Rows[0][0].ToString();
 
                         //lưu thông tin với accID đó
-                        GiaoVien gv1 = new GiaoVien(gvid, hoten, cmnd, ngaysinh, gioitinh, sdt, diachi, email, accID, username, password);
+                        GiaoVien gv1 = new GiaoVien(gvid, hoten, ngaysinh, gioitinh, sdt, diachi, email, username);
                         gvDao.Them(gv1);
                         //luu thong tin vao bang luong
                         //GiaoVien gv = new GiaoVien(txt_UserName.Text, txt_Ten.Text);

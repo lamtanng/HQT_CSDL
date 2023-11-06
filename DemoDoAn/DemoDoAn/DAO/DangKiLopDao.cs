@@ -28,8 +28,8 @@ namespace DemoDoAn.HOCVIEN.Class
             return dbConn.LayDanhSach(sqlStr);
         }
 
-        //
-        public DataTable LayDanhSachLop()
+        // Dổi LayDanhSachLop thành LayDanhSachNhom
+        public DataTable LayDanhSachNhom()
         {
             string sqlStr = string.Format("SELECT DISTINCT MaLop, TenMon, TenKH, HocPhi, GiangVien, HOTEN, NgayBatDau, NgayKetThuc,TrangThai, TTMoLop, XacNhan \r\nFROM LOPDANGKI");
             return dbConn.LayDanhSach(sqlStr);

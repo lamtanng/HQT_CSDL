@@ -130,7 +130,7 @@
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(190, 1);
             this.panel4.TabIndex = 7;
@@ -141,7 +141,7 @@
             this.pnl_Page.BackColor = System.Drawing.Color.White;
             this.pnl_Page.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Page.Location = new System.Drawing.Point(207, 42);
-            this.pnl_Page.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_Page.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Page.Name = "pnl_Page";
             this.pnl_Page.Size = new System.Drawing.Size(1143, 733);
             this.pnl_Page.TabIndex = 6;
@@ -159,7 +159,7 @@
             this.btn_QLHocSinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLHocSinh.Location = new System.Drawing.Point(0, 564);
-            this.btn_QLHocSinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLHocSinh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLHocSinh.Name = "btn_QLHocSinh";
             this.btn_QLHocSinh.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_QLHocSinh.Size = new System.Drawing.Size(190, 42);
@@ -178,7 +178,7 @@
             this.pnl_QLHocTap.Controls.Add(this.btn_DiemSo);
             this.pnl_QLHocTap.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_QLHocTap.Location = new System.Drawing.Point(0, 459);
-            this.pnl_QLHocTap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_QLHocTap.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_QLHocTap.Name = "pnl_QLHocTap";
             this.pnl_QLHocTap.Size = new System.Drawing.Size(190, 105);
             this.pnl_QLHocTap.TabIndex = 3;
@@ -189,7 +189,7 @@
             this.panel3.BackColor = System.Drawing.Color.Gainsboro;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(190, 1);
             this.panel3.TabIndex = 7;
@@ -200,7 +200,7 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pictureBox3.Location = new System.Drawing.Point(25, 67);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(19, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,7 +213,7 @@
             this.pBox_DiemSo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_DiemSo.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_DiemSo.Location = new System.Drawing.Point(25, 20);
-            this.pBox_DiemSo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_DiemSo.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_DiemSo.Name = "pBox_DiemSo";
             this.pBox_DiemSo.Size = new System.Drawing.Size(19, 20);
             this.pBox_DiemSo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,7 +231,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.button3.Location = new System.Drawing.Point(2, 56);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(203, 42);
@@ -251,7 +251,7 @@
             this.btn_DiemSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DiemSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_DiemSo.Location = new System.Drawing.Point(2, 9);
-            this.btn_DiemSo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DiemSo.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DiemSo.Name = "btn_DiemSo";
             this.btn_DiemSo.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_DiemSo.Size = new System.Drawing.Size(203, 42);
@@ -273,7 +273,7 @@
             this.btn_QLHocTap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLHocTap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLHocTap.Location = new System.Drawing.Point(0, 417);
-            this.btn_QLHocTap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLHocTap.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLHocTap.Name = "btn_QLHocTap";
             this.btn_QLHocTap.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_QLHocTap.Size = new System.Drawing.Size(190, 42);
@@ -296,7 +296,7 @@
             this.pnl_QLManagement.Controls.Add(this.btn_Infomation);
             this.pnl_QLManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_QLManagement.Location = new System.Drawing.Point(0, 228);
-            this.pnl_QLManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_QLManagement.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_QLManagement.Name = "pnl_QLManagement";
             this.pnl_QLManagement.Size = new System.Drawing.Size(190, 189);
             this.pnl_QLManagement.TabIndex = 1;
@@ -309,7 +309,7 @@
             this.pBox_Course.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Course.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_Course.Location = new System.Drawing.Point(25, 154);
-            this.pBox_Course.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_Course.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_Course.Name = "pBox_Course";
             this.pBox_Course.Size = new System.Drawing.Size(19, 20);
             this.pBox_Course.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -321,7 +321,7 @@
             this.pnl_NgangManagement.BackColor = System.Drawing.Color.Gainsboro;
             this.pnl_NgangManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_NgangManagement.Location = new System.Drawing.Point(0, 0);
-            this.pnl_NgangManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_NgangManagement.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_NgangManagement.Name = "pnl_NgangManagement";
             this.pnl_NgangManagement.Size = new System.Drawing.Size(190, 1);
             this.pnl_NgangManagement.TabIndex = 7;
@@ -333,7 +333,7 @@
             this.pBox_Room.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Room.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_Room.Location = new System.Drawing.Point(25, 106);
-            this.pBox_Room.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_Room.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_Room.Name = "pBox_Room";
             this.pBox_Room.Size = new System.Drawing.Size(19, 20);
             this.pBox_Room.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -347,7 +347,7 @@
             this.pBox_Class.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Class.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_Class.Location = new System.Drawing.Point(25, 59);
-            this.pBox_Class.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_Class.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_Class.Name = "pBox_Class";
             this.pBox_Class.Size = new System.Drawing.Size(19, 20);
             this.pBox_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -361,7 +361,7 @@
             this.pBox_Information.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Information.Image = global::DemoDoAn.Properties.Resources.QLChung_INFOMATION;
             this.pBox_Information.Location = new System.Drawing.Point(25, 12);
-            this.pBox_Information.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_Information.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_Information.Name = "pBox_Information";
             this.pBox_Information.Size = new System.Drawing.Size(19, 20);
             this.pBox_Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -380,7 +380,7 @@
             this.btn_Course.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_Course.Location = new System.Drawing.Point(2, 142);
-            this.btn_Course.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Course.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Course.Name = "btn_Course";
             this.btn_Course.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_Course.Size = new System.Drawing.Size(203, 42);
@@ -401,7 +401,7 @@
             this.btn_Room.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Room.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_Room.Location = new System.Drawing.Point(2, 95);
-            this.btn_Room.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Room.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Room.Name = "btn_Room";
             this.btn_Room.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_Room.Size = new System.Drawing.Size(203, 42);
@@ -422,7 +422,7 @@
             this.btn_Class.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Class.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_Class.Location = new System.Drawing.Point(0, 49);
-            this.btn_Class.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Class.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Class.Name = "btn_Class";
             this.btn_Class.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_Class.Size = new System.Drawing.Size(203, 42);
@@ -443,7 +443,7 @@
             this.btn_Infomation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Infomation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_Infomation.Location = new System.Drawing.Point(2, 1);
-            this.btn_Infomation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Infomation.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Infomation.Name = "btn_Infomation";
             this.btn_Infomation.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_Infomation.Size = new System.Drawing.Size(203, 42);
@@ -465,7 +465,7 @@
             this.btn_QLChung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLChung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLChung.Location = new System.Drawing.Point(0, 186);
-            this.btn_QLChung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLChung.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLChung.Name = "btn_QLChung";
             this.btn_QLChung.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_QLChung.Size = new System.Drawing.Size(190, 42);
@@ -488,7 +488,7 @@
             this.btn_DSLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DSLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_DSLop.Location = new System.Drawing.Point(0, 132);
-            this.btn_DSLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DSLop.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DSLop.Name = "btn_DSLop";
             this.btn_DSLop.Padding = new System.Windows.Forms.Padding(11, 12, 0, 0);
             this.btn_DSLop.Size = new System.Drawing.Size(190, 54);
@@ -503,7 +503,7 @@
             this.pnl_NgangLogo.BackColor = System.Drawing.Color.Gainsboro;
             this.pnl_NgangLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_NgangLogo.Location = new System.Drawing.Point(0, 131);
-            this.pnl_NgangLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_NgangLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_NgangLogo.Name = "pnl_NgangLogo";
             this.pnl_NgangLogo.Size = new System.Drawing.Size(190, 1);
             this.pnl_NgangLogo.TabIndex = 5;
@@ -516,7 +516,7 @@
             this.pnl_Title.Controls.Add(this.picBox_Exit);
             this.pnl_Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Title.Location = new System.Drawing.Point(207, 0);
-            this.pnl_Title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_Title.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Title.Name = "pnl_Title";
             this.pnl_Title.Size = new System.Drawing.Size(1143, 42);
             this.pnl_Title.TabIndex = 5;
@@ -550,7 +550,7 @@
             this.picBox_Minisize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBox_Minisize.Image = global::DemoDoAn.Properties.Resources.minus;
             this.picBox_Minisize.Location = new System.Drawing.Point(1094, 14);
-            this.picBox_Minisize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBox_Minisize.Margin = new System.Windows.Forms.Padding(2);
             this.picBox_Minisize.Name = "picBox_Minisize";
             this.picBox_Minisize.Size = new System.Drawing.Size(11, 12);
             this.picBox_Minisize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -564,7 +564,7 @@
             this.picBox_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBox_Exit.Image = global::DemoDoAn.Properties.Resources.exit;
             this.picBox_Exit.Location = new System.Drawing.Point(1116, 10);
-            this.picBox_Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBox_Exit.Margin = new System.Windows.Forms.Padding(2);
             this.picBox_Exit.Name = "picBox_Exit";
             this.picBox_Exit.Size = new System.Drawing.Size(18, 20);
             this.picBox_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -630,7 +630,7 @@
             this.pnl_Menu.Controls.Add(this.picBoxLogo);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Size = new System.Drawing.Size(207, 775);
             this.pnl_Menu.TabIndex = 4;
@@ -648,7 +648,7 @@
             this.pnl_QLThongKe.Controls.Add(this.btn_HocPhi);
             this.pnl_QLThongKe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_QLThongKe.Location = new System.Drawing.Point(0, 1142);
-            this.pnl_QLThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_QLThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_QLThongKe.Name = "pnl_QLThongKe";
             this.pnl_QLThongKe.Size = new System.Drawing.Size(190, 203);
             this.pnl_QLThongKe.TabIndex = 6;
@@ -659,7 +659,7 @@
             this.panel9.BackColor = System.Drawing.Color.Gainsboro;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(190, 1);
             this.panel9.TabIndex = 7;
@@ -670,7 +670,7 @@
             this.pBox_ChamCong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_ChamCong.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_ChamCong.Location = new System.Drawing.Point(25, 162);
-            this.pBox_ChamCong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_ChamCong.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_ChamCong.Name = "pBox_ChamCong";
             this.pBox_ChamCong.Size = new System.Drawing.Size(19, 20);
             this.pBox_ChamCong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -683,7 +683,7 @@
             this.pBox_HocTap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_HocTap.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_HocTap.Location = new System.Drawing.Point(25, 115);
-            this.pBox_HocTap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_HocTap.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_HocTap.Name = "pBox_HocTap";
             this.pBox_HocTap.Size = new System.Drawing.Size(19, 20);
             this.pBox_HocTap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -696,7 +696,7 @@
             this.pBox_GhiDanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_GhiDanh.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_GhiDanh.Location = new System.Drawing.Point(25, 67);
-            this.pBox_GhiDanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_GhiDanh.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_GhiDanh.Name = "pBox_GhiDanh";
             this.pBox_GhiDanh.Size = new System.Drawing.Size(19, 20);
             this.pBox_GhiDanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -709,7 +709,7 @@
             this.pBox_HocPhi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_HocPhi.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_HocPhi.Location = new System.Drawing.Point(25, 20);
-            this.pBox_HocPhi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_HocPhi.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_HocPhi.Name = "pBox_HocPhi";
             this.pBox_HocPhi.Size = new System.Drawing.Size(19, 20);
             this.pBox_HocPhi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -727,7 +727,7 @@
             this.btn_ChamCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ChamCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_ChamCong.Location = new System.Drawing.Point(2, 150);
-            this.btn_ChamCong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ChamCong.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ChamCong.Name = "btn_ChamCong";
             this.btn_ChamCong.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_ChamCong.Size = new System.Drawing.Size(203, 42);
@@ -747,7 +747,7 @@
             this.btn_HocTap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HocTap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_HocTap.Location = new System.Drawing.Point(2, 103);
-            this.btn_HocTap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_HocTap.Margin = new System.Windows.Forms.Padding(2);
             this.btn_HocTap.Name = "btn_HocTap";
             this.btn_HocTap.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_HocTap.Size = new System.Drawing.Size(203, 42);
@@ -767,7 +767,7 @@
             this.btn_GhiDanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GhiDanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_GhiDanh.Location = new System.Drawing.Point(2, 56);
-            this.btn_GhiDanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_GhiDanh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_GhiDanh.Name = "btn_GhiDanh";
             this.btn_GhiDanh.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_GhiDanh.Size = new System.Drawing.Size(203, 42);
@@ -787,7 +787,7 @@
             this.btn_HocPhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HocPhi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_HocPhi.Location = new System.Drawing.Point(2, 9);
-            this.btn_HocPhi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_HocPhi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_HocPhi.Name = "btn_HocPhi";
             this.btn_HocPhi.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_HocPhi.Size = new System.Drawing.Size(203, 42);
@@ -808,7 +808,7 @@
             this.btn_QLThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLThongKe.Location = new System.Drawing.Point(0, 1100);
-            this.btn_QLThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLThongKe.Name = "btn_QLThongKe";
             this.btn_QLThongKe.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_QLThongKe.Size = new System.Drawing.Size(190, 42);
@@ -827,7 +827,7 @@
             this.pnl_QLThuChi.Controls.Add(this.btn_PhieuThu);
             this.pnl_QLThuChi.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_QLThuChi.Location = new System.Drawing.Point(0, 996);
-            this.pnl_QLThuChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_QLThuChi.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_QLThuChi.Name = "pnl_QLThuChi";
             this.pnl_QLThuChi.Size = new System.Drawing.Size(190, 104);
             this.pnl_QLThuChi.TabIndex = 5;
@@ -838,7 +838,7 @@
             this.panel7.BackColor = System.Drawing.Color.Gainsboro;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(190, 1);
             this.panel7.TabIndex = 7;
@@ -849,7 +849,7 @@
             this.pBox_PhieuChi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_PhieuChi.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_PhieuChi.Location = new System.Drawing.Point(25, 67);
-            this.pBox_PhieuChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_PhieuChi.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_PhieuChi.Name = "pBox_PhieuChi";
             this.pBox_PhieuChi.Size = new System.Drawing.Size(19, 20);
             this.pBox_PhieuChi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -862,7 +862,7 @@
             this.pBox_PhieuThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_PhieuThu.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_PhieuThu.Location = new System.Drawing.Point(25, 20);
-            this.pBox_PhieuThu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_PhieuThu.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_PhieuThu.Name = "pBox_PhieuThu";
             this.pBox_PhieuThu.Size = new System.Drawing.Size(19, 20);
             this.pBox_PhieuThu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -880,7 +880,7 @@
             this.btn_PhieuChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PhieuChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_PhieuChi.Location = new System.Drawing.Point(2, 56);
-            this.btn_PhieuChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_PhieuChi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_PhieuChi.Name = "btn_PhieuChi";
             this.btn_PhieuChi.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_PhieuChi.Size = new System.Drawing.Size(203, 42);
@@ -900,7 +900,7 @@
             this.btn_PhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PhieuThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_PhieuThu.Location = new System.Drawing.Point(2, 9);
-            this.btn_PhieuThu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_PhieuThu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_PhieuThu.Name = "btn_PhieuThu";
             this.btn_PhieuThu.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_PhieuThu.Size = new System.Drawing.Size(203, 42);
@@ -921,7 +921,7 @@
             this.btn_QLThuChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLThuChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLThuChi.Location = new System.Drawing.Point(0, 954);
-            this.btn_QLThuChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLThuChi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLThuChi.Name = "btn_QLThuChi";
             this.btn_QLThuChi.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_QLThuChi.Size = new System.Drawing.Size(190, 42);
@@ -942,7 +942,7 @@
             this.pnl_QLNhanSu.Controls.Add(this.btn_GiangVien);
             this.pnl_QLNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_QLNhanSu.Location = new System.Drawing.Point(0, 804);
-            this.pnl_QLNhanSu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_QLNhanSu.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_QLNhanSu.Name = "pnl_QLNhanSu";
             this.pnl_QLNhanSu.Size = new System.Drawing.Size(190, 150);
             this.pnl_QLNhanSu.TabIndex = 4;
@@ -953,7 +953,7 @@
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(190, 1);
             this.panel5.TabIndex = 7;
@@ -964,7 +964,7 @@
             this.pBox_BangLuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_BangLuong.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_BangLuong.Location = new System.Drawing.Point(25, 115);
-            this.pBox_BangLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_BangLuong.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_BangLuong.Name = "pBox_BangLuong";
             this.pBox_BangLuong.Size = new System.Drawing.Size(19, 20);
             this.pBox_BangLuong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -977,7 +977,7 @@
             this.pBox_NhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_NhanVien.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_NhanVien.Location = new System.Drawing.Point(25, 67);
-            this.pBox_NhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_NhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_NhanVien.Name = "pBox_NhanVien";
             this.pBox_NhanVien.Size = new System.Drawing.Size(19, 20);
             this.pBox_NhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -990,7 +990,7 @@
             this.pBox_GiangVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_GiangVien.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_GiangVien.Location = new System.Drawing.Point(25, 20);
-            this.pBox_GiangVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_GiangVien.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_GiangVien.Name = "pBox_GiangVien";
             this.pBox_GiangVien.Size = new System.Drawing.Size(19, 20);
             this.pBox_GiangVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1008,7 +1008,7 @@
             this.btn_BangLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BangLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_BangLuong.Location = new System.Drawing.Point(2, 103);
-            this.btn_BangLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_BangLuong.Margin = new System.Windows.Forms.Padding(2);
             this.btn_BangLuong.Name = "btn_BangLuong";
             this.btn_BangLuong.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_BangLuong.Size = new System.Drawing.Size(203, 42);
@@ -1028,7 +1028,7 @@
             this.btn_NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_NhanVien.Location = new System.Drawing.Point(2, 56);
-            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.btn_NhanVien.Name = "btn_NhanVien";
             this.btn_NhanVien.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_NhanVien.Size = new System.Drawing.Size(203, 42);
@@ -1048,7 +1048,7 @@
             this.btn_GiangVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GiangVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_GiangVien.Location = new System.Drawing.Point(2, 9);
-            this.btn_GiangVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_GiangVien.Margin = new System.Windows.Forms.Padding(2);
             this.btn_GiangVien.Name = "btn_GiangVien";
             this.btn_GiangVien.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_GiangVien.Size = new System.Drawing.Size(203, 42);
@@ -1069,7 +1069,7 @@
             this.btn_QLNhanSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_QLNhanSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLNhanSu.Location = new System.Drawing.Point(0, 762);
-            this.btn_QLNhanSu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QLNhanSu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QLNhanSu.Name = "btn_QLNhanSu";
             this.btn_QLNhanSu.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_QLNhanSu.Size = new System.Drawing.Size(190, 42);
@@ -1091,7 +1091,7 @@
             this.pnl_QLHocVien.Controls.Add(this.btn_DSHocSinh);
             this.pnl_QLHocVien.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_QLHocVien.Location = new System.Drawing.Point(0, 606);
-            this.pnl_QLHocVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_QLHocVien.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_QLHocVien.Name = "pnl_QLHocVien";
             this.pnl_QLHocVien.Size = new System.Drawing.Size(190, 156);
             this.pnl_QLHocVien.TabIndex = 3;
@@ -1103,7 +1103,7 @@
             this.pBox_XepLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_XepLop.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_XepLop.Location = new System.Drawing.Point(25, 115);
-            this.pBox_XepLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_XepLop.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_XepLop.Name = "pBox_XepLop";
             this.pBox_XepLop.Size = new System.Drawing.Size(19, 20);
             this.pBox_XepLop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1116,7 +1116,7 @@
             this.pBox_DiemDanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_DiemDanh.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_DiemDanh.Location = new System.Drawing.Point(25, 67);
-            this.pBox_DiemDanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_DiemDanh.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_DiemDanh.Name = "pBox_DiemDanh";
             this.pBox_DiemDanh.Size = new System.Drawing.Size(19, 20);
             this.pBox_DiemDanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1129,7 +1129,7 @@
             this.pBox_DSHV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_DSHV.Image = global::DemoDoAn.Properties.Resources.eye;
             this.pBox_DSHV.Location = new System.Drawing.Point(25, 20);
-            this.pBox_DSHV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBox_DSHV.Margin = new System.Windows.Forms.Padding(2);
             this.pBox_DSHV.Name = "pBox_DSHV";
             this.pBox_DSHV.Size = new System.Drawing.Size(19, 20);
             this.pBox_DSHV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1147,7 +1147,7 @@
             this.btn_XepLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XepLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_XepLop.Location = new System.Drawing.Point(2, 103);
-            this.btn_XepLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_XepLop.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XepLop.Name = "btn_XepLop";
             this.btn_XepLop.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_XepLop.Size = new System.Drawing.Size(203, 42);
@@ -1167,7 +1167,7 @@
             this.btn_DiemDanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DiemDanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_DiemDanh.Location = new System.Drawing.Point(2, 56);
-            this.btn_DiemDanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DiemDanh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DiemDanh.Name = "btn_DiemDanh";
             this.btn_DiemDanh.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_DiemDanh.Size = new System.Drawing.Size(203, 42);
@@ -1187,7 +1187,7 @@
             this.btn_DSHocSinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DSHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_DSHocSinh.Location = new System.Drawing.Point(2, 9);
-            this.btn_DSHocSinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DSHocSinh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DSHocSinh.Name = "btn_DSHocSinh";
             this.btn_DSHocSinh.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.btn_DSHocSinh.Size = new System.Drawing.Size(203, 42);
@@ -1203,7 +1203,7 @@
             this.picBoxLogo.Image = global::DemoDoAn.Properties.Resources.LOGO_3x;
             this.picBoxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBoxLogo.InitialImage")));
             this.picBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.picBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.picBoxLogo.Name = "picBoxLogo";
             this.picBoxLogo.Size = new System.Drawing.Size(190, 131);
             this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1220,7 +1220,7 @@
             this.Controls.Add(this.pnl_Title);
             this.Controls.Add(this.pnl_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "F_HOCVIEN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_HOCVIEN";

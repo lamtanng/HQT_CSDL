@@ -28,6 +28,7 @@ namespace DemoDoAn.HOCVIEN
             this.chucnang = chucnang;
         }
 
+
         private void UC_TKB_Load(object sender, EventArgs e)
         {
             layID();//lấy mssv // msgv
@@ -262,7 +263,7 @@ namespace DemoDoAn.HOCVIEN
         //lay tong ds lop
         private void taiDSLFull()
         {
-            dsLop = dklDao.LayDanhSachLop();
+            dsLop = dklDao.LayDanhSachNhom();
             for(int i = dsLop.Rows.Count - 1; i >= 0; i--)
             {
                 DataRow row = dsLop.Rows[i];
@@ -821,7 +822,7 @@ namespace DemoDoAn.HOCVIEN
         //lay tong ds lop
         private void taiDSLFull1()
         {
-            dtDSLFull1 = dklDao1.LayDanhSachLop();
+            dtDSLFull1 = dklDao1.LayDanhSachNhom();
             for (int i = dtDSLFull1.Rows.Count - 1; i >= 0; i--)
             {
                 DataRow row = dtDSLFull1.Rows[i];
@@ -924,7 +925,7 @@ namespace DemoDoAn.HOCVIEN
         //tai DSL DKy
         private void taiDSLDangKy1()
         {
-            dtDSL1 = dklDao1.LayDanhSachLop();
+            dtDSL1 = dklDao1.LayDanhSachNhom();
             //loại bỏ những lớp không còn hoạt động:
             for (int i = dtDSL1.Rows.Count - 1; i >= 0; i--)
             {
@@ -1233,6 +1234,9 @@ namespace DemoDoAn.HOCVIEN
             hien_SearchText(txt_Search, ref isEmptyText);
         }
 
+
         #endregion
+
+        
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace DemoDoAn.HOCVIEN
+namespace DemoDoAn.HOCVIEN
 {
     partial class UC_DANGKILOP
     {
@@ -106,7 +106,6 @@
             this.pnl_BangDiem.Name = "pnl_BangDiem";
             this.pnl_BangDiem.Size = new System.Drawing.Size(1635, 883);
             this.pnl_BangDiem.TabIndex = 189;
-            this.pnl_BangDiem.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_BangDiem_Paint);
             // 
             // txt_Search
             // 
@@ -119,7 +118,6 @@
             this.txt_Search.Size = new System.Drawing.Size(201, 26);
             this.txt_Search.TabIndex = 196;
             this.txt_Search.Text = "Search...";
-            this.txt_Search.TextChanged += new System.EventHandler(this.txt_Search_TextChanged);
             // 
             // dataGrView_DSLop
             // 
@@ -313,7 +311,6 @@
             this.lbl_LopHoc.Size = new System.Drawing.Size(82, 25);
             this.lbl_LopHoc.TabIndex = 122;
             this.lbl_LopHoc.Text = "Lớp học";
-            this.lbl_LopHoc.Click += new System.EventHandler(this.lbl_LopHoc_Click);
             // 
             // btn_BangDiem
             // 
@@ -346,7 +343,6 @@
             this.lbl_TenLopHoc.Size = new System.Drawing.Size(89, 25);
             this.lbl_TenLopHoc.TabIndex = 121;
             this.lbl_TenLopHoc.Text = "Anh Văn";
-            this.lbl_TenLopHoc.Click += new System.EventHandler(this.lbl_TenLopHoc_Click);
             // 
             // pnl_ThanhNgangLopHoc
             // 
@@ -356,7 +352,6 @@
             this.pnl_ThanhNgangLopHoc.Name = "pnl_ThanhNgangLopHoc";
             this.pnl_ThanhNgangLopHoc.Size = new System.Drawing.Size(192, 2);
             this.pnl_ThanhNgangLopHoc.TabIndex = 123;
-            this.pnl_ThanhNgangLopHoc.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_ThanhNgangLopHoc_Paint);
             // 
             // lbl_KhoaHoc
             // 
@@ -368,7 +363,6 @@
             this.lbl_KhoaHoc.Size = new System.Drawing.Size(96, 25);
             this.lbl_KhoaHoc.TabIndex = 125;
             this.lbl_KhoaHoc.Text = "Khóa học";
-            this.lbl_KhoaHoc.Click += new System.EventHandler(this.lbl_KhoaHoc_Click);
             // 
             // lbl_TenKhoaHoc
             // 
@@ -380,7 +374,6 @@
             this.lbl_TenKhoaHoc.Size = new System.Drawing.Size(89, 25);
             this.lbl_TenKhoaHoc.TabIndex = 124;
             this.lbl_TenKhoaHoc.Text = "Anh Văn";
-            this.lbl_TenKhoaHoc.Click += new System.EventHandler(this.lbl_TenKhoaHoc_Click);
             // 
             // pnl_ThanhNgangKhoaHoc
             // 
@@ -390,7 +383,6 @@
             this.pnl_ThanhNgangKhoaHoc.Name = "pnl_ThanhNgangKhoaHoc";
             this.pnl_ThanhNgangKhoaHoc.Size = new System.Drawing.Size(192, 2);
             this.pnl_ThanhNgangKhoaHoc.TabIndex = 126;
-            this.pnl_ThanhNgangKhoaHoc.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_ThanhNgangKhoaHoc_Paint);
             // 
             // panel9
             // 
@@ -404,7 +396,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1638, 165);
             this.panel9.TabIndex = 191;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // lbl_DanhMucKhoaHoc
             // 
@@ -417,7 +408,6 @@
             this.lbl_DanhMucKhoaHoc.Size = new System.Drawing.Size(158, 24);
             this.lbl_DanhMucKhoaHoc.TabIndex = 23;
             this.lbl_DanhMucKhoaHoc.Text = "Course Catalogue";
-            this.lbl_DanhMucKhoaHoc.Click += new System.EventHandler(this.lbl_DanhMucKhoaHoc_Click);
             // 
             // pnl_ThanhNgang_TitlePage
             // 
@@ -427,7 +417,6 @@
             this.pnl_ThanhNgang_TitlePage.Name = "pnl_ThanhNgang_TitlePage";
             this.pnl_ThanhNgang_TitlePage.Size = new System.Drawing.Size(172, 2);
             this.pnl_ThanhNgang_TitlePage.TabIndex = 21;
-            this.pnl_ThanhNgang_TitlePage.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_ThanhNgang_TitlePage_Paint);
             // 
             // lbl_QuanLiKhoaHoc
             // 
@@ -440,7 +429,6 @@
             this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(340, 43);
             this.lbl_QuanLiKhoaHoc.TabIndex = 22;
             this.lbl_QuanLiKhoaHoc.Text = "General Management";
-            this.lbl_QuanLiKhoaHoc.Click += new System.EventHandler(this.lbl_QuanLiKhoaHoc_Click);
             // 
             // pictureBox10
             // 
@@ -452,7 +440,6 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 126;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // btn_TitleQLNV
             // 

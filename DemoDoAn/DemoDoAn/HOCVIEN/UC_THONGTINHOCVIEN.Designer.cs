@@ -34,60 +34,41 @@
             this.pnl_ThanhNgang_TitlePage = new System.Windows.Forms.Panel();
             this.lbl_QuanLiKhoaHoc = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.btn_TitleQLNV = new CustomControls.RJControls.RJButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pnl_TimKiem = new System.Windows.Forms.Panel();
-            this.rjButton7 = new CustomControls.RJControls.RJButton();
             this.pnl_ThongTin = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_SDTUpd = new System.Windows.Forms.TextBox();
-            this.rjButton6 = new CustomControls.RJControls.RJButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.dPTime_NgaySinhUpd = new DemoDoAn.Custom_Control.RJDatePicker();
-            this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txt_NameUpd = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_DiaChiUpd = new System.Windows.Forms.TextBox();
-            this.rjButton9 = new CustomControls.RJControls.RJButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_CCCDUpd = new System.Windows.Forms.TextBox();
-            this.rjButton8 = new CustomControls.RJControls.RJButton();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_GioiTinhUpd = new System.Windows.Forms.TextBox();
-            this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.txt_NgaySinhUpd = new System.Windows.Forms.TextBox();
-            this.btn_CapNhat = new CustomControls.RJControls.RJButton();
             this.lbl_ThongTinLopHoc = new System.Windows.Forms.Label();
-            this.btn_TTLopHoc = new CustomControls.RJControls.RJButton();
             this.pnl_TTCaNhan = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_VNDHomNay = new System.Windows.Forms.Label();
             this.lbl_TaiKhoan = new System.Windows.Forms.Label();
-            this.btn_DiaChi = new CustomControls.RJControls.RJButton();
-            this.btn_CCCD = new CustomControls.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_SDT = new CustomControls.RJControls.RJButton();
-            this.btn_Email = new CustomControls.RJControls.RJButton();
-            this.btn_NgaySinh = new CustomControls.RJControls.RJButton();
-            this.btn_TimKiem = new CustomControls.RJControls.RJButton();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_GioiTinh = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -101,6 +82,25 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_TitleQLNV = new CustomControls.RJControls.RJButton();
+            this.rjButton7 = new CustomControls.RJControls.RJButton();
+            this.rjButton6 = new CustomControls.RJControls.RJButton();
+            this.dPTime_NgaySinhUpd = new DemoDoAn.Custom_Control.RJDatePicker();
+            this.rjButton3 = new CustomControls.RJControls.RJButton();
+            this.rjButton5 = new CustomControls.RJControls.RJButton();
+            this.rjButton9 = new CustomControls.RJControls.RJButton();
+            this.rjButton8 = new CustomControls.RJControls.RJButton();
+            this.rjButton4 = new CustomControls.RJControls.RJButton();
+            this.btn_CapNhat = new CustomControls.RJControls.RJButton();
+            this.btn_TTLopHoc = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.btn_DiaChi = new CustomControls.RJControls.RJButton();
+            this.btn_CCCD = new CustomControls.RJControls.RJButton();
+            this.btn_SDT = new CustomControls.RJControls.RJButton();
+            this.btn_Email = new CustomControls.RJControls.RJButton();
+            this.btn_NgaySinh = new CustomControls.RJControls.RJButton();
+            this.btn_TimKiem = new CustomControls.RJControls.RJButton();
             this.btn_QL_FORM_AVT = new CustomControls.RJControls.RJButton();
             this.pnl_FORM.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -137,7 +137,7 @@
             this.pnl_FORM.Controls.Add(this.pnl_ThongTin);
             this.pnl_FORM.Controls.Add(this.pnl_TTCaNhan);
             this.pnl_FORM.Location = new System.Drawing.Point(6, 6);
-            this.pnl_FORM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_FORM.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_FORM.Name = "pnl_FORM";
             this.pnl_FORM.Size = new System.Drawing.Size(1113, 717);
             this.pnl_FORM.TabIndex = 1;
@@ -151,7 +151,7 @@
             this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.btn_TitleQLNV);
             this.panel1.Location = new System.Drawing.Point(4, -26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1101, 107);
             this.panel1.TabIndex = 185;
@@ -174,7 +174,7 @@
             this.pnl_ThanhNgang_TitlePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(127)))), ((int)(((byte)(245)))));
             this.pnl_ThanhNgang_TitlePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pnl_ThanhNgang_TitlePage.Location = new System.Drawing.Point(44, 73);
-            this.pnl_ThanhNgang_TitlePage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_ThanhNgang_TitlePage.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_ThanhNgang_TitlePage.Name = "pnl_ThanhNgang_TitlePage";
             this.pnl_ThanhNgang_TitlePage.Size = new System.Drawing.Size(115, 1);
             this.pnl_ThanhNgang_TitlePage.TabIndex = 21;
@@ -197,40 +197,19 @@
             this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox11.Image = global::DemoDoAn.Properties.Resources.book;
             this.pictureBox11.Location = new System.Drawing.Point(15, 44);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(18, 30);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 126;
             this.pictureBox11.TabStop = false;
             // 
-            // btn_TitleQLNV
-            // 
-            this.btn_TitleQLNV.BackColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.BackgroundColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_TitleQLNV.BorderRadius = 30;
-            this.btn_TitleQLNV.BorderSize = 1;
-            this.btn_TitleQLNV.FlatAppearance.BorderSize = 0;
-            this.btn_TitleQLNV.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TitleQLNV.ForeColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.Location = new System.Drawing.Point(2, 6);
-            this.btn_TitleQLNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_TitleQLNV.Name = "btn_TitleQLNV";
-            this.btn_TitleQLNV.Size = new System.Drawing.Size(1090, 99);
-            this.btn_TitleQLNV.TabIndex = 172;
-            this.btn_TitleQLNV.TextColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.UseVisualStyleBackColor = false;
-            // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pictureBox10.Image = global::DemoDoAn.Properties.Resources.ID_SAU_3x;
             this.pictureBox10.Location = new System.Drawing.Point(711, 447);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(404, 267);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -241,31 +220,10 @@
             // 
             this.pnl_TimKiem.Controls.Add(this.rjButton7);
             this.pnl_TimKiem.Location = new System.Drawing.Point(317, 447);
-            this.pnl_TimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_TimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_TimKiem.Name = "pnl_TimKiem";
             this.pnl_TimKiem.Size = new System.Drawing.Size(390, 267);
             this.pnl_TimKiem.TabIndex = 122;
-            // 
-            // rjButton7
-            // 
-            this.rjButton7.BackColor = System.Drawing.Color.White;
-            this.rjButton7.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rjButton7.BorderRadius = 30;
-            this.rjButton7.BorderSize = 1;
-            this.rjButton7.FlatAppearance.BorderSize = 0;
-            this.rjButton7.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.rjButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton7.ForeColor = System.Drawing.Color.White;
-            this.rjButton7.Location = new System.Drawing.Point(2, 5);
-            this.rjButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton7.Name = "rjButton7";
-            this.rjButton7.Size = new System.Drawing.Size(386, 257);
-            this.rjButton7.TabIndex = 119;
-            this.rjButton7.TextColor = System.Drawing.Color.White;
-            this.rjButton7.UseVisualStyleBackColor = false;
             // 
             // pnl_ThongTin
             // 
@@ -281,7 +239,7 @@
             this.pnl_ThongTin.Controls.Add(this.lbl_ThongTinLopHoc);
             this.pnl_ThongTin.Controls.Add(this.btn_TTLopHoc);
             this.pnl_ThongTin.Location = new System.Drawing.Point(317, 83);
-            this.pnl_ThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_ThongTin.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_ThongTin.Name = "pnl_ThongTin";
             this.pnl_ThongTin.Size = new System.Drawing.Size(788, 280);
             this.pnl_ThongTin.TabIndex = 121;
@@ -292,12 +250,13 @@
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = global::DemoDoAn.Properties.Resources.updates;
             this.pictureBox12.Location = new System.Drawing.Point(156, 22);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(22, 23);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 201;
             this.pictureBox12.TabStop = false;
+//            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // panel6
             // 
@@ -306,7 +265,7 @@
             this.panel6.Controls.Add(this.txt_SDTUpd);
             this.panel6.Controls.Add(this.rjButton6);
             this.panel6.Location = new System.Drawing.Point(37, 164);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(232, 81);
             this.panel6.TabIndex = 200;
@@ -330,32 +289,10 @@
             this.txt_SDTUpd.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
             this.txt_SDTUpd.ForeColor = System.Drawing.Color.Gray;
             this.txt_SDTUpd.Location = new System.Drawing.Point(14, 40);
-            this.txt_SDTUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_SDTUpd.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SDTUpd.Name = "txt_SDTUpd";
             this.txt_SDTUpd.Size = new System.Drawing.Size(75, 18);
             this.txt_SDTUpd.TabIndex = 139;
-            // 
-            // rjButton6
-            // 
-            this.rjButton6.BackColor = System.Drawing.Color.White;
-            this.rjButton6.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton6.BorderRadius = 10;
-            this.rjButton6.BorderSize = 1;
-            this.rjButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton6.FlatAppearance.BorderSize = 0;
-            this.rjButton6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.ForeColor = System.Drawing.Color.White;
-            this.rjButton6.Location = new System.Drawing.Point(3, 24);
-            this.rjButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(222, 45);
-            this.rjButton6.TabIndex = 185;
-            this.rjButton6.TextColor = System.Drawing.Color.White;
-            this.rjButton6.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -364,7 +301,7 @@
             this.panel4.Controls.Add(this.dPTime_NgaySinhUpd);
             this.panel4.Controls.Add(this.rjButton3);
             this.panel4.Location = new System.Drawing.Point(517, 164);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(232, 81);
             this.panel4.TabIndex = 199;
@@ -382,44 +319,6 @@
             this.label9.TabIndex = 128;
             this.label9.Text = "Day of birth";
             // 
-            // dPTime_NgaySinhUpd
-            // 
-            this.dPTime_NgaySinhUpd.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dPTime_NgaySinhUpd.BorderSize = 0;
-            this.dPTime_NgaySinhUpd.CustomFormat = "dd/MM/yyyy";
-            this.dPTime_NgaySinhUpd.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
-            this.dPTime_NgaySinhUpd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dPTime_NgaySinhUpd.Location = new System.Drawing.Point(8, 32);
-            this.dPTime_NgaySinhUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dPTime_NgaySinhUpd.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dPTime_NgaySinhUpd.Name = "dPTime_NgaySinhUpd";
-            this.dPTime_NgaySinhUpd.Size = new System.Drawing.Size(212, 35);
-            this.dPTime_NgaySinhUpd.SkinColor = System.Drawing.Color.White;
-            this.dPTime_NgaySinhUpd.TabIndex = 140;
-            this.dPTime_NgaySinhUpd.TextColor = System.Drawing.Color.Gray;
-            // 
-            // rjButton3
-            // 
-            this.rjButton3.BackColor = System.Drawing.Color.White;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton3.BorderRadius = 10;
-            this.rjButton3.BorderSize = 1;
-            this.rjButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(3, 24);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(222, 45);
-            this.rjButton3.TabIndex = 185;
-            this.rjButton3.TextColor = System.Drawing.Color.White;
-            this.rjButton3.UseVisualStyleBackColor = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
@@ -428,7 +327,7 @@
             this.panel5.Controls.Add(this.rjButton5);
             this.panel5.Controls.Add(this.textBox2);
             this.panel5.Location = new System.Drawing.Point(37, 72);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(232, 81);
             this.panel5.TabIndex = 199;
@@ -439,7 +338,7 @@
             this.txt_NameUpd.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
             this.txt_NameUpd.ForeColor = System.Drawing.Color.Gray;
             this.txt_NameUpd.Location = new System.Drawing.Point(14, 39);
-            this.txt_NameUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_NameUpd.Margin = new System.Windows.Forms.Padding(2);
             this.txt_NameUpd.Name = "txt_NameUpd";
             this.txt_NameUpd.Size = new System.Drawing.Size(128, 18);
             this.txt_NameUpd.TabIndex = 139;
@@ -457,34 +356,12 @@
             this.label10.TabIndex = 128;
             this.label10.Text = "Name";
             // 
-            // rjButton5
-            // 
-            this.rjButton5.BackColor = System.Drawing.Color.White;
-            this.rjButton5.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton5.BorderRadius = 10;
-            this.rjButton5.BorderSize = 1;
-            this.rjButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.Location = new System.Drawing.Point(3, 24);
-            this.rjButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(222, 45);
-            this.rjButton5.TabIndex = 185;
-            this.rjButton5.TextColor = System.Drawing.Color.White;
-            this.rjButton5.UseVisualStyleBackColor = false;
-            // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762712F);
             this.textBox2.Location = new System.Drawing.Point(12, 32);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(75, 15);
             this.textBox2.TabIndex = 139;
@@ -496,7 +373,7 @@
             this.panel8.Controls.Add(this.txt_DiaChiUpd);
             this.panel8.Controls.Add(this.rjButton9);
             this.panel8.Location = new System.Drawing.Point(277, 72);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(232, 81);
             this.panel8.TabIndex = 199;
@@ -520,32 +397,10 @@
             this.txt_DiaChiUpd.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
             this.txt_DiaChiUpd.ForeColor = System.Drawing.Color.Gray;
             this.txt_DiaChiUpd.Location = new System.Drawing.Point(14, 39);
-            this.txt_DiaChiUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_DiaChiUpd.Margin = new System.Windows.Forms.Padding(2);
             this.txt_DiaChiUpd.Name = "txt_DiaChiUpd";
             this.txt_DiaChiUpd.Size = new System.Drawing.Size(128, 18);
             this.txt_DiaChiUpd.TabIndex = 139;
-            // 
-            // rjButton9
-            // 
-            this.rjButton9.BackColor = System.Drawing.Color.White;
-            this.rjButton9.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton9.BorderRadius = 10;
-            this.rjButton9.BorderSize = 1;
-            this.rjButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton9.FlatAppearance.BorderSize = 0;
-            this.rjButton9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton9.ForeColor = System.Drawing.Color.White;
-            this.rjButton9.Location = new System.Drawing.Point(3, 24);
-            this.rjButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton9.Name = "rjButton9";
-            this.rjButton9.Size = new System.Drawing.Size(222, 45);
-            this.rjButton9.TabIndex = 185;
-            this.rjButton9.TextColor = System.Drawing.Color.White;
-            this.rjButton9.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
@@ -554,7 +409,7 @@
             this.panel7.Controls.Add(this.txt_CCCDUpd);
             this.panel7.Controls.Add(this.rjButton8);
             this.panel7.Location = new System.Drawing.Point(277, 164);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(232, 81);
             this.panel7.TabIndex = 199;
@@ -578,32 +433,10 @@
             this.txt_CCCDUpd.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
             this.txt_CCCDUpd.ForeColor = System.Drawing.Color.Gray;
             this.txt_CCCDUpd.Location = new System.Drawing.Point(16, 40);
-            this.txt_CCCDUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_CCCDUpd.Margin = new System.Windows.Forms.Padding(2);
             this.txt_CCCDUpd.Name = "txt_CCCDUpd";
             this.txt_CCCDUpd.Size = new System.Drawing.Size(128, 18);
             this.txt_CCCDUpd.TabIndex = 139;
-            // 
-            // rjButton8
-            // 
-            this.rjButton8.BackColor = System.Drawing.Color.White;
-            this.rjButton8.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton8.BorderRadius = 10;
-            this.rjButton8.BorderSize = 1;
-            this.rjButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton8.FlatAppearance.BorderSize = 0;
-            this.rjButton8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton8.ForeColor = System.Drawing.Color.White;
-            this.rjButton8.Location = new System.Drawing.Point(3, 24);
-            this.rjButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton8.Name = "rjButton8";
-            this.rjButton8.Size = new System.Drawing.Size(222, 45);
-            this.rjButton8.TabIndex = 185;
-            this.rjButton8.TextColor = System.Drawing.Color.White;
-            this.rjButton8.UseVisualStyleBackColor = false;
             // 
             // panel14
             // 
@@ -612,7 +445,7 @@
             this.panel14.Controls.Add(this.txt_GioiTinhUpd);
             this.panel14.Controls.Add(this.rjButton4);
             this.panel14.Location = new System.Drawing.Point(517, 72);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(232, 81);
             this.panel14.TabIndex = 199;
@@ -636,63 +469,20 @@
             this.txt_GioiTinhUpd.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
             this.txt_GioiTinhUpd.ForeColor = System.Drawing.Color.Gray;
             this.txt_GioiTinhUpd.Location = new System.Drawing.Point(15, 39);
-            this.txt_GioiTinhUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_GioiTinhUpd.Margin = new System.Windows.Forms.Padding(2);
             this.txt_GioiTinhUpd.Name = "txt_GioiTinhUpd";
             this.txt_GioiTinhUpd.Size = new System.Drawing.Size(75, 18);
             this.txt_GioiTinhUpd.TabIndex = 139;
-            // 
-            // rjButton4
-            // 
-            this.rjButton4.BackColor = System.Drawing.Color.White;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
-            this.rjButton4.BorderRadius = 10;
-            this.rjButton4.BorderSize = 1;
-            this.rjButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.rjButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(3, 24);
-            this.rjButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(222, 45);
-            this.rjButton4.TabIndex = 185;
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
             // 
             // txt_NgaySinhUpd
             // 
             this.txt_NgaySinhUpd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_NgaySinhUpd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762712F);
             this.txt_NgaySinhUpd.Location = new System.Drawing.Point(136, 106);
-            this.txt_NgaySinhUpd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_NgaySinhUpd.Margin = new System.Windows.Forms.Padding(2);
             this.txt_NgaySinhUpd.Name = "txt_NgaySinhUpd";
             this.txt_NgaySinhUpd.Size = new System.Drawing.Size(75, 15);
             this.txt_NgaySinhUpd.TabIndex = 139;
-            // 
-            // btn_CapNhat
-            // 
-            this.btn_CapNhat.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_CapNhat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_CapNhat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_CapNhat.BorderRadius = 20;
-            this.btn_CapNhat.BorderSize = 0;
-            this.btn_CapNhat.FlatAppearance.BorderSize = 0;
-            this.btn_CapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.152542F);
-            this.btn_CapNhat.ForeColor = System.Drawing.Color.White;
-            this.btn_CapNhat.Location = new System.Drawing.Point(316, 27);
-            this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_CapNhat.Name = "btn_CapNhat";
-            this.btn_CapNhat.Size = new System.Drawing.Size(30, 32);
-            this.btn_CapNhat.TabIndex = 73;
-            this.btn_CapNhat.Text = "Cập nhật";
-            this.btn_CapNhat.TextColor = System.Drawing.Color.White;
-            this.btn_CapNhat.UseVisualStyleBackColor = false;
-            this.btn_CapNhat.Visible = false;
             // 
             // lbl_ThongTinLopHoc
             // 
@@ -706,27 +496,6 @@
             this.lbl_ThongTinLopHoc.Size = new System.Drawing.Size(133, 32);
             this.lbl_ThongTinLopHoc.TabIndex = 120;
             this.lbl_ThongTinLopHoc.Text = "My profile";
-            // 
-            // btn_TTLopHoc
-            // 
-            this.btn_TTLopHoc.BackColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.BackgroundColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_TTLopHoc.BorderRadius = 30;
-            this.btn_TTLopHoc.BorderSize = 1;
-            this.btn_TTLopHoc.FlatAppearance.BorderSize = 0;
-            this.btn_TTLopHoc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TTLopHoc.ForeColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.Location = new System.Drawing.Point(2, 5);
-            this.btn_TTLopHoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_TTLopHoc.Name = "btn_TTLopHoc";
-            this.btn_TTLopHoc.Size = new System.Drawing.Size(776, 266);
-            this.btn_TTLopHoc.TabIndex = 119;
-            this.btn_TTLopHoc.TextColor = System.Drawing.Color.White;
-            this.btn_TTLopHoc.UseVisualStyleBackColor = false;
             // 
             // pnl_TTCaNhan
             // 
@@ -757,7 +526,7 @@
             this.pnl_TTCaNhan.Controls.Add(this.pictureBox1);
             this.pnl_TTCaNhan.Controls.Add(this.btn_QL_FORM_AVT);
             this.pnl_TTCaNhan.Location = new System.Drawing.Point(2, 83);
-            this.pnl_TTCaNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_TTCaNhan.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_TTCaNhan.Name = "pnl_TTCaNhan";
             this.pnl_TTCaNhan.Size = new System.Drawing.Size(313, 631);
             this.pnl_TTCaNhan.TabIndex = 1;
@@ -782,28 +551,10 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(33, 531);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(246, 43);
             this.panel3.TabIndex = 123;
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 5;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(2, 2);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(39, 38);
-            this.rjButton2.TabIndex = 124;
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -839,28 +590,10 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(33, 483);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(246, 43);
             this.panel2.TabIndex = 123;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 5;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(2, 2);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(39, 38);
-            this.rjButton1.TabIndex = 124;
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -916,46 +649,6 @@
             this.lbl_TaiKhoan.Text = "3.000.000";
             this.lbl_TaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_DiaChi
-            // 
-            this.btn_DiaChi.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_DiaChi.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_DiaChi.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_DiaChi.BorderRadius = 20;
-            this.btn_DiaChi.BorderSize = 0;
-            this.btn_DiaChi.FlatAppearance.BorderSize = 0;
-            this.btn_DiaChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DiaChi.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_DiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_DiaChi.Location = new System.Drawing.Point(47, 303);
-            this.btn_DiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_DiaChi.Name = "btn_DiaChi";
-            this.btn_DiaChi.Size = new System.Drawing.Size(221, 39);
-            this.btn_DiaChi.TabIndex = 73;
-            this.btn_DiaChi.Text = "Ho Chi Minh";
-            this.btn_DiaChi.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_DiaChi.UseVisualStyleBackColor = false;
-            // 
-            // btn_CCCD
-            // 
-            this.btn_CCCD.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_CCCD.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_CCCD.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_CCCD.BorderRadius = 20;
-            this.btn_CCCD.BorderSize = 0;
-            this.btn_CCCD.FlatAppearance.BorderSize = 0;
-            this.btn_CCCD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CCCD.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_CCCD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_CCCD.Location = new System.Drawing.Point(47, 259);
-            this.btn_CCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_CCCD.Name = "btn_CCCD";
-            this.btn_CCCD.Size = new System.Drawing.Size(221, 39);
-            this.btn_CCCD.TabIndex = 73;
-            this.btn_CCCD.Text = "2120076426813";
-            this.btn_CCCD.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_CCCD.UseVisualStyleBackColor = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -968,87 +661,6 @@
             this.label6.Size = new System.Drawing.Size(154, 24);
             this.label6.TabIndex = 120;
             this.label6.Text = "Account Balance";
-            // 
-            // btn_SDT
-            // 
-            this.btn_SDT.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_SDT.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_SDT.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_SDT.BorderRadius = 20;
-            this.btn_SDT.BorderSize = 0;
-            this.btn_SDT.FlatAppearance.BorderSize = 0;
-            this.btn_SDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SDT.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_SDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_SDT.Location = new System.Drawing.Point(47, 215);
-            this.btn_SDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_SDT.Name = "btn_SDT";
-            this.btn_SDT.Size = new System.Drawing.Size(221, 39);
-            this.btn_SDT.TabIndex = 73;
-            this.btn_SDT.Text = "09476237642";
-            this.btn_SDT.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_SDT.UseVisualStyleBackColor = false;
-            // 
-            // btn_Email
-            // 
-            this.btn_Email.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_Email.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_Email.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Email.BorderRadius = 20;
-            this.btn_Email.BorderSize = 0;
-            this.btn_Email.FlatAppearance.BorderSize = 0;
-            this.btn_Email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Email.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_Email.Location = new System.Drawing.Point(47, 171);
-            this.btn_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_Email.Name = "btn_Email";
-            this.btn_Email.Size = new System.Drawing.Size(221, 39);
-            this.btn_Email.TabIndex = 73;
-            this.btn_Email.Text = "laam@gmail.com";
-            this.btn_Email.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_Email.UseVisualStyleBackColor = false;
-            // 
-            // btn_NgaySinh
-            // 
-            this.btn_NgaySinh.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_NgaySinh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn_NgaySinh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_NgaySinh.BorderRadius = 20;
-            this.btn_NgaySinh.BorderSize = 0;
-            this.btn_NgaySinh.FlatAppearance.BorderSize = 0;
-            this.btn_NgaySinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NgaySinh.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_NgaySinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_NgaySinh.Location = new System.Drawing.Point(47, 128);
-            this.btn_NgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_NgaySinh.Name = "btn_NgaySinh";
-            this.btn_NgaySinh.Size = new System.Drawing.Size(221, 39);
-            this.btn_NgaySinh.TabIndex = 73;
-            this.btn_NgaySinh.Text = "01/01/2003";
-            this.btn_NgaySinh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_NgaySinh.UseVisualStyleBackColor = false;
-            // 
-            // btn_TimKiem
-            // 
-            this.btn_TimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_TimKiem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_TimKiem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_TimKiem.BorderRadius = 30;
-            this.btn_TimKiem.BorderSize = 0;
-            this.btn_TimKiem.FlatAppearance.BorderSize = 0;
-            this.btn_TimKiem.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btn_TimKiem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_TimKiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_TimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_TimKiem.Location = new System.Drawing.Point(14, 358);
-            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_TimKiem.Name = "btn_TimKiem";
-            this.btn_TimKiem.Size = new System.Drawing.Size(284, 247);
-            this.btn_TimKiem.TabIndex = 119;
-            this.btn_TimKiem.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.btn_TimKiem.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -1081,7 +693,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.White;
             this.pictureBox9.Image = global::DemoDoAn.Properties.Resources.bell;
             this.pictureBox9.Location = new System.Drawing.Point(20, 307);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(22, 31);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1106,7 +718,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.White;
             this.pictureBox8.Image = global::DemoDoAn.Properties.Resources.bell;
             this.pictureBox8.Location = new System.Drawing.Point(20, 263);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(22, 31);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1131,7 +743,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Image = global::DemoDoAn.Properties.Resources.bell;
             this.pictureBox7.Location = new System.Drawing.Point(20, 219);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(22, 31);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1143,7 +755,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = global::DemoDoAn.Properties.Resources.star;
             this.pictureBox4.Location = new System.Drawing.Point(131, 80);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(22, 24);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1155,7 +767,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Image = global::DemoDoAn.Properties.Resources.bell;
             this.pictureBox6.Location = new System.Drawing.Point(20, 176);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(22, 31);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1167,7 +779,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::DemoDoAn.Properties.Resources.comment;
             this.pictureBox3.Location = new System.Drawing.Point(104, 80);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(22, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1179,7 +791,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Image = global::DemoDoAn.Properties.Resources.bell;
             this.pictureBox5.Location = new System.Drawing.Point(20, 132);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(22, 31);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1191,7 +803,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::DemoDoAn.Properties.Resources.bell;
             this.pictureBox2.Location = new System.Drawing.Point(77, 80);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(22, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1203,12 +815,401 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::DemoDoAn.Properties.Resources.user2;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 71;
             this.pictureBox1.TabStop = false;
+            // 
+            // btn_TitleQLNV
+            // 
+            this.btn_TitleQLNV.BackColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.BackgroundColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_TitleQLNV.BorderRadius = 30;
+            this.btn_TitleQLNV.BorderSize = 1;
+            this.btn_TitleQLNV.FlatAppearance.BorderSize = 0;
+            this.btn_TitleQLNV.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TitleQLNV.ForeColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.Location = new System.Drawing.Point(2, 6);
+            this.btn_TitleQLNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TitleQLNV.Name = "btn_TitleQLNV";
+            this.btn_TitleQLNV.Size = new System.Drawing.Size(1090, 99);
+            this.btn_TitleQLNV.TabIndex = 172;
+            this.btn_TitleQLNV.TextColor = System.Drawing.Color.White;
+            this.btn_TitleQLNV.UseVisualStyleBackColor = false;
+            // 
+            // rjButton7
+            // 
+            this.rjButton7.BackColor = System.Drawing.Color.White;
+            this.rjButton7.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rjButton7.BorderRadius = 30;
+            this.rjButton7.BorderSize = 1;
+            this.rjButton7.FlatAppearance.BorderSize = 0;
+            this.rjButton7.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.rjButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton7.ForeColor = System.Drawing.Color.White;
+            this.rjButton7.Location = new System.Drawing.Point(2, 5);
+            this.rjButton7.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton7.Name = "rjButton7";
+            this.rjButton7.Size = new System.Drawing.Size(386, 257);
+            this.rjButton7.TabIndex = 119;
+            this.rjButton7.TextColor = System.Drawing.Color.White;
+            this.rjButton7.UseVisualStyleBackColor = false;
+            // 
+            // rjButton6
+            // 
+            this.rjButton6.BackColor = System.Drawing.Color.White;
+            this.rjButton6.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton6.BorderRadius = 10;
+            this.rjButton6.BorderSize = 1;
+            this.rjButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton6.FlatAppearance.BorderSize = 0;
+            this.rjButton6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton6.ForeColor = System.Drawing.Color.White;
+            this.rjButton6.Location = new System.Drawing.Point(3, 24);
+            this.rjButton6.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton6.Name = "rjButton6";
+            this.rjButton6.Size = new System.Drawing.Size(222, 45);
+            this.rjButton6.TabIndex = 185;
+            this.rjButton6.TextColor = System.Drawing.Color.White;
+            this.rjButton6.UseVisualStyleBackColor = false;
+            // 
+            // dPTime_NgaySinhUpd
+            // 
+            this.dPTime_NgaySinhUpd.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dPTime_NgaySinhUpd.BorderSize = 0;
+            this.dPTime_NgaySinhUpd.CustomFormat = "dd/MM/yyyy";
+            this.dPTime_NgaySinhUpd.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
+            this.dPTime_NgaySinhUpd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dPTime_NgaySinhUpd.Location = new System.Drawing.Point(8, 32);
+            this.dPTime_NgaySinhUpd.Margin = new System.Windows.Forms.Padding(2);
+            this.dPTime_NgaySinhUpd.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dPTime_NgaySinhUpd.Name = "dPTime_NgaySinhUpd";
+            this.dPTime_NgaySinhUpd.Size = new System.Drawing.Size(212, 35);
+            this.dPTime_NgaySinhUpd.SkinColor = System.Drawing.Color.White;
+            this.dPTime_NgaySinhUpd.TabIndex = 140;
+            this.dPTime_NgaySinhUpd.TextColor = System.Drawing.Color.Gray;
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.White;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton3.BorderRadius = 10;
+            this.rjButton3.BorderSize = 1;
+            this.rjButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.Location = new System.Drawing.Point(3, 24);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(222, 45);
+            this.rjButton3.TabIndex = 185;
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            // 
+            // rjButton5
+            // 
+            this.rjButton5.BackColor = System.Drawing.Color.White;
+            this.rjButton5.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton5.BorderRadius = 10;
+            this.rjButton5.BorderSize = 1;
+            this.rjButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton5.FlatAppearance.BorderSize = 0;
+            this.rjButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton5.ForeColor = System.Drawing.Color.White;
+            this.rjButton5.Location = new System.Drawing.Point(3, 24);
+            this.rjButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton5.Name = "rjButton5";
+            this.rjButton5.Size = new System.Drawing.Size(222, 45);
+            this.rjButton5.TabIndex = 185;
+            this.rjButton5.TextColor = System.Drawing.Color.White;
+            this.rjButton5.UseVisualStyleBackColor = false;
+            // 
+            // rjButton9
+            // 
+            this.rjButton9.BackColor = System.Drawing.Color.White;
+            this.rjButton9.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton9.BorderRadius = 10;
+            this.rjButton9.BorderSize = 1;
+            this.rjButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton9.FlatAppearance.BorderSize = 0;
+            this.rjButton9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton9.ForeColor = System.Drawing.Color.White;
+            this.rjButton9.Location = new System.Drawing.Point(3, 24);
+            this.rjButton9.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton9.Name = "rjButton9";
+            this.rjButton9.Size = new System.Drawing.Size(222, 45);
+            this.rjButton9.TabIndex = 185;
+            this.rjButton9.TextColor = System.Drawing.Color.White;
+            this.rjButton9.UseVisualStyleBackColor = false;
+            // 
+            // rjButton8
+            // 
+            this.rjButton8.BackColor = System.Drawing.Color.White;
+            this.rjButton8.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton8.BorderRadius = 10;
+            this.rjButton8.BorderSize = 1;
+            this.rjButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton8.FlatAppearance.BorderSize = 0;
+            this.rjButton8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton8.ForeColor = System.Drawing.Color.White;
+            this.rjButton8.Location = new System.Drawing.Point(3, 24);
+            this.rjButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton8.Name = "rjButton8";
+            this.rjButton8.Size = new System.Drawing.Size(222, 45);
+            this.rjButton8.TabIndex = 185;
+            this.rjButton8.TextColor = System.Drawing.Color.White;
+            this.rjButton8.UseVisualStyleBackColor = false;
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.BackColor = System.Drawing.Color.White;
+            this.rjButton4.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(110)))), ((int)(((byte)(246)))));
+            this.rjButton4.BorderRadius = 10;
+            this.rjButton4.BorderSize = 1;
+            this.rjButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.rjButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Location = new System.Drawing.Point(3, 24);
+            this.rjButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(222, 45);
+            this.rjButton4.TabIndex = 185;
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            // 
+            // btn_CapNhat
+            // 
+            this.btn_CapNhat.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_CapNhat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_CapNhat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_CapNhat.BorderRadius = 20;
+            this.btn_CapNhat.BorderSize = 0;
+            this.btn_CapNhat.FlatAppearance.BorderSize = 0;
+            this.btn_CapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.152542F);
+            this.btn_CapNhat.ForeColor = System.Drawing.Color.White;
+            this.btn_CapNhat.Location = new System.Drawing.Point(316, 27);
+            this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CapNhat.Name = "btn_CapNhat";
+            this.btn_CapNhat.Size = new System.Drawing.Size(30, 32);
+            this.btn_CapNhat.TabIndex = 73;
+            this.btn_CapNhat.Text = "Cập nhật";
+            this.btn_CapNhat.TextColor = System.Drawing.Color.White;
+            this.btn_CapNhat.UseVisualStyleBackColor = false;
+            this.btn_CapNhat.Visible = false;
+            // 
+            // btn_TTLopHoc
+            // 
+            this.btn_TTLopHoc.BackColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.BackgroundColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_TTLopHoc.BorderRadius = 30;
+            this.btn_TTLopHoc.BorderSize = 1;
+            this.btn_TTLopHoc.FlatAppearance.BorderSize = 0;
+            this.btn_TTLopHoc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TTLopHoc.ForeColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.Location = new System.Drawing.Point(2, 5);
+            this.btn_TTLopHoc.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TTLopHoc.Name = "btn_TTLopHoc";
+            this.btn_TTLopHoc.Size = new System.Drawing.Size(776, 266);
+            this.btn_TTLopHoc.TabIndex = 119;
+            this.btn_TTLopHoc.TextColor = System.Drawing.Color.White;
+            this.btn_TTLopHoc.UseVisualStyleBackColor = false;
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 5;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(2, 2);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(39, 38);
+            this.rjButton2.TabIndex = 124;
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 5;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(2, 2);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(39, 38);
+            this.rjButton1.TabIndex = 124;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // btn_DiaChi
+            // 
+            this.btn_DiaChi.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_DiaChi.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_DiaChi.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_DiaChi.BorderRadius = 20;
+            this.btn_DiaChi.BorderSize = 0;
+            this.btn_DiaChi.FlatAppearance.BorderSize = 0;
+            this.btn_DiaChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DiaChi.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_DiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_DiaChi.Location = new System.Drawing.Point(47, 303);
+            this.btn_DiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_DiaChi.Name = "btn_DiaChi";
+            this.btn_DiaChi.Size = new System.Drawing.Size(221, 39);
+            this.btn_DiaChi.TabIndex = 73;
+            this.btn_DiaChi.Text = "Ho Chi Minh";
+            this.btn_DiaChi.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_DiaChi.UseVisualStyleBackColor = false;
+            // 
+            // btn_CCCD
+            // 
+            this.btn_CCCD.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_CCCD.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_CCCD.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_CCCD.BorderRadius = 20;
+            this.btn_CCCD.BorderSize = 0;
+            this.btn_CCCD.FlatAppearance.BorderSize = 0;
+            this.btn_CCCD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CCCD.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_CCCD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_CCCD.Location = new System.Drawing.Point(47, 259);
+            this.btn_CCCD.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CCCD.Name = "btn_CCCD";
+            this.btn_CCCD.Size = new System.Drawing.Size(221, 39);
+            this.btn_CCCD.TabIndex = 73;
+            this.btn_CCCD.Text = "2120076426813";
+            this.btn_CCCD.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_CCCD.UseVisualStyleBackColor = false;
+            // 
+            // btn_SDT
+            // 
+            this.btn_SDT.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_SDT.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_SDT.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_SDT.BorderRadius = 20;
+            this.btn_SDT.BorderSize = 0;
+            this.btn_SDT.FlatAppearance.BorderSize = 0;
+            this.btn_SDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SDT.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_SDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_SDT.Location = new System.Drawing.Point(47, 215);
+            this.btn_SDT.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_SDT.Name = "btn_SDT";
+            this.btn_SDT.Size = new System.Drawing.Size(221, 39);
+            this.btn_SDT.TabIndex = 73;
+            this.btn_SDT.Text = "09476237642";
+            this.btn_SDT.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_SDT.UseVisualStyleBackColor = false;
+            // 
+            // btn_Email
+            // 
+            this.btn_Email.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_Email.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_Email.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Email.BorderRadius = 20;
+            this.btn_Email.BorderSize = 0;
+            this.btn_Email.FlatAppearance.BorderSize = 0;
+            this.btn_Email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Email.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_Email.Location = new System.Drawing.Point(47, 171);
+            this.btn_Email.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Email.Name = "btn_Email";
+            this.btn_Email.Size = new System.Drawing.Size(221, 39);
+            this.btn_Email.TabIndex = 73;
+            this.btn_Email.Text = "laam@gmail.com";
+            this.btn_Email.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_Email.UseVisualStyleBackColor = false;
+            // 
+            // btn_NgaySinh
+            // 
+            this.btn_NgaySinh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_NgaySinh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_NgaySinh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_NgaySinh.BorderRadius = 20;
+            this.btn_NgaySinh.BorderSize = 0;
+            this.btn_NgaySinh.FlatAppearance.BorderSize = 0;
+            this.btn_NgaySinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_NgaySinh.Font = new System.Drawing.Font("Segoe UI Variable Small", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_NgaySinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_NgaySinh.Location = new System.Drawing.Point(47, 128);
+            this.btn_NgaySinh.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_NgaySinh.Name = "btn_NgaySinh";
+            this.btn_NgaySinh.Size = new System.Drawing.Size(221, 39);
+            this.btn_NgaySinh.TabIndex = 73;
+            this.btn_NgaySinh.Text = "01/01/2003";
+            this.btn_NgaySinh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_NgaySinh.UseVisualStyleBackColor = false;
+            // 
+            // btn_TimKiem
+            // 
+            this.btn_TimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_TimKiem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_TimKiem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_TimKiem.BorderRadius = 30;
+            this.btn_TimKiem.BorderSize = 0;
+            this.btn_TimKiem.FlatAppearance.BorderSize = 0;
+            this.btn_TimKiem.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btn_TimKiem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_TimKiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_TimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_TimKiem.Location = new System.Drawing.Point(14, 358);
+            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.Size = new System.Drawing.Size(284, 247);
+            this.btn_TimKiem.TabIndex = 119;
+            this.btn_TimKiem.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btn_TimKiem.UseVisualStyleBackColor = false;
             // 
             // btn_QL_FORM_AVT
             // 
@@ -1224,7 +1225,7 @@
             this.btn_QL_FORM_AVT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_QL_FORM_AVT.ForeColor = System.Drawing.Color.White;
             this.btn_QL_FORM_AVT.Location = new System.Drawing.Point(2, 2);
-            this.btn_QL_FORM_AVT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_QL_FORM_AVT.Margin = new System.Windows.Forms.Padding(2);
             this.btn_QL_FORM_AVT.Name = "btn_QL_FORM_AVT";
             this.btn_QL_FORM_AVT.Size = new System.Drawing.Size(308, 622);
             this.btn_QL_FORM_AVT.TabIndex = 70;
@@ -1237,7 +1238,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.Controls.Add(this.pnl_FORM);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_THONGTINHOCVIEN";
             this.Size = new System.Drawing.Size(1113, 726);
             this.Load += new System.EventHandler(this.UC_THONGTINHOCVIEN_Load);

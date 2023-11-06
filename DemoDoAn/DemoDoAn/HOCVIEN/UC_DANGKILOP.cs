@@ -98,7 +98,7 @@ namespace DemoDoAn.HOCVIEN
         //lay tong ds lop
         private void taiDSLFull()
         {
-            dtDSLFull1 = dklDao1.LayDanhSachLop();
+            dtDSLFull1 = dklDao1.LayDanhSachNhom();
             for (int i = dtDSLFull1.Rows.Count - 1; i >= 0; i--)
             {
                 DataRow row = dtDSLFull1.Rows[i];

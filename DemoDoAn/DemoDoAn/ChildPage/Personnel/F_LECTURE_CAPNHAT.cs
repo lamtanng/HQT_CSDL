@@ -50,9 +50,9 @@ namespace DemoDoAn.ChildPage.Personnel
         //cap nhat
         private void btn_HoanThanh_Click(object sender, EventArgs e)
         {
-            GiaoVien gvCapNhat = new GiaoVien(txt_Ma.Text.ToString(), txt_Ten.Text.ToString(), txt_CCCD.Text.ToString(), dPTime_NgaySinh.Value, txt_GioiTinh.Text.ToString(), txt_SDT.Text.ToString(), txt_DiaChi.Text.ToString(), txt_Email.Text.ToString(), gv.DIACHI,txt_UserName.Text.ToString(), txt_Pass.Text.ToString());
-            gvDao.CapNhat(gvCapNhat);
-            this.Close();
+           // GiaoVien gvCapNhat = new GiaoVien(txt_Ma.Text.ToString(), txt_Ten.Text.ToString(), txt_CCCD.Text.ToString(), dPTime_NgaySinh.Value, txt_GioiTinh.Text.ToString(), txt_SDT.Text.ToString(), txt_DiaChi.Text.ToString(), txt_Email.Text.ToString(), gv.DIACHI,txt_UserName.Text.ToString(), txt_Pass.Text.ToString());
+           // gvDao.CapNhat(gvCapNhat);
+           // this.Close();
         }
     }
 }

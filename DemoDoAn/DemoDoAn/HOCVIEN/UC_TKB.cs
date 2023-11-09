@@ -624,7 +624,7 @@ namespace DemoDoAn.HOCVIEN
         {
             DataTable dtID = new DataTable();
             dtID = hsDao.Lay_MSSV(Login.userName);
-            ID = dtID.Rows[0]["ID"].ToString().Trim();
+            ID = dtID.Rows[0]["MaHocVien"].ToString().Trim();
         }
 
         //xu li TKB

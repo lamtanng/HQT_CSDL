@@ -35,8 +35,9 @@ namespace DemoDoAn
         public DataTable LayDanhSachGiaoVien()
         {
             //để sau này có đổi tên bảng dưới SQL thì chuyển cho nhanh
-            string bangTKGV = "ACCOUNTS_TEACHER";
-            string sqlStr = string.Format("SELECT *FROM GIANGVIEN left join {0} on GIANGVIEN.AccID = {1}.AccID_Tea", bangTKGV, bangTKGV);
+            // string bangTKGV = "ACCOUNTS_TEACHER";
+            //string sqlStr = string.Format("SELECT *FROM GIANGVIEN left join {0} on GIANGVIEN.AccID = {1}.AccID_Tea", bangTKGV, bangTKGV);
+            string sqlStr = string.Format("SELECT *FROM GIAOVIEN");
             return dbConn.LayDanhSach(sqlStr);
         }
         public void Them(GiaoVien gv)

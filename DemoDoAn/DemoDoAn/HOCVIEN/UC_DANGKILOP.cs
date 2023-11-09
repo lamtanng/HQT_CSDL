@@ -73,7 +73,7 @@ namespace DemoDoAn.HOCVIEN
         {
             InitializeComponent();
             this.chucVu = chucVu;
-            layID();
+            //layID();
         }
 
         private void UC_DANGKILOP_Load(object sender, EventArgs e)
@@ -194,7 +194,7 @@ namespace DemoDoAn.HOCVIEN
         {
             DataTable dtID = new DataTable();
             dtID = hsDao1.Lay_MSSV(Login.userName);
-            ID = dtID.Rows[0]["ID"].ToString().Trim();
+            ID = dtID.Rows[0]["MaHocVien"].ToString().Trim();
         }
         
         //tai DSL DKy
@@ -510,6 +510,326 @@ namespace DemoDoAn.HOCVIEN
         }
 
         private void btn_DangKi_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fLPnl_DSL_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fLPnl_KQ_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_BangDiem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_Search_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGrView_DSLop_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lbl_LopHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_TenLopHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_ThanhNgangLopHoc_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_KhoaHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_TenKhoaHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_ThanhNgangKhoaHoc_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_MaLop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_TT_TenLopHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_TT_TenKhoaHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_TTChiTiet_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_SoPhongHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_NgayKetThuc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_NgayBatDau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_PhongHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Ca_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_GioKetThuc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_GioBatDau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Thu_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Thu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_ThuTitle2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_ThuTitle1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_DanhMucKhoaHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_ThanhNgang_TitlePage_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_QuanLiKhoaHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_BangDiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_TitleQLNV_Click(object sender, EventArgs e)
         {
 
         }

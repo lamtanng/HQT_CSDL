@@ -66,7 +66,7 @@ namespace DemoDoAn.FORM
 
         private void btn_QLChung_Click(object sender, EventArgs e)
         {
-            UC_TKB tkb = new UC_TKB(chucVu,2);
+            UC_DANGKILOP tkb = new UC_DANGKILOP(chucVu);
             selectButton(tkb);
         }
 

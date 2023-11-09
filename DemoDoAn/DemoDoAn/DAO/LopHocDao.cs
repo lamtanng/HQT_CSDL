@@ -11,9 +11,10 @@ namespace DemoDoAn.DAO
     internal class LopHocDao
     {
         DBConnection dbConn = new DBConnection();
+
         public DataTable LayDanhSachLop()
         {
-            string sqlStr = string.Format("SELECT *FROM LOPHOC");
+            string sqlStr = string.Format("SELECT * FROM LOPHOC");
             return dbConn.LayDanhSach(sqlStr);
         }
         public void ThemLopHoc(LopHoc lopHoc)
@@ -26,6 +27,13 @@ namespace DemoDoAn.DAO
         {
             string sqlStr = string.Format("Exec dbo.proc_XoaLopHoc @MaLopHoc = '{0}'", lopHoc.MaLopHoc);
             dbConn.ThucThi(sqlStr);
+        }
+
+        //lay so buoi hoc:
+        public DataTable LaySoBuoiHoc(String maLop)
+        {
+            string sqlStr = string.Format("Select dbo.uf_TimTongSoBuoiHoc('{0}') TongSoBuoiHoc",maLop );
+            return dbConn.LayDanhSach(sqlStr);
         }
 
     }

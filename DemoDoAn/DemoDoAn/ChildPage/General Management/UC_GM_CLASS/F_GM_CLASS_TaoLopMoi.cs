@@ -113,7 +113,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
             string maKH = ((DataRowView)gCbb_KhoaHoc.SelectedItem)["MaKH"].ToString();
             string tengon = rutGonTen(txt_TenLopMoi.Text.ToString());
             NhomHoc lop = new NhomHoc(maKH, txt_TenLopMoi.Text.ToString(), txt_HocPhi.Text.ToString());
-            lopHocDao.themLopHoc(lop, tengon);
+            //lopHocDao.themLopHoc(lop, tengon);
             this.Close();
         }
 

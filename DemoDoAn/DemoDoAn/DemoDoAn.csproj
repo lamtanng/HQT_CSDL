@@ -277,6 +277,8 @@
     <Compile Include="BangLuong.cs" />
     <Compile Include="DAO\BangLuongDao.cs" />
     <Compile Include="bieuDoChart.cs" />
+    <Compile Include="DAO\HocVaoDao.cs" />
+    <Compile Include="DAO\LopHocDao.cs" />
     <Compile Include="KiemTraLoi.cs" />
     <Compile Include="ChildForm\F_UpdateHV.cs">
       <SubType>Form</SubType>

@@ -14,6 +14,14 @@ namespace DemoDoAn
     {
         DBConnection dbConn = new DBConnection();
         //DBConnection db = null;
+        //tim số chỗ ngồi tối đa = số học viên tối đa:
+        public DataTable LaySoHocVienToiDa(String maPhong)
+        {
+            string sqlStr = string.Format("Select dbo.uf_TimSoHocVienToiDa('{0}') as SoHocVienToiDa", maPhong);
+            return dbConn.LayDanhSach(sqlStr);
+        }
+
+        //
         public DataTable LayDanhSachPhong()
         {
             string sqlStr = string.Format("SELECT *FROM PHONGHOC");
@@ -44,5 +52,7 @@ namespace DemoDoAn
             string sqlStr = string.Format("UPDATE PHONGHOC SET TrangThai = N'{0}' Where PHONG = '{1}'", Convert.ToInt32(phong.TRANGTHAI), phong.PHONGHOC);
             dbConn.ThucThi(sqlStr);
         }
+
+        
     }
 }

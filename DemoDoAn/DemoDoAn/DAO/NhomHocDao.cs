@@ -21,18 +21,20 @@ namespace DemoDoAn
         }
 
         //xep lop
-        public void XepNhom(NhomHoc lop)
+        public void taoNhomMoi(NhomHoc nhom)
         {
-            //string sqlStr = string.Format("Update LOPHOC Set SoBuoiTrongTuan = '{0}', DiemTBQuaMon = '{1}', GiangVien = '{2}', SoHocVien = '{3}', NgayBatDau = '{4}', NgayKetThuc = '{5}', XacNhan = 0 Where MaLop = '{6}'",lop.SOBUOITRONGTUAN, 8.0, lop.GIANGVIEN, lop.SOHOCVIEN, lop.NGAYBATDAU, lop.NGAYKETTHUC, lop.MALOP  );
-            string sqlStr = "";
+            string sqlStr = string.Format("INSERT INTO NHOMHOC(MaNhomHoc, MaLopHoc, MaGiaoVien, MaPhongHoc, Ca, SoLuongHocVienToiThieu, SoLuongHocVienToiDa, NgayBatDau, NgayKetThuc, TrangThaiMoDangKy) VALUES " +
+                                            "('{0}', '{1}', '{2}', '{3}', {4}, {5}, {6}, '{7}', '{8}', 1)",
+                                            nhom.MaNhom, nhom.MaLop, nhom.MaGiaoVien, nhom.MaPhongHoc, nhom.Ca, nhom.SoLuongHocVienToiThieu, nhom.SoLuongHocVienToiDa, nhom.NgayBatDau, nhom.NgayKetThuc);
+ 
             dbConn.ThucThi(sqlStr);
         }
 
-        //tao lop moi
-        public void themLopHoc(NhomHoc lop, string tengon)
+        //lay 1 nhom bang MaNhom:
+        public DataTable layNhomMoiNhatTrongLopHoc(string maLop)
         {
-            string sqlStr = string.Format("");
-            dbConn.ThucThi(sqlStr);
+            string sqlStr = string.Format("Select TOP 1 * From NHOMHOC WHERE MaLopHoc = '{0}' ORDER BY MaNhomHoc DESC", maLop);
+            return dbConn.LayDanhSach(sqlStr);
         }
 
         //cap nhat thong tin lop hoc
@@ -47,7 +49,7 @@ namespace DemoDoAn
         //lay gio hoc
         public DataTable gioHoc()
         {
-            string sqlStr = string.Format("Select * From GIOHOC");
+            string sqlStr = string.Format("select * from CAHOC");
             return dbConn.LayDanhSach(sqlStr);
         }
 
@@ -68,7 +70,7 @@ namespace DemoDoAn
         //lay giang vien
         public DataTable giangVien()
         {
-            string sqlStr = string.Format("Select GvID, HOTEN From GIANGVIEN");
+            string sqlStr = string.Format("Select * From GIAOVIEN");
             return dbConn.LayDanhSach(sqlStr);
         }
 
@@ -80,9 +82,9 @@ namespace DemoDoAn
         }
 
         //xoa
-        public void Xoa(string maLop)
+        public void Xoa(string maNhom)
         {
-            string sqlStr = string.Format("delete from LOPHOC where MaLop = '{0}'", maLop);
+            string sqlStr = string.Format("delete NHOMHOC where MaNhomHoc='{0}'", maNhom);
             dbConn.ThucThi(sqlStr);
         }
 

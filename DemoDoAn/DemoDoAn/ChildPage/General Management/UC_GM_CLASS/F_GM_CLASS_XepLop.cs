@@ -1,12 +1,16 @@
 ﻿using DemoDoAn.Custom_Control;
+using DemoDoAn.DAO;
 using DemoDoAn.MODELS;
 //using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -16,17 +20,20 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 {
     public partial class F_GM_CLASS_XepLop : Form
     {
-        NhomHocDao LopHocDao = new NhomHocDao();
+        public const int SOBUOIHOCTRONGTUAN = 3;
+        int soBuoiHoc = SOBUOIHOCTRONGTUAN;
+
+        PhongHocDao phongHocDao = new PhongHocDao();
+        NhomHocDao nhomHocDao = new NhomHocDao();
         LichHocDao LichHocDao = new LichHocDao();
+        HocVaoDao hocVaoDao = new HocVaoDao();
+        LopHocDao lopHocDao = new LopHocDao();
+
         DataTable dtKhoaHoc = new DataTable();
         DataTable dtLichHoc = new DataTable();
-        int soBuoiHoc = 0;
-
+        string[] arrCacBuoiHoc = new string[3];
         string malop, tenlop, maKH, tenKH;
-        enum TrangThaiLopHoc
-        {
 
-        }
 
         public F_GM_CLASS_XepLop()
         {
@@ -40,7 +47,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
             this.tenlop = tenlop;
             this.maKH = maKH;
             this.tenKH = tenKH;
-            hienThongTin();
+            //hienThongTin();
         }
 
         #region XULIDOHOa
@@ -104,61 +111,54 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 
         private void F_GM_CLASS_XepLop_Load(object sender, EventArgs e)
         {
-            dtKhoaHoc = LopHocDao.LayDanhSachNhom();
-            //load combobox
+            dtKhoaHoc = nhomHocDao.LayDanhSachNhom();
+            loadCbb_LopHoc();
             loadCbb_GioHoc();
-            loadLichHoc();
-            chonSoBuoiHoc();
-        }
-
-        //tai thong tin
-        private void hienThongTin()
-        {
-            lbl_TenKH.Text = tenKH.ToString();
-            lbl_TenLH.Text = tenlop.ToString();
         }
 
         //cap nhat
         private void btn_HoanThanh_Click(object sender, EventArgs e)
         {
+            
             try
             {   //kiểm tra xem đã đủ thông tin hay chưa
-                if (chonDuSoNgayHoc() && chonSoHocVien())
+                if (chonDuSoNgayHoc() && !String.IsNullOrEmpty(txt_SLHVToiThieu.Text))
                 {
-                    //string maLop = ((DataRowView)cbb_ChonLopHoc.SelectedItem)["MaLop"].ToString();
-                    //string tenLop = ((DataRowView)cbb_ChonLopHoc.SelectedItem)["TenMon"].ToString();
+                    string maLop = ((DataRowView)cbb_LopHoc.SelectedItem)["MaLopHoc"].ToString();
                     string trangThai = btn_TrangThai.Text.ToString();
-                    //string khoaHoc = ((DataRowView)cbb_ChonKhoaHoc.SelectedItem)["MaKH"].ToString();
-                    int soHV = Convert.ToInt32(txt_SLHocVien.Text.ToString());
+                    int soHVToiThieu = Convert.ToInt32(txt_SLHVToiThieu.Text.ToString());
+                    int soHVToiDa = Convert.ToInt32(txt_SLHVToiDa.Text.ToString());
                     DateTime ngayBD = datePTime_NgayBatDau.Value;
-                    DateTime ngayKT = datePTime_NgayKetThuc.Value;
-                    string GvID = ((DataRowView)cbb_GiangVien.SelectedItem)["GvID"].ToString();
-                    string soBuoi = (cbb_ChonSoBuoiHoc.SelectedItem).ToString();
+                    DateTime ngayKT = Convert.ToDateTime(lbl_NgayKetThuc.Text.Trim(), CultureInfo.CreateSpecificCulture("en-US"));
+                    string maGV = ((DataRowView)cbb_GiaoVien.SelectedItem)["MaGiaoVien"].ToString();
+                    string soBuoi = "0";
                     string ca = ((DataRowView)cbb_GioHoc.SelectedItem)["Ca"].ToString();
-                    string phong = ((DataRowView)cbb_PhongHoc.SelectedItem)["Phong"].ToString();
+                    string maPhong = ((DataRowView)cbb_PhongHoc.SelectedItem)["MaPhongHoc"].ToString();
 
-                    //xep lop
-                    NhomHoc lop = new NhomHoc(malop, tenlop, trangThai, maKH, soHV, ngayBD, ngayKT, "", GvID, soBuoi, tenlop);
-                    LopHocDao.XepNhom(lop);
+                    //them l
+                    NhomHoc nhom = new NhomHoc("", maLop, maGV, maPhong, Convert.ToInt32(ca), soHVToiThieu, soHVToiDa ,ngayBD, ngayKT, true);
+                    nhomHocDao.taoNhomMoi(nhom);
 
+                    DataTable dtNhomHocMoiThem = nhomHocDao.layNhomMoiNhatTrongLopHoc(nhom.MaLop);
+                    if(dtNhomHocMoiThem.Rows.Count == 1)
+                    {
+                        HocVao hocVao = new HocVao();
+                        hocVao.MaNhomHoc = dtNhomHocMoiThem.Rows[0]["MaNhomHoc"].ToString().Trim();
+                        for(int i = 0; i< 3; i++)
+                        {
+                            hocVao.ThuTrongTuan = arrCacBuoiHoc[i];
+                            hocVaoDao.themBuoiHoc(hocVao);
+                        }
 
-                    //DataTable checkLich = new DataTable();
-                    //checkLich = NhomHocDao.checkLichHoc(maLop);
+                    }
+
 
                     //xoa lich hoc cu
-                    LichHocDao.xoaLichHoc(malop);
+                    //LichHocDao.xoaLichHoc(malop);
                     //update thong tin lop hoc
-                    LopHocDao.capNhatThongTinLop(lop);
+                    //nhomHocDao.capNhatThongTinLop(lop);
                     //tao lich hoc moi
-                    foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
-                    {
-                        if (cbox.Checked == true)
-                        {
-                            //chuẩn hóa 'Thứ 2' -> '2'
-                            string thu = chuanHoa(cbox.Text.ToString());
-                            LichHocDao.xepLichHoc(malop, thu, ca, phong);
-                        }
-                    }
+                    
                     this.Close();
 
                 }
@@ -177,54 +177,24 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         //load combobox
         private void loadCombobox(ComboBox cbb, DataTable dt, string displayMember, string valueMember)
         {
-            cbb.DataSource = dt;
+            cbb.ValueMember = valueMember;
             cbb.DisplayMember = displayMember;
-            cbb.ValueMember = displayMember;
+            cbb.DataSource = dt;
         }
 
-        //Xu li chon so buoi hoc
-        private void cbb_ChonSoBuoiHoc_SelectedIndexChanged(object sender, EventArgs e)
+        //load cbb lop hoc: Tạm thời bỏ vào class NhomHocDAO
+        private void loadCbb_LopHoc()
         {
-            ComboBox cbb = sender as ComboBox;
-            pnl_QLNgayHoc.Enabled = true;
-            if (cbb.SelectedIndex >= 0)
-            {
-                //lưu lại số buổi học đã chọn
-                soBuoiHoc = Convert.ToInt32((cbb.SelectedItem).ToString());
-                //tắt checked tất cả các Thứ để chọn lại từ đầu khi mỗi lần số buổi được thiết lập lại 
-                foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
-                {
-                    cbox.Checked = false;
-                }
-                //load Phòng/GV học trống 
-                loadCbb_PhongHoc();
-                loadCbb_GiaoVien();
-                //
-                pnl_QLNgayHoc.Visible = true;
-            }
-            else
-            {
-                pnl_QLNgayHoc.Enabled = false;
-            }
-        }
-
-        //xử lí giờ học
-        private void cbb_GioHoc_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ComboBox cbb = sender as ComboBox;
-            if (cbb.SelectedIndex != null)
-            {
-                //mỗi khi giờ học được chọn thì hiển thị lại số 'phòng học' mà Thứ + Ca đó trống
-                loadCbb_PhongHoc();
-                loadCbb_GiaoVien();
-            }
+            DataTable dtLopHoc = new DataTable();
+            dtLopHoc = lopHocDao.LayDanhSachLop();
+            loadCombobox(cbb_LopHoc, dtLopHoc, "TenLopHoc", "MaLopHoc");
         }
 
         //load cbb gio hoc
         private void loadCbb_GioHoc()
         {
             DataTable dtGioHoc = new DataTable();
-            dtGioHoc = LopHocDao.gioHoc();
+            dtGioHoc = nhomHocDao.gioHoc();
             dtGioHoc.Columns.Add("GioHoc");
 
             for (int r = 0; r < dtGioHoc.Rows.Count; r++)
@@ -236,64 +206,62 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         }
 
         //load cbb phong hoc
-        private void loadCbb_PhongHoc()
+        private void loadCbb_PhongHoc(int ca)
         {
             DataTable dtPhongHoc = new DataTable();
-            dtPhongHoc = LopHocDao.phongHoc();
-            checkLichTrong(dtPhongHoc, "Phong");
-            loadCombobox(cbb_PhongHoc, dtPhongHoc, "Phong", "Phong");
+            dtPhongHoc = LichHocDao.taiPhongTrongLich(arrCacBuoiHoc[0], arrCacBuoiHoc[1], arrCacBuoiHoc[2], ca);
+            loadCombobox(cbb_PhongHoc, dtPhongHoc, "MaPhongHoc", "MaPhongHoc");
 
         }
 
         //check lịch trống
-        private void checkLichTrong(DataTable dtCheck, string thuocTinhCheck)
-        {
-            //kiểm tra những "Thứ" nào được chọn
-            foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
-            {
-                if (cbox.Checked == true)
-                {
-                    //chuẩn hóa 'Thứ 2' -> '2'
-                    string thu = chuanHoa(cbox.Text.ToString());
-                    //tìm tra Table lịch học all môn
-                    for (int r = 0; r < dtLichHoc.Rows.Count; r++)
-                    {   //tìm những "Thứ" và "Ca" đã được chọn đã có lịch dạy của môn khác hay chưa
-                        if (dtLichHoc.Rows[r]["Thu"].ToString().Trim() == thu && dtLichHoc.Rows[r]["Ca"].ToString().Trim() == ((DataRowView)cbb_GioHoc.SelectedItem)["Ca"].ToString().Trim())
-                        {
-                            //nếu có thì phòng/GV đó đã có lịch
-                            for (int i = dtCheck.Rows.Count- 1; i >=0 ; i--)
-                            {
-                                if (dtCheck.Rows[i][thuocTinhCheck].ToString().Trim() == dtLichHoc.Rows[r][thuocTinhCheck].ToString().Trim())
-                                {
-                                    MessageBox.Show(dtCheck.Rows.Count.ToString());
-                                    //xóa phòng/GV đó khỏi DataTable
-                                    dtCheck.Rows[i].Delete();
-                                    dtCheck.AcceptChanges();
+        //private void checkLichTrong(DataTable dtCheck, string thuocTinhCheck)
+        //{
+        //    //kiểm tra những "Thứ" nào được chọn
+        //    foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
+        //    {
+        //        if (cbox.Checked == true)
+        //        {
+        //            //chuẩn hóa 'Thứ 2' -> '2'
+        //            string thu = chuanHoa(cbox.Text.ToString());
+        //            //tìm tra Table lịch học all môn
+        //            for (int r = 0; r < dtLichHoc.Rows.Count; r++)
+        //            {   //tìm những "Thứ" và "Ca" đã được chọn đã có lịch dạy của môn khác hay chưa
+        //                if (dtLichHoc.Rows[r]["Thu"].ToString().Trim() == thu && dtLichHoc.Rows[r]["Ca"].ToString().Trim() == ((DataRowView)cbb_GioHoc.SelectedItem)["Ca"].ToString().Trim())
+        //                {
+        //                    //nếu có thì phòng/GV đó đã có lịch
+        //                    for (int i = dtCheck.Rows.Count- 1; i >=0 ; i--)
+        //                    {
+        //                        if (dtCheck.Rows[i][thuocTinhCheck].ToString().Trim() == dtLichHoc.Rows[r][thuocTinhCheck].ToString().Trim())
+        //                        {
+        //                            MessageBox.Show(dtCheck.Rows.Count.ToString());
+        //                            //xóa phòng/GV đó khỏi DataTable
+        //                            dtCheck.Rows[i].Delete();
+        //                            dtCheck.AcceptChanges();
 
-                                    MessageBox.Show(dtCheck.Rows.Count.ToString());
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        //                            MessageBox.Show(dtCheck.Rows.Count.ToString());
+        //                            break;
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
 
-        }
+        //}
 
         //load cbb giao vien
-        private void loadCbb_GiaoVien()
+        private void loadCbb_GiaoVien(int ca)
         {
             DataTable dtGV = new DataTable();
-            dtGV = LopHocDao.giangVien();
-            checkLichTrong(dtGV, "GvID");
-            loadCombobox(cbb_GiangVien, dtGV, "HOTEN", "GvID");
+            dtGV = LichHocDao.taiGiaoVienTrongLich(arrCacBuoiHoc[0], arrCacBuoiHoc[1], arrCacBuoiHoc[2], ca);
+           loadCombobox(cbb_GiaoVien, dtGV, "HoTen", "MaGiaoVien");
         }
 
         //load lịch học all môn
         private void loadLichHoc()
         {
-            dtLichHoc = LopHocDao.lichHocCacMon();
+            dtLichHoc = nhomHocDao.lichHocCacMon();
         }
 
         //chuẩn hóa 'Thứ 2' về '2':
@@ -319,9 +287,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
             {
                 ++soBuoiHoc;
             }
-            //Nếu có lỗi số buổi học > khi chọn trên cbb thì đưa về đúng số buổi đã chọn
-            if (soBuoiHoc > Convert.ToInt32((cbb_ChonSoBuoiHoc.SelectedItem).ToString()))
-                soBuoiHoc = Convert.ToInt32((cbb_ChonSoBuoiHoc.SelectedItem).ToString());
+      
             //nếu đã chọn đủ số lượng buổi học thì không được chọn thêm buổi nào nữa
             if (soBuoiHoc == 0)
             {
@@ -329,7 +295,9 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
                 {
                     if (cbox.Checked == false)
                         cbox.Enabled = false;
+
                 }
+                btn_Loc.Enabled = true; //bật nút kiểm tra
             }
             else//ngược lại nếu chưa đủ thì tất cả checkbox đều được chọn
             {
@@ -337,6 +305,9 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
                 {
                     cbox.Enabled = true;
                 }
+                btn_Loc.Enabled = false;//tắt nút ktra
+                cbb_GiaoVien.DataSource = null;
+                cbb_PhongHoc.DataSource= null;
             }
         }
         private void cbox_Thu2_CheckedChanged(object sender, EventArgs e)
@@ -345,8 +316,8 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
             try
             {
                 kiemTraNgayHoc(cb);
-                loadCbb_PhongHoc();
-                loadCbb_GiaoVien();
+                 
+                
             }
             catch
             {
@@ -360,77 +331,141 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         {
             CheckBox cb = sender as CheckBox;
             kiemTraNgayHoc(cb);
-            loadCbb_PhongHoc();
-            loadCbb_GiaoVien();
+             
+            
         }
         private void cbox_Thu4_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox cb = sender as CheckBox;
             kiemTraNgayHoc(cb);
-            loadCbb_PhongHoc();
-            loadCbb_GiaoVien();
+             
+            
         }
         private void cbox_Thu5_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox cb = sender as CheckBox;
             kiemTraNgayHoc(cb);
-            loadCbb_PhongHoc();
-            loadCbb_GiaoVien();
+             
+            
         }
         private void cbox_Thu6_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox cb = sender as CheckBox;
             kiemTraNgayHoc(cb);
-            loadCbb_PhongHoc();
-            loadCbb_GiaoVien();
+             
+            
         }
         private void cbox_Thu7_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox cb = sender as CheckBox;
             kiemTraNgayHoc(cb);
-            loadCbb_PhongHoc();
-            loadCbb_GiaoVien();
+             
+            
         }
+
+        private void txt_SoBuoiHoc_TextChanged(object sender, EventArgs e)
+        {
+            lbl_NgayKetThuc.Text = tinhNgayKetThuc();
+        }
+
+        private void datePTime_NgayBatDau_ValueChanged(object sender, EventArgs e)
+        {
+            lbl_NgayKetThuc.Text = tinhNgayKetThuc();
+        }
+
+        //Tính ngày kết thúc:
+        private string tinhNgayKetThuc()
+        {
+          
+            DataTable dtNgayKetThuc = LichHocDao.tinhNgayKetThuc(datePTime_NgayBatDau.Value, 
+                                                                ((DataRowView)cbb_LopHoc.SelectedItem)["MaLopHoc"].ToString());
+            DateTime ngayKetThuc = (DateTime)dtNgayKetThuc.Rows[0]["NgayKetThuc"];
+            return ngayKetThuc.ToShortDateString(); // MM/dd/yyyy
+        }
+
+        //Lọc Phòng học + Giáo viên
+        private void btn_Loc_Click(object sender, EventArgs e)
+        {
+            int i = 2;
+            int ca = Convert.ToInt32(((DataRowView)cbb_GioHoc.SelectedItem)["Ca"].ToString());
+            foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
+            {
+                if (cbox.Checked == true)
+                {
+                    //chuẩn hóa 'Thứ 2' -> '2'
+                    string thu = chuanHoa(cbox.Text.ToString());
+                    arrCacBuoiHoc[i--] = thu;
+                }
+            }
+
+            loadCbb_PhongHoc(ca);
+            loadCbb_GiaoVien(ca);
+        }
+
+        private void btn_Thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cbb_LopHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maLop = ((DataRowView)cbb_LopHoc.SelectedItem)["MaLopHoc"].ToString();
+            DataTable dt = lopHocDao.LaySoBuoiHoc(maLop);
+            if (dt.Rows.Count == 1)
+            {
+                txt_SoBuoiHoc.Text = dt.Rows[0]["TongSoBuoiHoc"].ToString().Trim();
+            }
+        }
+
+        private void cbb_PhongHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbb_PhongHoc.DataSource != null)
+            {
+                try
+                {
+                    string maPhong = ((DataRowView)cbb_PhongHoc.SelectedItem)["MaPhongHoc"].ToString();
+                    DataTable dt = phongHocDao.LaySoHocVienToiDa(maPhong);
+                    if (dt.Rows.Count == 1)
+                    {
+                        txt_SLHVToiDa.Text = dt.Rows[0]["SoHocVienToiDa"].ToString().Trim();
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+            else
+            {
+                txt_SLHVToiDa.Text = string.Empty;
+            }
+            
+            
+        }
+
 
         #region checkLoi
         //ktra đã chọn sô buổi học chưa
         private void chonSoBuoiHoc()
         {
-            if (cbb_ChonSoBuoiHoc.SelectedIndex < 0)
-                pnl_QLNgayHoc.Enabled = false;
-            else pnl_QLNgayHoc.Enabled = true;
+            
         }
-        //ktra thanh trang thai
-        //private bool chonTrangThai()
-        //{
-        //    if (btn_TrangThai.Text.ToString() != @"Hoạt Động" && btn_TrangThai.Text.ToString() != @"Đã đầy")
-        //        return false;
-        //    return true;
-        //}
-        //ktra soHocVien
-        private bool chonSoHocVien()
+
+        private bool kiemTraRong(TextBox textbox)
         {
             int soLuongHV;
-            bool isInt = int.TryParse(txt_SLHocVien.Text.ToString(), out soLuongHV);
+            bool isInt = int.TryParse(textbox.Text.ToString(), out soLuongHV);
             //ktra txtboxHocVien có rỗng hay có phải số nguyên không
-            if (String.IsNullOrEmpty(txt_SLHocVien.Text.ToString()) || !isInt)
+            if (String.IsNullOrEmpty(textbox.Text.ToString()) || !isInt)
             {
                 return false;
             }
-            return true;
+            return true;//thỏa
         }
         //ktra tích đủ số thứ học 
         private bool chonDuSoNgayHoc()
         {
-            int soNgayHoc = 0;
-            foreach (CheckBox cb in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
-            {
-                if (cb.Checked) ++soNgayHoc;
-            }
-            if (soNgayHoc == Convert.ToInt32(cbb_ChonSoBuoiHoc.SelectedItem.ToString()))
-                return true;
-            return false;
-
+            return btn_Loc.Enabled == true;
         }
         #endregion
 

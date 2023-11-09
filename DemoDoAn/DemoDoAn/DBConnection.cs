@@ -28,7 +28,7 @@ namespace DemoDoAn
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
                 adapter.Fill(dtds);
             }
-            catch (Exception exc)
+            catch (SqlException exc)
             {
                 MessageBox.Show(exc.Message);
             }
@@ -52,7 +52,7 @@ namespace DemoDoAn
                 { }
                     //MessageBox.Show("thanh cong");
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }

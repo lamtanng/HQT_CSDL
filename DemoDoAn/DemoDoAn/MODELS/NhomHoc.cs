@@ -50,8 +50,11 @@ namespace DemoDoAn.MODELS
         //1.
         public NhomHoc() { }
 
-        public NhomHoc(string maNhom, string maLop, string maGiaoVien, string maPhongHoc, int ca, int soLuongHocVienToiThieu, int soLuongHocVienToiDa, DateTime ngayBatDau, DateTime ngayKetThuc, bool trangThaiMoDangKy) : this(maNhom, maLop, maGiaoVien)
+        public NhomHoc(string maNhom, string maLop, string maGiaoVien, string maPhongHoc, int ca, int soLuongHocVienToiThieu, int soLuongHocVienToiDa, DateTime ngayBatDau, DateTime ngayKetThuc, bool trangThaiMoDangKy)
         {
+            this.MaNhom = maNhom;
+            this.MaLop = maLop;
+            this.MaGiaoVien = maGiaoVien;
             this.MaPhongHoc = maPhongHoc;
             this.Ca = ca;
             this.SoLuongHocVienToiThieu = soLuongHocVienToiThieu;

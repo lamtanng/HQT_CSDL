@@ -23,7 +23,7 @@ namespace DemoDoAn.ChildPage
             MaNhomHoc,
             TenLopHoc,
             TongHocVien,
-            GiaoVien,
+            TenGiaoVien,
             PhongHoc,
             Ca,
             NgayBatDau,
@@ -113,11 +113,10 @@ namespace DemoDoAn.ChildPage
         //them lop hoc
         private void btnTaoLopMoi_Click(object sender, EventArgs e)
         {
-            F_GM_CLASS_TaoLopMoi taoLop = new F_GM_CLASS_TaoLopMoi();
-            taoLop.ShowDialog();
+            F_GM_CLASS_XepLop xepLop = new F_GM_CLASS_XepLop();
+            xepLop.ShowDialog();
             resetDataGrView();
             taiDSL();
-
         }
 
         //add columns 

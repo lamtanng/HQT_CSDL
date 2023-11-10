@@ -96,7 +96,7 @@ namespace DemoDoAn.HOCVIEN
             {
                 DataGridViewRow row = dataGrView_DSLop.Rows[i];
                 string maHV = row.Cells["MaHocVien"].Value.ToString().Trim();
-                bool hienDien = Convert.ToBoolean(row.Cells["DiemDanh"].Value);
+                bool hienDien = Convert.ToBoolean(row.Cells["DiemDanh"].EditedFormattedValue);
                 bddDao.diemDanhHocVien(maNhom, maHV, hienDien);
 
             }

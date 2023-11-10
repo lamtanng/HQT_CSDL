@@ -60,7 +60,7 @@ namespace DemoDoAn.FORM
 
         private void btn_QLHocSinh_Click(object sender, EventArgs e)
         {
-            UC_HAMTHUGOPY hopthu = new UC_HAMTHUGOPY();
+            UC_HAMTHUGOPY hopthu = new UC_HAMTHUGOPY(chucVu);
             selectButton(hopthu);
         }
 

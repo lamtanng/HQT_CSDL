@@ -78,17 +78,17 @@ namespace DemoDoAn.HOCVIEN
         {
             InitializeComponent();
         }
-        public UC_HAMTHUGOPY_CHILD(string mathu, string ten, string tieude, string noidung, DateTime ngay, DateTime gio, bool danhdau)
+        public UC_HAMTHUGOPY_CHILD(string mathu, string ten, string tieude, string noidung, DateTime ngay, DateTime gio)
         {
             InitializeComponent();
             this.ten = ten;
             this.tieude = tieude;
             this.noidung = noidung;
-            this.danhdau = danhdau;
+            //this.danhdau = danhdau;
             this.ngay = ngay;
             this.gio = gio;
             this.mathu = mathu;
-            checkDanhDau();
+            //checkDanhDau();
         }
 
         public string MATHU { get { return mathu; } set { ten = mathu; } }
@@ -97,7 +97,7 @@ namespace DemoDoAn.HOCVIEN
         public string NOIDUNG { get { return noidung; } set { noidung = value; } }
         public DateTime NGAY { get { return ngay; } set { ngay = value; } }
         public DateTime GIO { get { return gio; } set { gio = value; } }
-        public bool DANHDAU { get { return danhdau; } set { danhdau = value; } }
+        //public bool DANHDAU { get { return danhdau; } set { danhdau = value; } }
 
         private void UC_HAMTHUGOPY_CHILD_Load(object sender, EventArgs e)
         {

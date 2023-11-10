@@ -84,5 +84,10 @@ namespace DemoDoAn
             string sqlStr = string.Format("INSERT INTO BANGLUONG (ID, HOTEN, CHUCVU, LuongDay, PhuCap, TienThuong, TienBaoHiem, THANG) VALUES ('{0}',N'{1}', N'Giáo viên' ,0, 0, 0, 0," + a + ");", gv.GVID, gv.HOTEN);
             dbConn.ThucThi(sqlStr);
         }
+        public DataTable TaiThongTinGiaoVien(string username)
+        {
+            string sqlStr = string.Format("SELECT * FROM GIAOVIEN WHERE TenDangNhap = '{0}'", username);
+            return dbConn.LayDanhSach(sqlStr);
+        }
     }
 }

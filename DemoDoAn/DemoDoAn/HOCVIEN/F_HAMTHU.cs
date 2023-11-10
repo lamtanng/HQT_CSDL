@@ -1,4 +1,7 @@
-﻿using DemoDoAn.HOCVIEN.Class;
+﻿using DemoDoAn.DAO;
+using DemoDoAn.HOCVIEN.Class;
+using DemoDoAn.MODELS;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,15 +20,22 @@ namespace DemoDoAn.HOCVIEN
         LoginDAO logDao = new LoginDAO();
         HocSinhDao hsDao = new HocSinhDao();
         HamThuDAO thuDao = new HamThuDAO();
+        GiaoVienDao giaoVienDao= new GiaoVienDao();
+        LopHocDao lopHocDao= new LopHocDao();
+        NhomHocDao nhomHocDao = new NhomHocDao();
 
-        DataTable dtFULL_INFO = new DataTable();
+        DataTable dt_GiaoVien = new DataTable();
+        DataTable dt_NhomHoc = new DataTable();
+
+        //DataTable dtFULL_INFO = new DataTable();
         string IDGui ;
         string IDNhan;
 
         public F_HAMTHU()
         {
             InitializeComponent();
-            dtFULL_INFO = logDao.loadFull();
+            //dtFULL_INFO = logDao.loadFull();
+            dt_GiaoVien = giaoVienDao.TaiThongTinGiaoVien(Login.userName.ToString().Trim());
             layIDNguoiGui();
         }
 
@@ -52,7 +62,7 @@ namespace DemoDoAn.HOCVIEN
         }
         private void txt_IDNhan_Click(object sender, EventArgs e)
         {
-            an_SearchText(txt_IDNhan, ref isEmpty_Search);
+            //an_SearchText(txt_IDNhan, ref isEmpty_Search);
         }
         private void lbl_ContentTxt_Click(object sender, EventArgs e)
         {
@@ -71,13 +81,9 @@ namespace DemoDoAn.HOCVIEN
         //lay accID nguoi gui
         private void layIDNguoiGui()
         {
-           for(int i = 0; i < dtFULL_INFO.Rows.Count; i++)
+           if(dt_GiaoVien.Rows.Count > 0)
             {
-                DataRow row  = dtFULL_INFO.Rows[i];
-                if (row["USERNAME"].ToString().Trim() == Login.userName.ToString().Trim()) 
-                {
-                    IDGui = row["ID"].ToString().Trim();
-                }
+                    IDGui = dt_GiaoVien.Rows[0]["MaGiaoVien"].ToString().Trim();
             }
             
         }
@@ -87,67 +93,94 @@ namespace DemoDoAn.HOCVIEN
             //string AccID = hsDao.Lay_MSSV(Login.userName);
             //dt_HV = hsDao.LoadThongTin(accID);
             //lbl_HoTen.Text = dtFULL_INFO.Rows[0]["HOTEN"].ToString();
-            for (int i = 0; i < dtFULL_INFO.Rows.Count; i++)
+            if (dt_GiaoVien.Rows.Count > 0)
             {
-                DataRow row = dtFULL_INFO.Rows[i];
-                if (row["USERNAME"].ToString().Trim() == Login.userName.ToString().Trim())
-                {
-                    lbl_HoTen.Text = row["HOTEN"].ToString().Trim();
-                }
+                    lbl_HoTen.Text = dt_GiaoVien.Rows[0]["HoTen"].ToString().Trim();
             }
+            loadCbbNhomHoc();
         }
 
         //gui thu
         private void pBox_Gui_Click(object sender, EventArgs e)
         {
             //string accID = hsDao.LayAccID(Login.userName);
-            if(checkNguoiNhan(IDNhan))
+            //if(checkNguoiNhan(IDNhan))
             {
-                HamThu thu = new HamThu(IDGui, txt_TieuDe.Text.ToString(), txt_NoiDung.Text.ToString(), DateTime.Now, DateTime.Now, false, IDNhan, lbl_ChucVu.Text.ToString().Trim());
-                thuDao.Them(thu);
+                ThongBao thongBao = new ThongBao(null, IDGui, txt_TieuDe.Text.ToString(), txt_NoiDung.Text.ToString());
+                thuDao.GuiThongBao(thongBao);
+                DataTable dt_thongBao = thuDao.LayMaThongBaoMoiNhat();
+                if (dt_thongBao.Rows.Count > 0)
+                {
+                    thongBao.MaThongBao = dt_thongBao.Rows[0]["MaThongBao"].ToString().Trim();
+                }
+                TruyenTin truyenTin = new TruyenTin(thongBao.MaThongBao, ((DataRowView)gCbb_NhomHoc.SelectedItem)["MaNhomHoc"].ToString());
+                thuDao.TruyenTin(truyenTin);
             }
-            else
-            {
-                MessageBox.Show("Không thể xác nhận người nhận!");
-            }
+            //else
+            //{
+            //    MessageBox.Show("Không thể xác nhận người nhận!");
+            //}
             
+        }
+
+        private void loadCbbNhomHoc()
+        {
+            dt_NhomHoc.Rows.Clear();
+            dt_NhomHoc = nhomHocDao.LayDanhSachNhom();
+            //duyet lui chứ mỗi lần xóa bị lỗi
+            int rows = dt_NhomHoc.Rows.Count;
+            for (int r = rows - 1; r >= 0; r--)
+            {
+                DataRow row = dt_NhomHoc.Rows[r];
+                if (Convert.ToString(row["MaGiaoVien"]) != IDGui)
+                    dt_NhomHoc.Rows.Remove(row);
+            }
+            loadCombobox(gCbb_NhomHoc, dt_NhomHoc, "MaNhomHoc", "MaNhomHoc");
+        }
+
+        //load combobox
+        private void loadCombobox(Guna2ComboBox cbb, DataTable dt, string displayMember, string valueMember)
+        {
+            cbb.DataSource = dt;
+            cbb.DisplayMember = displayMember;
+            cbb.ValueMember = valueMember;
         }
 
         //load thong tin ng nhan thu
         private void txt_IDNhan_TextChanged(object sender, EventArgs e)
         {
-            IDNhan = txt_IDNhan.Text.ToString();
-            for (int i = 0; i < dtFULL_INFO.Rows.Count; i++)
-            {
-                DataRow row = dtFULL_INFO.Rows[i];
-                if (row["ID"].ToString().Trim() == IDNhan)
-                {
-                    lbl_HoTenNhan.Text = "(" + row["HOTEN"].ToString() + ")";
-                    lbl_ChucVu.Text = row["ChucVu"].ToString().Trim();
-                    return;
-                }
-                else
-                {
-                    lbl_HoTenNhan.Text = "Recipient";
-                    lbl_ChucVu.Text = "Duty";
-                }
-            }
+            //IDNhan = txt_IDNhan.Text.ToString();
+            //for (int i = 0; i < dtFULL_INFO.Rows.Count; i++)
+            //{
+            //    DataRow row = dtFULL_INFO.Rows[i];
+            //    if (row["ID"].ToString().Trim() == IDNhan)
+            //    {
+            //        lbl_HoTenNhan.Text = "(" + row["HOTEN"].ToString() + ")";
+            //        lbl_ChucVu.Text = row["ChucVu"].ToString().Trim();
+            //        return;
+            //    }
+            //    else
+            //    {
+            //        lbl_HoTenNhan.Text = "Recipient";
+            //        lbl_ChucVu.Text = "Duty";
+            //    }
+            //}
         }
 
         //check 
         private bool checkNguoiNhan(string ID)
         {
-            for(int i = 0; i < dtFULL_INFO.Rows.Count; i++)
-            {
-                DataRow row  = dtFULL_INFO.Rows[i];
-                if (row["ID"].ToString().Trim() == ID)
-                {
-                    return true;
-                }    
-            }
+            //for(int i = 0; i < dtFULL_INFO.Rows.Count; i++)
+            //{
+            //    DataRow row  = dtFULL_INFO.Rows[i];
+            //    if (row["ID"].ToString().Trim() == ID)
+            //    {
+            //        return true;
+            //    }    
+            //}
             return false;
         }
 
-
+        
     }
 }

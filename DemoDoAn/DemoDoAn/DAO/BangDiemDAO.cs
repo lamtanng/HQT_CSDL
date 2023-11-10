@@ -17,6 +17,11 @@ namespace DemoDoAn.ChildPage.HocTap
             string sqlStr = string.Format("SELECT BANGDIEM.MaLop, HOCVIEN.HVID, HOCVIEN.HOTEN, DiemGiuaKy, DiemCuoiKy, DiemTB, XepHang\r\nFROM BANGDIEM inner join HOCVIEN on BANGDIEM.HVID = HOCVIEN.HVID\r\nWHERE MaLop = '{0}'", maLop);
             return dbConn.LayDanhSach(sqlStr);
         }
+        public DataTable lauBangDiem(string maNhom)
+        {
+            string sqlStr = string.Format("EXEC dbo.proc_LapBangDiem '{0}'", maNhom);
+            return dbConn.LayDanhSach(sqlStr);
+        }
 
         //lay thong tin lop
         public DataTable layThongTinLop(string maLop)
@@ -30,11 +35,11 @@ namespace DemoDoAn.ChildPage.HocTap
         }
 
         //cap nhat diem
-        public void capNhatDiem(string maLop, string hvID, double diemGK, double diemCK)
+        public void capNhatDiem(string maNhom, string maHocVien, double diemLyThuyet, double diemThucHanh)
         {
-            diemCK = String.IsNullOrEmpty(diemCK.ToString()) ? 0.0 : diemCK;
-            diemGK = String.IsNullOrEmpty(diemGK.ToString()) ? 0.0 : diemGK;
-            string sqlStr = string.Format("UpDate DANHSACHLOP Set DiemGiuaKy = {0}, DiemCuoiKy = {1} WHERE MaLop = '{2}' and HVID = '{3}'", diemGK, diemCK, maLop, hvID);
+            diemThucHanh = String.IsNullOrEmpty(diemThucHanh.ToString()) ? 0.0 : diemThucHanh;
+            diemLyThuyet = String.IsNullOrEmpty(diemLyThuyet.ToString()) ? 0.0 : diemLyThuyet;
+            string sqlStr = string.Format("UpDate DANHSACHNHOM Set DiemLyThuyet = {0}, DiemThucHanh = {1} WHERE MaNhomHoc = '{2}' and MaHocVien = '{3}'", diemLyThuyet, diemThucHanh, maNhom, maHocVien);
             dbConn.ThucThi(sqlStr);
         }
     }

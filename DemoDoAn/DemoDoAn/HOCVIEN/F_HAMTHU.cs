@@ -115,6 +115,7 @@ namespace DemoDoAn.HOCVIEN
                 }
                 TruyenTin truyenTin = new TruyenTin(thongBao.MaThongBao, ((DataRowView)gCbb_NhomHoc.SelectedItem)["MaNhomHoc"].ToString());
                 thuDao.TruyenTin(truyenTin);
+                this.Close();
             }
             //else
             //{

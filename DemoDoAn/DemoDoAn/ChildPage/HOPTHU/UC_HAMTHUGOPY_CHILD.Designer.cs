@@ -56,16 +56,18 @@
             this.fLPnl_FORM.Controls.Add(this.pnl_PhanCach);
             this.fLPnl_FORM.Controls.Add(this.pnl_NoiDung);
             this.fLPnl_FORM.Controls.Add(this.pnl_Xoa);
-            this.fLPnl_FORM.Location = new System.Drawing.Point(3, 3);
+            this.fLPnl_FORM.Location = new System.Drawing.Point(2, 2);
+            this.fLPnl_FORM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fLPnl_FORM.Name = "fLPnl_FORM";
-            this.fLPnl_FORM.Size = new System.Drawing.Size(676, 121);
+            this.fLPnl_FORM.Size = new System.Drawing.Size(507, 98);
             this.fLPnl_FORM.TabIndex = 0;
             // 
             // pnl_PhanCach
             // 
-            this.pnl_PhanCach.Location = new System.Drawing.Point(3, 3);
+            this.pnl_PhanCach.Location = new System.Drawing.Point(2, 2);
+            this.pnl_PhanCach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_PhanCach.Name = "pnl_PhanCach";
-            this.pnl_PhanCach.Size = new System.Drawing.Size(56, 118);
+            this.pnl_PhanCach.Size = new System.Drawing.Size(42, 96);
             this.pnl_PhanCach.TabIndex = 0;
             // 
             // pnl_NoiDung
@@ -79,18 +81,20 @@
             this.pnl_NoiDung.Controls.Add(this.lbl_HoTen);
             this.pnl_NoiDung.Controls.Add(this.pBox_AVT);
             this.pnl_NoiDung.Controls.Add(this.btn_NoiDung);
-            this.pnl_NoiDung.Location = new System.Drawing.Point(65, 3);
+            this.pnl_NoiDung.Location = new System.Drawing.Point(48, 2);
+            this.pnl_NoiDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_NoiDung.Name = "pnl_NoiDung";
-            this.pnl_NoiDung.Size = new System.Drawing.Size(584, 118);
+            this.pnl_NoiDung.Size = new System.Drawing.Size(438, 96);
             this.pnl_NoiDung.TabIndex = 0;
             // 
             // pBox_DanhDau
             // 
             this.pBox_DanhDau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.pBox_DanhDau.Image = global::DemoDoAn.Properties.Resources.star_White;
-            this.pBox_DanhDau.Location = new System.Drawing.Point(517, 75);
+            this.pBox_DanhDau.Location = new System.Drawing.Point(388, 61);
+            this.pBox_DanhDau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pBox_DanhDau.Name = "pBox_DanhDau";
-            this.pBox_DanhDau.Size = new System.Drawing.Size(25, 28);
+            this.pBox_DanhDau.Size = new System.Drawing.Size(19, 23);
             this.pBox_DanhDau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_DanhDau.TabIndex = 0;
             this.pBox_DanhDau.TabStop = false;
@@ -101,9 +105,10 @@
             this.lbl_NoiDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.lbl_NoiDung.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_NoiDung.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_NoiDung.Location = new System.Drawing.Point(72, 84);
+            this.lbl_NoiDung.Location = new System.Drawing.Point(54, 68);
+            this.lbl_NoiDung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_NoiDung.Name = "lbl_NoiDung";
-            this.lbl_NoiDung.Size = new System.Drawing.Size(439, 23);
+            this.lbl_NoiDung.Size = new System.Drawing.Size(329, 19);
             this.lbl_NoiDung.TabIndex = 177;
             this.lbl_NoiDung.Text = "Ahlfagon: B2B SaaS Product Inventory Tool (Dashboard UI Design).Hope you guys lik" +
     "e it and feel free to leave your feedback! Thanks";
@@ -114,9 +119,10 @@
             this.lbl_Gio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.lbl_Gio.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_Gio.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_Gio.Location = new System.Drawing.Point(490, 40);
+            this.lbl_Gio.Location = new System.Drawing.Point(368, 32);
+            this.lbl_Gio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Gio.Name = "lbl_Gio";
-            this.lbl_Gio.Size = new System.Drawing.Size(61, 20);
+            this.lbl_Gio.Size = new System.Drawing.Size(53, 16);
             this.lbl_Gio.TabIndex = 177;
             this.lbl_Gio.Text = "12:05:00";
             // 
@@ -126,9 +132,10 @@
             this.lbl_NgayThang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.lbl_NgayThang.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_NgayThang.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_NgayThang.Location = new System.Drawing.Point(470, 15);
+            this.lbl_NgayThang.Location = new System.Drawing.Point(352, 12);
+            this.lbl_NgayThang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_NgayThang.Name = "lbl_NgayThang";
-            this.lbl_NgayThang.Size = new System.Drawing.Size(81, 20);
+            this.lbl_NgayThang.Size = new System.Drawing.Size(69, 16);
             this.lbl_NgayThang.TabIndex = 177;
             this.lbl_NgayThang.Text = "01/01/2022";
             // 
@@ -138,9 +145,10 @@
             this.lbl_MaThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.lbl_MaThu.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold);
             this.lbl_MaThu.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_MaThu.Location = new System.Drawing.Point(11, 75);
+            this.lbl_MaThu.Location = new System.Drawing.Point(8, 61);
+            this.lbl_MaThu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_MaThu.Name = "lbl_MaThu";
-            this.lbl_MaThu.Size = new System.Drawing.Size(65, 22);
+            this.lbl_MaThu.Size = new System.Drawing.Size(54, 19);
             this.lbl_MaThu.TabIndex = 177;
             this.lbl_MaThu.Text = "Tiêu đề";
             this.lbl_MaThu.Visible = false;
@@ -151,9 +159,10 @@
             this.lbl_TieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.lbl_TieuDe.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold);
             this.lbl_TieuDe.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_TieuDe.Location = new System.Drawing.Point(72, 48);
+            this.lbl_TieuDe.Location = new System.Drawing.Point(54, 39);
+            this.lbl_TieuDe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_TieuDe.Name = "lbl_TieuDe";
-            this.lbl_TieuDe.Size = new System.Drawing.Size(59, 20);
+            this.lbl_TieuDe.Size = new System.Drawing.Size(46, 16);
             this.lbl_TieuDe.TabIndex = 177;
             this.lbl_TieuDe.Text = "Tiêu đề";
             // 
@@ -163,9 +172,10 @@
             this.lbl_HoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.lbl_HoTen.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold);
             this.lbl_HoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.lbl_HoTen.Location = new System.Drawing.Point(72, 22);
+            this.lbl_HoTen.Location = new System.Drawing.Point(54, 18);
+            this.lbl_HoTen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_HoTen.Name = "lbl_HoTen";
-            this.lbl_HoTen.Size = new System.Drawing.Size(119, 22);
+            this.lbl_HoTen.Size = new System.Drawing.Size(96, 19);
             this.lbl_HoTen.TabIndex = 176;
             this.lbl_HoTen.Text = "Nguyen Van A";
             // 
@@ -173,9 +183,10 @@
             // 
             this.pBox_AVT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.pBox_AVT.Image = global::DemoDoAn.Properties.Resources.user2;
-            this.pBox_AVT.Location = new System.Drawing.Point(12, 20);
+            this.pBox_AVT.Location = new System.Drawing.Point(9, 16);
+            this.pBox_AVT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pBox_AVT.Name = "pBox_AVT";
-            this.pBox_AVT.Size = new System.Drawing.Size(54, 52);
+            this.pBox_AVT.Size = new System.Drawing.Size(40, 42);
             this.pBox_AVT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_AVT.TabIndex = 175;
             this.pBox_AVT.TabStop = false;
@@ -193,9 +204,10 @@
             this.btn_NoiDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.btn_NoiDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NoiDung.ForeColor = System.Drawing.Color.White;
-            this.btn_NoiDung.Location = new System.Drawing.Point(3, 3);
+            this.btn_NoiDung.Location = new System.Drawing.Point(2, 2);
+            this.btn_NoiDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_NoiDung.Name = "btn_NoiDung";
-            this.btn_NoiDung.Size = new System.Drawing.Size(578, 112);
+            this.btn_NoiDung.Size = new System.Drawing.Size(434, 91);
             this.btn_NoiDung.TabIndex = 174;
             this.btn_NoiDung.TextColor = System.Drawing.Color.White;
             this.btn_NoiDung.UseVisualStyleBackColor = false;
@@ -206,18 +218,20 @@
             this.pnl_Xoa.BackColor = System.Drawing.Color.White;
             this.pnl_Xoa.Controls.Add(this.pBox_Xoa);
             this.pnl_Xoa.Controls.Add(this.btn_Xoa);
-            this.pnl_Xoa.Location = new System.Drawing.Point(3, 127);
+            this.pnl_Xoa.Location = new System.Drawing.Point(2, 102);
+            this.pnl_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Xoa.Name = "pnl_Xoa";
-            this.pnl_Xoa.Size = new System.Drawing.Size(72, 118);
+            this.pnl_Xoa.Size = new System.Drawing.Size(54, 96);
             this.pnl_Xoa.TabIndex = 0;
             // 
             // pBox_Xoa
             // 
             this.pBox_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(238)))));
             this.pBox_Xoa.Image = global::DemoDoAn.Properties.Resources.delete1;
-            this.pBox_Xoa.Location = new System.Drawing.Point(16, 36);
+            this.pBox_Xoa.Location = new System.Drawing.Point(12, 29);
+            this.pBox_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pBox_Xoa.Name = "pBox_Xoa";
-            this.pBox_Xoa.Size = new System.Drawing.Size(40, 46);
+            this.pBox_Xoa.Size = new System.Drawing.Size(30, 37);
             this.pBox_Xoa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pBox_Xoa.TabIndex = 0;
             this.pBox_Xoa.TabStop = false;
@@ -236,21 +250,23 @@
             this.btn_Xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(253)))));
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_Xoa.Location = new System.Drawing.Point(3, 3);
+            this.btn_Xoa.Location = new System.Drawing.Point(2, 2);
+            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(66, 112);
+            this.btn_Xoa.Size = new System.Drawing.Size(50, 91);
             this.btn_Xoa.TabIndex = 174;
             this.btn_Xoa.TextColor = System.Drawing.Color.White;
             this.btn_Xoa.UseVisualStyleBackColor = false;
             // 
             // UC_HAMTHUGOPY_CHILD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.fLPnl_FORM);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UC_HAMTHUGOPY_CHILD";
-            this.Size = new System.Drawing.Size(683, 128);
+            this.Size = new System.Drawing.Size(512, 104);
             this.Load += new System.EventHandler(this.UC_HAMTHUGOPY_CHILD_Load);
             this.fLPnl_FORM.ResumeLayout(false);
             this.pnl_NoiDung.ResumeLayout(false);

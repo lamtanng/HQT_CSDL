@@ -16,7 +16,14 @@ namespace DemoDoAn
         //lay ds nhom
         public DataTable LayDanhSachNhom()
         {
-            string sqlStr = string.Format("EXEC dbo.proc_LayDanhSachNhom");
+            string sqlStr = string.Format("select * from uf_LayDanhSachNhom()");
+            return dbConn.LayDanhSach(sqlStr);
+        }
+
+        //lay ds lop GV đang dạy
+        public DataTable LayDanhSachNhom_DangDay(string maGiaoVien)
+        {
+            string sqlStr = string.Format("select * from uf_LayDanhSachNhom_DangDay('{0}') ", maGiaoVien);
             return dbConn.LayDanhSach(sqlStr);
         }
 

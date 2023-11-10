@@ -1,4 +1,4 @@
-﻿using DemoDoAn.DAO;
+using DemoDoAn.DAO;
 using DemoDoAn.HOCVIEN.Class;
 using DemoDoAn.MODELS;
 using System;
@@ -22,27 +22,27 @@ namespace DemoDoAn.HOCVIEN
         DanhSachNhomDao dslDao1 = new DanhSachNhomDao();
         HocSinhDao hsDao1 = new HocSinhDao();
         GiaoVienDao gvDao1 = new GiaoVienDao();
-        NhomHocDao lhDao1 = new NhomHocDao();
+        NhomHocDao lhDao = new NhomHocDao();
 
         DataTable dtDSLFull1 = new DataTable();
         //DataTable dtLopDaDay = new DataTable();
         DataTable dtKQ1 = new DataTable("DS_KQ");
-        DataTable dtDSL1 = new DataTable();//full danh sach(bao gồm còn hoạt động và hết hd)
+        DataTable dtDSL = new DataTable();//full danh sach(bao gồm còn hoạt động và hết hd)
         List<string> dslTrungLich1 = new List<string>();//dslop trung lich voi dsl hiện tại
 
         string trangThai1;
         string ID;
         //string gvID;//check trùng giáng viên
 
-        enum nameCol_DSL1
+        enum nameCol_DSL_GV
         {
-            STT_DSL,
-            MaLop_DSL,
-            TenMon_DSL,
-            TenKH_DSL,
-            HocPhi_DSL,
-            HOTEN_DSL,
-            TrangThai_DSL
+            STT,
+            MaNhomHoc,
+            TenLopHoc,
+            MaPhongHoc,
+            TongHocVien,
+            NgayBatDau,
+            NgayKetThuc
         }
 
         #region DOHOA
@@ -74,7 +74,7 @@ namespace DemoDoAn.HOCVIEN
         {
             InitializeComponent();
             this.chucVu = chucVu;
-            //layID();
+            layID();
         }
 
         private void UC_DANGKILOP_Load(object sender, EventArgs e)
@@ -85,13 +85,13 @@ namespace DemoDoAn.HOCVIEN
             }
             else if (chucVu == 2)//giang vien
             {
-                taiDSLFull();
+                //taiDSLFull();
                 taiDSLDangDay();
             }
 
-            taiDSLDangKy();
-            hienThongTinLopDaDangKy();
-            taiDSLNoiBat();
+            //taiDSLDangKy();
+            //hienThongTinLopDaDangKy();
+            //taiDSLNoiBat();
         }
 
         #region GiangVien
@@ -109,22 +109,39 @@ namespace DemoDoAn.HOCVIEN
 
         //load dsl dang day
         private void taiDSLDangDay()
-
         {
-            dtKQ1.Rows.Clear();
-            dtKQ1 = dtDSLFull1.Clone();
-            dtKQ1.Rows.Clear();
-            for (int i = 0; i < dtDSLFull1.Rows.Count; i++)
+            dtDSL = lhDao.LayDanhSachNhom_DangDay(ID);
+            //loại bỏ những lớp không còn hoạt động:
+            //for (int i = dtDSL.Rows.Count - 1; i >= 0; i--)
+            //{
+            //    DataRow row = dtDSL.Rows[i];
+            //    if (Convert.ToInt32(row["TTMoLop"].ToString()) == 0)
+            //        dtDSL.Rows.Remove(row);
+            //}
+
+            loadForm(dataGrView_DSLop, dtDSL);
+            //ẩn full các cột     
+            for (int i = 0; i < dataGrView_DSLop.Columns.Count; i++)
             {
-                DataRow row = dtDSLFull1.Rows[i];
-                //da xac nhan day
-                if (Convert.ToInt32(row["XacNhan"].ToString()) == 1)
+                DataGridViewColumn colDtg = dataGrView_DSLop.Columns[i];
+                colDtg.Visible = false;
+            }
+
+            //hiện những cột cần, name của các cột được lưu trong Enum
+            foreach (nameCol_DSL_GV day in Enum.GetValues(typeof(nameCol_DSL_GV)))
+            {
+                for (int i = 0; i < dataGrView_DSLop.Columns.Count; i++)
                 {
-                    //tạo dataRow lưu hàng đó lại
-                    DataRow newRow = copyRowToDataTble(dtDSLFull1, dtKQ1, i);
-                    dtKQ1.Rows.Add(newRow);
+                    DataGridViewColumn colDtg = dataGrView_DSLop.Columns[i];
+                    if (colDtg.Name.ToString() == day.ToString())
+                    {
+                        colDtg.Visible = true;
+                        break;
+                    }
                 }
             }
+            dataGrView_DSLop.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
         //copy row cho dataTable
@@ -139,11 +156,11 @@ namespace DemoDoAn.HOCVIEN
         //check lop da co gv
         private bool isNullGV(string malop)
         {
-            for (int r = 0; r < dtDSL1.Rows.Count; r++)
+            for (int r = 0; r < dtDSL.Rows.Count; r++)
             {
-                if (dtDSL1.Rows[r]["MaLop"].ToString().Trim() == malop)
+                if (dtDSL.Rows[r]["MaLop"].ToString().Trim() == malop)
                 {
-                    if (string.IsNullOrEmpty(dtDSL1.Rows[r]["GiangVien"].ToString()))
+                    if (string.IsNullOrEmpty(dtDSL.Rows[r]["GiangVien"].ToString()))
                     {
                         return true;
                     }
@@ -186,7 +203,7 @@ namespace DemoDoAn.HOCVIEN
                 //nhom.KHOAHOC = dataGrView_DSLop.Rows[r].Cells["TenKH_DSL"].Value.ToString().Trim();
                 //nhom.HOCPHI = dataGrView_DSLop.Rows[r].Cells["HocPhi_DSL"].Value.ToString().Trim();
                 //nhom.GIANGVIEN = dataGrView_DSLop.Rows[r].Cells["HOTEN_DSL"].Value.ToString().Trim();
-                fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD("Fail", "Fail", "Fail","Fail"));
+                //fLPnl_DSL.Controls.Add(new UC_DANHSACHLOP_CHILD("Fail", "Fail", "Fail","Fail"));
             }
         }
 
@@ -195,22 +212,22 @@ namespace DemoDoAn.HOCVIEN
         {
             DataTable dtID = new DataTable();
             dtID = hsDao1.Lay_MSSV(Login.userName);
-            ID = dtID.Rows[0]["MaHocVien"].ToString().Trim();
+            ID = dtID.Rows[0]["Ma"].ToString().Trim();
         }
         
         //tai DSL DKy
         private void taiDSLDangKy()
         {
-            dtDSL1 = dklDao1.LayDanhSachLop();
+            dtDSL = dklDao1.LayDanhSachLop();
             //loại bỏ những lớp không còn hoạt động:
-            for (int i = dtDSL1.Rows.Count - 1; i >= 0; i--)
+            for (int i = dtDSL.Rows.Count - 1; i >= 0; i--)
             {
-                DataRow row = dtDSL1.Rows[i];
+                DataRow row = dtDSL.Rows[i];
                 if (Convert.ToInt32(row["TTMoLop"].ToString()) == 0)
-                    dtDSL1.Rows.Remove(row);
+                    dtDSL.Rows.Remove(row);
             }
 
-            loadForm(dataGrView_DSLop, dtDSL1);
+            loadForm(dataGrView_DSLop, dtDSL);
             //ẩn full các cột     
             for (int i = 0; i < dataGrView_DSLop.Columns.Count; i++)
             {
@@ -219,7 +236,7 @@ namespace DemoDoAn.HOCVIEN
             }
 
             //hiện những cột cần, name của các cột được lưu trong Enum
-            foreach (nameCol_DSL1 day in Enum.GetValues(typeof(nameCol_DSL1)))
+            foreach (nameCol_DSL_GV day in Enum.GetValues(typeof(nameCol_DSL_GV)))
             {
                 for (int i = 0; i < dataGrView_DSLop.Columns.Count; i++)
                 {
@@ -238,91 +255,91 @@ namespace DemoDoAn.HOCVIEN
         //dang ki
         private void btn_DangKi_Click(object sender, EventArgs e)
         {
-            string maLop = lbl_MaLop.Text.Trim();
-            string lopTrungLich = "";
+            ////string maLop = lbl_MaLop.Text.Trim();
+            //string lopTrungLich = "";
 
-            //check lop da dang ky
-            if (chucVu == 1)//hocvien
-            {
-                if (kiemTraLop(maLop, "MaLop", dtKQ1) == true)
-                {
-                    if (kiemTraTrungLich(maLop, ref lopTrungLich) == true)
-                    {
-                        if (trangThai1 == "Hoạt động")
-                        {
-                            //thêm học viên vào lớp + cập nhật sĩ số lớp đó
-                            dslDao1.themHocVienVaoNhom(lbl_MaLop.Text.ToString(), ID);
-                            dklDao1.CapNhatSiSoLop();
-                            taiDSL_DaDangKy();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Lớp học đã đầy!");
-                        }
+            ////check lop da dang ky
+            //if (chucVu == 1)//hocvien
+            //{
+            //    if (kiemTraLop(maLop, "MaLop", dtKQ1) == true)
+            //    {
+            //        if (kiemTraTrungLich(maLop, ref lopTrungLich) == true)
+            //        {
+            //            if (trangThai1 == "Hoạt động")
+            //            {
+            //                //thêm học viên vào lớp + cập nhật sĩ số lớp đó
+            //                dslDao1.themHocVienVaoLop(lbl_MaLop.Text.ToString(), ID);
+            //                dklDao1.CapNhatSiSoLop();
+            //                taiDSL_DaDangKy();
+            //            }
+            //            else
+            //            {
+            //                MessageBox.Show("Lớp học đã đầy!");
+            //            }
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Trùng lịch với lớp " + lopTrungLich);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Lớp học đã được đăng ký trước đó!");
-                }
-            }
-            else if (chucVu == 2)//giangvien
-            {
-                if (isNullGV(maLop) == true)
-                {
-                    if (kiemTraTrungLich(maLop, ref lopTrungLich) == true)
-                    {
-                        //cap nhat giang vien day + cap nhat trang thai XacNhan day = 1
-                        lhDao1.capNhatGiangVienChoNhom(maLop, ID);
-                        gvDao1.xacNhanDay(maLop, 1);
-                        taiDSLFull();
-                        taiDSLDangDay();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Trùng lịch với lớp " + lopTrungLich);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Lớp học đã được đăng ký trước đó!");
-                }
-            }
-            hienThongTinLopDaDangKy();
-            taiDSLDangKy();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Trùng lịch với lớp " + lopTrungLich);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Lớp học đã được đăng ký trước đó!");
+            //    }
+            //}
+            //else if (chucVu == 2)//giangvien
+            //{
+            //    if (isNullGV(maLop) == true)
+            //    {
+            //        if (kiemTraTrungLich(maLop, ref lopTrungLich) == true)
+            //        {
+            //            //cap nhat giang vien day + cap nhat trang thai XacNhan day = 1
+            //            lhDao.capNhatGiangVienChoNhom(maLop, ID);
+            //            gvDao1.xacNhanDay(maLop, 1);
+            //            taiDSLFull();
+            //            taiDSLDangDay();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Trùng lịch với lớp " + lopTrungLich);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Lớp học đã được đăng ký trước đó!");
+            //    }
+            //}
+            //hienThongTinLopDaDangKy();
+            //taiDSLDangKy();
         }
         ////load danh sach lop hoc da duoc dang ki
         private void hienThongTinLopDaDangKy()
         {
-            fLPnl_KQ.Controls.Clear();
+            //fLPnl_KQ.Controls.Clear();
 
-            UC_DANGKILOP_CHILD[] ucDangKiLop = new UC_DANGKILOP_CHILD[dtKQ1.Rows.Count];
-            //MaLop, TenMon, TenKH, HocPhi, GiangVien, HOTEN, TrangThai
-            string maLop_Temp = "";
-            int stt = 0;
-            for (int i = 0; i < dtKQ1.Rows.Count; i++)
-            {
-                if (dtKQ1.Rows[i]["MaLop"].ToString() != maLop_Temp)
-                {
-                    ucDangKiLop[stt] = new UC_DANGKILOP_CHILD((++stt).ToString(), dtKQ1.Rows[i]["MaLop"].ToString(),
-                                        dtKQ1.Rows[i]["TenMon"].ToString(), Convert.ToDateTime(dtKQ1.Rows[i]["NgayBatDau"]),
-                                        Convert.ToDateTime(dtKQ1.Rows[i]["NgayKetThuc"]), dtKQ1.Rows[i]["HOTEN"].ToString(),
-                                        dtKQ1.Rows[i]["TrangThai"].ToString(), chucVu);
-                    fLPnl_KQ.Controls.Add(ucDangKiLop[stt - 1]);
-                    maLop_Temp = dtKQ1.Rows[i]["MaLop"].ToString();
-                }
+            //UC_DANGKILOP_CHILD[] ucDangKiLop = new UC_DANGKILOP_CHILD[dtKQ1.Rows.Count];
+            ////MaLop, TenMon, TenKH, HocPhi, GiangVien, HOTEN, TrangThai
+            //string maLop_Temp = "";
+            //int stt = 0;
+            //for (int i = 0; i < dtKQ1.Rows.Count; i++)
+            //{
+            //    if (dtKQ1.Rows[i]["MaLop"].ToString() != maLop_Temp)
+            //    {
+            //        ucDangKiLop[stt] = new UC_DANGKILOP_CHILD((++stt).ToString(), dtKQ1.Rows[i]["MaLop"].ToString(),
+            //                            dtKQ1.Rows[i]["TenMon"].ToString(), Convert.ToDateTime(dtKQ1.Rows[i]["NgayBatDau"]),
+            //                            Convert.ToDateTime(dtKQ1.Rows[i]["NgayKetThuc"]), dtKQ1.Rows[i]["HOTEN"].ToString(),
+            //                            dtKQ1.Rows[i]["TrangThai"].ToString(), chucVu);
+            //        fLPnl_KQ.Controls.Add(ucDangKiLop[stt - 1]);
+            //        maLop_Temp = dtKQ1.Rows[i]["MaLop"].ToString();
+            //    }
 
-            }
-            //event
-            for (int i = 0; i < stt; i++)
-            {
-                ucDangKiLop[i].DeleteClicked += UC_DANGKILOP_DeleteClicked;
-            }
+            //}
+            ////event
+            //for (int i = 0; i < stt; i++)
+            //{
+            //    ucDangKiLop[i].DeleteClicked += UC_DANGKILOP_DeleteClicked;
+            //}
         }
         //event
         private void UC_DANGKILOP_DeleteClicked(object sender, EventArgs e)
@@ -347,7 +364,7 @@ namespace DemoDoAn.HOCVIEN
         {
             //lay thong tin lich hoc cua lop
             DataTable dtTTCT = new DataTable("TTChiTiet");
-            dtDSL1 = dklDao1.LayThongTinLop(maLop);
+            dtDSL = dklDao1.LayThongTinLop(maLop);
 
             for (int i = 0; i < dtTTCT.Rows.Count; i++)
             {
@@ -389,38 +406,37 @@ namespace DemoDoAn.HOCVIEN
             DataGridViewRow row = new DataGridViewRow();
             row = dataGrView_DSLop.Rows[e.RowIndex];
 
-            lbl_MaLop.Text = row.Cells["MaLop_DSL"].Value.ToString();
-            lbl_TT_TenKhoaHoc.Text = row.Cells["TenKH_DSL"].Value.ToString();
-            lbl_TT_TenLopHoc.Text = row.Cells["TenMon_DSL"].Value.ToString();
-            trangThai1 = row.Cells["TrangThai_DSL"].Value.ToString();
+            string maNhom = row.Cells["MaNhomHoc"].Value.ToString();
+            F_DIEMDANH f_DIEMDANH = new F_DIEMDANH(maNhom);
+            f_DIEMDANH.ShowDialog();
 
-            //lay thong tin lich hoc cua lop
-            DataTable dtTTCT = new DataTable("TTChiTiet");
-            dtTTCT = dklDao1.LayThongTinLop(row.Cells["MaLop_DSL"].Value.ToString());
-            //gán thứ
-            lbl_Thu.Text = String.Empty;
-            for (int r = 0; r < dtTTCT.Rows.Count; r++)
-            {
-                lbl_Thu.Text += "Thứ " + dtTTCT.Rows[r]["Thu"].ToString() + "\n\n";
-            }
-            //phòng
-            lbl_SoPhongHoc.Text = dtTTCT.Rows[0]["Phong"].ToString();
+            ////lay thong tin lich hoc cua lop
+            //DataTable dtTTCT = new DataTable("TTChiTiet");
+            //dtTTCT = dklDao1.LayThongTinLop(row.Cells["MaLop_DSL"].Value.ToString());
+            ////gán thứ
+            //lbl_Thu.Text = String.Empty;
+            //for (int r = 0; r < dtTTCT.Rows.Count; r++)
+            //{
+            //    lbl_Thu.Text += "Thứ " + dtTTCT.Rows[r]["Thu"].ToString() + "\n\n";
+            //}
+            ////phòng
+            //lbl_SoPhongHoc.Text = dtTTCT.Rows[0]["Phong"].ToString();
 
-            //giờ BD: TIME -> TimeSpan
-            TimeSpan gioBD = (TimeSpan)dtTTCT.Rows[0]["GioBatDau"];
-            lbl_GioBatDau.Text = gioBD.ToString(@"hh\:mm");
+            ////giờ BD: TIME -> TimeSpan
+            //TimeSpan gioBD = (TimeSpan)dtTTCT.Rows[0]["GioBatDau"];
+            //lbl_GioBatDau.Text = gioBD.ToString(@"hh\:mm");
 
-            //Giờ KT
-            TimeSpan gioKT = (TimeSpan)dtTTCT.Rows[0]["GioKetThuc"];
-            lbl_GioKetThuc.Text = gioKT.ToString(@"hh\:mm");
+            ////Giờ KT
+            //TimeSpan gioKT = (TimeSpan)dtTTCT.Rows[0]["GioKetThuc"];
+            //lbl_GioKetThuc.Text = gioKT.ToString(@"hh\:mm");
 
-            //Ngày BD: DATE -> DateTime
-            DateTime ngayBD = (DateTime)dtTTCT.Rows[0]["NgayBatDau"];
-            lbl_NgayBatDau.Text = ngayBD.ToString("dd/MM/yyyy");
+            ////Ngày BD: DATE -> DateTime
+            //DateTime ngayBD = (DateTime)dtTTCT.Rows[0]["NgayBatDau"];
+            //lbl_NgayBatDau.Text = ngayBD.ToString("dd/MM/yyyy");
 
-            //NgàyKT
-            DateTime ngayKT = (DateTime)dtTTCT.Rows[0]["NgayKetThuc"];
-            lbl_NgayKetThuc.Text = ngayKT.ToString("dd/MM/yyyy");
+            ////NgàyKT
+            //DateTime ngayKT = (DateTime)dtTTCT.Rows[0]["NgayKetThuc"];
+            //lbl_NgayKetThuc.Text = ngayKT.ToString("dd/MM/yyyy");
         }
 
         //load dtg
@@ -448,7 +464,7 @@ namespace DemoDoAn.HOCVIEN
         {
             if (e.KeyCode == Keys.Enter)
             {
-                thucHienTimKiem(dataGrView_DSLop, txt_Search.Text.ToString(), typeof(nameCol_DSL1));
+                thucHienTimKiem(dataGrView_DSLop, txt_Search.Text.ToString(), typeof(nameCol_DSL_GV));
             }
             else if (e.KeyCode == Keys.Escape)
             {
@@ -561,11 +577,6 @@ namespace DemoDoAn.HOCVIEN
         }
 
         private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGrView_DSLop_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -831,6 +842,11 @@ namespace DemoDoAn.HOCVIEN
         }
 
         private void btn_TitleQLNV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void T(object sender, DataGridViewCellEventArgs e)
         {
 
         }

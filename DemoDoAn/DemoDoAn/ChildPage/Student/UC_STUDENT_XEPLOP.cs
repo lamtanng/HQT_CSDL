@@ -1,4 +1,5 @@
 ﻿using DemoDoAn.ChildPage.HocTap;
+using DemoDoAn.DAO;
 using DemoDoAn.HOCVIEN.Class;
 using System;
 using System.Collections.Generic;
@@ -19,14 +20,19 @@ namespace DemoDoAn.ChildPage
         NhomHocDao LopHocDao = new NhomHocDao();
         BangDiemDAO bangDiemDao = new BangDiemDAO();
         HocSinhDao hvDao = new HocSinhDao();
-        DanhSachLopDao dslDao = new DanhSachLopDao();
         DangKiLopDao dklDao = new DangKiLopDao();
         PhieuThuDao ptDao = new PhieuThuDao();
 
-        DataTable dtKhoaHoc = new DataTable();
-        DataTable dsHV = new DataTable();
-        DataTable dsLop = new DataTable();
-        DataTable dtKQ = new DataTable();
+        DanhSachNhomDao dsNhomDao = new DanhSachNhomDao();
+        NhomHocDao nhomDao = new NhomHocDao();
+        LopHocDao lopDao = new LopHocDao();
+        KhoaHocDao khDao = new KhoaHocDao();
+       
+        DataTable dtDSHV_KhacNhom = new DataTable();
+        DataTable dtDSHVNhom = new DataTable();
+        DataTable dtDSNhomDaDangKy = new DataTable();
+
+        string maNhom = "";
 
         enum nameCol_DSHV
         {
@@ -79,7 +85,6 @@ namespace DemoDoAn.ChildPage
         private void UC_STUDENT_XEPLOP_Load(object sender, EventArgs e)
         {
             loadCbb_KhoaHoc();
-            
         }
 
         //load form
@@ -89,24 +94,11 @@ namespace DemoDoAn.ChildPage
         }
 
         //load ds hoc vien chua co lop
-        private void taiDSHV_KhongLop(DataGridView dtg)
+        private void taiDSHV_KhacNhom(DataGridView dtg)
         {
-            dsHV = hvDao.LayDanhSachSinhVien();
-            //loại bỏ những hv đã có trong lớp
-            for (int i = dsLop.Rows.Count - 1; i >= 0; i--)
-            {
-                DataRow row = dsLop.Rows[i];
-                for (int r = 0; r < dsHV.Rows.Count; r++)
-                {
-                    if (row["HVID"].ToString() == dsHV.Rows[r]["HVID"].ToString())
-                    {
-                        dsHV.Rows.Remove(dsHV.Rows[r]);
-                        break;
-                    }
+            dtDSHV_KhacNhom = dsNhomDao.layDSHocVien_KhacNhom(maNhom);
 
-                }
-            }
-            loadForm(dtg, dsHV);
+            loadForm(dtg, dtDSHV_KhacNhom);
             //ẩn full các cột     
             for (int i = 0; i < dtg.Columns.Count; i++)
             {
@@ -126,15 +118,14 @@ namespace DemoDoAn.ChildPage
                     }
                 }
             }
-            dtg.Sort(dtg.Columns["HVID_DSHV"], ListSortDirection.Ascending);
+           // dtg.Sort(dtg.Columns["HVID_DSHV"], ListSortDirection.Ascending);
         }
 
         //load ds lop
-        private void taiDSLop(DataGridView dtg ,string maLop)
+        private void taiDSHVNhom(DataGridView dtg )
         {
-            dsLop = bangDiemDao.taiBangDiem(maLop);
-            loadForm(dtg, dsLop);
-            //ẩn full các cột     
+            dtDSHVNhom = dsNhomDao.layDSHocVienNhomHoc(maNhom);
+            loadForm(dtg, dtDSHVNhom);
             for (int i = 0; i < dtg.Columns.Count; i++)
             {
                 DataGridViewColumn colDtg = dtg.Columns[i];
@@ -153,7 +144,7 @@ namespace DemoDoAn.ChildPage
                     }
                 }
             }
-            dtg.Sort(dtg.Columns["HVID_DSL"], ListSortDirection.Ascending);
+            //dtg.Sort(dtg.Columns["HVID_DSL"], ListSortDirection.Ascending);
         }
 
         //load combobox
@@ -167,87 +158,110 @@ namespace DemoDoAn.ChildPage
         //load cbb khoa hoc
         private void loadCbb_KhoaHoc()
         {
-            dtKhoaHoc.Rows.Clear();
-            dtKhoaHoc = LopHocDao.LayDanhSachNhom();
-            //duyet lui chứ mỗi lần xóa bị lỗi
-            int rows = dtKhoaHoc.Rows.Count;
-            for (int r = rows - 1; r >= 0; r--)
-            {
-                DataRow row = dtKhoaHoc.Rows[r];
-                //loại bỏ các dòng có khóa học và lớp học đã ngưng hoạt động
-                if (Convert.ToInt32(row["TrangThaiKH"]) == 0 || Convert.ToInt32(row["TTMoLop"]) == 0)
-                    dtKhoaHoc.Rows.Remove(row);
-            }
-            DataTable distinctMaKH = dtKhoaHoc.DefaultView.ToTable(true, new string[] { "MaKH", "TenKH" });
-            loadCombobox(cbb_ChonKhoaHoc, distinctMaKH, "TenKH", "MaKH");
-        }
+            DataTable dtKhoaHoc = khDao.LayKhoaHoc();
+            loadCombobox(cbb_KhoaHoc, dtKhoaHoc, "TenKhoaHoc", "MaKhoaHoc");
+            string maKH = ((DataRowView)cbb_KhoaHoc.SelectedItem)["MaKhoaHoc"].ToString();
 
+            //loadCbb_LopHoc(maKH);
+        }
         //load cbb lop hoc
         private void loadCbb_LopHoc(string maKH)
         {
-            //tạo DT mới có số cột = số cột cũ qua .Clone()
-            DataTable dtLopHoc = dtKhoaHoc.Clone();
+            DataTable dtLopHoc = lopDao.LayLopHoc_ThuocKhoaHoc(maKH);
+            loadCombobox(cbb_LopHoc, dtLopHoc, "TenLopHoc", "MaLopHoc");
+            string maLH = ((DataRowView)cbb_LopHoc.SelectedItem)["MaLopHoc"].ToString();
+            //loadCbb_NhomHoc(maLH);
+            //dtKhoaHoc.Rows.Clear();
+            //dtKhoaHoc = LopHocDao.LayDanhSachNhom();
+            ////duyet lui chứ mỗi lần xóa bị lỗi
+            //int rows = dtKhoaHoc.Rows.Count;
+            //for (int r = rows - 1; r >= 0; r--)
+            //{
+            //    DataRow row = dtKhoaHoc.Rows[r];
+            //    //loại bỏ các dòng có khóa học và lớp học đã ngưng hoạt động
+            //    if (Convert.ToInt32(row["TrangThaiKH"]) == 0 || Convert.ToInt32(row["TTMoLop"]) == 0)
+            //        dtKhoaHoc.Rows.Remove(row);
+            //}
+            //DataTable distinctMaKH = dtKhoaHoc.DefaultView.ToTable(true, new string[] { "MaKH", "TenKH" });
+            //loadCombobox(cbb_LopHoc, distinctMaKH, "TenKH", "MaKH");
+        }
 
-            for (int r = 0; r < dtKhoaHoc.Rows.Count; r++)
-            {
-                //tìm những dòng có MãKH đã được chọn
-                if (dtKhoaHoc.Rows[r]["MaKH"].ToString() == maKH)
-                {
-                    //tạo dataRow lưu hàng đó lại
-                    DataRow newRow = dtLopHoc.NewRow();
-                    newRow.ItemArray = dtKhoaHoc.Rows[r].ItemArray; // sao chép dữ liệu từ dòng r của dt vào newRow
-                    dtLopHoc.Rows.Add(newRow);
-                }
-            }
-            //load những lớp thuộc MãKH đó lên thôi
-            loadCombobox(cbb_ChonLopHoc, dtLopHoc, "TenMon", "MaLop");
+        //load cbb nhom hoc
+        private void loadCbb_NhomHoc(string maLH)
+        {
+            DataTable dtNhomHoc = nhomDao.LayDanhSachNhom_ThuocLopHoc(maLH);
+            loadCombobox(cbb_NhomHoc, dtNhomHoc, "MaNhomHoc", "MaNhomHoc");
+            ////tạo DT mới có số cột = số cột cũ qua .Clone()
+            //DataTable dtLopHoc = dtKhoaHoc.Clone();
+
+            //for (int r = 0; r < dtKhoaHoc.Rows.Count; r++)
+            //{
+            //    //tìm những dòng có MãKH đã được chọn
+            //    if (dtKhoaHoc.Rows[r]["MaKH"].ToString() == maKH)
+            //    {
+            //        //tạo dataRow lưu hàng đó lại
+            //        DataRow newRow = dtLopHoc.NewRow();
+            //        newRow.ItemArray = dtKhoaHoc.Rows[r].ItemArray; // sao chép dữ liệu từ dòng r của dt vào newRow
+            //        dtLopHoc.Rows.Add(newRow);
+            //    }
+            //}
+            ////load những lớp thuộc MãKH đó lên thôi
+            //loadCombobox(cbb_NhomHoc, dtLopHoc, "TenMon", "MaLop");
         }
 
         //xu li chon khoa hoc
-        private void cbb_ChonKhoaHoc_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbb_KhoaHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cbb = sender as ComboBox;
             if (cbb.SelectedIndex >= 0)
             {
-                string khoaHoc = ((DataRowView)cbb.SelectedItem)["MaKH"].ToString();
-                loadCbb_LopHoc(khoaHoc);
+                string maKH = ((DataRowView)cbb.SelectedItem)["MaKhoaHoc"].ToString();
+                loadCbb_LopHoc(maKH);
             }
         }
-        //load thong tin 
-        private void cbb_ChonLopHoc_SelectedIndexChanged(object sender, EventArgs e)
+        //xu li chon lop hoc 
+        private void cbb_LopHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cbb = sender as ComboBox;
             if (cbb.SelectedIndex >= 0)
             {
-                string maLop = ((DataRowView)cbb_ChonLopHoc.SelectedItem)["maLop"].ToString();
-                taiDSLop(dataGrView_DSLop, maLop);
-                taiDSHV_KhongLop(dataGrView_DSHocVien);
-
-                string soHVHienTai = (dataGrView_DSLop.Rows.Count).ToString();
-                hienThongTinLop(maLop, soHVHienTai);
+                string maLH = ((DataRowView)cbb.SelectedItem)["MaLopHoc"].ToString();
+                loadCbb_NhomHoc(maLH);
+            }
+        }
+        //xu li chon nhom hoc
+        private void cbb_NhomHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cbb = sender as ComboBox;
+            if (cbb.SelectedIndex >= 0)
+            {
+                maNhom = ((DataRowView)cbb_NhomHoc.SelectedItem)["MaNhomHoc"].ToString();
+                taiDSHVNhom(dataGrView_DSLop);
+                taiDSHV_KhacNhom(dataGrView_DSHocVien);
+                hienThongTinNhom();
             }
         }
 
-        //hien thong tin lop
-        private void hienThongTinLop(string maLop, string soHVHienTai)
+        //hien thong tin nhom
+        private void hienThongTinNhom()
         {
             //lấy thông tin lớp
-            DataTable dtTTLop = new DataTable();
-            dtTTLop = bangDiemDao.layThongTinLop(maLop);
+            DataTable dtThongTinNhom = new DataTable();
+            dtThongTinNhom = nhomDao.LayThongTinMotNhom(maNhom);
 
-            DataRow row = dtTTLop.Rows[0];
-            lbl_TT_TenKhoaHoc.Text = row["TenKH"].ToString();
-            lbl_TT_TenLopHoc.Text = row["TenMon"].ToString();
+            DataRow row = dtThongTinNhom.Rows[0];
+            lbl_TT_TenKhoaHoc.Text = ((DataRowView)cbb_KhoaHoc.SelectedItem)["TenKhoaHoc"].ToString();
+            lbl_TT_TenLopHoc.Text = row["TenLopHoc"].ToString();
             string ngayBD = ((DateTime)row["NgayBatDau"]).ToString("dd/MM/yyyy");
             lbl_TT_NgayBatDau.Text = ngayBD;
             string ngayKT = ((DateTime)row["NgayKetThuc"]).ToString("dd/MM/yyyy");
             lbl_TT_NgayKetThuc.Text = ngayKT;
-            lbl_TT_TongSoHV.Text = row["SoHocVien"].ToString();
-            lbl_TT_HocVienHienTai.Text = soHVHienTai;
-            lbl_TT_TenGiangVien.Text = row["HOTEN"].ToString();
+            lbl_TT_TongSoHV.Text = row["SoLuongHocVienToiDa"].ToString();
+            lbl_TT_HocVienHienTai.Text = row["TongHocVien"].ToString();
+            lbl_TT_TenGiangVien.Text = row["TenGiaoVien"].ToString();
             lbl_TT_SoTienHocPhi.Text = row["HocPhi"].ToString();
 
-            trangThai = row["TrangThai"].ToString().Trim();
+           //trangThai = row["TrangThai"].ToString().Trim();
         }
 
         //them hoc vien vao lop
@@ -260,7 +274,7 @@ namespace DemoDoAn.ChildPage
                 if (dataGrView_DSHocVien.Columns[e.ColumnIndex].Name == "Them")
                 {
 
-                    string maLop = ((DataRowView)cbb_ChonLopHoc.SelectedItem)["MaLop"].ToString();
+                    string maLop = ((DataRowView)cbb_NhomHoc.SelectedItem)["MaLop"].ToString();
                     string hvID = row.Cells["HVID_DSHV"].Value.ToString();
                     string loptrunglich = "";
                     //kiem tra si so
@@ -270,7 +284,7 @@ namespace DemoDoAn.ChildPage
                         if(kiemTraTrungLich(maLop, ref loptrunglich, hvID))
                         {
                             //them hv
-                            dslDao.themHocVienVaoLop(maLop, hvID);
+                            dsNhomDao.themHocVienVaoNhom(maLop, hvID);
                             dklDao.CapNhatSiSoLop();
                         }
                         else
@@ -282,9 +296,9 @@ namespace DemoDoAn.ChildPage
                     {
                         MessageBox.Show("Không thành công!");
                     }
-                    taiDSLop(dataGrView_DSLop,maLop);
-                    taiDSHV_KhongLop(dataGrView_DSHocVien);
-                    hienThongTinLop(maLop, (dataGrView_DSLop.Rows.Count).ToString());
+                    taiDSHVNhom(dataGrView_DSLop);
+                    taiDSHV_KhacNhom(dataGrView_DSHocVien);
+                    hienThongTinNhom();
                 }
             }
             catch (Exception ex)
@@ -299,30 +313,30 @@ namespace DemoDoAn.ChildPage
         private bool kiemTraTrungLich(string maLop, ref string loptrunglich, string hvid)
         {
             taiDSL_DaDangKy(hvid);
-            //lay thong tin lich hoc cua lop
+
+            //lay thong tin lich hoc cua nhóm
             DataTable dtTTCT = new DataTable("TTChiTiet");
             dtTTCT = dklDao.LayThongTinLop(maLop);
-
             for (int i = 0; i < dtTTCT.Rows.Count; i++)
             {
                 DataRow rowDK = dtTTCT.Rows[i];
 
-                //duyệt từng lớp đã đki
-                for (int j = 0; j < dtKQ.Rows.Count; j++)
+                //duyệt từng nhóm đã đki
+                for (int j = 0; j < dtDSNhomDaDangKy.Rows.Count; j++)
                 {
-                    //lay thong tin lich hoc cua lop ket qua
-                    DataTable dtTTCT_KQ = new DataTable("TTChiTiet");
-                    dtTTCT_KQ = dklDao.LayThongTinLop(dtKQ.Rows[j]["MaLop"].ToString());
-                    for (int r = 0; r < dtTTCT_KQ.Rows.Count; r++)
+                    //lay thong tin lich hoc của từng nhóm đã đăng ký
+                    DataTable dtLichHocNhom = new DataTable("LichHocNhom");
+                    dtLichHocNhom = dklDao.LayThongTinLop(dtDSNhomDaDangKy.Rows[j]["MaLop"].ToString());
+                    for (int r = 0; r < dtLichHocNhom.Rows.Count; r++)
                     {
                         //xét trùng thứ
-                        DataRow rowKQ = dtTTCT_KQ.Rows[r];
+                        DataRow rowKQ = dtLichHocNhom.Rows[r];
                         if (Convert.ToInt32(rowKQ["Thu"].ToString()) == Convert.ToInt32(rowDK["Thu"].ToString()))
                         {   //xét trùng ca học
                             if (Convert.ToInt32(rowKQ["Ca"].ToString()) == Convert.ToInt32(rowDK["Ca"].ToString()))
                             {
                                 //MessageBox.Show(rowKQ["MaLop"].ToString().Trim());
-                                loptrunglich = dtKQ.Rows[j]["TenMon"].ToString();
+                                loptrunglich = dtDSNhomDaDangKy.Rows[j]["TenMon"].ToString();
                                 return false;//trung lich
                             }
                         }
@@ -337,8 +351,8 @@ namespace DemoDoAn.ChildPage
         //tai DSLdaDangKy
         private void taiDSL_DaDangKy(string hvid)
         {
-            dtKQ.Rows.Clear();
-            dtKQ = dklDao.LayDanhSachLopDaDangKi(hvid);
+            dtDSNhomDaDangKy.Rows.Clear();
+            dtDSNhomDaDangKy = dklDao.LayDanhSachLopDaDangKi(hvid);
         }
 
         //xoa hoc vien khoi lop
@@ -355,20 +369,20 @@ namespace DemoDoAn.ChildPage
                 {
                     if (MessageBox.Show("Bạn muốn xóa học viên?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        string maLop = ((DataRowView)cbb_ChonLopHoc.SelectedItem)["MaLop"].ToString();
+                        string maLop = ((DataRowView)cbb_NhomHoc.SelectedItem)["MaLop"].ToString();
                         string hvID = row.Cells["HVID_DSL"].Value.ToString();
 
-                        dslDao.xoaHocVien(maLop, hvID);
+                        dsNhomDao.xoaHocVienKhoiNhom(maLop, hvID);
                         //cap nhat si so lop
                         dklDao.CapNhatSiSoLop();
-                        hienThongTinLop(maLop, dataGrView_DSLop.Rows.Count.ToString());//cập nhật lại trạng thái 
+                        hienThongTinNhom();//cập nhật lại trạng thái 
 
                         //xoa lich su phieu thu
                         ptDao.xoaLichSuThu(hvID, maLop);
 
-                        taiDSLop(dataGrView_DSLop,maLop);
-                        taiDSHV_KhongLop(dataGrView_DSHocVien);
-                        hienThongTinLop(maLop, (dtg.Rows.Count).ToString());
+                        taiDSHVNhom(dataGrView_DSLop);
+                        taiDSHV_KhacNhom(dataGrView_DSHocVien);
+                        hienThongTinNhom();
                     }
                 }
             }
@@ -472,7 +486,6 @@ namespace DemoDoAn.ChildPage
             DataGridViewRow row = dataGrView_DSHocVien.Rows[e.RowIndex];
             row.Cells[0].Value = (e.RowIndex + 1).ToString();
         }
-
 
     }
 }

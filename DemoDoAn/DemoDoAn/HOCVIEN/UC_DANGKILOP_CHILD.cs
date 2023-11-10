@@ -1,4 +1,5 @@
-﻿using DemoDoAn.HOCVIEN.Class;
+﻿using DemoDoAn.DAO;
+using DemoDoAn.HOCVIEN.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,7 @@ namespace DemoDoAn.HOCVIEN
         GiaoVienDao gvDao = new GiaoVienDao();
         DangKiLopDao dklDao = new DangKiLopDao();
         HocSinhDao hsDao = new HocSinhDao();    
-        DanhSachLopDao dslDao = new DanhSachLopDao();
+        DanhSachNhomDao dslDao = new DanhSachNhomDao();
         PhieuThuDao ptDao = new PhieuThuDao();
 
         public event EventHandler DeleteClicked;
@@ -72,7 +73,7 @@ namespace DemoDoAn.HOCVIEN
                 if(chucVu == 1)//HV
                 {
                     //xoa hv khoi lop
-                    dslDao.xoaHocVien(btn_MaLop.Text.ToString(), hvID);
+                    dslDao.xoaHocVienKhoiNhom(btn_MaLop.Text.ToString(), hvID);
                     //cap nhat si so lop
                     dklDao.CapNhatSiSoLop();
                     //xoa lich su phieu thu

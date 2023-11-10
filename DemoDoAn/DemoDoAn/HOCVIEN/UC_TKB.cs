@@ -1,4 +1,5 @@
 ﻿using DemoDoAn.ChildPage.HocTap;
+using DemoDoAn.DAO;
 using DemoDoAn.GIANGVIEN;
 using DemoDoAn.HOCVIEN.Class;
 using DemoDoAn.MODELS;
@@ -741,7 +742,7 @@ namespace DemoDoAn.HOCVIEN
 
         #region DKL
         DangKiLopDao dklDao1 = new DangKiLopDao();
-        DanhSachLopDao dslDao1 = new DanhSachLopDao();
+        DanhSachNhomDao dslDao1 = new DanhSachNhomDao();
         HocSinhDao hsDao1 = new HocSinhDao();
         GiaoVienDao gvDao1 = new GiaoVienDao();
         NhomHocDao lhDao1 = new NhomHocDao();
@@ -973,7 +974,7 @@ namespace DemoDoAn.HOCVIEN
                         if (trangThai1 == "Hoạt động")
                         {
                             //thêm học viên vào lớp + cập nhật sĩ số lớp đó
-                            dslDao1.themHocVienVaoLop(lbl_MaLop.Text.ToString(), ID);
+                            dslDao1.themHocVienVaoNhom(lbl_MaLop.Text.ToString(), ID);
                             dklDao1.CapNhatSiSoLop();
                             taiDSL_DaDangKy1();
                         }

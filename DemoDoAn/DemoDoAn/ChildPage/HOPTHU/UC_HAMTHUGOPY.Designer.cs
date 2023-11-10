@@ -45,7 +45,7 @@
             this.fLPnl_ThongTinNguoiGui = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl_HoTen = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_MaNhomHoc = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pBox_DanhDau = new System.Windows.Forms.PictureBox();
             this.lbl_Gio = new System.Windows.Forms.Label();
@@ -134,7 +134,7 @@
             this.lbl_QuanLiKhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbl_QuanLiKhoaHoc.Location = new System.Drawing.Point(51, 54);
             this.lbl_QuanLiKhoaHoc.Name = "lbl_QuanLiKhoaHoc";
-            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(133, 36);
+            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(134, 36);
             this.lbl_QuanLiKhoaHoc.TabIndex = 22;
             this.lbl_QuanLiKhoaHoc.Text = "Email box";
             // 
@@ -293,7 +293,7 @@
             this.fLPnl_ThongTinNguoiGui.BackColor = System.Drawing.Color.White;
             this.fLPnl_ThongTinNguoiGui.Controls.Add(this.lbl_HoTen);
             this.fLPnl_ThongTinNguoiGui.Controls.Add(this.label1);
-            this.fLPnl_ThongTinNguoiGui.Controls.Add(this.label2);
+            this.fLPnl_ThongTinNguoiGui.Controls.Add(this.lbl_MaNhomHoc);
             this.fLPnl_ThongTinNguoiGui.Location = new System.Drawing.Point(104, 130);
             this.fLPnl_ThongTinNguoiGui.Name = "fLPnl_ThongTinNguoiGui";
             this.fLPnl_ThongTinNguoiGui.Size = new System.Drawing.Size(483, 31);
@@ -323,17 +323,17 @@
             this.label1.TabIndex = 180;
             this.label1.Text = "to";
             // 
-            // label2
+            // lbl_MaNhomHoc
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(156, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 22);
-            this.label2.TabIndex = 180;
-            this.label2.Text = "Language Hub";
+            this.lbl_MaNhomHoc.AutoSize = true;
+            this.lbl_MaNhomHoc.BackColor = System.Drawing.Color.White;
+            this.lbl_MaNhomHoc.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold);
+            this.lbl_MaNhomHoc.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_MaNhomHoc.Location = new System.Drawing.Point(156, 0);
+            this.lbl_MaNhomHoc.Name = "lbl_MaNhomHoc";
+            this.lbl_MaNhomHoc.Size = new System.Drawing.Size(121, 22);
+            this.lbl_MaNhomHoc.TabIndex = 180;
+            this.lbl_MaNhomHoc.Text = "Language Hub";
             // 
             // pictureBox1
             // 
@@ -640,7 +640,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbl_NoiDung_CT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_MaNhomHoc;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lbl_Gio;

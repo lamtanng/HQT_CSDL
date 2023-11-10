@@ -925,6 +925,7 @@ namespace DemoDoAn.HOCVIEN
         //tai DSL DKy
         private void taiDSLDangKy1()
         {
+            
             dtDSL1 = dklDao1.LayDanhSachNhom();
             //loại bỏ những lớp không còn hoạt động:
             for (int i = dtDSL1.Rows.Count - 1; i >= 0; i--)

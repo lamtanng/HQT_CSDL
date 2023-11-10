@@ -27,7 +27,7 @@ namespace DemoDoAn
         public DataTable Lay_MSSV(string username)
         {
             //string thuocTinh = "HVID";
-            string sqlStr = string.Format("SELECT * FROM V_GIOITHIEU Where TenDangNhap = '{0}'", username);
+            string sqlStr = string.Format("SELECT * FROM V_LIENLAC Where TenDangNhap = '{0}'", username);
             return dbConn.LayDanhSach(sqlStr);
         }
 

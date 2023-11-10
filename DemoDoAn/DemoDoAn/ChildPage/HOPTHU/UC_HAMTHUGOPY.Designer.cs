@@ -1,4 +1,4 @@
-﻿namespace DemoDoAn.HOCVIEN
+namespace DemoDoAn.HOCVIEN
 {
     partial class UC_HAMTHUGOPY
     {
@@ -89,7 +89,7 @@
             this.pnl_FORM.Controls.Add(this.pnl_TTCaNhan);
             this.pnl_FORM.Location = new System.Drawing.Point(3, 3);
             this.pnl_FORM.Name = "pnl_FORM";
-            this.pnl_FORM.Size = new System.Drawing.Size(1484, 893);
+            this.pnl_FORM.Size = new System.Drawing.Size(1670, 1117);
             this.pnl_FORM.TabIndex = 1;
             // 
             // panel1
@@ -100,9 +100,9 @@
             this.panel1.Controls.Add(this.lbl_QuanLiKhoaHoc);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.btn_TitleQLNV);
-            this.panel1.Location = new System.Drawing.Point(6, -36);
+            this.panel1.Location = new System.Drawing.Point(6, -45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1475, 132);
+            this.panel1.Size = new System.Drawing.Size(1659, 165);
             this.panel1.TabIndex = 175;
             // 
             // lbl_DanhMucKhoaHoc
@@ -111,9 +111,9 @@
             this.lbl_DanhMucKhoaHoc.BackColor = System.Drawing.Color.White;
             this.lbl_DanhMucKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DanhMucKhoaHoc.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbl_DanhMucKhoaHoc.Location = new System.Drawing.Point(55, 96);
+            this.lbl_DanhMucKhoaHoc.Location = new System.Drawing.Point(62, 120);
             this.lbl_DanhMucKhoaHoc.Name = "lbl_DanhMucKhoaHoc";
-            this.lbl_DanhMucKhoaHoc.Size = new System.Drawing.Size(135, 20);
+            this.lbl_DanhMucKhoaHoc.Size = new System.Drawing.Size(158, 24);
             this.lbl_DanhMucKhoaHoc.TabIndex = 23;
             this.lbl_DanhMucKhoaHoc.Text = "Course Catalogue";
             // 
@@ -121,9 +121,9 @@
             // 
             this.pnl_ThanhNgang_TitlePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(127)))), ((int)(((byte)(245)))));
             this.pnl_ThanhNgang_TitlePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnl_ThanhNgang_TitlePage.Location = new System.Drawing.Point(59, 90);
+            this.pnl_ThanhNgang_TitlePage.Location = new System.Drawing.Point(66, 112);
             this.pnl_ThanhNgang_TitlePage.Name = "pnl_ThanhNgang_TitlePage";
-            this.pnl_ThanhNgang_TitlePage.Size = new System.Drawing.Size(153, 1);
+            this.pnl_ThanhNgang_TitlePage.Size = new System.Drawing.Size(172, 2);
             this.pnl_ThanhNgang_TitlePage.TabIndex = 21;
             // 
             // lbl_QuanLiKhoaHoc
@@ -132,9 +132,9 @@
             this.lbl_QuanLiKhoaHoc.BackColor = System.Drawing.Color.White;
             this.lbl_QuanLiKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_QuanLiKhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_QuanLiKhoaHoc.Location = new System.Drawing.Point(51, 54);
+            this.lbl_QuanLiKhoaHoc.Location = new System.Drawing.Point(57, 68);
             this.lbl_QuanLiKhoaHoc.Name = "lbl_QuanLiKhoaHoc";
-            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(134, 36);
+            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(164, 43);
             this.lbl_QuanLiKhoaHoc.TabIndex = 22;
             this.lbl_QuanLiKhoaHoc.Text = "Email box";
             // 
@@ -142,9 +142,9 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox9.Image = global::DemoDoAn.Properties.Resources.book;
-            this.pictureBox9.Location = new System.Drawing.Point(20, 54);
+            this.pictureBox9.Location = new System.Drawing.Point(22, 68);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 37);
+            this.pictureBox9.Size = new System.Drawing.Size(27, 46);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 126;
             this.pictureBox9.TabStop = false;
@@ -162,9 +162,9 @@
             this.btn_TitleQLNV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_TitleQLNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TitleQLNV.ForeColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.Location = new System.Drawing.Point(3, 7);
+            this.btn_TitleQLNV.Location = new System.Drawing.Point(3, 9);
             this.btn_TitleQLNV.Name = "btn_TitleQLNV";
-            this.btn_TitleQLNV.Size = new System.Drawing.Size(1469, 122);
+            this.btn_TitleQLNV.Size = new System.Drawing.Size(1653, 152);
             this.btn_TitleQLNV.TabIndex = 172;
             this.btn_TitleQLNV.TextColor = System.Drawing.Color.White;
             this.btn_TitleQLNV.UseVisualStyleBackColor = false;
@@ -185,9 +185,9 @@
             this.pnl_ChiTiet.Controls.Add(this.lbl_NgayThang);
             this.pnl_ChiTiet.Controls.Add(this.pBox_AVT);
             this.pnl_ChiTiet.Controls.Add(this.rjButton1);
-            this.pnl_ChiTiet.Location = new System.Drawing.Point(750, 102);
+            this.pnl_ChiTiet.Location = new System.Drawing.Point(843, 128);
             this.pnl_ChiTiet.Name = "pnl_ChiTiet";
-            this.pnl_ChiTiet.Size = new System.Drawing.Size(731, 788);
+            this.pnl_ChiTiet.Size = new System.Drawing.Size(822, 985);
             this.pnl_ChiTiet.TabIndex = 1;
             // 
             // label6
@@ -195,9 +195,9 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI Variable Display", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label6.Location = new System.Drawing.Point(50, 25);
+            this.label6.Location = new System.Drawing.Point(57, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 36);
+            this.label6.Size = new System.Drawing.Size(198, 45);
             this.label6.TabIndex = 189;
             this.label6.Text = "Detail";
             // 
@@ -206,9 +206,9 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(104, 740);
+            this.label5.Location = new System.Drawing.Point(117, 925);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(546, 27);
+            this.label5.Size = new System.Drawing.Size(615, 34);
             this.label5.TabIndex = 188;
             this.label5.Text = "If you have a moment, we\'d love to learn a little bit more about you! ";
             // 
@@ -231,13 +231,13 @@
             this.gBtn_Gui.Image = global::DemoDoAn.Properties.Resources.send;
             this.gBtn_Gui.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.gBtn_Gui.ImageOffset = new System.Drawing.Point(25, 0);
-            this.gBtn_Gui.Location = new System.Drawing.Point(264, 663);
+            this.gBtn_Gui.Location = new System.Drawing.Point(297, 829);
             this.gBtn_Gui.Name = "gBtn_Gui";
             this.gBtn_Gui.ShadowDecoration.BorderRadius = 30;
             this.gBtn_Gui.ShadowDecoration.Color = System.Drawing.Color.Blue;
             this.gBtn_Gui.ShadowDecoration.Enabled = true;
             this.gBtn_Gui.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.gBtn_Gui.Size = new System.Drawing.Size(199, 61);
+            this.gBtn_Gui.Size = new System.Drawing.Size(224, 77);
             this.gBtn_Gui.TabIndex = 188;
             this.gBtn_Gui.Text = "Compose";
             this.gBtn_Gui.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -252,9 +252,9 @@
             this.lbl_TieuDe_CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.lbl_TieuDe_CT.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Bold);
             this.lbl_TieuDe_CT.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_TieuDe_CT.Location = new System.Drawing.Point(102, 203);
+            this.lbl_TieuDe_CT.Location = new System.Drawing.Point(114, 254);
             this.lbl_TieuDe_CT.Name = "lbl_TieuDe_CT";
-            this.lbl_TieuDe_CT.Size = new System.Drawing.Size(75, 26);
+            this.lbl_TieuDe_CT.Size = new System.Drawing.Size(88, 30);
             this.lbl_TieuDe_CT.TabIndex = 183;
             this.lbl_TieuDe_CT.Text = "Tieu de";
             // 
@@ -263,9 +263,9 @@
             this.lbl_NoiDung_CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.lbl_NoiDung_CT.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold);
             this.lbl_NoiDung_CT.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_NoiDung_CT.Location = new System.Drawing.Point(104, 242);
+            this.lbl_NoiDung_CT.Location = new System.Drawing.Point(117, 303);
             this.lbl_NoiDung_CT.Name = "lbl_NoiDung_CT";
-            this.lbl_NoiDung_CT.Size = new System.Drawing.Size(552, 369);
+            this.lbl_NoiDung_CT.Size = new System.Drawing.Size(621, 462);
             this.lbl_NoiDung_CT.TabIndex = 182;
             // 
             // rjButton3
@@ -281,9 +281,9 @@
             this.rjButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(56, 185);
+            this.rjButton3.Location = new System.Drawing.Point(63, 231);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(619, 449);
+            this.rjButton3.Size = new System.Drawing.Size(696, 562);
             this.rjButton3.TabIndex = 187;
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
@@ -294,9 +294,9 @@
             this.fLPnl_ThongTinNguoiGui.Controls.Add(this.lbl_HoTen);
             this.fLPnl_ThongTinNguoiGui.Controls.Add(this.label1);
             this.fLPnl_ThongTinNguoiGui.Controls.Add(this.lbl_MaNhomHoc);
-            this.fLPnl_ThongTinNguoiGui.Location = new System.Drawing.Point(104, 130);
+            this.fLPnl_ThongTinNguoiGui.Location = new System.Drawing.Point(117, 163);
             this.fLPnl_ThongTinNguoiGui.Name = "fLPnl_ThongTinNguoiGui";
-            this.fLPnl_ThongTinNguoiGui.Size = new System.Drawing.Size(483, 31);
+            this.fLPnl_ThongTinNguoiGui.Size = new System.Drawing.Size(543, 38);
             this.fLPnl_ThongTinNguoiGui.TabIndex = 186;
             // 
             // lbl_HoTen
@@ -307,7 +307,7 @@
             this.lbl_HoTen.ForeColor = System.Drawing.Color.Gray;
             this.lbl_HoTen.Location = new System.Drawing.Point(3, 0);
             this.lbl_HoTen.Name = "lbl_HoTen";
-            this.lbl_HoTen.Size = new System.Drawing.Size(119, 22);
+            this.lbl_HoTen.Size = new System.Drawing.Size(139, 27);
             this.lbl_HoTen.TabIndex = 180;
             this.lbl_HoTen.Text = "Nguyen Van A";
             // 
@@ -317,9 +317,9 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("SFU Futura", 9.152542F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(128, 0);
+            this.label1.Location = new System.Drawing.Point(148, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 21);
+            this.label1.Size = new System.Drawing.Size(28, 28);
             this.label1.TabIndex = 180;
             this.label1.Text = "to";
             // 
@@ -329,9 +329,9 @@
             this.lbl_MaNhomHoc.BackColor = System.Drawing.Color.White;
             this.lbl_MaNhomHoc.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold);
             this.lbl_MaNhomHoc.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_MaNhomHoc.Location = new System.Drawing.Point(156, 0);
+            this.lbl_MaNhomHoc.Location = new System.Drawing.Point(182, 0);
             this.lbl_MaNhomHoc.Name = "lbl_MaNhomHoc";
-            this.lbl_MaNhomHoc.Size = new System.Drawing.Size(121, 22);
+            this.lbl_MaNhomHoc.Size = new System.Drawing.Size(142, 27);
             this.lbl_MaNhomHoc.TabIndex = 180;
             this.lbl_MaNhomHoc.Text = "Language Hub";
             // 
@@ -339,9 +339,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::DemoDoAn.Properties.Resources.delete_White;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 83);
+            this.pictureBox1.Location = new System.Drawing.Point(63, 103);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(28, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 178;
             this.pictureBox1.TabStop = false;
@@ -350,9 +350,9 @@
             // 
             this.pBox_DanhDau.BackColor = System.Drawing.Color.White;
             this.pBox_DanhDau.Image = global::DemoDoAn.Properties.Resources.star_White;
-            this.pBox_DanhDau.Location = new System.Drawing.Point(87, 83);
+            this.pBox_DanhDau.Location = new System.Drawing.Point(98, 103);
             this.pBox_DanhDau.Name = "pBox_DanhDau";
-            this.pBox_DanhDau.Size = new System.Drawing.Size(25, 28);
+            this.pBox_DanhDau.Size = new System.Drawing.Size(28, 35);
             this.pBox_DanhDau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_DanhDau.TabIndex = 178;
             this.pBox_DanhDau.TabStop = false;
@@ -364,9 +364,9 @@
             this.lbl_Gio.BackColor = System.Drawing.Color.White;
             this.lbl_Gio.Font = new System.Drawing.Font("SFU Futura", 9.152542F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Gio.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_Gio.Location = new System.Drawing.Point(582, 90);
+            this.lbl_Gio.Location = new System.Drawing.Point(654, 112);
             this.lbl_Gio.Name = "lbl_Gio";
-            this.lbl_Gio.Size = new System.Drawing.Size(74, 21);
+            this.lbl_Gio.Size = new System.Drawing.Size(96, 28);
             this.lbl_Gio.TabIndex = 182;
             this.lbl_Gio.Text = "10:10:00";
             // 
@@ -376,9 +376,9 @@
             this.lbl_NgayThang.BackColor = System.Drawing.Color.White;
             this.lbl_NgayThang.Font = new System.Drawing.Font("SFU Futura", 9.152542F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NgayThang.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_NgayThang.Location = new System.Drawing.Point(556, 69);
+            this.lbl_NgayThang.Location = new System.Drawing.Point(626, 86);
             this.lbl_NgayThang.Name = "lbl_NgayThang";
-            this.lbl_NgayThang.Size = new System.Drawing.Size(100, 21);
+            this.lbl_NgayThang.Size = new System.Drawing.Size(130, 28);
             this.lbl_NgayThang.TabIndex = 182;
             this.lbl_NgayThang.Text = "01/01/2022";
             // 
@@ -386,9 +386,9 @@
             // 
             this.pBox_AVT.BackColor = System.Drawing.Color.White;
             this.pBox_AVT.Image = global::DemoDoAn.Properties.Resources.user2;
-            this.pBox_AVT.Location = new System.Drawing.Point(56, 124);
+            this.pBox_AVT.Location = new System.Drawing.Point(63, 155);
             this.pBox_AVT.Name = "pBox_AVT";
-            this.pBox_AVT.Size = new System.Drawing.Size(42, 42);
+            this.pBox_AVT.Size = new System.Drawing.Size(48, 52);
             this.pBox_AVT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_AVT.TabIndex = 179;
             this.pBox_AVT.TabStop = false;
@@ -408,7 +408,7 @@
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(6, 3);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(722, 924);
+            this.rjButton1.Size = new System.Drawing.Size(813, 1155);
             this.rjButton1.TabIndex = 70;
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
@@ -428,9 +428,9 @@
             this.pnl_TTCaNhan.Controls.Add(this.fLPnl_ThuDen);
             this.pnl_TTCaNhan.Controls.Add(this.btn_TongQuan);
             this.pnl_TTCaNhan.Controls.Add(this.btn_QL_FORM_AVT);
-            this.pnl_TTCaNhan.Location = new System.Drawing.Point(3, 102);
+            this.pnl_TTCaNhan.Location = new System.Drawing.Point(3, 128);
             this.pnl_TTCaNhan.Name = "pnl_TTCaNhan";
-            this.pnl_TTCaNhan.Size = new System.Drawing.Size(741, 788);
+            this.pnl_TTCaNhan.Size = new System.Drawing.Size(834, 985);
             this.pnl_TTCaNhan.TabIndex = 1;
             // 
             // label9
@@ -438,9 +438,9 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(56, 148);
+            this.label9.Location = new System.Drawing.Point(63, 185);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(378, 94);
+            this.label9.Size = new System.Drawing.Size(426, 117);
             this.label9.TabIndex = 188;
             this.label9.Text = "If you have a moment, we\'d love to learn a little bit more about you! We put toge" +
     "ther a quick survey with question about what you\'re most interested in.";
@@ -450,9 +450,9 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Segoe UI Variable Display", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(113)))), ((int)(((byte)(245)))));
-            this.label4.Location = new System.Drawing.Point(54, 50);
+            this.label4.Location = new System.Drawing.Point(60, 63);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(399, 94);
+            this.label4.Size = new System.Drawing.Size(448, 117);
             this.label4.TabIndex = 187;
             this.label4.Text = "We\'d love \r\nto hear your feedback!";
             // 
@@ -460,9 +460,9 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Image = global::DemoDoAn.Properties.Resources.menu_dots_vertical;
-            this.pictureBox6.Location = new System.Drawing.Point(682, 300);
+            this.pictureBox6.Location = new System.Drawing.Point(768, 375);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(18, 26);
+            this.pictureBox6.Size = new System.Drawing.Size(21, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 189;
             this.pictureBox6.TabStop = false;
@@ -471,9 +471,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(113)))), ((int)(((byte)(245)))));
             this.pictureBox5.Image = global::DemoDoAn.Properties.Resources.chat;
-            this.pictureBox5.Location = new System.Drawing.Point(508, 70);
+            this.pictureBox5.Location = new System.Drawing.Point(572, 88);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(130, 151);
+            this.pictureBox5.Size = new System.Drawing.Size(147, 189);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 179;
             this.pictureBox5.TabStop = false;
@@ -483,9 +483,9 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI Variable Display", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label3.Location = new System.Drawing.Point(54, 290);
+            this.label3.Location = new System.Drawing.Point(60, 363);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 36);
+            this.label3.Size = new System.Drawing.Size(198, 45);
             this.label3.TabIndex = 187;
             this.label3.Text = "Email list";
             // 
@@ -493,9 +493,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = global::DemoDoAn.Properties.Resources.picture;
-            this.pictureBox4.Location = new System.Drawing.Point(517, 285);
+            this.pictureBox4.Location = new System.Drawing.Point(582, 357);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox4.Size = new System.Drawing.Size(48, 51);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 178;
             this.pictureBox4.TabStop = false;
@@ -505,9 +505,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::DemoDoAn.Properties.Resources.link;
-            this.pictureBox3.Location = new System.Drawing.Point(471, 285);
+            this.pictureBox3.Location = new System.Drawing.Point(530, 357);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 51);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 178;
             this.pictureBox3.TabStop = false;
@@ -526,9 +526,9 @@
             this.rjButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(113)))), ((int)(((byte)(245)))));
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(452, 49);
+            this.rjButton2.Location = new System.Drawing.Point(508, 62);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(243, 192);
+            this.rjButton2.Size = new System.Drawing.Size(273, 240);
             this.rjButton2.TabIndex = 120;
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
@@ -537,9 +537,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::DemoDoAn.Properties.Resources.stickerIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(425, 285);
+            this.pictureBox2.Location = new System.Drawing.Point(478, 357);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 51);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 178;
             this.pictureBox2.TabStop = false;
@@ -549,9 +549,9 @@
             // 
             this.fLPnl_ThuDen.AutoScroll = true;
             this.fLPnl_ThuDen.BackColor = System.Drawing.Color.White;
-            this.fLPnl_ThuDen.Location = new System.Drawing.Point(17, 340);
+            this.fLPnl_ThuDen.Location = new System.Drawing.Point(20, 425);
             this.fLPnl_ThuDen.Name = "fLPnl_ThuDen";
-            this.fLPnl_ThuDen.Size = new System.Drawing.Size(710, 427);
+            this.fLPnl_ThuDen.Size = new System.Drawing.Size(798, 534);
             this.fLPnl_ThuDen.TabIndex = 71;
             // 
             // btn_TongQuan
@@ -567,9 +567,9 @@
             this.btn_TongQuan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.btn_TongQuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TongQuan.ForeColor = System.Drawing.Color.White;
-            this.btn_TongQuan.Location = new System.Drawing.Point(23, 25);
+            this.btn_TongQuan.Location = new System.Drawing.Point(26, 31);
             this.btn_TongQuan.Name = "btn_TongQuan";
-            this.btn_TongQuan.Size = new System.Drawing.Size(693, 243);
+            this.btn_TongQuan.Size = new System.Drawing.Size(780, 303);
             this.btn_TongQuan.TabIndex = 120;
             this.btn_TongQuan.TextColor = System.Drawing.Color.White;
             this.btn_TongQuan.UseVisualStyleBackColor = false;
@@ -589,19 +589,19 @@
             this.btn_QL_FORM_AVT.ForeColor = System.Drawing.Color.White;
             this.btn_QL_FORM_AVT.Location = new System.Drawing.Point(3, 3);
             this.btn_QL_FORM_AVT.Name = "btn_QL_FORM_AVT";
-            this.btn_QL_FORM_AVT.Size = new System.Drawing.Size(735, 782);
+            this.btn_QL_FORM_AVT.Size = new System.Drawing.Size(826, 977);
             this.btn_QL_FORM_AVT.TabIndex = 70;
             this.btn_QL_FORM_AVT.TextColor = System.Drawing.Color.White;
             this.btn_QL_FORM_AVT.UseVisualStyleBackColor = false;
             // 
             // UC_HAMTHUGOPY
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.Controls.Add(this.pnl_FORM);
             this.Name = "UC_HAMTHUGOPY";
-            this.Size = new System.Drawing.Size(1490, 899);
+            this.Size = new System.Drawing.Size(1677, 1123);
             this.Load += new System.EventHandler(this.UC_HAMTHUGOPY_Load);
             this.pnl_FORM.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

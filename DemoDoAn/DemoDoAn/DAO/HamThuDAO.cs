@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoDoAn.MODELS;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -42,6 +43,33 @@ namespace DemoDoAn.HOCVIEN.Class
         {
             string sqlStr = string.Format("delete HOPTHU where MaThu = '{0}'", mathu);
             dbConn.ThucThi(sqlStr);
+        }
+        public void GuiThongBao(ThongBao thongBao)
+        {
+            string sqlStr = string.Format("Exec dbo.proc_ThemThongBao @MaGiaoVien = '{0}', @TieuDe = N'{1}', @NoiDung = N'{2}'",
+                                          thongBao.MaGiaoVien, thongBao.TieuDe, thongBao.NoiDung);
+            dbConn.ThucThi(sqlStr);
+        }
+        public DataTable LayMaThongBaoMoiNhat()
+        {
+            string sqlStr = string.Format("SELECT TOP 1 * FROM THONGBAO ORDER BY MaThongBao DESC");
+            return dbConn.LayDanhSach(sqlStr);
+        }
+        public void TruyenTin(TruyenTin truyenTin)
+        {
+            string sqlStr = string.Format("Exec dbo.proc_ThemTruyenTin @MaThongBao = '{0}', @MaNhomHoc = '{1}'",
+                                          truyenTin.MaThongBao, truyenTin.MaNhomHoc);
+            dbConn.ThucThi(sqlStr);
+        }
+        public DataTable LayThongBaoMoiNhat(string MaHocVien)
+        {
+            string sqlStr = string.Format("EXEC dbo.proc_LayThongBaoMoiNhat @MaHocVien = '{0}'", MaHocVien);
+            return dbConn.LayDanhSach(sqlStr);
+        }
+        public DataTable LayThongBaoDuocGui(string MaGiaoVien)
+        {
+            string sqlStr = string.Format("EXEC dbo.proc_LayThongBaoDuocGui @MaGiaoVien = '{0}'", MaGiaoVien);
+            return dbConn.LayDanhSach(sqlStr);
         }
     }
 }

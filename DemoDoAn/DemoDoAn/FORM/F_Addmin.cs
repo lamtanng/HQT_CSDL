@@ -257,9 +257,9 @@ namespace DemoDoAn.FORM
 
         private void button3_Click(object sender, EventArgs e)
         {
-            UC_HAMTHUGOPY hamThu = new UC_HAMTHUGOPY();
-            unselectButton();
-            selectButton(hamThu, pBox_EmailBox, btn_EmailBox);
+            //UC_HAMTHUGOPY hamThu = new UC_HAMTHUGOPY();
+            //unselectButton();
+            //selectButton(hamThu, pBox_EmailBox, btn_EmailBox);
         }
 
         private void btn_BangLuong_Click(object sender, EventArgs e)

@@ -92,14 +92,22 @@ namespace DemoDoAn.HOCVIEN
 
         private void diemDanhHocVien()
         {    
-            for (int i = dataGrView_DSLop.Rows.Count - 1; i >=0; i--)
+            try
             {
-                DataGridViewRow row = dataGrView_DSLop.Rows[i];
-                string maHV = row.Cells["MaHocVien"].Value.ToString().Trim();
-                bool hienDien = Convert.ToBoolean(row.Cells["DiemDanh"].Value);
-                bddDao.diemDanhHocVien(maNhom, maHV, hienDien);
+                for (int i = dataGrView_DSLop.Rows.Count - 1; i >= 0; i--)
+                {
+                    DataGridViewRow row = dataGrView_DSLop.Rows[i];
+                    string maHV = row.Cells["MaHocVien"].Value.ToString().Trim();
+                    bool hienDien = Convert.ToBoolean(row.Cells["DiemDanh"].EditedFormattedValue);
+                    bddDao.diemDanhHocVien(maNhom, maHV, hienDien);
 
+                }
+                MessageBox.Show("Đã điểm danh xong!");
+            }catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
+            
             //foreach (DataGridViewRow row in dataGrView_DSLop.Rows)
             //{
             //    string maHV = row.Cells["MaHocVien"].Value.ToString().Trim();

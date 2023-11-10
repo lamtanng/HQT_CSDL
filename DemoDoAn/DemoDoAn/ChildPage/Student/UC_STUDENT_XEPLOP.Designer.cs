@@ -43,6 +43,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_FORM = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.lbl_DanhMucKhoaHoc = new System.Windows.Forms.Label();
             this.pnl_ThanhNgang_TitlePage = new System.Windows.Forms.Panel();
@@ -77,9 +78,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbb_ChonLopHoc = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbb_ChonKhoaHoc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbb_NhomHoc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbb_KhoaHoc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbb_LopHoc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_SearchDSLopHoc = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txt_SearchHVChuaCoLop = new System.Windows.Forms.TextBox();
@@ -111,8 +114,8 @@
             this.btn_QLThongTinLopHoc = new CustomControls.RJControls.RJButton();
             this.btn_QLDSHocVienChuaCoLop = new CustomControls.RJControls.RJButton();
             this.btn_DSLopHoc = new CustomControls.RJControls.RJButton();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnl_FORM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel9.SuspendLayout();
@@ -127,7 +130,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSHocVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSLop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_FORM
@@ -148,9 +150,11 @@
             this.pnl_FORM.Controls.Add(this.label2);
             this.pnl_FORM.Controls.Add(this.label3);
             this.pnl_FORM.Controls.Add(this.label7);
+            this.pnl_FORM.Controls.Add(this.label4);
             this.pnl_FORM.Controls.Add(this.label5);
-            this.pnl_FORM.Controls.Add(this.cbb_ChonLopHoc);
-            this.pnl_FORM.Controls.Add(this.cbb_ChonKhoaHoc);
+            this.pnl_FORM.Controls.Add(this.cbb_NhomHoc);
+            this.pnl_FORM.Controls.Add(this.cbb_KhoaHoc);
+            this.pnl_FORM.Controls.Add(this.cbb_LopHoc);
             this.pnl_FORM.Controls.Add(this.txt_SearchDSLopHoc);
             this.pnl_FORM.Controls.Add(this.pictureBox3);
             this.pnl_FORM.Controls.Add(this.txt_SearchHVChuaCoLop);
@@ -167,6 +171,17 @@
             this.pnl_FORM.Name = "pnl_FORM";
             this.pnl_FORM.Size = new System.Drawing.Size(1508, 899);
             this.pnl_FORM.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Image = global::DemoDoAn.Properties.Resources.menu_dots_vertical;
+            this.pictureBox6.Location = new System.Drawing.Point(1418, 119);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(18, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 192;
+            this.pictureBox6.TabStop = false;
             // 
             // panel10
             // 
@@ -268,7 +283,7 @@
             this.label13.ForeColor = System.Drawing.Color.Silver;
             this.label13.Location = new System.Drawing.Point(4, 1);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(57, 20);
+            this.label13.Size = new System.Drawing.Size(58, 20);
             this.label13.TabIndex = 128;
             this.label13.Text = "Tuition";
             // 
@@ -396,7 +411,7 @@
             this.lbl_TT_TenGiangVien.ForeColor = System.Drawing.Color.DimGray;
             this.lbl_TT_TenGiangVien.Location = new System.Drawing.Point(16, 34);
             this.lbl_TT_TenGiangVien.Name = "lbl_TT_TenGiangVien";
-            this.lbl_TT_TenGiangVien.Size = new System.Drawing.Size(150, 22);
+            this.lbl_TT_TenGiangVien.Size = new System.Drawing.Size(151, 22);
             this.lbl_TT_TenGiangVien.TabIndex = 89;
             this.lbl_TT_TenGiangVien.Text = "Nguyễn Thị Tuyết";
             // 
@@ -525,7 +540,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.label1.Location = new System.Drawing.Point(790, 399);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 33);
+            this.label1.Size = new System.Drawing.Size(184, 33);
             this.label1.TabIndex = 189;
             this.label1.Text = "List of student";
             // 
@@ -561,9 +576,21 @@
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
             this.label7.Location = new System.Drawing.Point(918, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 20);
+            this.label7.Size = new System.Drawing.Size(84, 20);
             this.label7.TabIndex = 187;
-            this.label7.Text = "Subjects selection:";
+            this.label7.Text = "Nhóm học:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.DarkGray;
+            this.label4.Location = new System.Drawing.Point(353, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.TabIndex = 188;
+            this.label4.Text = "Khóa học:";
             // 
             // label5
             // 
@@ -573,63 +600,94 @@
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
             this.label5.Location = new System.Drawing.Point(635, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 20);
+            this.label5.Size = new System.Drawing.Size(67, 20);
             this.label5.TabIndex = 188;
-            this.label5.Text = "Course selection:";
+            this.label5.Text = "Lớp học:";
             // 
-            // cbb_ChonLopHoc
+            // cbb_NhomHoc
             // 
-            this.cbb_ChonLopHoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.cbb_ChonLopHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.cbb_ChonLopHoc.BorderRadius = 7;
-            this.cbb_ChonLopHoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbb_ChonLopHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_ChonLopHoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.cbb_ChonLopHoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.cbb_ChonLopHoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.cbb_ChonLopHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
-            this.cbb_ChonLopHoc.ForeColor = System.Drawing.Color.Gray;
-            this.cbb_ChonLopHoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.cbb_ChonLopHoc.HoverState.FillColor = System.Drawing.Color.White;
-            this.cbb_ChonLopHoc.ItemHeight = 30;
-            this.cbb_ChonLopHoc.Location = new System.Drawing.Point(914, 131);
-            this.cbb_ChonLopHoc.Name = "cbb_ChonLopHoc";
-            this.cbb_ChonLopHoc.ShadowDecoration.BorderRadius = 0;
-            this.cbb_ChonLopHoc.Size = new System.Drawing.Size(235, 36);
-            this.cbb_ChonLopHoc.TabIndex = 185;
-            this.cbb_ChonLopHoc.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cbb_ChonLopHoc.SelectedIndexChanged += new System.EventHandler(this.cbb_ChonLopHoc_SelectedIndexChanged);
+            this.cbb_NhomHoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.cbb_NhomHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_NhomHoc.BorderRadius = 7;
+            this.cbb_NhomHoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbb_NhomHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_NhomHoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_NhomHoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_NhomHoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_NhomHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
+            this.cbb_NhomHoc.ForeColor = System.Drawing.Color.Gray;
+            this.cbb_NhomHoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_NhomHoc.HoverState.FillColor = System.Drawing.Color.White;
+            this.cbb_NhomHoc.ItemHeight = 30;
+            this.cbb_NhomHoc.Location = new System.Drawing.Point(914, 131);
+            this.cbb_NhomHoc.Name = "cbb_NhomHoc";
+            this.cbb_NhomHoc.ShadowDecoration.BorderRadius = 0;
+            this.cbb_NhomHoc.Size = new System.Drawing.Size(235, 36);
+            this.cbb_NhomHoc.TabIndex = 185;
+            this.cbb_NhomHoc.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cbb_NhomHoc.SelectedIndexChanged += new System.EventHandler(this.cbb_NhomHoc_SelectedIndexChanged);
             // 
-            // cbb_ChonKhoaHoc
+            // cbb_KhoaHoc
             // 
-            this.cbb_ChonKhoaHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.cbb_ChonKhoaHoc.BorderColor = System.Drawing.Color.White;
-            this.cbb_ChonKhoaHoc.BorderRadius = 7;
-            this.cbb_ChonKhoaHoc.DisabledState.BorderColor = System.Drawing.Color.White;
-            this.cbb_ChonKhoaHoc.DisabledState.FillColor = System.Drawing.Color.White;
-            this.cbb_ChonKhoaHoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbb_ChonKhoaHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_ChonKhoaHoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.cbb_ChonKhoaHoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.cbb_ChonKhoaHoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
-            this.cbb_ChonKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
-            this.cbb_ChonKhoaHoc.ForeColor = System.Drawing.Color.Gray;
-            this.cbb_ChonKhoaHoc.HoverState.BorderColor = System.Drawing.Color.White;
-            this.cbb_ChonKhoaHoc.HoverState.FillColor = System.Drawing.Color.White;
-            this.cbb_ChonKhoaHoc.HoverState.ForeColor = System.Drawing.Color.DimGray;
-            this.cbb_ChonKhoaHoc.ItemHeight = 30;
-            this.cbb_ChonKhoaHoc.ItemsAppearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.cbb_ChonKhoaHoc.ItemsAppearance.ForeColor = System.Drawing.Color.Silver;
-            this.cbb_ChonKhoaHoc.ItemsAppearance.SelectedBackColor = System.Drawing.Color.White;
-            this.cbb_ChonKhoaHoc.ItemsAppearance.SelectedFont = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
-            this.cbb_ChonKhoaHoc.ItemsAppearance.SelectedForeColor = System.Drawing.Color.DimGray;
-            this.cbb_ChonKhoaHoc.Location = new System.Drawing.Point(632, 131);
-            this.cbb_ChonKhoaHoc.Name = "cbb_ChonKhoaHoc";
-            this.cbb_ChonKhoaHoc.ShadowDecoration.BorderRadius = 0;
-            this.cbb_ChonKhoaHoc.Size = new System.Drawing.Size(238, 36);
-            this.cbb_ChonKhoaHoc.TabIndex = 186;
-            this.cbb_ChonKhoaHoc.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cbb_ChonKhoaHoc.SelectedIndexChanged += new System.EventHandler(this.cbb_ChonKhoaHoc_SelectedIndexChanged);
+            this.cbb_KhoaHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_KhoaHoc.BorderColor = System.Drawing.Color.White;
+            this.cbb_KhoaHoc.BorderRadius = 7;
+            this.cbb_KhoaHoc.DisabledState.BorderColor = System.Drawing.Color.White;
+            this.cbb_KhoaHoc.DisabledState.FillColor = System.Drawing.Color.White;
+            this.cbb_KhoaHoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbb_KhoaHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_KhoaHoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_KhoaHoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_KhoaHoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_KhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
+            this.cbb_KhoaHoc.ForeColor = System.Drawing.Color.Gray;
+            this.cbb_KhoaHoc.HoverState.BorderColor = System.Drawing.Color.White;
+            this.cbb_KhoaHoc.HoverState.FillColor = System.Drawing.Color.White;
+            this.cbb_KhoaHoc.HoverState.ForeColor = System.Drawing.Color.DimGray;
+            this.cbb_KhoaHoc.ItemHeight = 30;
+            this.cbb_KhoaHoc.ItemsAppearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_KhoaHoc.ItemsAppearance.ForeColor = System.Drawing.Color.Silver;
+            this.cbb_KhoaHoc.ItemsAppearance.SelectedBackColor = System.Drawing.Color.White;
+            this.cbb_KhoaHoc.ItemsAppearance.SelectedFont = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
+            this.cbb_KhoaHoc.ItemsAppearance.SelectedForeColor = System.Drawing.Color.DimGray;
+            this.cbb_KhoaHoc.Location = new System.Drawing.Point(350, 131);
+            this.cbb_KhoaHoc.Name = "cbb_KhoaHoc";
+            this.cbb_KhoaHoc.ShadowDecoration.BorderRadius = 0;
+            this.cbb_KhoaHoc.Size = new System.Drawing.Size(238, 36);
+            this.cbb_KhoaHoc.TabIndex = 186;
+            this.cbb_KhoaHoc.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cbb_KhoaHoc.SelectedIndexChanged += new System.EventHandler(this.cbb_KhoaHoc_SelectedIndexChanged);
+            // 
+            // cbb_LopHoc
+            // 
+            this.cbb_LopHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_LopHoc.BorderColor = System.Drawing.Color.White;
+            this.cbb_LopHoc.BorderRadius = 7;
+            this.cbb_LopHoc.DisabledState.BorderColor = System.Drawing.Color.White;
+            this.cbb_LopHoc.DisabledState.FillColor = System.Drawing.Color.White;
+            this.cbb_LopHoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbb_LopHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_LopHoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_LopHoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_LopHoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(101)))), ((int)(((byte)(110)))));
+            this.cbb_LopHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
+            this.cbb_LopHoc.ForeColor = System.Drawing.Color.Gray;
+            this.cbb_LopHoc.HoverState.BorderColor = System.Drawing.Color.White;
+            this.cbb_LopHoc.HoverState.FillColor = System.Drawing.Color.White;
+            this.cbb_LopHoc.HoverState.ForeColor = System.Drawing.Color.DimGray;
+            this.cbb_LopHoc.ItemHeight = 30;
+            this.cbb_LopHoc.ItemsAppearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.cbb_LopHoc.ItemsAppearance.ForeColor = System.Drawing.Color.Silver;
+            this.cbb_LopHoc.ItemsAppearance.SelectedBackColor = System.Drawing.Color.White;
+            this.cbb_LopHoc.ItemsAppearance.SelectedFont = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold);
+            this.cbb_LopHoc.ItemsAppearance.SelectedForeColor = System.Drawing.Color.DimGray;
+            this.cbb_LopHoc.Location = new System.Drawing.Point(632, 131);
+            this.cbb_LopHoc.Name = "cbb_LopHoc";
+            this.cbb_LopHoc.ShadowDecoration.BorderRadius = 0;
+            this.cbb_LopHoc.Size = new System.Drawing.Size(238, 36);
+            this.cbb_LopHoc.TabIndex = 186;
+            this.cbb_LopHoc.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cbb_LopHoc.SelectedIndexChanged += new System.EventHandler(this.cbb_LopHoc_SelectedIndexChanged);
             // 
             // txt_SearchDSLopHoc
             // 
@@ -750,28 +808,28 @@
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.STT_DSHV.DefaultCellStyle = dataGridViewCellStyle2;
             this.STT_DSHV.FillWeight = 30F;
-            this.STT_DSHV.HeaderText = "Order Number";
+            this.STT_DSHV.HeaderText = "STT";
             this.STT_DSHV.MinimumWidth = 6;
             this.STT_DSHV.Name = "STT_DSHV";
-            this.STT_DSHV.Width = 132;
+            this.STT_DSHV.Width = 64;
             // 
             // HVID_DSHV
             // 
             this.HVID_DSHV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HVID_DSHV.DataPropertyName = "HVID";
+            this.HVID_DSHV.DataPropertyName = "MaHocVien";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.HVID_DSHV.DefaultCellStyle = dataGridViewCellStyle3;
             this.HVID_DSHV.FillWeight = 110.2163F;
-            this.HVID_DSHV.HeaderText = "ID";
+            this.HVID_DSHV.HeaderText = "Mã học viên";
             this.HVID_DSHV.MinimumWidth = 6;
             this.HVID_DSHV.Name = "HVID_DSHV";
             // 
             // HOTEN_DSHV
             // 
             this.HOTEN_DSHV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HOTEN_DSHV.DataPropertyName = "HOTEN";
+            this.HOTEN_DSHV.DataPropertyName = "TenHocVien";
             this.HOTEN_DSHV.FillWeight = 91.01637F;
-            this.HOTEN_DSHV.HeaderText = "Name";
+            this.HOTEN_DSHV.HeaderText = "Họ tên";
             this.HOTEN_DSHV.MinimumWidth = 6;
             this.HOTEN_DSHV.Name = "HOTEN_DSHV";
             // 
@@ -783,7 +841,7 @@
             dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.Them.DefaultCellStyle = dataGridViewCellStyle4;
             this.Them.FillWeight = 91.01637F;
-            this.Them.HeaderText = "Add";
+            this.Them.HeaderText = "Thêm";
             this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
             this.Them.MinimumWidth = 6;
             this.Them.Name = "Them";
@@ -850,30 +908,30 @@
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.STT_DSL.DefaultCellStyle = dataGridViewCellStyle8;
             this.STT_DSL.FillWeight = 30F;
-            this.STT_DSL.HeaderText = "Order Number";
+            this.STT_DSL.HeaderText = "STT";
             this.STT_DSL.MinimumWidth = 6;
             this.STT_DSL.Name = "STT_DSL";
-            this.STT_DSL.Width = 144;
+            this.STT_DSL.Width = 64;
             // 
             // HVID_DSL
             // 
             this.HVID_DSL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HVID_DSL.DataPropertyName = "HVID";
+            this.HVID_DSL.DataPropertyName = "MaHocVien";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.HVID_DSL.DefaultCellStyle = dataGridViewCellStyle9;
             this.HVID_DSL.FillWeight = 110.2163F;
-            this.HVID_DSL.HeaderText = "ID";
+            this.HVID_DSL.HeaderText = "Mã học viên";
             this.HVID_DSL.MinimumWidth = 6;
             this.HVID_DSL.Name = "HVID_DSL";
             // 
             // HOTEN_DSL
             // 
             this.HOTEN_DSL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HOTEN_DSL.DataPropertyName = "HOTEN";
+            this.HOTEN_DSL.DataPropertyName = "TenHocVien";
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.HOTEN_DSL.DefaultCellStyle = dataGridViewCellStyle10;
             this.HOTEN_DSL.FillWeight = 91.01637F;
-            this.HOTEN_DSL.HeaderText = "Name";
+            this.HOTEN_DSL.HeaderText = "Họ tên";
             this.HOTEN_DSL.MinimumWidth = 6;
             this.HOTEN_DSL.Name = "HOTEN_DSL";
             // 
@@ -1200,17 +1258,6 @@
             this.btn_DSLopHoc.TextColor = System.Drawing.Color.White;
             this.btn_DSLopHoc.UseVisualStyleBackColor = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Image = global::DemoDoAn.Properties.Resources.menu_dots_vertical;
-            this.pictureBox6.Location = new System.Drawing.Point(1418, 119);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(18, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 192;
-            this.pictureBox6.TabStop = false;
-            // 
             // UC_STUDENT_XEPLOP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1222,6 +1269,7 @@
             this.Load += new System.EventHandler(this.UC_STUDENT_XEPLOP_Load);
             this.pnl_FORM.ResumeLayout(false);
             this.pnl_FORM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -1245,7 +1293,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSHocVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSLop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1269,14 +1316,6 @@
         private CustomControls.RJControls.RJButton btn_QLThongTinLopHoc;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT_DSL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HVID_DSL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HOTEN_DSL;
-        private System.Windows.Forms.DataGridViewImageColumn Xoa_DSL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT_DSHV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HVID_DSHV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HOTEN_DSHV;
-        private System.Windows.Forms.DataGridViewImageColumn Them;
         private System.Windows.Forms.TextBox txt_SearchDSLopHoc;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txt_SearchHVChuaCoLop;
@@ -1285,8 +1324,8 @@
         private CustomControls.RJControls.RJButton rjButton2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_ChonLopHoc;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_ChonKhoaHoc;
+        private Guna.UI2.WinForms.Guna2ComboBox cbb_NhomHoc;
+        private Guna.UI2.WinForms.Guna2ComboBox cbb_LopHoc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -1322,5 +1361,15 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private CustomControls.RJControls.RJButton btn_TitleQLNV;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT_DSHV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HVID_DSHV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HOTEN_DSHV;
+        private System.Windows.Forms.DataGridViewImageColumn Them;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT_DSL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HVID_DSL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HOTEN_DSL;
+        private System.Windows.Forms.DataGridViewImageColumn Xoa_DSL;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ComboBox cbb_KhoaHoc;
     }
 }

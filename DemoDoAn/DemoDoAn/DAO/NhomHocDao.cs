@@ -13,10 +13,28 @@ namespace DemoDoAn
     {
         DBConnection dbConn = new DBConnection();
 
-        //lay ds lop
+        //lay ds nhom
         public DataTable LayDanhSachNhom()
         {
             string sqlStr = string.Format("EXEC dbo.proc_LayDanhSachNhom");
+            return dbConn.LayDanhSach(sqlStr);
+        }
+
+        //lay ds nhom thuoc LopHoc
+        public DataTable LayDanhSachNhom_ThuocLopHoc(string maLop)
+        {
+            string sqlStr = string.Format("select * from NHOMHOC Where MaLopHoc = '{0}'", maLop);
+            return dbConn.LayDanhSach(sqlStr);
+        }
+
+        //lay thong tin nhom hoc
+        public DataTable LayThongTinMotNhom(string maNhom)
+        {
+            string sqlStr = string.Format("SELECT dbo.NHOMHOC.* , dbo.LOPHOC.TenLopHoc, dbo.LOPHOC.HocPhi, dbo.GIAOVIEN.HoTen as TenGiaoVien " +
+                                            "FROM dbo.LOPHOC INNER JOIN " +
+                                            "dbo.NHOMHOC ON dbo.LOPHOC.MaLopHoc = dbo.NHOMHOC.MaLopHoc INNER JOIN " +
+                                            "dbo.GIAOVIEN ON dbo.NHOMHOC.MaGiaoVien = dbo.GIAOVIEN.MaGiaoVien " +
+                                            "Where NHOMHOC.MaNhomHoc = '{0}'", maNhom);
             return dbConn.LayDanhSach(sqlStr);
         }
 

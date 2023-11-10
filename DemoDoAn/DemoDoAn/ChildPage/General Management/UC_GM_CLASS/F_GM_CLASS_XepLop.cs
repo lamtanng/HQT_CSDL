@@ -1,7 +1,6 @@
 ﻿using DemoDoAn.Custom_Control;
 using DemoDoAn.DAO;
 using DemoDoAn.MODELS;
-//using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,7 +46,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
             this.tenlop = tenlop;
             this.maKH = maKH;
             this.tenKH = tenKH;
-            //hienThongTin();
+            
         }
 
         #region XULIDOHOa
@@ -214,54 +213,11 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 
         }
 
-        //check lịch trống
-        //private void checkLichTrong(DataTable dtCheck, string thuocTinhCheck)
-        //{
-        //    //kiểm tra những "Thứ" nào được chọn
-        //    foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
-        //    {
-        //        if (cbox.Checked == true)
-        //        {
-        //            //chuẩn hóa 'Thứ 2' -> '2'
-        //            string thu = chuanHoa(cbox.Text.ToString());
-        //            //tìm tra Table lịch học all môn
-        //            for (int r = 0; r < dtLichHoc.Rows.Count; r++)
-        //            {   //tìm những "Thứ" và "Ca" đã được chọn đã có lịch dạy của môn khác hay chưa
-        //                if (dtLichHoc.Rows[r]["Thu"].ToString().Trim() == thu && dtLichHoc.Rows[r]["Ca"].ToString().Trim() == ((DataRowView)cbb_GioHoc.SelectedItem)["Ca"].ToString().Trim())
-        //                {
-        //                    //nếu có thì phòng/GV đó đã có lịch
-        //                    for (int i = dtCheck.Rows.Count- 1; i >=0 ; i--)
-        //                    {
-        //                        if (dtCheck.Rows[i][thuocTinhCheck].ToString().Trim() == dtLichHoc.Rows[r][thuocTinhCheck].ToString().Trim())
-        //                        {
-        //                            MessageBox.Show(dtCheck.Rows.Count.ToString());
-        //                            //xóa phòng/GV đó khỏi DataTable
-        //                            dtCheck.Rows[i].Delete();
-        //                            dtCheck.AcceptChanges();
-
-        //                            MessageBox.Show(dtCheck.Rows.Count.ToString());
-        //                            break;
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-
-        //}
-
-        //load cbb giao vien
         private void loadCbb_GiaoVien(int ca)
         {
             DataTable dtGV = new DataTable();
             dtGV = LichHocDao.taiGiaoVienTrongLich(arrCacBuoiHoc[0], arrCacBuoiHoc[1], arrCacBuoiHoc[2], ca);
-           loadCombobox(cbb_GiaoVien, dtGV, "HoTen", "MaGiaoVien");
-        }
-
-        //load lịch học all môn
-        private void loadLichHoc()
-        {
-            dtLichHoc = nhomHocDao.lichHocCacMon();
+            loadCombobox(cbb_GiaoVien, dtGV, "HoTen", "MaGiaoVien");
         }
 
         //chuẩn hóa 'Thứ 2' về '2':
@@ -445,11 +401,6 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
 
 
         #region checkLoi
-        //ktra đã chọn sô buổi học chưa
-        private void chonSoBuoiHoc()
-        {
-            
-        }
 
         private bool kiemTraRong(TextBox textbox)
         {
@@ -469,35 +420,45 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         }
         #endregion
 
-#if false //load cbb lophoc, khoahoc
-        //load cbb lop hoc
-        private void loadCbb_LopHoc(string maKH)
-        {
-            //tạo DT mới có số cột = số cột cũ qua .Clone()
-            DataTable dtLopHoc = dtKhoaHoc.Clone();
+        //check lịch trống
+        //private void checkLichTrong(DataTable dtCheck, string thuocTinhCheck)
+        //{
+        //    //kiểm tra những "Thứ" nào được chọn
+        //    foreach (CheckBox cbox in pnl_QLNgayHoc.Controls.OfType<CheckBox>())
+        //    {
+        //        if (cbox.Checked == true)
+        //        {
+        //            //chuẩn hóa 'Thứ 2' -> '2'
+        //            string thu = chuanHoa(cbox.Text.ToString());
+        //            //tìm tra Table lịch học all môn
+        //            for (int r = 0; r < dtLichHoc.Rows.Count; r++)
+        //            {   //tìm những "Thứ" và "Ca" đã được chọn đã có lịch dạy của môn khác hay chưa
+        //                if (dtLichHoc.Rows[r]["Thu"].ToString().Trim() == thu && dtLichHoc.Rows[r]["Ca"].ToString().Trim() == ((DataRowView)cbb_GioHoc.SelectedItem)["Ca"].ToString().Trim())
+        //                {
+        //                    //nếu có thì phòng/GV đó đã có lịch
+        //                    for (int i = dtCheck.Rows.Count- 1; i >=0 ; i--)
+        //                    {
+        //                        if (dtCheck.Rows[i][thuocTinhCheck].ToString().Trim() == dtLichHoc.Rows[r][thuocTinhCheck].ToString().Trim())
+        //                        {
+        //                            MessageBox.Show(dtCheck.Rows.Count.ToString());
+        //                            //xóa phòng/GV đó khỏi DataTable
+        //                            dtCheck.Rows[i].Delete();
+        //                            dtCheck.AcceptChanges();
 
-            for (int r = 0; r < dtKhoaHoc.Rows.Count; r++)
-            {
-                //tìm những dòng có MãKH đã được chọn
-                if (dtKhoaHoc.Rows[r]["MaKH"].ToString() == maKH)
-                {
-                    //tạo dataRow lưu hàng đó lại
-                    DataRow newRow = dtLopHoc.NewRow();
-                    newRow.ItemArray = dtKhoaHoc.Rows[r].ItemArray; // sao chép dữ liệu từ dòng r của dt vào newRow
-                    dtLopHoc.Rows.Add(newRow);
-                }
-            }
-            //load những lớp thuộc MãKH đó lên thôi
-            loadCombobox(cbb_ChonLopHoc, dtLopHoc, "TenMon", "MaLop");
-        }
+        //                            MessageBox.Show(dtCheck.Rows.Count.ToString());
+        //                            break;
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
 
-        //load cbb khoa hoc
-        private void loadCbb_KhoaHoc()
-        {
-            DataTable distinctMaKH = dtKhoaHoc.DefaultView.ToTable(true, new string[] { "MaKH", "TenKH" });
-            loadCombobox(cbb_ChonKhoaHoc, distinctMaKH, "TenKH", "MaKH");
-        }
-#endif
+        //}
 
+        //load cbb giao vien
+
+
+        //load lịch học all môn
     }
 }

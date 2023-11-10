@@ -12,6 +12,7 @@ namespace DemoDoAn.DAO
     {
         DBConnection dbConn = new DBConnection();
 
+        //lay all danh sach lop
         public DataTable LayDanhSachLop()
         {
             string sqlStr = string.Format("SELECT * FROM LOPHOC");
@@ -36,5 +37,11 @@ namespace DemoDoAn.DAO
             return dbConn.LayDanhSach(sqlStr);
         }
 
+        //lay DS LopHoc của Khóa học
+        public DataTable LayLopHoc_ThuocKhoaHoc(string maKhoaHoc)
+        {
+            string sqlStr = string.Format("select * from LOPHOC Where MaKhoaHoc = '{0}'", maKhoaHoc);
+            return dbConn.LayDanhSach(sqlStr);
+        }
     }
 }

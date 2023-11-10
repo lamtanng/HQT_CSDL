@@ -37,19 +37,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_SearchDSLopHoc = new System.Windows.Forms.TextBox();
+            this.pBox_Luu = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.dataGrView_DSLop = new System.Windows.Forms.DataGridView();
+            this.btn_DSLopHoc = new CustomControls.RJControls.RJButton();
             this.STT_DSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaHocVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenHocVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiemDanh = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pBox_Luu = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.btn_DSLopHoc = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_Luu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSLop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox_Luu)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,6 +91,19 @@
             this.txt_SearchDSLopHoc.TabIndex = 192;
             this.txt_SearchDSLopHoc.Text = "Search...";
             // 
+            // pBox_Luu
+            // 
+            this.pBox_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.pBox_Luu.Image = global::DemoDoAn.Properties.Resources.updates;
+            this.pBox_Luu.Location = new System.Drawing.Point(1261, 81);
+            this.pBox_Luu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pBox_Luu.Name = "pBox_Luu";
+            this.pBox_Luu.Size = new System.Drawing.Size(39, 44);
+            this.pBox_Luu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pBox_Luu.TabIndex = 193;
+            this.pBox_Luu.TabStop = false;
+            this.pBox_Luu.Click += new System.EventHandler(this.pBox_Luu_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
@@ -102,6 +115,26 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 193;
             this.pictureBox3.TabStop = false;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.rjButton1.BorderRadius = 18;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(829, 46);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(269, 62);
+            this.rjButton1.TabIndex = 194;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // dataGrView_DSLop
             // 
@@ -156,6 +189,27 @@
             this.dataGrView_DSLop.TabIndex = 191;
             this.dataGrView_DSLop.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrView_DSLop_CellClick);
             // 
+            // btn_DSLopHoc
+            // 
+            this.btn_DSLopHoc.BackColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.BackgroundColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_DSLopHoc.BorderRadius = 40;
+            this.btn_DSLopHoc.BorderSize = 0;
+            this.btn_DSLopHoc.FlatAppearance.BorderSize = 0;
+            this.btn_DSLopHoc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DSLopHoc.ForeColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.Location = new System.Drawing.Point(3, 4);
+            this.btn_DSLopHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_DSLopHoc.Name = "btn_DSLopHoc";
+            this.btn_DSLopHoc.Size = new System.Drawing.Size(1475, 709);
+            this.btn_DSLopHoc.TabIndex = 190;
+            this.btn_DSLopHoc.TextColor = System.Drawing.Color.White;
+            this.btn_DSLopHoc.UseVisualStyleBackColor = false;
+            // 
             // STT_DSL
             // 
             this.STT_DSL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -191,64 +245,12 @@
             // 
             // DiemDanh
             // 
+            this.DiemDanh.FalseValue = "0";
             this.DiemDanh.HeaderText = "Điểm danh";
             this.DiemDanh.MinimumWidth = 8;
             this.DiemDanh.Name = "DiemDanh";
+            this.DiemDanh.TrueValue = "1";
             this.DiemDanh.Width = 150;
-            // 
-            // pBox_Luu
-            // 
-            this.pBox_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.pBox_Luu.Image = global::DemoDoAn.Properties.Resources.updates;
-            this.pBox_Luu.Location = new System.Drawing.Point(1261, 81);
-            this.pBox_Luu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pBox_Luu.Name = "pBox_Luu";
-            this.pBox_Luu.Size = new System.Drawing.Size(39, 44);
-            this.pBox_Luu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pBox_Luu.TabIndex = 193;
-            this.pBox_Luu.TabStop = false;
-            this.pBox_Luu.Click += new System.EventHandler(this.pBox_Luu_Click);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.rjButton1.BorderRadius = 18;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(829, 46);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(269, 62);
-            this.rjButton1.TabIndex = 194;
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // btn_DSLopHoc
-            // 
-            this.btn_DSLopHoc.BackColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.BackgroundColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_DSLopHoc.BorderRadius = 40;
-            this.btn_DSLopHoc.BorderSize = 0;
-            this.btn_DSLopHoc.FlatAppearance.BorderSize = 0;
-            this.btn_DSLopHoc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DSLopHoc.ForeColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.Location = new System.Drawing.Point(3, 4);
-            this.btn_DSLopHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DSLopHoc.Name = "btn_DSLopHoc";
-            this.btn_DSLopHoc.Size = new System.Drawing.Size(1475, 709);
-            this.btn_DSLopHoc.TabIndex = 190;
-            this.btn_DSLopHoc.TextColor = System.Drawing.Color.White;
-            this.btn_DSLopHoc.UseVisualStyleBackColor = false;
             // 
             // F_DIEMDANH
             // 
@@ -263,9 +265,9 @@
             this.Text = "F_DIEMDANH";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_Luu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSLop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox_Luu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,10 +281,10 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.DataGridView dataGrView_DSLop;
         private CustomControls.RJControls.RJButton btn_DSLopHoc;
+        private System.Windows.Forms.PictureBox pBox_Luu;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT_DSL;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHocVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenHocVien;
         private System.Windows.Forms.DataGridViewCheckBoxColumn DiemDanh;
-        private System.Windows.Forms.PictureBox pBox_Luu;
     }
 }

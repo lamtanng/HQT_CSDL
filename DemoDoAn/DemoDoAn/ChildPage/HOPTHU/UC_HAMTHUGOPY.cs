@@ -79,7 +79,7 @@ namespace DemoDoAn.HOCVIEN
 
         private void UC_HAMTHUGOPY_Load(object sender, EventArgs e)
         {
-            taiFULL_INFO();
+            //taiFULL_INFO();
             gBtn_Gui_Visiblitiy(chucVu);
             LoadThuDen(chucVu);
         }
@@ -195,6 +195,7 @@ namespace DemoDoAn.HOCVIEN
         {
             F_HAMTHU hopThu = new F_HAMTHU();
             hopThu.ShowDialog();
+            UC_HAMTHUGOPY_Load(sender, e);
         }
 
         private void gBtn_Gui_Visiblitiy (int chucVu)

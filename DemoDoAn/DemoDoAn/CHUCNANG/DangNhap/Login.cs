@@ -1,4 +1,5 @@
 ﻿using DemoDoAn.FORM;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,9 +22,14 @@ namespace DemoDoAn
         LoginDAO logDAO = new LoginDAO();
         DataTable dtTaiKhoan = new DataTable();
         public static string userName = "";
-        string password;
-        string accTable;
+        public static string password = "";
 
+        enum roles
+        {
+            role_Admin,
+            role_HocVien, 
+            role_GiaoVien
+        }
 
         public Login()
         {
@@ -112,48 +118,57 @@ namespace DemoDoAn
         //tai bang account
         private void taiTaiKhoan()
         {
-            dtTaiKhoan = logDAO.Login(txt_Username.Text.Trim(), txt_Password.Text.Trim());
+            try
+            {
+                dtTaiKhoan = logDAO.Login(txt_Username.Text.Trim(), txt_Password.Text.Trim());
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         //click login
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            taiTaiKhoan();
-            userName = txt_Username.Text.ToString();
-            password = txt_Password.Text.ToString();
-
-            //check acc co ton tai khong
-            int r = dtTaiKhoan.Rows.Count;
-            if (r >= 0)
+            try
             {
-                String quyenNguoiDung = dtTaiKhoan.Rows[0]["QuyenNguoiDung"].ToString().Trim();
-                if (Convert.ToInt16(quyenNguoiDung) == 0)
-                {
-                    F_Addmin admin = new F_Addmin();
-                    admin.Show();
-                    this.Hide();
+                taiTaiKhoan();
+                userName = txt_Username.Text.ToString();
+                password = txt_Password.Text.ToString();
+                //Enum.GetName(typeof(roles), roles.role_HocVien) -->string
 
-                }
-                else if (Convert.ToInt16(quyenNguoiDung) == 1)
+                //check acc co ton tai khong
+                int r = dtTaiKhoan.Rows.Count;
+                if (r >= 0)
                 {
-                    F_HOCVIEN hv = new F_HOCVIEN(1);
-                    hv.Show();
-                    this.Hide();
+                    String quyenNguoiDung = dtTaiKhoan.Rows[0]["Role"].ToString().Trim();
+                    if (quyenNguoiDung == Enum.GetName(typeof(roles), roles.role_Admin))
+                    {
+                        F_Addmin admin = new F_Addmin();
+                        admin.Show();
+                        this.Hide();
 
-                }
-                else
-                {
-                    F_HOCVIEN gv = new F_HOCVIEN(2);
-                    gv.Show();
-                    this.Hide();
+                    }
+                    else if (quyenNguoiDung == Enum.GetName(typeof(roles), roles.role_HocVien))
+                    {
+                        F_HOCVIEN hv = new F_HOCVIEN(1);
+                        hv.Show();
+                        this.Hide();
+
+                    }
+                    else
+                    {
+                        F_HOCVIEN gv = new F_HOCVIEN(2);
+                        gv.Show();
+                        this.Hide();
+                    }
                 }
             }
-            else
+            catch
             {
                 MessageBox.Show("Vui lòng kiểm tra lại thông tin!");
             }
-
-
         }
 
         //check tai khoan có tồn tại chưa ->Trigger
@@ -179,37 +194,7 @@ namespace DemoDoAn
         //hien pass da ghi nho
         private void txt_Username_TextChanged(object sender, EventArgs e)
         {
-            userName = txt_Username.Text.ToString();
-
-            //for (int r = 0; r < dtTaiKhoan.Rows.Count; r++)
-            //{
-            //    DataRow row = dtTaiKhoan.Rows[r];
-            //    if (row["username"].ToString().Trim() == userName)
-            //    {
-            //        if (Convert.ToInt32(row["remember"]) == 1)
-            //        {
-            //            checkbox_Remember.Checked = true;
-            //            txt_Password.Text = row["pass"].ToString();
-            //            an_PasswordText();
-            //            break;
-            //        }
-            //        else
-            //        {
-            //            checkbox_Remember.Checked = false;
-            //            break;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        checkbox_Remember.Checked = false;
-            //        txt_Password.Text = "password";
-            //        hien_PasswordText();
-
-            //    }
-            //}
-
-
-
+            userName = txt_Username.Text.ToString().Trim();
         }
 
         //check thong tin day du
@@ -225,6 +210,11 @@ namespace DemoDoAn
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_Password_TextChanged(object sender, EventArgs e)
+        {
+            password = txt_Password.Text.ToString().Trim();
         }
     }
 }

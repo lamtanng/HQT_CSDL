@@ -85,13 +85,11 @@ namespace DemoDoAn.HOCVIEN
             }
             else if (chucVu == 2)//giang vien
             {
-                //taiDSLFull();
+
                 taiDSLDangDay();
             }
 
-            //taiDSLDangKy();
-            //hienThongTinLopDaDangKy();
-            //taiDSLNoiBat();
+           
         }
 
         #region GiangVien
@@ -111,13 +109,6 @@ namespace DemoDoAn.HOCVIEN
         private void taiDSLDangDay()
         {
             dtDSL = lhDao.LayDanhSachNhom_DangDay(ID);
-            //loại bỏ những lớp không còn hoạt động:
-            //for (int i = dtDSL.Rows.Count - 1; i >= 0; i--)
-            //{
-            //    DataRow row = dtDSL.Rows[i];
-            //    if (Convert.ToInt32(row["TTMoLop"].ToString()) == 0)
-            //        dtDSL.Rows.Remove(row);
-            //}
 
             loadForm(dataGrView_DSLop, dtDSL);
             //ẩn full các cột     
@@ -211,7 +202,7 @@ namespace DemoDoAn.HOCVIEN
         private void layID()
         {
             DataTable dtID = new DataTable();
-            dtID = hsDao1.Lay_MSSV(Login.userName);
+            dtID = hsDao1.Lay_MaID(Login.userName);
             ID = dtID.Rows[0]["Ma"].ToString().Trim();
         }
         
@@ -410,33 +401,6 @@ namespace DemoDoAn.HOCVIEN
             F_DIEMDANH f_DIEMDANH = new F_DIEMDANH(maNhom);
             f_DIEMDANH.ShowDialog();
 
-            ////lay thong tin lich hoc cua lop
-            //DataTable dtTTCT = new DataTable("TTChiTiet");
-            //dtTTCT = dklDao1.LayThongTinLop(row.Cells["MaLop_DSL"].Value.ToString());
-            ////gán thứ
-            //lbl_Thu.Text = String.Empty;
-            //for (int r = 0; r < dtTTCT.Rows.Count; r++)
-            //{
-            //    lbl_Thu.Text += "Thứ " + dtTTCT.Rows[r]["Thu"].ToString() + "\n\n";
-            //}
-            ////phòng
-            //lbl_SoPhongHoc.Text = dtTTCT.Rows[0]["Phong"].ToString();
-
-            ////giờ BD: TIME -> TimeSpan
-            //TimeSpan gioBD = (TimeSpan)dtTTCT.Rows[0]["GioBatDau"];
-            //lbl_GioBatDau.Text = gioBD.ToString(@"hh\:mm");
-
-            ////Giờ KT
-            //TimeSpan gioKT = (TimeSpan)dtTTCT.Rows[0]["GioKetThuc"];
-            //lbl_GioKetThuc.Text = gioKT.ToString(@"hh\:mm");
-
-            ////Ngày BD: DATE -> DateTime
-            //DateTime ngayBD = (DateTime)dtTTCT.Rows[0]["NgayBatDau"];
-            //lbl_NgayBatDau.Text = ngayBD.ToString("dd/MM/yyyy");
-
-            ////NgàyKT
-            //DateTime ngayKT = (DateTime)dtTTCT.Rows[0]["NgayKetThuc"];
-            //lbl_NgayKetThuc.Text = ngayKT.ToString("dd/MM/yyyy");
         }
 
         //load dtg

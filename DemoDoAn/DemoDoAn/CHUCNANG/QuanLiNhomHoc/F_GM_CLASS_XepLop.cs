@@ -113,6 +113,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
             dtKhoaHoc = nhomHocDao.LayDanhSachNhom();
             loadCbb_LopHoc();
             loadCbb_GioHoc();
+            btn_Loc.Enabled = false;
         }
 
         //cap nhat
@@ -334,7 +335,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         {
           
             DataTable dtNgayKetThuc = LichHocDao.tinhNgayKetThuc(datePTime_NgayBatDau.Value, 
-                                                                ((DataRowView)cbb_LopHoc.SelectedItem)["MaLopHoc"].ToString());
+                                                                Convert.ToInt32(txt_SoBuoiHoc.Text.ToString().Trim()));
             DateTime ngayKetThuc = (DateTime)dtNgayKetThuc.Rows[0]["NgayKetThuc"];
             return ngayKetThuc.ToShortDateString(); // MM/dd/yyyy
         }

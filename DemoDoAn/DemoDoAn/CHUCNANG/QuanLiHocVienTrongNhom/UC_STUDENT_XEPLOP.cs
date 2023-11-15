@@ -273,37 +273,18 @@ namespace DemoDoAn.ChildPage
                 row = dataGrView_DSHocVien.Rows[e.RowIndex];
                 if (dataGrView_DSHocVien.Columns[e.ColumnIndex].Name == "Them")
                 {
-
-                    string maLop = ((DataRowView)cbb_NhomHoc.SelectedItem)["MaLop"].ToString();
                     string hvID = row.Cells["HVID_DSHV"].Value.ToString();
-                    string loptrunglich = "";
-                    //kiem tra si so
-                    if (trangThai == "Hoạt động")
-                    {
-                        //check trung lich
-                        if(kiemTraTrungLich(maLop, ref loptrunglich, hvID))
-                        {
-                            //them hv
-                            dsNhomDao.themHocVienVaoNhom(maLop, hvID);
-                            dklDao.CapNhatSiSoLop();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Trùng lịch học lớp " + loptrunglich);
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không thành công!");
-                    }
-                    taiDSHVNhom(dataGrView_DSLop);
-                    taiDSHV_KhacNhom(dataGrView_DSHocVien);
-                    hienThongTinNhom();
+                    dsNhomDao.themHocVienVaoNhom(maNhom, hvID);
+                     
                 }
+                taiDSHVNhom(dataGrView_DSLop);
+                taiDSHV_KhacNhom(dataGrView_DSHocVien);
+                hienThongTinNhom();
+                
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -359,8 +340,6 @@ namespace DemoDoAn.ChildPage
         private void dataGrView_DSLop_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView dtg = sender as DataGridView;
-            //MessageBox.Show(dtg.SelectedRows.Count.ToString() + "eeee" + dtg.SelectedRows[e.RowIndex].Index.ToString());
-
             try
             {
                 DataGridViewRow row = new DataGridViewRow();
@@ -369,17 +348,10 @@ namespace DemoDoAn.ChildPage
                 {
                     if (MessageBox.Show("Bạn muốn xóa học viên?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        string maLop = ((DataRowView)cbb_NhomHoc.SelectedItem)["MaLop"].ToString();
                         string hvID = row.Cells["HVID_DSL"].Value.ToString();
+                        dsNhomDao.xoaHocVienKhoiNhom(maNhom, hvID);
 
-                        dsNhomDao.xoaHocVienKhoiNhom(maLop, hvID);
-                        //cap nhat si so lop
-                        dklDao.CapNhatSiSoLop();
                         hienThongTinNhom();//cập nhật lại trạng thái 
-
-                        //xoa lich su phieu thu
-                        ptDao.xoaLichSuThu(hvID, maLop);
-
                         taiDSHVNhom(dataGrView_DSLop);
                         taiDSHV_KhacNhom(dataGrView_DSHocVien);
                         hienThongTinNhom();
@@ -388,7 +360,7 @@ namespace DemoDoAn.ChildPage
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
 
         }

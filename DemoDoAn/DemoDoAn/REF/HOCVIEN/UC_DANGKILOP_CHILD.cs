@@ -68,7 +68,7 @@ namespace DemoDoAn.HOCVIEN
             if (handler != null)
             {
                 DataTable dtINFO = new DataTable();
-                dtINFO = hsDao.Lay_MSSV(Login.userName);
+                dtINFO = hsDao.Lay_MaID(Login.userName);
                 string hvID = dtINFO.Rows[0]["ID"].ToString().Trim();
                 if(chucVu == 1)//HV
                 {

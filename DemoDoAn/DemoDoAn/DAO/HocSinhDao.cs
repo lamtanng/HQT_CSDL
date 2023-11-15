@@ -24,10 +24,10 @@ namespace DemoDoAn
         }
 
         //Lấy MSSV
-        public DataTable Lay_MSSV(string username)
+        public DataTable Lay_MaID(string username)
         {
             //string thuocTinh = "HVID";
-            string sqlStr = string.Format("SELECT * FROM V_LIENLAC Where TenDangNhap = '{0}'", username);
+            string sqlStr = string.Format("SELECT * FROM dbo.V_LIENLAC Where TenDangNhap = '{0}'", username);
             return dbConn.LayDanhSach(sqlStr);
         }
 

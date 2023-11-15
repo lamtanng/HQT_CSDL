@@ -31,7 +31,8 @@ namespace DemoDoAn
         //check acc
         public DataTable Login(string username, string password)
         {
-            string sqlStr = string.Format("Select * From dbo.func_kiemTraDangNhap('{0}', '{1}')", username, password);
+            //string sqlStr = string.Format("Select * From dbo.func_kiemTraDangNhap('{0}', '{1}')", username, password);
+            string sqlStr = string.Format("select R.Name as Role\r\n\tfrom sys.database_principals P \r\n\t\tleft outer join sys.database_role_members RM on P.principal_id=RM.member_principal_id \r\n\t\tleft outer join sys.database_principals R on R.principal_id=RM.role_principal_id\r\n\tWHERE P.name = '{0}'", username);
             return dbConn.LayDanhSach(sqlStr);
         }
 

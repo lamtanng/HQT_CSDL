@@ -31,7 +31,7 @@ namespace DemoDoAn.HOCVIEN
 
             //lay ID va chuc vu: 
             DataTable dt_ID = new DataTable();
-            dt_ID = hsDao.Lay_MSSV(Login.userName);
+            dt_ID = hsDao.Lay_MaID(Login.userName);
             hvID = dt_ID.Rows[0]["Ma"].ToString();
 
             //Học viên || Giảng Viên

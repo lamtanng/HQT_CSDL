@@ -211,6 +211,7 @@
             this.txt_Password.TabIndex = 1;
             this.txt_Password.Text = "password";
             this.txt_Password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_Password_MouseClick);
+            this.txt_Password.TextChanged += new System.EventHandler(this.txt_Password_TextChanged);
             // 
             // rjButton2
             // 

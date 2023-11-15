@@ -587,7 +587,7 @@ namespace DemoDoAn.HOCVIEN
             F_TKB_THANHTOAN thanhtoan = new F_TKB_THANHTOAN();
             thanhtoan.ShowDialog();
             DataTable dtINFO = new DataTable();
-            dtINFO = hsDao.Lay_MSSV(Login.userName);
+            dtINFO = hsDao.Lay_MaID(Login.userName);
             string hvID = dtINFO.Rows[0]["ID"].ToString().Trim();
             LoadForm(dataGrView_DSLop, tkbDao.loadDSL(hvID));
         }
@@ -624,7 +624,7 @@ namespace DemoDoAn.HOCVIEN
         private void layID()
         {
             DataTable dtID = new DataTable();
-            dtID = hsDao.Lay_MSSV(Login.userName);
+            dtID = hsDao.Lay_MaID(Login.userName);
             ID = dtID.Rows[0]["MaHocVien"].ToString().Trim();
         }
 
@@ -718,7 +718,7 @@ namespace DemoDoAn.HOCVIEN
         private DataTable creaDataTable(DataTable dt)
         {
             DataTable dtINFO = new DataTable();
-            dtINFO = hsDao.Lay_MSSV(Login.userName);
+            dtINFO = hsDao.Lay_MaID(Login.userName);
             string hvID = dtINFO.Rows[0]["ID"].ToString().Trim();
             dt.Columns.Add("TenMon");
             dt.Columns.Add("Thu");
@@ -917,7 +917,7 @@ namespace DemoDoAn.HOCVIEN
         //private void layID()
         //{
         //    DataTable dtID = new DataTable();
-        //    dtID = hsDao1.Lay_MSSV(Login.userName);
+        //    dtID = hsDao1.Lay_MaID(Login.userName);
         //    ID = dtID.Rows[0]["ID"].ToString().Trim();
         //}
 

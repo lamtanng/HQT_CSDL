@@ -134,10 +134,9 @@
             // 
             this.pnl_ThanhNgang_TitlePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(127)))), ((int)(((byte)(245)))));
             this.pnl_ThanhNgang_TitlePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnl_ThanhNgang_TitlePage.Location = new System.Drawing.Point(66, 112);
-            this.pnl_ThanhNgang_TitlePage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_ThanhNgang_TitlePage.Location = new System.Drawing.Point(59, 90);
             this.pnl_ThanhNgang_TitlePage.Name = "pnl_ThanhNgang_TitlePage";
-            this.pnl_ThanhNgang_TitlePage.Size = new System.Drawing.Size(172, 1);
+            this.pnl_ThanhNgang_TitlePage.Size = new System.Drawing.Size(153, 1);
             this.pnl_ThanhNgang_TitlePage.TabIndex = 21;
             // 
             // lbl_QuanLiKhoaHoc
@@ -146,9 +145,9 @@
             this.lbl_QuanLiKhoaHoc.BackColor = System.Drawing.Color.White;
             this.lbl_QuanLiKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_QuanLiKhoaHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_QuanLiKhoaHoc.Location = new System.Drawing.Point(57, 68);
+            this.lbl_QuanLiKhoaHoc.Location = new System.Drawing.Point(51, 54);
             this.lbl_QuanLiKhoaHoc.Name = "lbl_QuanLiKhoaHoc";
-            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(340, 43);
+            this.lbl_QuanLiKhoaHoc.Size = new System.Drawing.Size(286, 36);
             this.lbl_QuanLiKhoaHoc.TabIndex = 22;
             this.lbl_QuanLiKhoaHoc.Text = "General Management";
             // 
@@ -158,9 +157,9 @@
             this.lbl_DanhMucKhoaHoc.BackColor = System.Drawing.Color.White;
             this.lbl_DanhMucKhoaHoc.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DanhMucKhoaHoc.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbl_DanhMucKhoaHoc.Location = new System.Drawing.Point(62, 120);
+            this.lbl_DanhMucKhoaHoc.Location = new System.Drawing.Point(55, 96);
             this.lbl_DanhMucKhoaHoc.Name = "lbl_DanhMucKhoaHoc";
-            this.lbl_DanhMucKhoaHoc.Size = new System.Drawing.Size(158, 24);
+            this.lbl_DanhMucKhoaHoc.Size = new System.Drawing.Size(135, 20);
             this.lbl_DanhMucKhoaHoc.TabIndex = 23;
             this.lbl_DanhMucKhoaHoc.Text = "Course Catalogue";
             // 
@@ -202,8 +201,7 @@
             this.dataGrView_DSKhoaHoc.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGrView_DSKhoaHoc.EnableHeadersVisualStyles = false;
             this.dataGrView_DSKhoaHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.dataGrView_DSKhoaHoc.Location = new System.Drawing.Point(35, 144);
-            this.dataGrView_DSKhoaHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGrView_DSKhoaHoc.Location = new System.Drawing.Point(31, 115);
             this.dataGrView_DSKhoaHoc.Name = "dataGrView_DSKhoaHoc";
             this.dataGrView_DSKhoaHoc.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -225,7 +223,7 @@
             this.dataGrView_DSKhoaHoc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGrView_DSKhoaHoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGrView_DSKhoaHoc.ShowCellErrors = false;
-            this.dataGrView_DSKhoaHoc.Size = new System.Drawing.Size(987, 398);
+            this.dataGrView_DSKhoaHoc.Size = new System.Drawing.Size(877, 318);
             this.dataGrView_DSKhoaHoc.TabIndex = 28;
             this.dataGrView_DSKhoaHoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrView_DSKhoaHoc_CellClick);
             this.dataGrView_DSKhoaHoc.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGrView_DSKhoaHoc_RowPostPaint);
@@ -260,7 +258,7 @@
             this.TenKhoaHoc.HeaderText = "Name";
             this.TenKhoaHoc.MinimumWidth = 6;
             this.TenKhoaHoc.Name = "TenKhoaHoc";
-            this.TenKhoaHoc.Width = 98;
+            this.TenKhoaHoc.Width = 80;
             // 
             // TrangThai
             // 
@@ -279,10 +277,9 @@
             this.txt_Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Search.Font = new System.Drawing.Font("Segoe UI Variable Small", 9.762712F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Search.ForeColor = System.Drawing.Color.Silver;
-            this.txt_Search.Location = new System.Drawing.Point(810, 55);
-            this.txt_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Search.Location = new System.Drawing.Point(720, 44);
             this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(201, 26);
+            this.txt_Search.Size = new System.Drawing.Size(179, 22);
             this.txt_Search.TabIndex = 1;
             this.txt_Search.Text = "Search...";
             this.txt_Search.Click += new System.EventHandler(this.txt_Search_Click);
@@ -300,10 +297,9 @@
             this.pnl_TongThu.Controls.Add(this.dataGrView_DSKhoaHoc);
             this.pnl_TongThu.Controls.Add(this.btn_TongThu);
             this.pnl_TongThu.Controls.Add(this.rjButton2);
-            this.pnl_TongThu.Location = new System.Drawing.Point(9, 124);
-            this.pnl_TongThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_TongThu.Location = new System.Drawing.Point(8, 99);
             this.pnl_TongThu.Name = "pnl_TongThu";
-            this.pnl_TongThu.Size = new System.Drawing.Size(1072, 620);
+            this.pnl_TongThu.Size = new System.Drawing.Size(953, 496);
             this.pnl_TongThu.TabIndex = 171;
             // 
             // guna2Button1
@@ -327,21 +323,20 @@
             this.guna2Button1.HoverState.Image = global::DemoDoAn.Properties.Resources.add_big;
             this.guna2Button1.Image = global::DemoDoAn.Properties.Resources.add;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(159, 25);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(141, 20);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(45, 50);
+            this.guna2Button1.Size = new System.Drawing.Size(40, 40);
             this.guna2Button1.TabIndex = 194;
+            this.guna2Button1.Visible = false;
             this.guna2Button1.Click += new System.EventHandler(this.btnTaoKhoaHoc_Click);
             // 
             // pBox_Search
             // 
             this.pBox_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pBox_Search.Image = global::DemoDoAn.Properties.Resources.search;
-            this.pBox_Search.Location = new System.Drawing.Point(764, 48);
-            this.pBox_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pBox_Search.Location = new System.Drawing.Point(679, 38);
             this.pBox_Search.Name = "pBox_Search";
-            this.pBox_Search.Size = new System.Drawing.Size(39, 44);
+            this.pBox_Search.Size = new System.Drawing.Size(35, 35);
             this.pBox_Search.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pBox_Search.TabIndex = 5;
             this.pBox_Search.TabStop = false;
@@ -358,10 +353,9 @@
             this.rjButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(753, 38);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton1.Location = new System.Drawing.Point(669, 30);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(269, 62);
+            this.rjButton1.Size = new System.Drawing.Size(239, 50);
             this.rjButton1.TabIndex = 174;
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
@@ -370,10 +364,9 @@
             // 
             this.btnTaoKhoaHoc.BackColor = System.Drawing.Color.White;
             this.btnTaoKhoaHoc.Image = global::DemoDoAn.Properties.Resources.add_big;
-            this.btnTaoKhoaHoc.Location = new System.Drawing.Point(264, 25);
-            this.btnTaoKhoaHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTaoKhoaHoc.Location = new System.Drawing.Point(235, 20);
             this.btnTaoKhoaHoc.Name = "btnTaoKhoaHoc";
-            this.btnTaoKhoaHoc.Size = new System.Drawing.Size(27, 46);
+            this.btnTaoKhoaHoc.Size = new System.Drawing.Size(24, 37);
             this.btnTaoKhoaHoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnTaoKhoaHoc.TabIndex = 125;
             this.btnTaoKhoaHoc.TabStop = false;
@@ -385,9 +378,9 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(33, 72);
+            this.label2.Location = new System.Drawing.Point(29, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 27);
+            this.label2.Size = new System.Drawing.Size(67, 22);
             this.label2.TabIndex = 23;
             this.label2.Text = "50 total";
             // 
@@ -397,9 +390,9 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label1.Location = new System.Drawing.Point(28, 20);
+            this.label1.Location = new System.Drawing.Point(25, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 48);
+            this.label1.Size = new System.Drawing.Size(117, 40);
             this.label1.TabIndex = 22;
             this.label1.Text = "Course";
             // 
@@ -417,9 +410,8 @@
             this.btn_TongThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TongThu.ForeColor = System.Drawing.Color.White;
             this.btn_TongThu.Location = new System.Drawing.Point(2, 2);
-            this.btn_TongThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_TongThu.Name = "btn_TongThu";
-            this.btn_TongThu.Size = new System.Drawing.Size(1066, 606);
+            this.btn_TongThu.Size = new System.Drawing.Size(948, 485);
             this.btn_TongThu.TabIndex = 124;
             this.btn_TongThu.TextColor = System.Drawing.Color.White;
             this.btn_TongThu.UseVisualStyleBackColor = false;
@@ -437,10 +429,9 @@
             this.rjButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(514, 80);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton2.Location = new System.Drawing.Point(457, 64);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(458, 191);
+            this.rjButton2.Size = new System.Drawing.Size(407, 153);
             this.rjButton2.TabIndex = 124;
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
@@ -452,20 +443,18 @@
             this.panel1.Controls.Add(this.lbl_QuanLiKhoaHoc);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.btn_TitleQLNV);
-            this.panel1.Location = new System.Drawing.Point(9, -49);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(8, -39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1626, 165);
+            this.panel1.Size = new System.Drawing.Size(1445, 132);
             this.panel1.TabIndex = 173;
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox9.Image = global::DemoDoAn.Properties.Resources.book;
-            this.pictureBox9.Location = new System.Drawing.Point(22, 68);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox9.Location = new System.Drawing.Point(20, 54);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(27, 46);
+            this.pictureBox9.Size = new System.Drawing.Size(24, 37);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 126;
             this.pictureBox9.TabStop = false;
@@ -483,10 +472,9 @@
             this.btn_TitleQLNV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_TitleQLNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TitleQLNV.ForeColor = System.Drawing.Color.White;
-            this.btn_TitleQLNV.Location = new System.Drawing.Point(3, 9);
-            this.btn_TitleQLNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_TitleQLNV.Location = new System.Drawing.Point(3, 7);
             this.btn_TitleQLNV.Name = "btn_TitleQLNV";
-            this.btn_TitleQLNV.Size = new System.Drawing.Size(1611, 152);
+            this.btn_TitleQLNV.Size = new System.Drawing.Size(1432, 122);
             this.btn_TitleQLNV.TabIndex = 172;
             this.btn_TitleQLNV.TextColor = System.Drawing.Color.White;
             this.btn_TitleQLNV.UseVisualStyleBackColor = false;
@@ -500,19 +488,17 @@
             this.pnl_QLFORM.Controls.Add(this.panel3);
             this.pnl_QLFORM.Controls.Add(this.pnl_TongThu);
             this.pnl_QLFORM.Location = new System.Drawing.Point(0, 0);
-            this.pnl_QLFORM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLFORM.Name = "pnl_QLFORM";
-            this.pnl_QLFORM.Size = new System.Drawing.Size(1638, 1124);
+            this.pnl_QLFORM.Size = new System.Drawing.Size(1456, 899);
             this.pnl_QLFORM.TabIndex = 174;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.guna2PictureBox1);
             this.panel6.Controls.Add(this.rjButton7);
-            this.panel6.Location = new System.Drawing.Point(572, 751);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel6.Location = new System.Drawing.Point(508, 601);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1063, 349);
+            this.panel6.Size = new System.Drawing.Size(945, 279);
             this.panel6.TabIndex = 174;
             // 
             // guna2PictureBox1
@@ -520,10 +506,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.Image = global::DemoDoAn.Properties.Resources.chart_course_3x;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(65, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(58, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(987, 398);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(877, 318);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -541,10 +526,9 @@
             this.rjButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton7.ForeColor = System.Drawing.Color.White;
-            this.rjButton7.Location = new System.Drawing.Point(3, 4);
-            this.rjButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton7.Location = new System.Drawing.Point(3, 3);
             this.rjButton7.Name = "rjButton7";
-            this.rjButton7.Size = new System.Drawing.Size(1048, 341);
+            this.rjButton7.Size = new System.Drawing.Size(932, 273);
             this.rjButton7.TabIndex = 124;
             this.rjButton7.TextColor = System.Drawing.Color.White;
             this.rjButton7.UseVisualStyleBackColor = false;
@@ -552,10 +536,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox8);
-            this.panel2.Location = new System.Drawing.Point(9, 751);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(8, 601);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 349);
+            this.panel2.Size = new System.Drawing.Size(494, 279);
             this.panel2.TabIndex = 174;
             // 
             // pictureBox8
@@ -563,10 +546,9 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::DemoDoAn.Properties.Resources.Anh2;
             this.pictureBox8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.InitialImage")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 4);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(0, 3);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(552, 341);
+            this.pictureBox8.Size = new System.Drawing.Size(491, 273);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 126;
             this.pictureBox8.TabStop = false;
@@ -579,10 +561,9 @@
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.rjButton3);
-            this.panel3.Location = new System.Drawing.Point(1088, 124);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(967, 99);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(556, 620);
+            this.panel3.Size = new System.Drawing.Size(494, 496);
             this.panel3.TabIndex = 171;
             // 
             // panel5
@@ -601,10 +582,9 @@
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.rjButton6);
-            this.panel5.Location = new System.Drawing.Point(37, 346);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel5.Location = new System.Drawing.Point(33, 277);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(469, 215);
+            this.panel5.Size = new System.Drawing.Size(417, 172);
             this.panel5.TabIndex = 131;
             // 
             // label12
@@ -613,9 +593,9 @@
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label12.Font = new System.Drawing.Font("Segoe UI Variable Display", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label12.Location = new System.Drawing.Point(29, 30);
+            this.label12.Location = new System.Drawing.Point(26, 24);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(260, 37);
+            this.label12.Size = new System.Drawing.Size(208, 31);
             this.label12.TabIndex = 22;
             this.label12.Text = "Giao Tiếp Cơ Bản 1";
             // 
@@ -625,9 +605,9 @@
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Segoe UI Variable Display", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label13.Location = new System.Drawing.Point(55, 81);
+            this.label13.Location = new System.Drawing.Point(49, 65);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 21);
+            this.label13.Size = new System.Drawing.Size(49, 19);
             this.label13.TabIndex = 130;
             this.label13.Text = "LH010";
             // 
@@ -640,10 +620,9 @@
             this.rjCircularPictureBox5.BorderSize = 0;
             this.rjCircularPictureBox5.GradientAngle = 50F;
             this.rjCircularPictureBox5.Image = global::DemoDoAn.Properties.Resources.user1;
-            this.rjCircularPictureBox5.Location = new System.Drawing.Point(342, 114);
-            this.rjCircularPictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjCircularPictureBox5.Location = new System.Drawing.Point(304, 91);
             this.rjCircularPictureBox5.Name = "rjCircularPictureBox5";
-            this.rjCircularPictureBox5.Size = new System.Drawing.Size(47, 47);
+            this.rjCircularPictureBox5.Size = new System.Drawing.Size(42, 42);
             this.rjCircularPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox5.TabIndex = 128;
             this.rjCircularPictureBox5.TabStop = false;
@@ -661,10 +640,9 @@
             this.rjButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.Location = new System.Drawing.Point(35, 74);
-            this.rjButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton5.Location = new System.Drawing.Point(31, 59);
             this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(96, 38);
+            this.rjButton5.Size = new System.Drawing.Size(85, 30);
             this.rjButton5.TabIndex = 124;
             this.rjButton5.TextColor = System.Drawing.Color.White;
             this.rjButton5.UseVisualStyleBackColor = false;
@@ -675,9 +653,9 @@
             this.label14.BackColor = System.Drawing.Color.DimGray;
             this.label14.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(384, 126);
+            this.label14.Location = new System.Drawing.Point(341, 101);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 27);
+            this.label14.Size = new System.Drawing.Size(31, 22);
             this.label14.TabIndex = 129;
             this.label14.Text = "+3";
             // 
@@ -685,10 +663,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox4.Image = global::DemoDoAn.Properties.Resources.book;
-            this.pictureBox4.Location = new System.Drawing.Point(35, 145);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(31, 116);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 46);
+            this.pictureBox4.Size = new System.Drawing.Size(24, 37);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 126;
             this.pictureBox4.TabStop = false;
@@ -702,10 +679,9 @@
             this.rjCircularPictureBox6.BorderSize = 0;
             this.rjCircularPictureBox6.GradientAngle = 50F;
             this.rjCircularPictureBox6.Image = global::DemoDoAn.Properties.Resources.woman_user;
-            this.rjCircularPictureBox6.Location = new System.Drawing.Point(310, 114);
-            this.rjCircularPictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjCircularPictureBox6.Location = new System.Drawing.Point(276, 91);
             this.rjCircularPictureBox6.Name = "rjCircularPictureBox6";
-            this.rjCircularPictureBox6.Size = new System.Drawing.Size(47, 47);
+            this.rjCircularPictureBox6.Size = new System.Drawing.Size(42, 42);
             this.rjCircularPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox6.TabIndex = 128;
             this.rjCircularPictureBox6.TabStop = false;
@@ -714,10 +690,9 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox6.Image = global::DemoDoAn.Properties.Resources.menu_dots_vertical;
-            this.pictureBox6.Location = new System.Drawing.Point(417, 31);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(371, 25);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(20, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(18, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 125;
             this.pictureBox6.TabStop = false;
@@ -727,10 +702,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox5.Image = global::DemoDoAn.Properties.Resources.users;
-            this.pictureBox5.Location = new System.Drawing.Point(184, 145);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(164, 116);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(27, 46);
+            this.pictureBox5.Size = new System.Drawing.Size(24, 37);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 126;
             this.pictureBox5.TabStop = false;
@@ -744,10 +718,9 @@
             this.rjCircularPictureBox7.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.rjCircularPictureBox7.BorderSize = 0;
             this.rjCircularPictureBox7.GradientAngle = 50F;
-            this.rjCircularPictureBox7.Location = new System.Drawing.Point(378, 114);
-            this.rjCircularPictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjCircularPictureBox7.Location = new System.Drawing.Point(336, 91);
             this.rjCircularPictureBox7.Name = "rjCircularPictureBox7";
-            this.rjCircularPictureBox7.Size = new System.Drawing.Size(47, 47);
+            this.rjCircularPictureBox7.Size = new System.Drawing.Size(42, 42);
             this.rjCircularPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox7.TabIndex = 128;
             this.rjCircularPictureBox7.TabStop = false;
@@ -758,9 +731,9 @@
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label15.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkGray;
-            this.label15.Location = new System.Drawing.Point(69, 156);
+            this.label15.Location = new System.Drawing.Point(61, 125);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 27);
+            this.label15.Size = new System.Drawing.Size(67, 22);
             this.label15.TabIndex = 127;
             this.label15.Text = "50 total";
             // 
@@ -770,9 +743,9 @@
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label16.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkGray;
-            this.label16.Location = new System.Drawing.Point(218, 156);
+            this.label16.Location = new System.Drawing.Point(194, 125);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 27);
+            this.label16.Size = new System.Drawing.Size(67, 22);
             this.label16.TabIndex = 127;
             this.label16.Text = "50 total";
             // 
@@ -789,10 +762,9 @@
             this.rjButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton6.ForeColor = System.Drawing.Color.White;
-            this.rjButton6.Location = new System.Drawing.Point(4, 11);
-            this.rjButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton6.Location = new System.Drawing.Point(4, 9);
             this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(458, 191);
+            this.rjButton6.Size = new System.Drawing.Size(407, 153);
             this.rjButton6.TabIndex = 124;
             this.rjButton6.TextColor = System.Drawing.Color.White;
             this.rjButton6.UseVisualStyleBackColor = false;
@@ -812,10 +784,9 @@
             this.panel4.Controls.Add(this.rjCircularPictureBox4);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(37, 105);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel4.Location = new System.Drawing.Point(33, 84);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(469, 215);
+            this.panel4.Size = new System.Drawing.Size(417, 172);
             this.panel4.TabIndex = 131;
             // 
             // label7
@@ -824,9 +795,9 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI Variable Display", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label7.Location = new System.Drawing.Point(29, 30);
+            this.label7.Location = new System.Drawing.Point(26, 24);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(247, 37);
+            this.label7.Size = new System.Drawing.Size(198, 31);
             this.label7.TabIndex = 22;
             this.label7.Text = "Anh Văn Cơ Bản 1";
             // 
@@ -836,9 +807,9 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Segoe UI Variable Display", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label11.Location = new System.Drawing.Point(55, 81);
+            this.label11.Location = new System.Drawing.Point(49, 65);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 21);
+            this.label11.Size = new System.Drawing.Size(49, 19);
             this.label11.TabIndex = 130;
             this.label11.Text = "LH001";
             // 
@@ -851,10 +822,9 @@
             this.rjCircularPictureBox2.BorderSize = 0;
             this.rjCircularPictureBox2.GradientAngle = 50F;
             this.rjCircularPictureBox2.Image = global::DemoDoAn.Properties.Resources.user1;
-            this.rjCircularPictureBox2.Location = new System.Drawing.Point(342, 114);
-            this.rjCircularPictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjCircularPictureBox2.Location = new System.Drawing.Point(304, 91);
             this.rjCircularPictureBox2.Name = "rjCircularPictureBox2";
-            this.rjCircularPictureBox2.Size = new System.Drawing.Size(47, 47);
+            this.rjCircularPictureBox2.Size = new System.Drawing.Size(42, 42);
             this.rjCircularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox2.TabIndex = 128;
             this.rjCircularPictureBox2.TabStop = false;
@@ -872,10 +842,9 @@
             this.rjButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(35, 74);
-            this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton4.Location = new System.Drawing.Point(31, 59);
             this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(96, 38);
+            this.rjButton4.Size = new System.Drawing.Size(85, 30);
             this.rjButton4.TabIndex = 124;
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
@@ -887,9 +856,9 @@
             this.label10.BackColor = System.Drawing.Color.DimGray;
             this.label10.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(384, 126);
+            this.label10.Location = new System.Drawing.Point(341, 101);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(37, 27);
+            this.label10.Size = new System.Drawing.Size(31, 22);
             this.label10.TabIndex = 129;
             this.label10.Text = "+3";
             // 
@@ -897,10 +866,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox2.Image = global::DemoDoAn.Properties.Resources.book;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 145);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(31, 116);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 126;
             this.pictureBox2.TabStop = false;
@@ -914,10 +882,9 @@
             this.rjCircularPictureBox1.BorderSize = 0;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = global::DemoDoAn.Properties.Resources.woman_user;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(310, 114);
-            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(276, 91);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(47, 47);
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(42, 42);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 128;
             this.rjCircularPictureBox1.TabStop = false;
@@ -926,10 +893,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox1.Image = global::DemoDoAn.Properties.Resources.menu_dots_vertical;
-            this.pictureBox1.Location = new System.Drawing.Point(417, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(371, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(18, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 125;
             this.pictureBox1.TabStop = false;
@@ -939,10 +905,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pictureBox3.Image = global::DemoDoAn.Properties.Resources.users;
-            this.pictureBox3.Location = new System.Drawing.Point(184, 145);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(164, 116);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(24, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 126;
             this.pictureBox3.TabStop = false;
@@ -956,10 +921,9 @@
             this.rjCircularPictureBox4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.rjCircularPictureBox4.BorderSize = 0;
             this.rjCircularPictureBox4.GradientAngle = 50F;
-            this.rjCircularPictureBox4.Location = new System.Drawing.Point(378, 114);
-            this.rjCircularPictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjCircularPictureBox4.Location = new System.Drawing.Point(336, 91);
             this.rjCircularPictureBox4.Name = "rjCircularPictureBox4";
-            this.rjCircularPictureBox4.Size = new System.Drawing.Size(47, 47);
+            this.rjCircularPictureBox4.Size = new System.Drawing.Size(42, 42);
             this.rjCircularPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox4.TabIndex = 128;
             this.rjCircularPictureBox4.TabStop = false;
@@ -970,9 +934,9 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkGray;
-            this.label8.Location = new System.Drawing.Point(69, 156);
+            this.label8.Location = new System.Drawing.Point(61, 125);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 27);
+            this.label8.Size = new System.Drawing.Size(67, 22);
             this.label8.TabIndex = 127;
             this.label8.Text = "50 total";
             // 
@@ -982,9 +946,9 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label9.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(218, 156);
+            this.label9.Location = new System.Drawing.Point(194, 125);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 27);
+            this.label9.Size = new System.Drawing.Size(67, 22);
             this.label9.TabIndex = 127;
             this.label9.Text = "50 total";
             // 
@@ -994,9 +958,9 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(420, 41);
+            this.label6.Location = new System.Drawing.Point(373, 33);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 21);
+            this.label6.Size = new System.Drawing.Size(67, 19);
             this.label6.TabIndex = 125;
             this.label6.Text = "See More";
             // 
@@ -1004,10 +968,9 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.pictureBox7.Location = new System.Drawing.Point(260, 569);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(231, 455);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(27, 31);
+            this.pictureBox7.Size = new System.Drawing.Size(24, 25);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 125;
             this.pictureBox7.TabStop = false;
@@ -1019,9 +982,9 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.label5.Location = new System.Drawing.Point(29, 20);
+            this.label5.Location = new System.Drawing.Point(26, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 48);
+            this.label5.Size = new System.Drawing.Size(99, 40);
             this.label5.TabIndex = 22;
             this.label5.Text = "Detail";
             // 
@@ -1039,9 +1002,8 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.Location = new System.Drawing.Point(2, 2);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(533, 606);
+            this.rjButton3.Size = new System.Drawing.Size(474, 485);
             this.rjButton3.TabIndex = 124;
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
@@ -1078,13 +1040,12 @@
             // 
             // UC_GM_COURSE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.pnl_QLFORM);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_GM_COURSE";
-            this.Size = new System.Drawing.Size(1638, 1128);
+            this.Size = new System.Drawing.Size(1456, 902);
             this.Load += new System.EventHandler(this.UC_GM_COURSE_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrView_DSKhoaHoc)).EndInit();
             this.pnl_TongThu.ResumeLayout(false);

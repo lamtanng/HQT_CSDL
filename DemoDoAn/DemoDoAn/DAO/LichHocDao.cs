@@ -12,10 +12,11 @@ namespace DemoDoAn
         DBConnection dbConn = new DBConnection();
 
         //
-        public DataTable tinhNgayKetThuc(DateTime ngayBatDau, string maLop)
+        public DataTable tinhNgayKetThuc(DateTime ngayBatDau, int soBuoiHoc
+            )
         {
     
-            string sqlStr = string.Format("SELECT dbo.uf_TinhNgayKetThuc('{0}','{1}') AS NgayKetThuc;", ngayBatDau, maLop);
+            string sqlStr = string.Format("SELECT dbo.uf_TinhNgayKetThuc('{0}',{1}) AS NgayKetThuc;", ngayBatDau, soBuoiHoc);
             return dbConn.LayDanhSach(sqlStr);
         }
 

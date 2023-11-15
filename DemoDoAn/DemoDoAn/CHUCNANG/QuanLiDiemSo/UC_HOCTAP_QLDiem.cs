@@ -96,10 +96,7 @@ namespace DemoDoAn.ChildPage.HocTap
                     }
                 }
             }
-            //xem hang
-            //dataGrView_BangDiem.Sort(dataGrView_BangDiem.Columns["XepHang"], ListSortDirection.Descending);
-            //xepThuHang();
-            //dtg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
         }
         //load dtg
         private void LoadForm(DataGridView dtg, DataTable dt)
@@ -134,21 +131,7 @@ namespace DemoDoAn.ChildPage.HocTap
             DataTable dtKhoaHoc = khDao.LayKhoaHoc();
             loadCombobox(gCbb_KhoaHoc, dtKhoaHoc, "TenKhoaHoc", "MaKhoaHoc");
             string maKH = ((DataRowView)gCbb_KhoaHoc.SelectedItem)["MaKhoaHoc"].ToString();
-            //dtKhoaHoc.Rows.Clear();
-            //dtKhoaHoc = LopHocDao.LayDanhSachNhom();
-
-            ////duyet lui chứ mỗi lần xóa bị lỗi
-            //int rows = dtKhoaHoc.Rows.Count;
-            //for (int r = rows - 1; r >= 0; r--)
-            //{
-            //    DataRow row = dtKhoaHoc.Rows[r];
-            //    //loại bỏ các dòng có khóa học và lớp học đã ngưng hoạt động
-            //    if (Convert.ToInt32(row["TrangThaiKH"]) == 0 || Convert.ToInt32(row["TTMoLop"]) == 0)
-            //        dtKhoaHoc.Rows.Remove(row);
-            //}
-            ////lọc bỏ khoá học trùng
-            //DataTable distinctMaKH = dtKhoaHoc.DefaultView.ToTable(true, new string[] { "MaKH", "TenKH" });
-            //loadCombobox(gCbb_KhoaHoc, distinctMaKH, "TenKH", "MaKH");
+         
         }
         //load cbb lop hoc
         private void loadCbb_LopHoc(string maKH)
@@ -156,22 +139,6 @@ namespace DemoDoAn.ChildPage.HocTap
             DataTable dtLopHoc = lhDao.LayLopHoc_ThuocKhoaHoc(maKH);
             loadCombobox(gCbb_LopHoc, dtLopHoc, "TenLopHoc", "MaLopHoc");
             string maLH = ((DataRowView)gCbb_LopHoc.SelectedItem)["MaLopHoc"].ToString();
-            ////tạo DT mới có số cột = số cột cũ qua .Clone()
-            //DataTable dtLopHoc = dtKhoaHoc.Clone();
-
-            //for (int r = 0; r < dtKhoaHoc.Rows.Count; r++)
-            //{
-            //    //tìm những dòng có MãKH đã được chọn
-            //    if (dtKhoaHoc.Rows[r]["MaKH"].ToString() == maKH)
-            //    {
-            //        //tạo dataRow lưu hàng đó lại
-            //        DataRow newRow = dtLopHoc.NewRow();
-            //        newRow.ItemArray = dtKhoaHoc.Rows[r].ItemArray; // sao chép dữ liệu từ dòng r của dt vào newRow
-            //        dtLopHoc.Rows.Add(newRow);
-            //    }
-            //}
-            ////load những lớp thuộc MãKH đó lên thôi
-            //loadCombobox(gCbb_LopHoc, dtLopHoc, "TenMon", "MaLop");
         }
         //load cbb nhom hoc
         private void loadCbb_NhomHoc(string maLH)

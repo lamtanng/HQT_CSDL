@@ -12,12 +12,14 @@ namespace DemoDoAn
 {
     internal class DBConnection
     {
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.cnnStr);
-        
-        //Mới vãi luôn nè
+        //SqlConnection conn = new SqlConnection(Properties.Settings.Default.cnnStr);
+
+
         //lấy danh sách của các bảng có sẵn
         public DataTable LayDanhSach(string sqlStr)
         {
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-JGRTVMGL\MYCOM;Initial Catalog=TRUNGTAMHOCLAPTRINH;User Id=" + Login.userName + ";Password=" + Login.password + ";");
+
             DataTable dtds = new DataTable();
             try
 
@@ -42,6 +44,8 @@ namespace DemoDoAn
         //
         public void ThucThi(string sqlStr)
         {
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-JGRTVMGL\MYCOM;Initial Catalog=TRUNGTAMHOCLAPTRINH;User Id=" + Login.userName + ";Password=" + Login.password + ";");
+
             try
             {
                 conn.Open();

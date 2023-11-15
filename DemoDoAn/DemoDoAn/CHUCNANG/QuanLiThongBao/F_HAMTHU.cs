@@ -90,7 +90,7 @@ namespace DemoDoAn.HOCVIEN
 
         private void F_HAMTHU_Load(object sender, EventArgs e)
         {
-            //string AccID = hsDao.Lay_MSSV(Login.userName);
+            //string AccID = hsDao.Lay_MaID(Login.userName);
             //dt_HV = hsDao.LoadThongTin(accID);
             //lbl_HoTen.Text = dtFULL_INFO.Rows[0]["HOTEN"].ToString();
             if (dt_GiaoVien.Rows.Count > 0)

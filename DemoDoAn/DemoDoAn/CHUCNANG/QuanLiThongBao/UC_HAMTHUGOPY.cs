@@ -202,7 +202,7 @@ namespace DemoDoAn.HOCVIEN
         {
             if (chucVu == 1)
             {
-                dt_HocVien = hsDao.Lay_MSSV(Login.userName.ToString().Trim());
+                dt_HocVien = hsDao.Lay_MaID(Login.userName.ToString().Trim());
                 gBtn_Gui.Visible = false;
                 if(dt_HocVien.Rows.Count > 0)
                 {

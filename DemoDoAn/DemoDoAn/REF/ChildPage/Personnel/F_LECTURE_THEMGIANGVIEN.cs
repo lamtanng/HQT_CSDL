@@ -34,7 +34,7 @@ namespace DemoDoAn.ChildPage.Personnel
         private void layID(string username)
         {
             DataTable dtID = new DataTable();
-            dtID = hsDao.Lay_MSSV(username);
+            dtID = hsDao.Lay_MaID(username);
             ID = dtID.Rows[0]["ID"].ToString().Trim();
         }
 

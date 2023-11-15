@@ -33,98 +33,98 @@
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.pnl_QLThongKe = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.btn_ChamCong = new System.Windows.Forms.Button();
-            this.btn_HocTap = new System.Windows.Forms.Button();
-            this.btn_GhiDanh = new System.Windows.Forms.Button();
-            this.btn_HocPhi = new System.Windows.Forms.Button();
-            this.pnl_QLThuChi = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_PhieuChi = new System.Windows.Forms.Button();
-            this.btn_PhieuThu = new System.Windows.Forms.Button();
-            this.pnl_QLNhanSu = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_BangLuong = new System.Windows.Forms.Button();
-            this.btn_NhanVien = new System.Windows.Forms.Button();
-            this.btn_GiangVien = new System.Windows.Forms.Button();
-            this.pnl_QLHocVien = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_XepLop = new System.Windows.Forms.Button();
-            this.btn_DSHocSinh = new System.Windows.Forms.Button();
-            this.pnl_QLHocTap = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_EmailBox = new System.Windows.Forms.Button();
-            this.btn_DiemSo = new System.Windows.Forms.Button();
-            this.pnl_QLManagement = new System.Windows.Forms.Panel();
-            this.pnl_NgangManagement = new System.Windows.Forms.Panel();
-            this.btn_Course = new System.Windows.Forms.Button();
-            this.btn_Room = new System.Windows.Forms.Button();
-            this.btn_Class = new System.Windows.Forms.Button();
-            this.btn_LichHoc = new System.Windows.Forms.Button();
-            this.btn_DSLop = new System.Windows.Forms.Button();
-            this.pnl_NgangLogo = new System.Windows.Forms.Panel();
-            this.pnl_Title = new System.Windows.Forms.Panel();
-            this.pnl_Page = new System.Windows.Forms.Panel();
-            this.imgList_Icon = new System.Windows.Forms.ImageList(this.components);
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.pBox_Logout = new System.Windows.Forms.PictureBox();
-            this.picBox_Minisize = new System.Windows.Forms.PictureBox();
-            this.picBox_Exit = new System.Windows.Forms.PictureBox();
             this.pBox_ChamCong = new System.Windows.Forms.PictureBox();
             this.pBox_HocTap = new System.Windows.Forms.PictureBox();
             this.pBox_GhiDanh = new System.Windows.Forms.PictureBox();
             this.pBox_HocPhi = new System.Windows.Forms.PictureBox();
+            this.btn_ChamCong = new System.Windows.Forms.Button();
+            this.btn_HocTap = new System.Windows.Forms.Button();
+            this.btn_GhiDanh = new System.Windows.Forms.Button();
+            this.btn_HocPhi = new System.Windows.Forms.Button();
             this.btn_QLThongKe = new System.Windows.Forms.Button();
+            this.pnl_QLThuChi = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.pBox_PhieuChi = new System.Windows.Forms.PictureBox();
             this.pBox_PhieuThu = new System.Windows.Forms.PictureBox();
+            this.btn_PhieuChi = new System.Windows.Forms.Button();
+            this.btn_PhieuThu = new System.Windows.Forms.Button();
             this.btn_QLThuChi = new System.Windows.Forms.Button();
+            this.pnl_QLNhanSu = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pBox_BangLuong = new System.Windows.Forms.PictureBox();
             this.pBox_NhanVien = new System.Windows.Forms.PictureBox();
             this.pBox_GiangVien = new System.Windows.Forms.PictureBox();
+            this.btn_BangLuong = new System.Windows.Forms.Button();
+            this.btn_NhanVien = new System.Windows.Forms.Button();
+            this.btn_GiangVien = new System.Windows.Forms.Button();
             this.btn_QLNhanSu = new System.Windows.Forms.Button();
+            this.pnl_QLHocVien = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pBox_XepLop = new System.Windows.Forms.PictureBox();
             this.pBox_DSHV = new System.Windows.Forms.PictureBox();
+            this.btn_XepLop = new System.Windows.Forms.Button();
+            this.btn_DSHocSinh = new System.Windows.Forms.Button();
             this.btn_QLHocSinh = new System.Windows.Forms.Button();
+            this.pnl_QLHocTap = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pBox_EmailBox = new System.Windows.Forms.PictureBox();
             this.pBox_DiemSo = new System.Windows.Forms.PictureBox();
+            this.btn_EmailBox = new System.Windows.Forms.Button();
+            this.btn_DiemSo = new System.Windows.Forms.Button();
             this.btn_QLHocTap = new System.Windows.Forms.Button();
+            this.pnl_QLManagement = new System.Windows.Forms.Panel();
             this.pBox_Course = new System.Windows.Forms.PictureBox();
+            this.pnl_NgangManagement = new System.Windows.Forms.Panel();
             this.pBox_Room = new System.Windows.Forms.PictureBox();
             this.pBox_Class = new System.Windows.Forms.PictureBox();
             this.pBox_LichHoc = new System.Windows.Forms.PictureBox();
+            this.btn_Course = new System.Windows.Forms.Button();
+            this.btn_Room = new System.Windows.Forms.Button();
+            this.btn_Class = new System.Windows.Forms.Button();
+            this.btn_LichHoc = new System.Windows.Forms.Button();
             this.btn_QLChung = new System.Windows.Forms.Button();
+            this.btn_DSLop = new System.Windows.Forms.Button();
+            this.pnl_NgangLogo = new System.Windows.Forms.Panel();
             this.picBoxLogo = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.pnl_Title = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.picBox_Exit = new System.Windows.Forms.PictureBox();
+            this.picBox_Minisize = new System.Windows.Forms.PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.pBox_Logout = new System.Windows.Forms.PictureBox();
+            this.pnl_Page = new System.Windows.Forms.Panel();
+            this.imgList_Icon = new System.Windows.Forms.ImageList(this.components);
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pnl_Menu.SuspendLayout();
             this.pnl_QLThongKe.SuspendLayout();
-            this.pnl_QLThuChi.SuspendLayout();
-            this.pnl_QLNhanSu.SuspendLayout();
-            this.pnl_QLHocVien.SuspendLayout();
-            this.pnl_QLHocTap.SuspendLayout();
-            this.pnl_QLManagement.SuspendLayout();
-            this.pnl_Title.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox_Logout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_Minisize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_ChamCong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_HocTap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_GhiDanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_HocPhi)).BeginInit();
+            this.pnl_QLThuChi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_PhieuChi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_PhieuThu)).BeginInit();
+            this.pnl_QLNhanSu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_BangLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_NhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_GiangVien)).BeginInit();
+            this.pnl_QLHocVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_XepLop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_DSHV)).BeginInit();
+            this.pnl_QLHocTap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_EmailBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_DiemSo)).BeginInit();
+            this.pnl_QLManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Course)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Room)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Class)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_LichHoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
+            this.pnl_Title.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Minisize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_Logout)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Menu
@@ -178,6 +178,54 @@
             this.panel9.Size = new System.Drawing.Size(255, 1);
             this.panel9.TabIndex = 7;
             // 
+            // pBox_ChamCong
+            // 
+            this.pBox_ChamCong.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_ChamCong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_ChamCong.Image = global::DemoDoAn.Properties.Resources.Dark_HocPhi;
+            this.pBox_ChamCong.Location = new System.Drawing.Point(33, 199);
+            this.pBox_ChamCong.Name = "pBox_ChamCong";
+            this.pBox_ChamCong.Size = new System.Drawing.Size(25, 25);
+            this.pBox_ChamCong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_ChamCong.TabIndex = 3;
+            this.pBox_ChamCong.TabStop = false;
+            // 
+            // pBox_HocTap
+            // 
+            this.pBox_HocTap.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_HocTap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_HocTap.Image = global::DemoDoAn.Properties.Resources.Dark_HocTap;
+            this.pBox_HocTap.Location = new System.Drawing.Point(33, 141);
+            this.pBox_HocTap.Name = "pBox_HocTap";
+            this.pBox_HocTap.Size = new System.Drawing.Size(25, 25);
+            this.pBox_HocTap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_HocTap.TabIndex = 3;
+            this.pBox_HocTap.TabStop = false;
+            // 
+            // pBox_GhiDanh
+            // 
+            this.pBox_GhiDanh.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_GhiDanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_GhiDanh.Image = global::DemoDoAn.Properties.Resources.Dark_GhiDanh;
+            this.pBox_GhiDanh.Location = new System.Drawing.Point(33, 83);
+            this.pBox_GhiDanh.Name = "pBox_GhiDanh";
+            this.pBox_GhiDanh.Size = new System.Drawing.Size(25, 25);
+            this.pBox_GhiDanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_GhiDanh.TabIndex = 3;
+            this.pBox_GhiDanh.TabStop = false;
+            // 
+            // pBox_HocPhi
+            // 
+            this.pBox_HocPhi.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_HocPhi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_HocPhi.Image = global::DemoDoAn.Properties.Resources.Dark_HocPhi;
+            this.pBox_HocPhi.Location = new System.Drawing.Point(33, 25);
+            this.pBox_HocPhi.Name = "pBox_HocPhi";
+            this.pBox_HocPhi.Size = new System.Drawing.Size(25, 25);
+            this.pBox_HocPhi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_HocPhi.TabIndex = 3;
+            this.pBox_HocPhi.TabStop = false;
+            // 
             // btn_ChamCong
             // 
             this.btn_ChamCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
@@ -197,6 +245,7 @@
             this.btn_ChamCong.Text = "Salary";
             this.btn_ChamCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ChamCong.UseVisualStyleBackColor = false;
+            this.btn_ChamCong.Visible = false;
             this.btn_ChamCong.Click += new System.EventHandler(this.btn_ChamCong_Click);
             // 
             // btn_HocTap
@@ -218,6 +267,7 @@
             this.btn_HocTap.Text = "Study";
             this.btn_HocTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_HocTap.UseVisualStyleBackColor = false;
+            this.btn_HocTap.Visible = false;
             this.btn_HocTap.Click += new System.EventHandler(this.btn_HocTap_Click);
             // 
             // btn_GhiDanh
@@ -239,6 +289,7 @@
             this.btn_GhiDanh.Text = "Registration";
             this.btn_GhiDanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_GhiDanh.UseVisualStyleBackColor = false;
+            this.btn_GhiDanh.Visible = false;
             this.btn_GhiDanh.Click += new System.EventHandler(this.btn_GhiDanh_Click);
             // 
             // btn_HocPhi
@@ -260,7 +311,33 @@
             this.btn_HocPhi.Text = "Tuition";
             this.btn_HocPhi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_HocPhi.UseVisualStyleBackColor = false;
+            this.btn_HocPhi.Visible = false;
             this.btn_HocPhi.Click += new System.EventHandler(this.btn_HocPhi_Click);
+            // 
+            // btn_QLThongKe
+            // 
+            this.btn_QLThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.btn_QLThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QLThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_QLThongKe.FlatAppearance.BorderSize = 0;
+            this.btn_QLThongKe.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.btn_QLThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btn_QLThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
+            this.btn_QLThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_QLThongKe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btn_QLThongKe.Image = global::DemoDoAn.Properties.Resources.angle_down;
+            this.btn_QLThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_QLThongKe.Location = new System.Drawing.Point(0, 1245);
+            this.btn_QLThongKe.Name = "btn_QLThongKe";
+            this.btn_QLThongKe.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btn_QLThongKe.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLThongKe.TabIndex = 6;
+            this.btn_QLThongKe.Text = "Statistics";
+            this.btn_QLThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_QLThongKe.UseVisualStyleBackColor = false;
+            this.btn_QLThongKe.Visible = false;
+            this.btn_QLThongKe.Click += new System.EventHandler(this.btn_QLThongKe_Click);
             // 
             // pnl_QLThuChi
             // 
@@ -274,6 +351,7 @@
             this.pnl_QLThuChi.Name = "pnl_QLThuChi";
             this.pnl_QLThuChi.Size = new System.Drawing.Size(255, 128);
             this.pnl_QLThuChi.TabIndex = 5;
+            this.pnl_QLThuChi.Visible = false;
             // 
             // panel7
             // 
@@ -283,6 +361,30 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(255, 1);
             this.panel7.TabIndex = 7;
+            // 
+            // pBox_PhieuChi
+            // 
+            this.pBox_PhieuChi.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_PhieuChi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_PhieuChi.Image = global::DemoDoAn.Properties.Resources.Dark_PhieuThu_Chi;
+            this.pBox_PhieuChi.Location = new System.Drawing.Point(33, 83);
+            this.pBox_PhieuChi.Name = "pBox_PhieuChi";
+            this.pBox_PhieuChi.Size = new System.Drawing.Size(25, 25);
+            this.pBox_PhieuChi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_PhieuChi.TabIndex = 3;
+            this.pBox_PhieuChi.TabStop = false;
+            // 
+            // pBox_PhieuThu
+            // 
+            this.pBox_PhieuThu.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_PhieuThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_PhieuThu.Image = global::DemoDoAn.Properties.Resources.Dark_PhieuThu_Chi;
+            this.pBox_PhieuThu.Location = new System.Drawing.Point(33, 25);
+            this.pBox_PhieuThu.Name = "pBox_PhieuThu";
+            this.pBox_PhieuThu.Size = new System.Drawing.Size(25, 25);
+            this.pBox_PhieuThu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_PhieuThu.TabIndex = 3;
+            this.pBox_PhieuThu.TabStop = false;
             // 
             // btn_PhieuChi
             // 
@@ -326,6 +428,31 @@
             this.btn_PhieuThu.UseVisualStyleBackColor = false;
             this.btn_PhieuThu.Click += new System.EventHandler(this.btn_PhieuThu_Click);
             // 
+            // btn_QLThuChi
+            // 
+            this.btn_QLThuChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.btn_QLThuChi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QLThuChi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_QLThuChi.FlatAppearance.BorderSize = 0;
+            this.btn_QLThuChi.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.btn_QLThuChi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btn_QLThuChi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
+            this.btn_QLThuChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_QLThuChi.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLThuChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
+            this.btn_QLThuChi.Image = global::DemoDoAn.Properties.Resources.angle_down;
+            this.btn_QLThuChi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_QLThuChi.Location = new System.Drawing.Point(0, 1065);
+            this.btn_QLThuChi.Name = "btn_QLThuChi";
+            this.btn_QLThuChi.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btn_QLThuChi.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLThuChi.TabIndex = 5;
+            this.btn_QLThuChi.Text = "Financial Management";
+            this.btn_QLThuChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_QLThuChi.UseVisualStyleBackColor = false;
+            this.btn_QLThuChi.Visible = false;
+            this.btn_QLThuChi.Click += new System.EventHandler(this.btn_QLThuChi_Click);
+            // 
             // pnl_QLNhanSu
             // 
             this.pnl_QLNhanSu.Controls.Add(this.panel5);
@@ -340,6 +467,7 @@
             this.pnl_QLNhanSu.Name = "pnl_QLNhanSu";
             this.pnl_QLNhanSu.Size = new System.Drawing.Size(255, 132);
             this.pnl_QLNhanSu.TabIndex = 4;
+            this.pnl_QLNhanSu.Visible = false;
             // 
             // panel5
             // 
@@ -349,6 +477,43 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(255, 1);
             this.panel5.TabIndex = 7;
+            // 
+            // pBox_BangLuong
+            // 
+            this.pBox_BangLuong.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_BangLuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_BangLuong.Image = global::DemoDoAn.Properties.Resources.eye;
+            this.pBox_BangLuong.Location = new System.Drawing.Point(33, 141);
+            this.pBox_BangLuong.Name = "pBox_BangLuong";
+            this.pBox_BangLuong.Size = new System.Drawing.Size(25, 25);
+            this.pBox_BangLuong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_BangLuong.TabIndex = 3;
+            this.pBox_BangLuong.TabStop = false;
+            this.pBox_BangLuong.Visible = false;
+            // 
+            // pBox_NhanVien
+            // 
+            this.pBox_NhanVien.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_NhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_NhanVien.Image = global::DemoDoAn.Properties.Resources.Dark_NhanVien;
+            this.pBox_NhanVien.Location = new System.Drawing.Point(31, 83);
+            this.pBox_NhanVien.Name = "pBox_NhanVien";
+            this.pBox_NhanVien.Size = new System.Drawing.Size(25, 25);
+            this.pBox_NhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_NhanVien.TabIndex = 3;
+            this.pBox_NhanVien.TabStop = false;
+            // 
+            // pBox_GiangVien
+            // 
+            this.pBox_GiangVien.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_GiangVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_GiangVien.Image = global::DemoDoAn.Properties.Resources.Dark_GiangVien;
+            this.pBox_GiangVien.Location = new System.Drawing.Point(33, 25);
+            this.pBox_GiangVien.Name = "pBox_GiangVien";
+            this.pBox_GiangVien.Size = new System.Drawing.Size(25, 25);
+            this.pBox_GiangVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_GiangVien.TabIndex = 3;
+            this.pBox_GiangVien.TabStop = false;
             // 
             // btn_BangLuong
             // 
@@ -414,6 +579,31 @@
             this.btn_GiangVien.UseVisualStyleBackColor = false;
             this.btn_GiangVien.Click += new System.EventHandler(this.btn_GiangVien_Click);
             // 
+            // btn_QLNhanSu
+            // 
+            this.btn_QLNhanSu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.btn_QLNhanSu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QLNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_QLNhanSu.FlatAppearance.BorderSize = 0;
+            this.btn_QLNhanSu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.btn_QLNhanSu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btn_QLNhanSu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_QLNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_QLNhanSu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLNhanSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
+            this.btn_QLNhanSu.Image = global::DemoDoAn.Properties.Resources.angle_down;
+            this.btn_QLNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_QLNhanSu.Location = new System.Drawing.Point(0, 881);
+            this.btn_QLNhanSu.Name = "btn_QLNhanSu";
+            this.btn_QLNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btn_QLNhanSu.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLNhanSu.TabIndex = 4;
+            this.btn_QLNhanSu.Text = "Personnel";
+            this.btn_QLNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_QLNhanSu.UseVisualStyleBackColor = false;
+            this.btn_QLNhanSu.Visible = false;
+            this.btn_QLNhanSu.Click += new System.EventHandler(this.btn_QLNhanSu_Click);
+            // 
             // pnl_QLHocVien
             // 
             this.pnl_QLHocVien.Controls.Add(this.panel4);
@@ -436,6 +626,32 @@
             this.panel4.Size = new System.Drawing.Size(255, 1);
             this.panel4.TabIndex = 7;
             // 
+            // pBox_XepLop
+            // 
+            this.pBox_XepLop.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_XepLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_XepLop.Image = global::DemoDoAn.Properties.Resources.Dark_XepLop;
+            this.pBox_XepLop.Location = new System.Drawing.Point(33, 83);
+            this.pBox_XepLop.Name = "pBox_XepLop";
+            this.pBox_XepLop.Size = new System.Drawing.Size(25, 25);
+            this.pBox_XepLop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_XepLop.TabIndex = 3;
+            this.pBox_XepLop.TabStop = false;
+            // 
+            // pBox_DSHV
+            // 
+            this.pBox_DSHV.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_DSHV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_DSHV.Image = global::DemoDoAn.Properties.Resources.Dark_DSHocVien;
+            this.pBox_DSHV.Location = new System.Drawing.Point(33, 25);
+            this.pBox_DSHV.Name = "pBox_DSHV";
+            this.pBox_DSHV.Size = new System.Drawing.Size(25, 25);
+            this.pBox_DSHV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_DSHV.TabIndex = 3;
+            this.pBox_DSHV.TabStop = false;
+            this.pBox_DSHV.Visible = false;
+            this.pBox_DSHV.Click += new System.EventHandler(this.pBox_DSHV_Click);
+            // 
             // btn_XepLop
             // 
             this.btn_XepLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
@@ -452,7 +668,7 @@
             this.btn_XepLop.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
             this.btn_XepLop.Size = new System.Drawing.Size(271, 52);
             this.btn_XepLop.TabIndex = 1;
-            this.btn_XepLop.Text = "Class Management";
+            this.btn_XepLop.Text = "Quản lí nhóm";
             this.btn_XepLop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_XepLop.UseVisualStyleBackColor = false;
             this.btn_XepLop.Click += new System.EventHandler(this.btn_XepLop_Click);
@@ -476,7 +692,32 @@
             this.btn_DSHocSinh.Text = "List";
             this.btn_DSHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DSHocSinh.UseVisualStyleBackColor = false;
+            this.btn_DSHocSinh.Visible = false;
             this.btn_DSHocSinh.Click += new System.EventHandler(this.btn_DSHocSinh_Click);
+            // 
+            // btn_QLHocSinh
+            // 
+            this.btn_QLHocSinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.btn_QLHocSinh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QLHocSinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_QLHocSinh.FlatAppearance.BorderSize = 0;
+            this.btn_QLHocSinh.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.btn_QLHocSinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_QLHocSinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
+            this.btn_QLHocSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_QLHocSinh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
+            this.btn_QLHocSinh.Image = global::DemoDoAn.Properties.Resources.angle_down;
+            this.btn_QLHocSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_QLHocSinh.Location = new System.Drawing.Point(0, 699);
+            this.btn_QLHocSinh.Name = "btn_QLHocSinh";
+            this.btn_QLHocSinh.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btn_QLHocSinh.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLHocSinh.TabIndex = 3;
+            this.btn_QLHocSinh.Text = "Học viên";
+            this.btn_QLHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_QLHocSinh.UseVisualStyleBackColor = false;
+            this.btn_QLHocSinh.Click += new System.EventHandler(this.btn_QLHocSinh_Click);
             // 
             // pnl_QLHocTap
             // 
@@ -500,6 +741,31 @@
             this.panel3.Size = new System.Drawing.Size(255, 1);
             this.panel3.TabIndex = 7;
             // 
+            // pBox_EmailBox
+            // 
+            this.pBox_EmailBox.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_EmailBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_EmailBox.Image = global::DemoDoAn.Properties.Resources.eye;
+            this.pBox_EmailBox.Location = new System.Drawing.Point(33, 83);
+            this.pBox_EmailBox.Name = "pBox_EmailBox";
+            this.pBox_EmailBox.Size = new System.Drawing.Size(25, 25);
+            this.pBox_EmailBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_EmailBox.TabIndex = 3;
+            this.pBox_EmailBox.TabStop = false;
+            this.pBox_EmailBox.Visible = false;
+            // 
+            // pBox_DiemSo
+            // 
+            this.pBox_DiemSo.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_DiemSo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_DiemSo.Image = global::DemoDoAn.Properties.Resources.Dark_DiemSo;
+            this.pBox_DiemSo.Location = new System.Drawing.Point(33, 25);
+            this.pBox_DiemSo.Name = "pBox_DiemSo";
+            this.pBox_DiemSo.Size = new System.Drawing.Size(25, 25);
+            this.pBox_DiemSo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_DiemSo.TabIndex = 3;
+            this.pBox_DiemSo.TabStop = false;
+            // 
             // btn_EmailBox
             // 
             this.btn_EmailBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
@@ -519,6 +785,7 @@
             this.btn_EmailBox.Text = "Email Box";
             this.btn_EmailBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EmailBox.UseVisualStyleBackColor = false;
+            this.btn_EmailBox.Visible = false;
             this.btn_EmailBox.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_DiemSo
@@ -537,10 +804,34 @@
             this.btn_DiemSo.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
             this.btn_DiemSo.Size = new System.Drawing.Size(271, 52);
             this.btn_DiemSo.TabIndex = 1;
-            this.btn_DiemSo.Text = "Score";
+            this.btn_DiemSo.Text = "Điểm số";
             this.btn_DiemSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DiemSo.UseVisualStyleBackColor = false;
             this.btn_DiemSo.Click += new System.EventHandler(this.btn_DiemSo_Click);
+            // 
+            // btn_QLHocTap
+            // 
+            this.btn_QLHocTap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.btn_QLHocTap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QLHocTap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_QLHocTap.FlatAppearance.BorderSize = 0;
+            this.btn_QLHocTap.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.btn_QLHocTap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_QLHocTap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
+            this.btn_QLHocTap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_QLHocTap.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLHocTap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
+            this.btn_QLHocTap.Image = global::DemoDoAn.Properties.Resources.angle_down;
+            this.btn_QLHocTap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_QLHocTap.Location = new System.Drawing.Point(0, 518);
+            this.btn_QLHocTap.Name = "btn_QLHocTap";
+            this.btn_QLHocTap.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btn_QLHocTap.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLHocTap.TabIndex = 4;
+            this.btn_QLHocTap.Text = "Học tập";
+            this.btn_QLHocTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_QLHocTap.UseVisualStyleBackColor = false;
+            this.btn_QLHocTap.Click += new System.EventHandler(this.btn_QLHocTap_Click);
             // 
             // pnl_QLManagement
             // 
@@ -559,6 +850,19 @@
             this.pnl_QLManagement.Size = new System.Drawing.Size(255, 233);
             this.pnl_QLManagement.TabIndex = 1;
             // 
+            // pBox_Course
+            // 
+            this.pBox_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pBox_Course.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_Course.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_Course.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Course;
+            this.pBox_Course.Location = new System.Drawing.Point(33, 189);
+            this.pBox_Course.Name = "pBox_Course";
+            this.pBox_Course.Size = new System.Drawing.Size(25, 25);
+            this.pBox_Course.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_Course.TabIndex = 3;
+            this.pBox_Course.TabStop = false;
+            // 
             // pnl_NgangManagement
             // 
             this.pnl_NgangManagement.BackColor = System.Drawing.Color.Gainsboro;
@@ -567,6 +871,46 @@
             this.pnl_NgangManagement.Name = "pnl_NgangManagement";
             this.pnl_NgangManagement.Size = new System.Drawing.Size(255, 1);
             this.pnl_NgangManagement.TabIndex = 7;
+            // 
+            // pBox_Room
+            // 
+            this.pBox_Room.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pBox_Room.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_Room.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_Room.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Room;
+            this.pBox_Room.Location = new System.Drawing.Point(33, 131);
+            this.pBox_Room.Name = "pBox_Room";
+            this.pBox_Room.Size = new System.Drawing.Size(25, 25);
+            this.pBox_Room.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_Room.TabIndex = 3;
+            this.pBox_Room.TabStop = false;
+            // 
+            // pBox_Class
+            // 
+            this.pBox_Class.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pBox_Class.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_Class.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_Class.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Class;
+            this.pBox_Class.Location = new System.Drawing.Point(33, 73);
+            this.pBox_Class.Name = "pBox_Class";
+            this.pBox_Class.Size = new System.Drawing.Size(25, 25);
+            this.pBox_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_Class.TabIndex = 3;
+            this.pBox_Class.TabStop = false;
+            // 
+            // pBox_LichHoc
+            // 
+            this.pBox_LichHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pBox_LichHoc.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_LichHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBox_LichHoc.Image = global::DemoDoAn.Properties.Resources.QLChung_INFOMATION;
+            this.pBox_LichHoc.Location = new System.Drawing.Point(33, 15);
+            this.pBox_LichHoc.Name = "pBox_LichHoc";
+            this.pBox_LichHoc.Size = new System.Drawing.Size(25, 25);
+            this.pBox_LichHoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox_LichHoc.TabIndex = 3;
+            this.pBox_LichHoc.TabStop = false;
+            this.pBox_LichHoc.Visible = false;
             // 
             // btn_Course
             // 
@@ -585,7 +929,7 @@
             this.btn_Course.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
             this.btn_Course.Size = new System.Drawing.Size(271, 52);
             this.btn_Course.TabIndex = 1;
-            this.btn_Course.Text = "Course";
+            this.btn_Course.Text = "Khóa học";
             this.btn_Course.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Course.UseVisualStyleBackColor = false;
             this.btn_Course.Click += new System.EventHandler(this.btn_Course_Click);
@@ -607,7 +951,7 @@
             this.btn_Room.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
             this.btn_Room.Size = new System.Drawing.Size(271, 52);
             this.btn_Room.TabIndex = 1;
-            this.btn_Room.Text = "Room";
+            this.btn_Room.Text = "Lớp học";
             this.btn_Room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Room.UseVisualStyleBackColor = false;
             this.btn_Room.Click += new System.EventHandler(this.btn_Room_Click);
@@ -629,7 +973,7 @@
             this.btn_Class.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
             this.btn_Class.Size = new System.Drawing.Size(271, 52);
             this.btn_Class.TabIndex = 1;
-            this.btn_Class.Text = "Class";
+            this.btn_Class.Text = "Nhóm học";
             this.btn_Class.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Class.UseVisualStyleBackColor = false;
             this.btn_Class.Click += new System.EventHandler(this.btn_Class_Click);
@@ -654,7 +998,32 @@
             this.btn_LichHoc.Text = "Schedule";
             this.btn_LichHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_LichHoc.UseVisualStyleBackColor = false;
+            this.btn_LichHoc.Visible = false;
             this.btn_LichHoc.Click += new System.EventHandler(this.btn_LichHoc_Click);
+            // 
+            // btn_QLChung
+            // 
+            this.btn_QLChung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.btn_QLChung.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_QLChung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_QLChung.FlatAppearance.BorderSize = 0;
+            this.btn_QLChung.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.btn_QLChung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_QLChung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
+            this.btn_QLChung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_QLChung.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QLChung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
+            this.btn_QLChung.Image = global::DemoDoAn.Properties.Resources.angle_down;
+            this.btn_QLChung.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_QLChung.Location = new System.Drawing.Point(0, 226);
+            this.btn_QLChung.Name = "btn_QLChung";
+            this.btn_QLChung.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btn_QLChung.Size = new System.Drawing.Size(255, 59);
+            this.btn_QLChung.TabIndex = 6;
+            this.btn_QLChung.Text = "Quản lí chung";
+            this.btn_QLChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_QLChung.UseVisualStyleBackColor = false;
+            this.btn_QLChung.Click += new System.EventHandler(this.btn_QLChung_Click);
             // 
             // btn_DSLop
             // 
@@ -686,6 +1055,18 @@
             this.pnl_NgangLogo.Size = new System.Drawing.Size(255, 1);
             this.pnl_NgangLogo.TabIndex = 5;
             // 
+            // picBoxLogo
+            // 
+            this.picBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picBoxLogo.Image = global::DemoDoAn.Properties.Resources.LOGO_3x;
+            this.picBoxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBoxLogo.InitialImage")));
+            this.picBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.picBoxLogo.Name = "picBoxLogo";
+            this.picBoxLogo.Size = new System.Drawing.Size(255, 161);
+            this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxLogo.TabIndex = 4;
+            this.picBoxLogo.TabStop = false;
+            // 
             // pnl_Title
             // 
             this.pnl_Title.BackColor = System.Drawing.Color.White;
@@ -696,6 +1077,85 @@
             this.pnl_Title.Name = "pnl_Title";
             this.pnl_Title.Size = new System.Drawing.Size(1456, 52);
             this.pnl_Title.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.picBox_Exit);
+            this.flowLayoutPanel1.Controls.Add(this.picBox_Minisize);
+            this.flowLayoutPanel1.Controls.Add(this.guna2Button1);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1266, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 9, 5, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 52);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // picBox_Exit
+            // 
+            this.picBox_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picBox_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.picBox_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBox_Exit.Image = global::DemoDoAn.Properties.Resources.exit;
+            this.picBox_Exit.Location = new System.Drawing.Point(158, 12);
+            this.picBox_Exit.Name = "picBox_Exit";
+            this.picBox_Exit.Size = new System.Drawing.Size(24, 24);
+            this.picBox_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBox_Exit.TabIndex = 0;
+            this.picBox_Exit.TabStop = false;
+            this.picBox_Exit.Click += new System.EventHandler(this.picBox_Exit_Click);
+            // 
+            // picBox_Minisize
+            // 
+            this.picBox_Minisize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picBox_Minisize.BackColor = System.Drawing.Color.Transparent;
+            this.picBox_Minisize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBox_Minisize.Image = global::DemoDoAn.Properties.Resources.minus1;
+            this.picBox_Minisize.Location = new System.Drawing.Point(131, 9);
+            this.picBox_Minisize.Margin = new System.Windows.Forms.Padding(0);
+            this.picBox_Minisize.Name = "picBox_Minisize";
+            this.picBox_Minisize.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.picBox_Minisize.Size = new System.Drawing.Size(24, 27);
+            this.picBox_Minisize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_Minisize.TabIndex = 0;
+            this.picBox_Minisize.TabStop = false;
+            this.picBox_Minisize.Click += new System.EventHandler(this.picBox_Minisize_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.White;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.152543F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.guna2Button1.Location = new System.Drawing.Point(34, 9);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 3);
+            this.guna2Button1.Size = new System.Drawing.Size(97, 30);
+            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.Text = "Log out";
+            this.guna2Button1.Click += new System.EventHandler(this.pBox_Logout_Click);
+            // 
+            // pBox_Logout
+            // 
+            this.pBox_Logout.BackColor = System.Drawing.Color.Transparent;
+            this.pBox_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBox_Logout.Image = global::DemoDoAn.Properties.Resources.shutdow;
+            this.pBox_Logout.Location = new System.Drawing.Point(311, 23);
+            this.pBox_Logout.Name = "pBox_Logout";
+            this.pBox_Logout.Size = new System.Drawing.Size(23, 23);
+            this.pBox_Logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBox_Logout.TabIndex = 0;
+            this.pBox_Logout.TabStop = false;
+            this.pBox_Logout.Visible = false;
+            this.pBox_Logout.Click += new System.EventHandler(this.pBox_Logout_Click);
             // 
             // pnl_Page
             // 
@@ -753,451 +1213,6 @@
             this.guna2BorderlessForm1.ShadowColor = System.Drawing.Color.Gray;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // pBox_Logout
-            // 
-            this.pBox_Logout.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pBox_Logout.Image = global::DemoDoAn.Properties.Resources.shutdow;
-            this.pBox_Logout.Location = new System.Drawing.Point(311, 23);
-            this.pBox_Logout.Name = "pBox_Logout";
-            this.pBox_Logout.Size = new System.Drawing.Size(23, 23);
-            this.pBox_Logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox_Logout.TabIndex = 0;
-            this.pBox_Logout.TabStop = false;
-            this.pBox_Logout.Visible = false;
-            this.pBox_Logout.Click += new System.EventHandler(this.pBox_Logout_Click);
-            // 
-            // picBox_Minisize
-            // 
-            this.picBox_Minisize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picBox_Minisize.BackColor = System.Drawing.Color.Transparent;
-            this.picBox_Minisize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBox_Minisize.Image = global::DemoDoAn.Properties.Resources.minus1;
-            this.picBox_Minisize.Location = new System.Drawing.Point(131, 9);
-            this.picBox_Minisize.Margin = new System.Windows.Forms.Padding(0);
-            this.picBox_Minisize.Name = "picBox_Minisize";
-            this.picBox_Minisize.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.picBox_Minisize.Size = new System.Drawing.Size(24, 27);
-            this.picBox_Minisize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBox_Minisize.TabIndex = 0;
-            this.picBox_Minisize.TabStop = false;
-            this.picBox_Minisize.Click += new System.EventHandler(this.picBox_Minisize_Click);
-            // 
-            // picBox_Exit
-            // 
-            this.picBox_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picBox_Exit.BackColor = System.Drawing.Color.Transparent;
-            this.picBox_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBox_Exit.Image = global::DemoDoAn.Properties.Resources.exit;
-            this.picBox_Exit.Location = new System.Drawing.Point(158, 12);
-            this.picBox_Exit.Name = "picBox_Exit";
-            this.picBox_Exit.Size = new System.Drawing.Size(24, 24);
-            this.picBox_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picBox_Exit.TabIndex = 0;
-            this.picBox_Exit.TabStop = false;
-            this.picBox_Exit.Click += new System.EventHandler(this.picBox_Exit_Click);
-            // 
-            // pBox_ChamCong
-            // 
-            this.pBox_ChamCong.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_ChamCong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_ChamCong.Image = global::DemoDoAn.Properties.Resources.Dark_HocPhi;
-            this.pBox_ChamCong.Location = new System.Drawing.Point(33, 199);
-            this.pBox_ChamCong.Name = "pBox_ChamCong";
-            this.pBox_ChamCong.Size = new System.Drawing.Size(25, 25);
-            this.pBox_ChamCong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_ChamCong.TabIndex = 3;
-            this.pBox_ChamCong.TabStop = false;
-            // 
-            // pBox_HocTap
-            // 
-            this.pBox_HocTap.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_HocTap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_HocTap.Image = global::DemoDoAn.Properties.Resources.Dark_HocTap;
-            this.pBox_HocTap.Location = new System.Drawing.Point(33, 141);
-            this.pBox_HocTap.Name = "pBox_HocTap";
-            this.pBox_HocTap.Size = new System.Drawing.Size(25, 25);
-            this.pBox_HocTap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_HocTap.TabIndex = 3;
-            this.pBox_HocTap.TabStop = false;
-            // 
-            // pBox_GhiDanh
-            // 
-            this.pBox_GhiDanh.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_GhiDanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_GhiDanh.Image = global::DemoDoAn.Properties.Resources.Dark_GhiDanh;
-            this.pBox_GhiDanh.Location = new System.Drawing.Point(33, 83);
-            this.pBox_GhiDanh.Name = "pBox_GhiDanh";
-            this.pBox_GhiDanh.Size = new System.Drawing.Size(25, 25);
-            this.pBox_GhiDanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_GhiDanh.TabIndex = 3;
-            this.pBox_GhiDanh.TabStop = false;
-            // 
-            // pBox_HocPhi
-            // 
-            this.pBox_HocPhi.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_HocPhi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_HocPhi.Image = global::DemoDoAn.Properties.Resources.Dark_HocPhi;
-            this.pBox_HocPhi.Location = new System.Drawing.Point(33, 25);
-            this.pBox_HocPhi.Name = "pBox_HocPhi";
-            this.pBox_HocPhi.Size = new System.Drawing.Size(25, 25);
-            this.pBox_HocPhi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_HocPhi.TabIndex = 3;
-            this.pBox_HocPhi.TabStop = false;
-            // 
-            // btn_QLThongKe
-            // 
-            this.btn_QLThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.btn_QLThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QLThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_QLThongKe.FlatAppearance.BorderSize = 0;
-            this.btn_QLThongKe.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_QLThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.btn_QLThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
-            this.btn_QLThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLThongKe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.btn_QLThongKe.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.btn_QLThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLThongKe.Location = new System.Drawing.Point(0, 1245);
-            this.btn_QLThongKe.Name = "btn_QLThongKe";
-            this.btn_QLThongKe.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLThongKe.Size = new System.Drawing.Size(255, 52);
-            this.btn_QLThongKe.TabIndex = 6;
-            this.btn_QLThongKe.Text = "Statistics";
-            this.btn_QLThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QLThongKe.UseVisualStyleBackColor = false;
-            this.btn_QLThongKe.Click += new System.EventHandler(this.btn_QLThongKe_Click);
-            // 
-            // pBox_PhieuChi
-            // 
-            this.pBox_PhieuChi.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_PhieuChi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_PhieuChi.Image = global::DemoDoAn.Properties.Resources.Dark_PhieuThu_Chi;
-            this.pBox_PhieuChi.Location = new System.Drawing.Point(33, 83);
-            this.pBox_PhieuChi.Name = "pBox_PhieuChi";
-            this.pBox_PhieuChi.Size = new System.Drawing.Size(25, 25);
-            this.pBox_PhieuChi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_PhieuChi.TabIndex = 3;
-            this.pBox_PhieuChi.TabStop = false;
-            // 
-            // pBox_PhieuThu
-            // 
-            this.pBox_PhieuThu.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_PhieuThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_PhieuThu.Image = global::DemoDoAn.Properties.Resources.Dark_PhieuThu_Chi;
-            this.pBox_PhieuThu.Location = new System.Drawing.Point(33, 25);
-            this.pBox_PhieuThu.Name = "pBox_PhieuThu";
-            this.pBox_PhieuThu.Size = new System.Drawing.Size(25, 25);
-            this.pBox_PhieuThu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_PhieuThu.TabIndex = 3;
-            this.pBox_PhieuThu.TabStop = false;
-            // 
-            // btn_QLThuChi
-            // 
-            this.btn_QLThuChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.btn_QLThuChi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QLThuChi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_QLThuChi.FlatAppearance.BorderSize = 0;
-            this.btn_QLThuChi.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_QLThuChi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.btn_QLThuChi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
-            this.btn_QLThuChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLThuChi.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLThuChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.btn_QLThuChi.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.btn_QLThuChi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLThuChi.Location = new System.Drawing.Point(0, 1065);
-            this.btn_QLThuChi.Name = "btn_QLThuChi";
-            this.btn_QLThuChi.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLThuChi.Size = new System.Drawing.Size(255, 52);
-            this.btn_QLThuChi.TabIndex = 5;
-            this.btn_QLThuChi.Text = "Financial Management";
-            this.btn_QLThuChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QLThuChi.UseVisualStyleBackColor = false;
-            this.btn_QLThuChi.Click += new System.EventHandler(this.btn_QLThuChi_Click);
-            // 
-            // pBox_BangLuong
-            // 
-            this.pBox_BangLuong.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_BangLuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_BangLuong.Image = global::DemoDoAn.Properties.Resources.eye;
-            this.pBox_BangLuong.Location = new System.Drawing.Point(33, 141);
-            this.pBox_BangLuong.Name = "pBox_BangLuong";
-            this.pBox_BangLuong.Size = new System.Drawing.Size(25, 25);
-            this.pBox_BangLuong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_BangLuong.TabIndex = 3;
-            this.pBox_BangLuong.TabStop = false;
-            this.pBox_BangLuong.Visible = false;
-            // 
-            // pBox_NhanVien
-            // 
-            this.pBox_NhanVien.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_NhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_NhanVien.Image = global::DemoDoAn.Properties.Resources.Dark_NhanVien;
-            this.pBox_NhanVien.Location = new System.Drawing.Point(31, 83);
-            this.pBox_NhanVien.Name = "pBox_NhanVien";
-            this.pBox_NhanVien.Size = new System.Drawing.Size(25, 25);
-            this.pBox_NhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_NhanVien.TabIndex = 3;
-            this.pBox_NhanVien.TabStop = false;
-            // 
-            // pBox_GiangVien
-            // 
-            this.pBox_GiangVien.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_GiangVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_GiangVien.Image = global::DemoDoAn.Properties.Resources.Dark_GiangVien;
-            this.pBox_GiangVien.Location = new System.Drawing.Point(33, 25);
-            this.pBox_GiangVien.Name = "pBox_GiangVien";
-            this.pBox_GiangVien.Size = new System.Drawing.Size(25, 25);
-            this.pBox_GiangVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_GiangVien.TabIndex = 3;
-            this.pBox_GiangVien.TabStop = false;
-            // 
-            // btn_QLNhanSu
-            // 
-            this.btn_QLNhanSu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.btn_QLNhanSu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QLNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_QLNhanSu.FlatAppearance.BorderSize = 0;
-            this.btn_QLNhanSu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_QLNhanSu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.btn_QLNhanSu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_QLNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLNhanSu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLNhanSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.btn_QLNhanSu.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.btn_QLNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLNhanSu.Location = new System.Drawing.Point(0, 881);
-            this.btn_QLNhanSu.Name = "btn_QLNhanSu";
-            this.btn_QLNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLNhanSu.Size = new System.Drawing.Size(255, 52);
-            this.btn_QLNhanSu.TabIndex = 4;
-            this.btn_QLNhanSu.Text = "Personnel";
-            this.btn_QLNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QLNhanSu.UseVisualStyleBackColor = false;
-            this.btn_QLNhanSu.Click += new System.EventHandler(this.btn_QLNhanSu_Click);
-            // 
-            // pBox_XepLop
-            // 
-            this.pBox_XepLop.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_XepLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_XepLop.Image = global::DemoDoAn.Properties.Resources.Dark_XepLop;
-            this.pBox_XepLop.Location = new System.Drawing.Point(33, 83);
-            this.pBox_XepLop.Name = "pBox_XepLop";
-            this.pBox_XepLop.Size = new System.Drawing.Size(25, 25);
-            this.pBox_XepLop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_XepLop.TabIndex = 3;
-            this.pBox_XepLop.TabStop = false;
-            // 
-            // pBox_DSHV
-            // 
-            this.pBox_DSHV.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_DSHV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_DSHV.Image = global::DemoDoAn.Properties.Resources.Dark_DSHocVien;
-            this.pBox_DSHV.Location = new System.Drawing.Point(33, 25);
-            this.pBox_DSHV.Name = "pBox_DSHV";
-            this.pBox_DSHV.Size = new System.Drawing.Size(25, 25);
-            this.pBox_DSHV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_DSHV.TabIndex = 3;
-            this.pBox_DSHV.TabStop = false;
-            this.pBox_DSHV.Click += new System.EventHandler(this.pBox_DSHV_Click);
-            // 
-            // btn_QLHocSinh
-            // 
-            this.btn_QLHocSinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.btn_QLHocSinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QLHocSinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_QLHocSinh.FlatAppearance.BorderSize = 0;
-            this.btn_QLHocSinh.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_QLHocSinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_QLHocSinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
-            this.btn_QLHocSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLHocSinh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.btn_QLHocSinh.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.btn_QLHocSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLHocSinh.Location = new System.Drawing.Point(0, 699);
-            this.btn_QLHocSinh.Name = "btn_QLHocSinh";
-            this.btn_QLHocSinh.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLHocSinh.Size = new System.Drawing.Size(255, 52);
-            this.btn_QLHocSinh.TabIndex = 3;
-            this.btn_QLHocSinh.Text = "Student";
-            this.btn_QLHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QLHocSinh.UseVisualStyleBackColor = false;
-            this.btn_QLHocSinh.Click += new System.EventHandler(this.btn_QLHocSinh_Click);
-            // 
-            // pBox_EmailBox
-            // 
-            this.pBox_EmailBox.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_EmailBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_EmailBox.Image = global::DemoDoAn.Properties.Resources.eye;
-            this.pBox_EmailBox.Location = new System.Drawing.Point(33, 83);
-            this.pBox_EmailBox.Name = "pBox_EmailBox";
-            this.pBox_EmailBox.Size = new System.Drawing.Size(25, 25);
-            this.pBox_EmailBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_EmailBox.TabIndex = 3;
-            this.pBox_EmailBox.TabStop = false;
-            // 
-            // pBox_DiemSo
-            // 
-            this.pBox_DiemSo.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_DiemSo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_DiemSo.Image = global::DemoDoAn.Properties.Resources.Dark_DiemSo;
-            this.pBox_DiemSo.Location = new System.Drawing.Point(33, 25);
-            this.pBox_DiemSo.Name = "pBox_DiemSo";
-            this.pBox_DiemSo.Size = new System.Drawing.Size(25, 25);
-            this.pBox_DiemSo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_DiemSo.TabIndex = 3;
-            this.pBox_DiemSo.TabStop = false;
-            // 
-            // btn_QLHocTap
-            // 
-            this.btn_QLHocTap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.btn_QLHocTap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QLHocTap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_QLHocTap.FlatAppearance.BorderSize = 0;
-            this.btn_QLHocTap.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_QLHocTap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_QLHocTap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
-            this.btn_QLHocTap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLHocTap.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLHocTap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.btn_QLHocTap.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.btn_QLHocTap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLHocTap.Location = new System.Drawing.Point(0, 518);
-            this.btn_QLHocTap.Name = "btn_QLHocTap";
-            this.btn_QLHocTap.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLHocTap.Size = new System.Drawing.Size(255, 52);
-            this.btn_QLHocTap.TabIndex = 4;
-            this.btn_QLHocTap.Text = "Study";
-            this.btn_QLHocTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QLHocTap.UseVisualStyleBackColor = false;
-            this.btn_QLHocTap.Click += new System.EventHandler(this.btn_QLHocTap_Click);
-            // 
-            // pBox_Course
-            // 
-            this.pBox_Course.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pBox_Course.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_Course.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_Course.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Course;
-            this.pBox_Course.Location = new System.Drawing.Point(33, 189);
-            this.pBox_Course.Name = "pBox_Course";
-            this.pBox_Course.Size = new System.Drawing.Size(25, 25);
-            this.pBox_Course.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_Course.TabIndex = 3;
-            this.pBox_Course.TabStop = false;
-            // 
-            // pBox_Room
-            // 
-            this.pBox_Room.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pBox_Room.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_Room.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_Room.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Room;
-            this.pBox_Room.Location = new System.Drawing.Point(33, 131);
-            this.pBox_Room.Name = "pBox_Room";
-            this.pBox_Room.Size = new System.Drawing.Size(25, 25);
-            this.pBox_Room.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_Room.TabIndex = 3;
-            this.pBox_Room.TabStop = false;
-            // 
-            // pBox_Class
-            // 
-            this.pBox_Class.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pBox_Class.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_Class.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_Class.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Class;
-            this.pBox_Class.Location = new System.Drawing.Point(33, 73);
-            this.pBox_Class.Name = "pBox_Class";
-            this.pBox_Class.Size = new System.Drawing.Size(25, 25);
-            this.pBox_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_Class.TabIndex = 3;
-            this.pBox_Class.TabStop = false;
-            // 
-            // pBox_LichHoc
-            // 
-            this.pBox_LichHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pBox_LichHoc.BackColor = System.Drawing.Color.Transparent;
-            this.pBox_LichHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBox_LichHoc.Image = global::DemoDoAn.Properties.Resources.QLChung_INFOMATION;
-            this.pBox_LichHoc.Location = new System.Drawing.Point(33, 15);
-            this.pBox_LichHoc.Name = "pBox_LichHoc";
-            this.pBox_LichHoc.Size = new System.Drawing.Size(25, 25);
-            this.pBox_LichHoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox_LichHoc.TabIndex = 3;
-            this.pBox_LichHoc.TabStop = false;
-            // 
-            // btn_QLChung
-            // 
-            this.btn_QLChung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.btn_QLChung.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_QLChung.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_QLChung.FlatAppearance.BorderSize = 0;
-            this.btn_QLChung.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.btn_QLChung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_QLChung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(176)))), ((int)(((byte)(247)))));
-            this.btn_QLChung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLChung.Font = new System.Drawing.Font("Segoe UI Semibold", 10.98305F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLChung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
-            this.btn_QLChung.Image = global::DemoDoAn.Properties.Resources.angle_down;
-            this.btn_QLChung.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLChung.Location = new System.Drawing.Point(0, 226);
-            this.btn_QLChung.Name = "btn_QLChung";
-            this.btn_QLChung.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLChung.Size = new System.Drawing.Size(255, 59);
-            this.btn_QLChung.TabIndex = 6;
-            this.btn_QLChung.Text = "General Management";
-            this.btn_QLChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QLChung.UseVisualStyleBackColor = false;
-            this.btn_QLChung.Click += new System.EventHandler(this.btn_QLChung_Click);
-            // 
-            // picBoxLogo
-            // 
-            this.picBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picBoxLogo.Image = global::DemoDoAn.Properties.Resources.LOGO_3x;
-            this.picBoxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBoxLogo.InitialImage")));
-            this.picBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.picBoxLogo.Name = "picBoxLogo";
-            this.picBoxLogo.Size = new System.Drawing.Size(255, 161);
-            this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxLogo.TabIndex = 4;
-            this.picBoxLogo.TabStop = false;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.152543F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
-            this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.guna2Button1.Location = new System.Drawing.Point(34, 9);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 3);
-            this.guna2Button1.Size = new System.Drawing.Size(97, 30);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Log out";
-            this.guna2Button1.Click += new System.EventHandler(this.pBox_Logout_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.picBox_Exit);
-            this.flowLayoutPanel1.Controls.Add(this.picBox_Minisize);
-            this.flowLayoutPanel1.Controls.Add(this.guna2Button1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1266, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 9, 5, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 52);
-            this.flowLayoutPanel1.TabIndex = 2;
-            // 
             // F_Addmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1214,34 +1229,34 @@
             this.Text = "F_Addmin";
             this.pnl_Menu.ResumeLayout(false);
             this.pnl_QLThongKe.ResumeLayout(false);
-            this.pnl_QLThuChi.ResumeLayout(false);
-            this.pnl_QLNhanSu.ResumeLayout(false);
-            this.pnl_QLHocVien.ResumeLayout(false);
-            this.pnl_QLHocTap.ResumeLayout(false);
-            this.pnl_QLManagement.ResumeLayout(false);
-            this.pnl_Title.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pBox_Logout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_Minisize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_Exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_ChamCong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_HocTap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_GhiDanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_HocPhi)).EndInit();
+            this.pnl_QLThuChi.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox_PhieuChi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_PhieuThu)).EndInit();
+            this.pnl_QLNhanSu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox_BangLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_NhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_GiangVien)).EndInit();
+            this.pnl_QLHocVien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox_XepLop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_DSHV)).EndInit();
+            this.pnl_QLHocTap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox_EmailBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_DiemSo)).EndInit();
+            this.pnl_QLManagement.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Course)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Room)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Class)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_LichHoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();
+            this.pnl_Title.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Minisize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_Logout)).EndInit();
             this.ResumeLayout(false);
 
         }

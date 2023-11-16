@@ -275,263 +275,270 @@
     <Compile Include="Admin.cs" />
     <Compile Include="DAO\AdminDao.cs" />
     <Compile Include="BangLuong.cs" />
+    <Compile Include="DAO\BangDiemDanhDao.cs" />
     <Compile Include="DAO\BangLuongDao.cs" />
     <Compile Include="bieuDoChart.cs" />
+    <Compile Include="DAO\DanhSachNhomDao.cs" />
     <Compile Include="DAO\HocVaoDao.cs" />
     <Compile Include="DAO\LopHocDao.cs" />
-    <Compile Include="KiemTraLoi.cs" />
-    <Compile Include="ChildForm\F_UpdateHV.cs">
+    <Compile Include="CHUCNANG\QuanLiDiemDanh\F_DIEMDANH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForm\F_UpdateHV.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiDiemDanh\F_DIEMDANH.Designer.cs">
+      <DependentUpon>F_DIEMDANH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiemTraLoi.cs" />
+    <Compile Include="REF\ChildForm\F_UpdateHV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REF\ChildForm\F_UpdateHV.Designer.cs">
       <DependentUpon>F_UpdateHV.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\DSLOPMOI\UC_DSLopMoi.cs">
+    <Compile Include="REF\ChildPage\DSLOPMOI\UC_DSLopMoi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\DSLOPMOI\UC_DSLopMoi.Designer.cs">
+    <Compile Include="REF\ChildPage\DSLOPMOI\UC_DSLopMoi.Designer.cs">
       <DependentUpon>UC_DSLopMoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\DSLOPMOI\UC_DSLopMoi_FormClass.cs">
+    <Compile Include="REF\ChildPage\DSLOPMOI\UC_DSLopMoi_FormClass.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\DSLOPMOI\UC_DSLopMoi_FormClass.Designer.cs">
+    <Compile Include="REF\ChildPage\DSLOPMOI\UC_DSLopMoi_FormClass.Designer.cs">
       <DependentUpon>UC_DSLopMoi_FormClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\F_UC_GM_COURSE_CapNhat.cs">
+    <Compile Include="REF\ChildPage\General Management\F_UC_GM_COURSE_CapNhat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\F_UC_GM_COURSE_CapNhat.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\F_UC_GM_COURSE_CapNhat.Designer.cs">
       <DependentUpon>F_UC_GM_COURSE_CapNhat.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_CLASS.cs">
+    <Compile Include="CHUCNANG\QuanLiNhomHoc\UC_GM_CLASS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_CLASS.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiNhomHoc\UC_GM_CLASS.Designer.cs">
       <DependentUpon>UC_GM_CLASS.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_TaoLopMoi.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_TaoLopMoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_TaoLopMoi.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_TaoLopMoi.Designer.cs">
       <DependentUpon>F_GM_CLASS_TaoLopMoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_XepLop.cs">
+    <Compile Include="CHUCNANG\QuanLiNhomHoc\F_GM_CLASS_XepLop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_XepLop.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiNhomHoc\F_GM_CLASS_XepLop.Designer.cs">
       <DependentUpon>F_GM_CLASS_XepLop.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_COURSE.cs">
+    <Compile Include="CHUCNANG\QuanLiKhoaHoc\UC_GM_COURSE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_COURSE.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiKhoaHoc\UC_GM_COURSE.Designer.cs">
       <DependentUpon>UC_GM_COURSE.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\F_UC_GM_COURSE_ThemKhoaHoc.cs">
+    <Compile Include="REF\ChildPage\General Management\F_UC_GM_COURSE_ThemKhoaHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\F_UC_GM_COURSE_ThemKhoaHoc.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\F_UC_GM_COURSE_ThemKhoaHoc.Designer.cs">
       <DependentUpon>F_UC_GM_COURSE_ThemKhoaHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_ROOM.cs">
+    <Compile Include="CHUCNANG\QuanLiLopHoc\UC_GM_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_ROOM.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiLopHoc\UC_GM_ROOM.Designer.cs">
       <DependentUpon>UC_GM_ROOM.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_ADDNEWROOM.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_ADDNEWROOM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_ADDNEWROOM.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_ADDNEWROOM.Designer.cs">
       <DependentUpon>F_GM_ROOM_ADDNEWROOM.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_UPDATE.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_UPDATE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_UPDATE.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_UPDATE.Designer.cs">
       <DependentUpon>F_GM_ROOM_UPDATE.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_SCHEDULE.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_SCHEDULE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_SCHEDULE.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_SCHEDULE.Designer.cs">
       <DependentUpon>UC_GM_SCHEDULE.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\HOPTHU\UC_CHITIETTHU.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\UC_CHITIETTHU.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\HOPTHU\UC_CHITIETTHU.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\UC_CHITIETTHU.Designer.cs">
       <DependentUpon>UC_CHITIETTHU.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\BangDiemDAO.cs" />
-    <Compile Include="ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.cs">
+    <Compile Include="REF\ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.Designer.cs">
+    <Compile Include="REF\ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.Designer.cs">
       <DependentUpon>F_HOCTAP_TAOBANGDIEM.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\HocTap\UC_HOCTAP_QLDiem.cs">
+    <Compile Include="CHUCNANG\QuanLiDiemSo\UC_HOCTAP_QLDiem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\HocTap\UC_HOCTAP_QLDiem.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiDiemSo\UC_HOCTAP_QLDiem.Designer.cs">
       <DependentUpon>UC_HOCTAP_QLDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_LECTURE_CAPNHAT.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_LECTURE_CAPNHAT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_LECTURE_CAPNHAT.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_LECTURE_CAPNHAT.Designer.cs">
       <DependentUpon>F_LECTURE_CAPNHAT.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_LECTURE_THEMGIANGVIEN.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_LECTURE_THEMGIANGVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_LECTURE_THEMGIANGVIEN.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_LECTURE_THEMGIANGVIEN.Designer.cs">
       <DependentUpon>F_LECTURE_THEMGIANGVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_NV_CAPNHAT.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_NV_CAPNHAT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_NV_CAPNHAT.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_NV_CAPNHAT.Designer.cs">
       <DependentUpon>F_NV_CAPNHAT.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_NV_THEMNHANVIEN.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_NV_THEMNHANVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\F_NV_THEMNHANVIEN.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\F_NV_THEMNHANVIEN.Designer.cs">
       <DependentUpon>F_NV_THEMNHANVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\UC_PERSONNEL_BANGLUONG.cs">
+    <Compile Include="REF\ChildPage\Personnel\UC_PERSONNEL_BANGLUONG.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\UC_PERSONNEL_BANGLUONG.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\UC_PERSONNEL_BANGLUONG.Designer.cs">
       <DependentUpon>UC_PERSONNEL_BANGLUONG.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\UC_PERSONNEL_NV.cs">
+    <Compile Include="REF\ChildPage\Personnel\UC_PERSONNEL_NV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\UC_PERSONNEL_NV.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\UC_PERSONNEL_NV.Designer.cs">
       <DependentUpon>UC_PERSONNEL_NV.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\F_THUCHI_TAOPHIEUTHU.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\F_THUCHI_TAOPHIEUTHU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\F_THUCHI_TAOPHIEUTHU.Designer.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\F_THUCHI_TAOPHIEUTHU.Designer.cs">
       <DependentUpon>F_THUCHI_TAOPHIEUTHU.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_CHI.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_CHI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_CHI.Designer.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_CHI.Designer.cs">
       <DependentUpon>UC_THUCHI_CHI.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_CHI_TaoPhieuChi.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_CHI_TaoPhieuChi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_CHI_TaoPhieuChi.Designer.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_CHI_TaoPhieuChi.Designer.cs">
       <DependentUpon>UC_THUCHI_CHI_TaoPhieuChi.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_THU.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_THU.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_THU.Designer.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_THU.Designer.cs">
       <DependentUpon>UC_THUCHI_THU.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_THU_FormAVT.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_THU_FormAVT.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\QLThuChi\UC_THUCHI_THU_FormAVT.Designer.cs">
+    <Compile Include="REF\ChildPage\QLThuChi\UC_THUCHI_THU_FormAVT.Designer.cs">
       <DependentUpon>UC_THUCHI_THU_FormAVT.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Student\F_STUDENT_CAPNHAT.cs">
+    <Compile Include="REF\ChildPage\Student\F_STUDENT_CAPNHAT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\Student\F_STUDENT_CAPNHAT.Designer.cs">
+    <Compile Include="REF\ChildPage\Student\F_STUDENT_CAPNHAT.Designer.cs">
       <DependentUpon>F_STUDENT_CAPNHAT.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Student\F_STUDENT_THEMHOCVIEN.cs">
+    <Compile Include="REF\ChildPage\Student\F_STUDENT_THEMHOCVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildPage\Student\F_STUDENT_THEMHOCVIEN.Designer.cs">
+    <Compile Include="REF\ChildPage\Student\F_STUDENT_THEMHOCVIEN.Designer.cs">
       <DependentUpon>F_STUDENT_THEMHOCVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Student\UC_STUDENT_DSHocVien.cs">
+    <Compile Include="REF\ChildPage\Student\UC_STUDENT_DSHocVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\Student\UC_STUDENT_DSHocVien.Designer.cs">
+    <Compile Include="REF\ChildPage\Student\UC_STUDENT_DSHocVien.Designer.cs">
       <DependentUpon>UC_STUDENT_DSHocVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Student\UC_STUDENT_DSHV_ChildForm.cs">
+    <Compile Include="REF\ChildPage\Student\UC_STUDENT_DSHV_ChildForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\Student\UC_STUDENT_DSHV_ChildForm.Designer.cs">
+    <Compile Include="REF\ChildPage\Student\UC_STUDENT_DSHV_ChildForm.Designer.cs">
       <DependentUpon>UC_STUDENT_DSHV_ChildForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Student\UC_STUDENT_XEPLOP.cs">
+    <Compile Include="CHUCNANG\QuanLiHocVienTrongNhom\UC_STUDENT_XEPLOP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\Student\UC_STUDENT_XEPLOP.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiHocVienTrongNhom\UC_STUDENT_XEPLOP.Designer.cs">
       <DependentUpon>UC_STUDENT_XEPLOP.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_INFO_UPDATE.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_INFO_UPDATE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\General Management\UC_GM_INFO_UPDATE.Designer.cs">
+    <Compile Include="REF\ChildPage\General Management\UC_GM_INFO_UPDATE.Designer.cs">
       <DependentUpon>UC_GM_INFO_UPDATE.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\Personnel\UC_PERSONNEL_LECTURE.cs">
+    <Compile Include="REF\ChildPage\Personnel\UC_PERSONNEL_LECTURE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\Personnel\UC_PERSONNEL_LECTURE.Designer.cs">
+    <Compile Include="REF\ChildPage\Personnel\UC_PERSONNEL_LECTURE.Designer.cs">
       <DependentUpon>UC_PERSONNEL_LECTURE.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_CHAMCONG.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_CHAMCONG.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_CHAMCONG.Designer.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_CHAMCONG.Designer.cs">
       <DependentUpon>UC_THONGKE_CHAMCONG.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_HOCPHI.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_HOCPHI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_HOCPHI.Designer.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_HOCPHI.Designer.cs">
       <DependentUpon>UC_THONGKE_HOCPHI.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_GHIDANH.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_GHIDANH.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_GHIDANH.Designer.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_GHIDANH.Designer.cs">
       <DependentUpon>UC_THONGKE_GHIDANH.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_HOCTAP.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_HOCTAP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\ThongKe\UC_THONGKE_HOCTAP.Designer.cs">
+    <Compile Include="REF\ChildPage\ThongKe\UC_THONGKE_HOCTAP.Designer.cs">
       <DependentUpon>UC_THONGKE_HOCTAP.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassFuncOther\Chart.cs" />
-    <Compile Include="Custom Control\cusButton.cs">
+    <Compile Include="REF\ClassFuncOther\Chart.cs" />
+    <Compile Include="REF\Custom Control\cusButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Custom Control\cusCombobox.cs">
+    <Compile Include="REF\Custom Control\cusCombobox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Custom Control\cusDateTimePicker.cs">
+    <Compile Include="REF\Custom Control\cusDateTimePicker.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Custom Control\cusMsgBox.cs" />
-    <Compile Include="Custom Control\cusPictureBox.cs">
+    <Compile Include="REF\Custom Control\cusMsgBox.cs" />
+    <Compile Include="REF\Custom Control\cusPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Custom Control\cusProgressBar.cs">
+    <Compile Include="REF\Custom Control\cusProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Custom Control\cusRadioButton.cs">
+    <Compile Include="REF\Custom Control\cusRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Custom Control\cusTextbox.cs" />
-    <Compile Include="DAO\DanhSachLopDao.cs" />
-    <Compile Include="DBConnection.cs" />
+    <Compile Include="REF\Custom Control\cusTextbox.cs" />
+    <Compile Include="DAO\DBConnection.cs" />
     <Compile Include="FORM\F_Addmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -544,18 +551,18 @@
     <Compile Include="FORM\F_HOCVIEN.Designer.cs">
       <DependentUpon>F_HOCVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="GIANGVIEN\UC_XACNHANLOP_CHILD.cs">
+    <Compile Include="REF\GIANGVIEN\UC_XACNHANLOP_CHILD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GIANGVIEN\UC_XACNHANLOP_CHILD.Designer.cs">
+    <Compile Include="REF\GIANGVIEN\UC_XACNHANLOP_CHILD.Designer.cs">
       <DependentUpon>UC_XACNHANLOP_CHILD.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\GiaoVienDao.cs" />
     <Compile Include="DAO\HocSinhDao.cs" />
-    <Compile Include="FORM\Login.cs">
+    <Compile Include="CHUCNANG\DangNhap\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\Login.Designer.cs">
+    <Compile Include="CHUCNANG\DangNhap\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MODELS\GiaoVien.cs" />
@@ -567,82 +574,82 @@
     <Compile Include="HamThu.cs" />
     <Compile Include="DAO\HamThuDAO.cs" />
     <Compile Include="DAO\TKBDao.cs" />
-    <Compile Include="HOCVIEN\F_HAMTHU.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\F_HAMTHU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\F_HAMTHU.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\F_HAMTHU.Designer.cs">
       <DependentUpon>F_HAMTHU.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\F_TKB_THANHTOAN.cs">
+    <Compile Include="REF\HOCVIEN\F_TKB_THANHTOAN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\F_TKB_THANHTOAN.Designer.cs">
+    <Compile Include="REF\HOCVIEN\F_TKB_THANHTOAN.Designer.cs">
       <DependentUpon>F_TKB_THANHTOAN.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANGKILOP.cs">
+    <Compile Include="CHUCNANG\QuanLiDiemDanh\UC_DANGKILOP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANGKILOP.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiDiemDanh\UC_DANGKILOP.Designer.cs">
       <DependentUpon>UC_DANGKILOP.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANGKILOP_CHILD.cs">
+    <Compile Include="REF\HOCVIEN\UC_DANGKILOP_CHILD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANGKILOP_CHILD.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_DANGKILOP_CHILD.Designer.cs">
       <DependentUpon>UC_DANGKILOP_CHILD.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANGKYLOP.cs">
+    <Compile Include="REF\HOCVIEN\UC_DANGKYLOP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANGKYLOP.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_DANGKYLOP.Designer.cs">
       <DependentUpon>UC_DANGKYLOP.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANHSACHLOP_CHILD.cs">
+    <Compile Include="REF\HOCVIEN\UC_DANHSACHLOP_CHILD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DANHSACHLOP_CHILD.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_DANHSACHLOP_CHILD.Designer.cs">
       <DependentUpon>UC_DANHSACHLOP_CHILD.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\HOPTHU\UC_HAMTHUGOPY.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\UC_HAMTHUGOPY.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\HOPTHU\UC_HAMTHUGOPY.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\UC_HAMTHUGOPY.Designer.cs">
       <DependentUpon>UC_HAMTHUGOPY.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildPage\HOPTHU\UC_HAMTHUGOPY_CHILD.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\UC_HAMTHUGOPY_CHILD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildPage\HOPTHU\UC_HAMTHUGOPY_CHILD.Designer.cs">
+    <Compile Include="CHUCNANG\QuanLiThongBao\UC_HAMTHUGOPY_CHILD.Designer.cs">
       <DependentUpon>UC_HAMTHUGOPY_CHILD.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DKL.cs">
+    <Compile Include="REF\HOCVIEN\UC_DKL.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_DKL.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_DKL.Designer.cs">
       <DependentUpon>UC_DKL.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_THOIKHOABIEU.cs">
+    <Compile Include="REF\HOCVIEN\UC_THOIKHOABIEU.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_THOIKHOABIEU.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_THOIKHOABIEU.Designer.cs">
       <DependentUpon>UC_THOIKHOABIEU.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_THONGTINCANHAN.cs">
+    <Compile Include="REF\HOCVIEN\UC_THONGTINCANHAN.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_THONGTINCANHAN.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_THONGTINCANHAN.Designer.cs">
       <DependentUpon>UC_THONGTINCANHAN.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_THONGTINHOCVIEN.cs">
+    <Compile Include="CHUCNANG\ThongTinCaNhan\UC_THONGTINHOCVIEN.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_THONGTINHOCVIEN.Designer.cs">
+    <Compile Include="CHUCNANG\ThongTinCaNhan\UC_THONGTINHOCVIEN.Designer.cs">
       <DependentUpon>UC_THONGTINHOCVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN\UC_TKB.cs">
+    <Compile Include="REF\HOCVIEN\UC_TKB.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HOCVIEN\UC_TKB.Designer.cs">
+    <Compile Include="REF\HOCVIEN\UC_TKB.Designer.cs">
       <DependentUpon>UC_TKB.cs</DependentUpon>
     </Compile>
     <Compile Include="MODELS\KhoaHoc.cs" />
@@ -673,126 +680,126 @@
     <Compile Include="DAO\PhongHocDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FORM\SignUp.cs">
+    <Compile Include="REF\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\SignUp.Designer.cs">
+    <Compile Include="REF\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\ThongKeDao.cs" />
     <Compile Include="XuatExcel.cs" />
-    <EmbeddedResource Include="ChildForm\F_UpdateHV.resx">
+    <EmbeddedResource Include="REF\ChildForm\F_UpdateHV.resx">
       <DependentUpon>F_UpdateHV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\DSLOPMOI\UC_DSLopMoi.resx">
+    <EmbeddedResource Include="REF\ChildPage\DSLOPMOI\UC_DSLopMoi.resx">
       <DependentUpon>UC_DSLopMoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\DSLOPMOI\UC_DSLopMoi_FormClass.resx">
+    <EmbeddedResource Include="REF\ChildPage\DSLOPMOI\UC_DSLopMoi_FormClass.resx">
       <DependentUpon>UC_DSLopMoi_FormClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\F_UC_GM_COURSE_CapNhat.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\F_UC_GM_COURSE_CapNhat.resx">
       <DependentUpon>F_UC_GM_COURSE_CapNhat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_CLASS.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiNhomHoc\UC_GM_CLASS.resx">
       <DependentUpon>UC_GM_CLASS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_TaoLopMoi.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_TaoLopMoi.resx">
       <DependentUpon>F_GM_CLASS_TaoLopMoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_CLASS\F_GM_CLASS_XepLop.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiNhomHoc\F_GM_CLASS_XepLop.resx">
       <DependentUpon>F_GM_CLASS_XepLop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_COURSE.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiKhoaHoc\UC_GM_COURSE.resx">
       <DependentUpon>UC_GM_COURSE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\F_UC_GM_COURSE_ThemKhoaHoc.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\F_UC_GM_COURSE_ThemKhoaHoc.resx">
       <DependentUpon>F_UC_GM_COURSE_ThemKhoaHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_ROOM.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiLopHoc\UC_GM_ROOM.resx">
       <DependentUpon>UC_GM_ROOM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_ADDNEWROOM.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_ADDNEWROOM.resx">
       <DependentUpon>F_GM_ROOM_ADDNEWROOM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_UPDATE.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\UC_GM_ROOM\F_GM_ROOM_UPDATE.resx">
       <DependentUpon>F_GM_ROOM_UPDATE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_SCHEDULE.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\UC_GM_SCHEDULE.resx">
       <DependentUpon>UC_GM_SCHEDULE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\HOPTHU\UC_CHITIETTHU.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiThongBao\UC_CHITIETTHU.resx">
       <DependentUpon>UC_CHITIETTHU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.resx">
+    <EmbeddedResource Include="REF\ChildPage\HocTap\F_HOCTAP_TAOBANGDIEM.resx">
       <DependentUpon>F_HOCTAP_TAOBANGDIEM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\HocTap\UC_HOCTAP_QLDiem.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiDiemSo\UC_HOCTAP_QLDiem.resx">
       <DependentUpon>UC_HOCTAP_QLDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\F_LECTURE_CAPNHAT.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\F_LECTURE_CAPNHAT.resx">
       <DependentUpon>F_LECTURE_CAPNHAT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\F_LECTURE_THEMGIANGVIEN.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\F_LECTURE_THEMGIANGVIEN.resx">
       <DependentUpon>F_LECTURE_THEMGIANGVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\F_NV_CAPNHAT.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\F_NV_CAPNHAT.resx">
       <DependentUpon>F_NV_CAPNHAT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\F_NV_THEMNHANVIEN.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\F_NV_THEMNHANVIEN.resx">
       <DependentUpon>F_NV_THEMNHANVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\UC_PERSONNEL_BANGLUONG.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\UC_PERSONNEL_BANGLUONG.resx">
       <DependentUpon>UC_PERSONNEL_BANGLUONG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\UC_PERSONNEL_NV.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\UC_PERSONNEL_NV.resx">
       <DependentUpon>UC_PERSONNEL_NV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\QLThuChi\F_THUCHI_TAOPHIEUTHU.resx">
+    <EmbeddedResource Include="REF\ChildPage\QLThuChi\F_THUCHI_TAOPHIEUTHU.resx">
       <DependentUpon>F_THUCHI_TAOPHIEUTHU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\QLThuChi\UC_THUCHI_CHI.resx">
+    <EmbeddedResource Include="REF\ChildPage\QLThuChi\UC_THUCHI_CHI.resx">
       <DependentUpon>UC_THUCHI_CHI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\QLThuChi\UC_THUCHI_CHI_TaoPhieuChi.resx">
+    <EmbeddedResource Include="REF\ChildPage\QLThuChi\UC_THUCHI_CHI_TaoPhieuChi.resx">
       <DependentUpon>UC_THUCHI_CHI_TaoPhieuChi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\QLThuChi\UC_THUCHI_THU.resx">
+    <EmbeddedResource Include="REF\ChildPage\QLThuChi\UC_THUCHI_THU.resx">
       <DependentUpon>UC_THUCHI_THU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\QLThuChi\UC_THUCHI_THU_FormAVT.resx">
+    <EmbeddedResource Include="REF\ChildPage\QLThuChi\UC_THUCHI_THU_FormAVT.resx">
       <DependentUpon>UC_THUCHI_THU_FormAVT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Student\F_STUDENT_CAPNHAT.resx">
+    <EmbeddedResource Include="REF\ChildPage\Student\F_STUDENT_CAPNHAT.resx">
       <DependentUpon>F_STUDENT_CAPNHAT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Student\F_STUDENT_THEMHOCVIEN.resx">
+    <EmbeddedResource Include="REF\ChildPage\Student\F_STUDENT_THEMHOCVIEN.resx">
       <DependentUpon>F_STUDENT_THEMHOCVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Student\UC_STUDENT_DSHocVien.resx">
+    <EmbeddedResource Include="REF\ChildPage\Student\UC_STUDENT_DSHocVien.resx">
       <DependentUpon>UC_STUDENT_DSHocVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Student\UC_STUDENT_DSHV_ChildForm.resx">
+    <EmbeddedResource Include="REF\ChildPage\Student\UC_STUDENT_DSHV_ChildForm.resx">
       <DependentUpon>UC_STUDENT_DSHV_ChildForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Student\UC_STUDENT_XEPLOP.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiHocVienTrongNhom\UC_STUDENT_XEPLOP.resx">
       <DependentUpon>UC_STUDENT_XEPLOP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\General Management\UC_GM_INFO_UPDATE.resx">
+    <EmbeddedResource Include="REF\ChildPage\General Management\UC_GM_INFO_UPDATE.resx">
       <DependentUpon>UC_GM_INFO_UPDATE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\Personnel\UC_PERSONNEL_LECTURE.resx">
+    <EmbeddedResource Include="REF\ChildPage\Personnel\UC_PERSONNEL_LECTURE.resx">
       <DependentUpon>UC_PERSONNEL_LECTURE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\ThongKe\UC_THONGKE_CHAMCONG.resx">
+    <EmbeddedResource Include="REF\ChildPage\ThongKe\UC_THONGKE_CHAMCONG.resx">
       <DependentUpon>UC_THONGKE_CHAMCONG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\ThongKe\UC_THONGKE_HOCPHI.resx">
+    <EmbeddedResource Include="REF\ChildPage\ThongKe\UC_THONGKE_HOCPHI.resx">
       <DependentUpon>UC_THONGKE_HOCPHI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\ThongKe\UC_THONGKE_GHIDANH.resx">
+    <EmbeddedResource Include="REF\ChildPage\ThongKe\UC_THONGKE_GHIDANH.resx">
       <DependentUpon>UC_THONGKE_GHIDANH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\ThongKe\UC_THONGKE_HOCTAP.resx">
+    <EmbeddedResource Include="REF\ChildPage\ThongKe\UC_THONGKE_HOCTAP.resx">
       <DependentUpon>UC_THONGKE_HOCTAP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\F_Addmin.resx">
@@ -801,49 +808,52 @@
     <EmbeddedResource Include="FORM\F_HOCVIEN.resx">
       <DependentUpon>F_HOCVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\Login.resx">
+    <EmbeddedResource Include="CHUCNANG\DangNhap\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GIANGVIEN\UC_XACNHANLOP_CHILD.resx">
+    <EmbeddedResource Include="REF\GIANGVIEN\UC_XACNHANLOP_CHILD.resx">
       <DependentUpon>UC_XACNHANLOP_CHILD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\F_HAMTHU.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiDiemDanh\F_DIEMDANH.resx">
+      <DependentUpon>F_DIEMDANH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHUCNANG\QuanLiThongBao\F_HAMTHU.resx">
       <DependentUpon>F_HAMTHU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\F_TKB_THANHTOAN.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\F_TKB_THANHTOAN.resx">
       <DependentUpon>F_TKB_THANHTOAN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_DANGKILOP.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiDiemDanh\UC_DANGKILOP.resx">
       <DependentUpon>UC_DANGKILOP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_DANGKILOP_CHILD.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_DANGKILOP_CHILD.resx">
       <DependentUpon>UC_DANGKILOP_CHILD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_DANGKYLOP.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_DANGKYLOP.resx">
       <DependentUpon>UC_DANGKYLOP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_DANHSACHLOP_CHILD.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_DANHSACHLOP_CHILD.resx">
       <DependentUpon>UC_DANHSACHLOP_CHILD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\HOPTHU\UC_HAMTHUGOPY.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiThongBao\UC_HAMTHUGOPY.resx">
       <DependentUpon>UC_HAMTHUGOPY.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildPage\HOPTHU\UC_HAMTHUGOPY_CHILD.resx">
+    <EmbeddedResource Include="CHUCNANG\QuanLiThongBao\UC_HAMTHUGOPY_CHILD.resx">
       <DependentUpon>UC_HAMTHUGOPY_CHILD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_DKL.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_DKL.resx">
       <DependentUpon>UC_DKL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_THOIKHOABIEU.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_THOIKHOABIEU.resx">
       <DependentUpon>UC_THOIKHOABIEU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_THONGTINCANHAN.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_THONGTINCANHAN.resx">
       <DependentUpon>UC_THONGTINCANHAN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_THONGTINHOCVIEN.resx">
+    <EmbeddedResource Include="CHUCNANG\ThongTinCaNhan\UC_THONGTINHOCVIEN.resx">
       <DependentUpon>UC_THONGTINHOCVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOCVIEN\UC_TKB.resx">
+    <EmbeddedResource Include="REF\HOCVIEN\UC_TKB.resx">
       <DependentUpon>UC_TKB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -856,7 +866,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FORM\SignUp.resx">
+    <EmbeddedResource Include="REF\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -1071,7 +1081,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HOCVIEN\Class\" />
+    <Folder Include="REF\ChildPage\HOPTHU\" />
+    <Folder Include="REF\HOCVIEN\Class\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

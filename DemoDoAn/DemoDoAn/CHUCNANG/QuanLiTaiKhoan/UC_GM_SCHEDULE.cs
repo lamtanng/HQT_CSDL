@@ -14,14 +14,20 @@ namespace DemoDoAn.ChildPage.General_Management
     public partial class UC_GM_SCHEDULE : UserControl
     {
         LichHocDao lichHocDao = new LichHocDao();
+        LoginDAO loginDao = new LoginDAO();
         enum nameCol_LichHoc
         {
             STT,
-            MaLop,
-            TenMon,
-            Thu,
-            Ca,
-            Phong,
+            TenDangNhap,
+            TenQuyen,
+            Ma,
+            Hoten,
+            SoDienThoai,
+            //MaLop,
+            //TenMon,
+            //Thu,
+            //Ca,
+            //Phong,
             CapNhat,
             Xoa
         }
@@ -64,7 +70,7 @@ namespace DemoDoAn.ChildPage.General_Management
         //tai DSNV
         private void taiLichHoc()
         {
-            loadForm(dataGrView_LichDay, lichHocDao.taiLichHoc());
+            loadForm(dataGrView_LichDay, loginDao.loadChiTietTaiKhoan());
             //ẩn full các cột     
             for (int i = 0; i < dataGrView_LichDay.Columns.Count; i++)
             {
@@ -174,8 +180,9 @@ namespace DemoDoAn.ChildPage.General_Management
         //xep lop
         private void btn_XepLop_Click(object sender, EventArgs e)
         {
-            F_GM_CLASS_XepLop xeplich  = new F_GM_CLASS_XepLop();
-            xeplich.ShowDialog();
+            F_GM_CLASS_TaoLopMoi taiKhoanMoi  = new F_GM_CLASS_TaoLopMoi();
+            taiKhoanMoi.ShowDialog();
+            taiLichHoc();
         }
 
         //xoa + xep lich

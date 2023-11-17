@@ -148,8 +148,9 @@
             this.pnl_Menu.Controls.Add(this.picBoxLogo);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(276, 954);
+            this.pnl_Menu.Size = new System.Drawing.Size(310, 1193);
             this.pnl_Menu.TabIndex = 0;
             // 
             // pnl_QLThongKe
@@ -164,9 +165,10 @@
             this.pnl_QLThongKe.Controls.Add(this.btn_GhiDanh);
             this.pnl_QLThongKe.Controls.Add(this.btn_HocPhi);
             this.pnl_QLThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_QLThongKe.Location = new System.Drawing.Point(0, 1297);
+            this.pnl_QLThongKe.Location = new System.Drawing.Point(0, 1620);
+            this.pnl_QLThongKe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLThongKe.Name = "pnl_QLThongKe";
-            this.pnl_QLThongKe.Size = new System.Drawing.Size(255, 239);
+            this.pnl_QLThongKe.Size = new System.Drawing.Size(284, 299);
             this.pnl_QLThongKe.TabIndex = 6;
             // 
             // panel9
@@ -174,8 +176,9 @@
             this.panel9.BackColor = System.Drawing.Color.Gainsboro;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(255, 1);
+            this.panel9.Size = new System.Drawing.Size(284, 1);
             this.panel9.TabIndex = 7;
             // 
             // pBox_ChamCong
@@ -183,9 +186,10 @@
             this.pBox_ChamCong.BackColor = System.Drawing.Color.Transparent;
             this.pBox_ChamCong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_ChamCong.Image = global::DemoDoAn.Properties.Resources.Dark_HocPhi;
-            this.pBox_ChamCong.Location = new System.Drawing.Point(33, 199);
+            this.pBox_ChamCong.Location = new System.Drawing.Point(37, 249);
+            this.pBox_ChamCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_ChamCong.Name = "pBox_ChamCong";
-            this.pBox_ChamCong.Size = new System.Drawing.Size(25, 25);
+            this.pBox_ChamCong.Size = new System.Drawing.Size(28, 31);
             this.pBox_ChamCong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_ChamCong.TabIndex = 3;
             this.pBox_ChamCong.TabStop = false;
@@ -195,9 +199,10 @@
             this.pBox_HocTap.BackColor = System.Drawing.Color.Transparent;
             this.pBox_HocTap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_HocTap.Image = global::DemoDoAn.Properties.Resources.Dark_HocTap;
-            this.pBox_HocTap.Location = new System.Drawing.Point(33, 141);
+            this.pBox_HocTap.Location = new System.Drawing.Point(37, 176);
+            this.pBox_HocTap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_HocTap.Name = "pBox_HocTap";
-            this.pBox_HocTap.Size = new System.Drawing.Size(25, 25);
+            this.pBox_HocTap.Size = new System.Drawing.Size(28, 31);
             this.pBox_HocTap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_HocTap.TabIndex = 3;
             this.pBox_HocTap.TabStop = false;
@@ -207,9 +212,10 @@
             this.pBox_GhiDanh.BackColor = System.Drawing.Color.Transparent;
             this.pBox_GhiDanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_GhiDanh.Image = global::DemoDoAn.Properties.Resources.Dark_GhiDanh;
-            this.pBox_GhiDanh.Location = new System.Drawing.Point(33, 83);
+            this.pBox_GhiDanh.Location = new System.Drawing.Point(37, 104);
+            this.pBox_GhiDanh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_GhiDanh.Name = "pBox_GhiDanh";
-            this.pBox_GhiDanh.Size = new System.Drawing.Size(25, 25);
+            this.pBox_GhiDanh.Size = new System.Drawing.Size(28, 31);
             this.pBox_GhiDanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_GhiDanh.TabIndex = 3;
             this.pBox_GhiDanh.TabStop = false;
@@ -219,9 +225,10 @@
             this.pBox_HocPhi.BackColor = System.Drawing.Color.Transparent;
             this.pBox_HocPhi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_HocPhi.Image = global::DemoDoAn.Properties.Resources.Dark_HocPhi;
-            this.pBox_HocPhi.Location = new System.Drawing.Point(33, 25);
+            this.pBox_HocPhi.Location = new System.Drawing.Point(37, 31);
+            this.pBox_HocPhi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_HocPhi.Name = "pBox_HocPhi";
-            this.pBox_HocPhi.Size = new System.Drawing.Size(25, 25);
+            this.pBox_HocPhi.Size = new System.Drawing.Size(28, 31);
             this.pBox_HocPhi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_HocPhi.TabIndex = 3;
             this.pBox_HocPhi.TabStop = false;
@@ -235,12 +242,13 @@
             this.btn_ChamCong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_ChamCong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_ChamCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ChamCong.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChamCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ChamCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_ChamCong.Location = new System.Drawing.Point(3, 185);
+            this.btn_ChamCong.Location = new System.Drawing.Point(3, 231);
+            this.btn_ChamCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_ChamCong.Name = "btn_ChamCong";
-            this.btn_ChamCong.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_ChamCong.Size = new System.Drawing.Size(271, 52);
+            this.btn_ChamCong.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_ChamCong.Size = new System.Drawing.Size(305, 65);
             this.btn_ChamCong.TabIndex = 1;
             this.btn_ChamCong.Text = "Salary";
             this.btn_ChamCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,12 +265,13 @@
             this.btn_HocTap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_HocTap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_HocTap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HocTap.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HocTap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HocTap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_HocTap.Location = new System.Drawing.Point(3, 127);
+            this.btn_HocTap.Location = new System.Drawing.Point(3, 159);
+            this.btn_HocTap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_HocTap.Name = "btn_HocTap";
-            this.btn_HocTap.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_HocTap.Size = new System.Drawing.Size(271, 52);
+            this.btn_HocTap.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_HocTap.Size = new System.Drawing.Size(305, 65);
             this.btn_HocTap.TabIndex = 1;
             this.btn_HocTap.Text = "Study";
             this.btn_HocTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -279,12 +288,13 @@
             this.btn_GhiDanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_GhiDanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_GhiDanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_GhiDanh.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_GhiDanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GhiDanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_GhiDanh.Location = new System.Drawing.Point(3, 69);
+            this.btn_GhiDanh.Location = new System.Drawing.Point(3, 86);
+            this.btn_GhiDanh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_GhiDanh.Name = "btn_GhiDanh";
-            this.btn_GhiDanh.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_GhiDanh.Size = new System.Drawing.Size(271, 52);
+            this.btn_GhiDanh.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_GhiDanh.Size = new System.Drawing.Size(305, 65);
             this.btn_GhiDanh.TabIndex = 1;
             this.btn_GhiDanh.Text = "Registration";
             this.btn_GhiDanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -301,12 +311,13 @@
             this.btn_HocPhi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_HocPhi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_HocPhi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HocPhi.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HocPhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HocPhi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_HocPhi.Location = new System.Drawing.Point(3, 11);
+            this.btn_HocPhi.Location = new System.Drawing.Point(3, 14);
+            this.btn_HocPhi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_HocPhi.Name = "btn_HocPhi";
-            this.btn_HocPhi.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_HocPhi.Size = new System.Drawing.Size(271, 52);
+            this.btn_HocPhi.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_HocPhi.Size = new System.Drawing.Size(305, 65);
             this.btn_HocPhi.TabIndex = 1;
             this.btn_HocPhi.Text = "Tuition";
             this.btn_HocPhi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -328,10 +339,11 @@
             this.btn_QLThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_QLThongKe.Image = global::DemoDoAn.Properties.Resources.angle_down;
             this.btn_QLThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLThongKe.Location = new System.Drawing.Point(0, 1245);
+            this.btn_QLThongKe.Location = new System.Drawing.Point(0, 1555);
+            this.btn_QLThongKe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QLThongKe.Name = "btn_QLThongKe";
-            this.btn_QLThongKe.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLThongKe.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLThongKe.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.btn_QLThongKe.Size = new System.Drawing.Size(284, 65);
             this.btn_QLThongKe.TabIndex = 6;
             this.btn_QLThongKe.Text = "Statistics";
             this.btn_QLThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -347,9 +359,10 @@
             this.pnl_QLThuChi.Controls.Add(this.btn_PhieuChi);
             this.pnl_QLThuChi.Controls.Add(this.btn_PhieuThu);
             this.pnl_QLThuChi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_QLThuChi.Location = new System.Drawing.Point(0, 1117);
+            this.pnl_QLThuChi.Location = new System.Drawing.Point(0, 1395);
+            this.pnl_QLThuChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLThuChi.Name = "pnl_QLThuChi";
-            this.pnl_QLThuChi.Size = new System.Drawing.Size(255, 128);
+            this.pnl_QLThuChi.Size = new System.Drawing.Size(284, 160);
             this.pnl_QLThuChi.TabIndex = 5;
             this.pnl_QLThuChi.Visible = false;
             // 
@@ -358,8 +371,9 @@
             this.panel7.BackColor = System.Drawing.Color.Gainsboro;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(255, 1);
+            this.panel7.Size = new System.Drawing.Size(284, 1);
             this.panel7.TabIndex = 7;
             // 
             // pBox_PhieuChi
@@ -367,9 +381,10 @@
             this.pBox_PhieuChi.BackColor = System.Drawing.Color.Transparent;
             this.pBox_PhieuChi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_PhieuChi.Image = global::DemoDoAn.Properties.Resources.Dark_PhieuThu_Chi;
-            this.pBox_PhieuChi.Location = new System.Drawing.Point(33, 83);
+            this.pBox_PhieuChi.Location = new System.Drawing.Point(37, 104);
+            this.pBox_PhieuChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_PhieuChi.Name = "pBox_PhieuChi";
-            this.pBox_PhieuChi.Size = new System.Drawing.Size(25, 25);
+            this.pBox_PhieuChi.Size = new System.Drawing.Size(28, 31);
             this.pBox_PhieuChi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_PhieuChi.TabIndex = 3;
             this.pBox_PhieuChi.TabStop = false;
@@ -379,9 +394,10 @@
             this.pBox_PhieuThu.BackColor = System.Drawing.Color.Transparent;
             this.pBox_PhieuThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_PhieuThu.Image = global::DemoDoAn.Properties.Resources.Dark_PhieuThu_Chi;
-            this.pBox_PhieuThu.Location = new System.Drawing.Point(33, 25);
+            this.pBox_PhieuThu.Location = new System.Drawing.Point(37, 31);
+            this.pBox_PhieuThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_PhieuThu.Name = "pBox_PhieuThu";
-            this.pBox_PhieuThu.Size = new System.Drawing.Size(25, 25);
+            this.pBox_PhieuThu.Size = new System.Drawing.Size(28, 31);
             this.pBox_PhieuThu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_PhieuThu.TabIndex = 3;
             this.pBox_PhieuThu.TabStop = false;
@@ -395,12 +411,13 @@
             this.btn_PhieuChi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_PhieuChi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_PhieuChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PhieuChi.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PhieuChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PhieuChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_PhieuChi.Location = new System.Drawing.Point(3, 69);
+            this.btn_PhieuChi.Location = new System.Drawing.Point(3, 86);
+            this.btn_PhieuChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_PhieuChi.Name = "btn_PhieuChi";
-            this.btn_PhieuChi.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_PhieuChi.Size = new System.Drawing.Size(271, 52);
+            this.btn_PhieuChi.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_PhieuChi.Size = new System.Drawing.Size(305, 65);
             this.btn_PhieuChi.TabIndex = 1;
             this.btn_PhieuChi.Text = "Outcome Management";
             this.btn_PhieuChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -416,12 +433,13 @@
             this.btn_PhieuThu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_PhieuThu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_PhieuThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PhieuThu.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PhieuThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PhieuThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_PhieuThu.Location = new System.Drawing.Point(3, 11);
+            this.btn_PhieuThu.Location = new System.Drawing.Point(3, 14);
+            this.btn_PhieuThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_PhieuThu.Name = "btn_PhieuThu";
-            this.btn_PhieuThu.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_PhieuThu.Size = new System.Drawing.Size(271, 52);
+            this.btn_PhieuThu.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_PhieuThu.Size = new System.Drawing.Size(305, 65);
             this.btn_PhieuThu.TabIndex = 1;
             this.btn_PhieuThu.Text = "Income Management";
             this.btn_PhieuThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -442,10 +460,11 @@
             this.btn_QLThuChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.btn_QLThuChi.Image = global::DemoDoAn.Properties.Resources.angle_down;
             this.btn_QLThuChi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLThuChi.Location = new System.Drawing.Point(0, 1065);
+            this.btn_QLThuChi.Location = new System.Drawing.Point(0, 1330);
+            this.btn_QLThuChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QLThuChi.Name = "btn_QLThuChi";
-            this.btn_QLThuChi.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLThuChi.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLThuChi.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.btn_QLThuChi.Size = new System.Drawing.Size(284, 65);
             this.btn_QLThuChi.TabIndex = 5;
             this.btn_QLThuChi.Text = "Financial Management";
             this.btn_QLThuChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -463,9 +482,10 @@
             this.pnl_QLNhanSu.Controls.Add(this.btn_NhanVien);
             this.pnl_QLNhanSu.Controls.Add(this.btn_GiangVien);
             this.pnl_QLNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_QLNhanSu.Location = new System.Drawing.Point(0, 933);
+            this.pnl_QLNhanSu.Location = new System.Drawing.Point(0, 1165);
+            this.pnl_QLNhanSu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLNhanSu.Name = "pnl_QLNhanSu";
-            this.pnl_QLNhanSu.Size = new System.Drawing.Size(255, 132);
+            this.pnl_QLNhanSu.Size = new System.Drawing.Size(284, 165);
             this.pnl_QLNhanSu.TabIndex = 4;
             this.pnl_QLNhanSu.Visible = false;
             // 
@@ -474,8 +494,9 @@
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(255, 1);
+            this.panel5.Size = new System.Drawing.Size(284, 1);
             this.panel5.TabIndex = 7;
             // 
             // pBox_BangLuong
@@ -483,9 +504,10 @@
             this.pBox_BangLuong.BackColor = System.Drawing.Color.Transparent;
             this.pBox_BangLuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_BangLuong.Image = global::DemoDoAn.Properties.Resources.eye;
-            this.pBox_BangLuong.Location = new System.Drawing.Point(33, 141);
+            this.pBox_BangLuong.Location = new System.Drawing.Point(37, 176);
+            this.pBox_BangLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_BangLuong.Name = "pBox_BangLuong";
-            this.pBox_BangLuong.Size = new System.Drawing.Size(25, 25);
+            this.pBox_BangLuong.Size = new System.Drawing.Size(28, 31);
             this.pBox_BangLuong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_BangLuong.TabIndex = 3;
             this.pBox_BangLuong.TabStop = false;
@@ -496,9 +518,10 @@
             this.pBox_NhanVien.BackColor = System.Drawing.Color.Transparent;
             this.pBox_NhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_NhanVien.Image = global::DemoDoAn.Properties.Resources.Dark_NhanVien;
-            this.pBox_NhanVien.Location = new System.Drawing.Point(31, 83);
+            this.pBox_NhanVien.Location = new System.Drawing.Point(35, 104);
+            this.pBox_NhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_NhanVien.Name = "pBox_NhanVien";
-            this.pBox_NhanVien.Size = new System.Drawing.Size(25, 25);
+            this.pBox_NhanVien.Size = new System.Drawing.Size(28, 31);
             this.pBox_NhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_NhanVien.TabIndex = 3;
             this.pBox_NhanVien.TabStop = false;
@@ -508,9 +531,10 @@
             this.pBox_GiangVien.BackColor = System.Drawing.Color.Transparent;
             this.pBox_GiangVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_GiangVien.Image = global::DemoDoAn.Properties.Resources.Dark_GiangVien;
-            this.pBox_GiangVien.Location = new System.Drawing.Point(33, 25);
+            this.pBox_GiangVien.Location = new System.Drawing.Point(37, 31);
+            this.pBox_GiangVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_GiangVien.Name = "pBox_GiangVien";
-            this.pBox_GiangVien.Size = new System.Drawing.Size(25, 25);
+            this.pBox_GiangVien.Size = new System.Drawing.Size(28, 31);
             this.pBox_GiangVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_GiangVien.TabIndex = 3;
             this.pBox_GiangVien.TabStop = false;
@@ -524,12 +548,13 @@
             this.btn_BangLuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_BangLuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_BangLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_BangLuong.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BangLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BangLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_BangLuong.Location = new System.Drawing.Point(3, 127);
+            this.btn_BangLuong.Location = new System.Drawing.Point(3, 159);
+            this.btn_BangLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_BangLuong.Name = "btn_BangLuong";
-            this.btn_BangLuong.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_BangLuong.Size = new System.Drawing.Size(271, 52);
+            this.btn_BangLuong.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_BangLuong.Size = new System.Drawing.Size(305, 65);
             this.btn_BangLuong.TabIndex = 1;
             this.btn_BangLuong.Text = "BangLuong";
             this.btn_BangLuong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -546,12 +571,13 @@
             this.btn_NhanVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_NhanVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NhanVien.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_NhanVien.Location = new System.Drawing.Point(3, 69);
+            this.btn_NhanVien.Location = new System.Drawing.Point(3, 86);
+            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_NhanVien.Name = "btn_NhanVien";
-            this.btn_NhanVien.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_NhanVien.Size = new System.Drawing.Size(271, 52);
+            this.btn_NhanVien.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_NhanVien.Size = new System.Drawing.Size(305, 65);
             this.btn_NhanVien.TabIndex = 1;
             this.btn_NhanVien.Text = "Staff";
             this.btn_NhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -567,12 +593,13 @@
             this.btn_GiangVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_GiangVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_GiangVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_GiangVien.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_GiangVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GiangVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_GiangVien.Location = new System.Drawing.Point(3, 11);
+            this.btn_GiangVien.Location = new System.Drawing.Point(3, 14);
+            this.btn_GiangVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_GiangVien.Name = "btn_GiangVien";
-            this.btn_GiangVien.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_GiangVien.Size = new System.Drawing.Size(271, 52);
+            this.btn_GiangVien.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_GiangVien.Size = new System.Drawing.Size(305, 65);
             this.btn_GiangVien.TabIndex = 1;
             this.btn_GiangVien.Text = "Lecture";
             this.btn_GiangVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -593,10 +620,11 @@
             this.btn_QLNhanSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.btn_QLNhanSu.Image = global::DemoDoAn.Properties.Resources.angle_down;
             this.btn_QLNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLNhanSu.Location = new System.Drawing.Point(0, 881);
+            this.btn_QLNhanSu.Location = new System.Drawing.Point(0, 1100);
+            this.btn_QLNhanSu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QLNhanSu.Name = "btn_QLNhanSu";
-            this.btn_QLNhanSu.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLNhanSu.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLNhanSu.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.btn_QLNhanSu.Size = new System.Drawing.Size(284, 65);
             this.btn_QLNhanSu.TabIndex = 4;
             this.btn_QLNhanSu.Text = "Personnel";
             this.btn_QLNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -612,9 +640,10 @@
             this.pnl_QLHocVien.Controls.Add(this.btn_XepLop);
             this.pnl_QLHocVien.Controls.Add(this.btn_DSHocSinh);
             this.pnl_QLHocVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_QLHocVien.Location = new System.Drawing.Point(0, 751);
+            this.pnl_QLHocVien.Location = new System.Drawing.Point(0, 938);
+            this.pnl_QLHocVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLHocVien.Name = "pnl_QLHocVien";
-            this.pnl_QLHocVien.Size = new System.Drawing.Size(255, 130);
+            this.pnl_QLHocVien.Size = new System.Drawing.Size(284, 162);
             this.pnl_QLHocVien.TabIndex = 3;
             // 
             // panel4
@@ -622,8 +651,9 @@
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(255, 1);
+            this.panel4.Size = new System.Drawing.Size(284, 1);
             this.panel4.TabIndex = 7;
             // 
             // pBox_XepLop
@@ -631,9 +661,10 @@
             this.pBox_XepLop.BackColor = System.Drawing.Color.Transparent;
             this.pBox_XepLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_XepLop.Image = global::DemoDoAn.Properties.Resources.Dark_XepLop;
-            this.pBox_XepLop.Location = new System.Drawing.Point(33, 83);
+            this.pBox_XepLop.Location = new System.Drawing.Point(37, 104);
+            this.pBox_XepLop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_XepLop.Name = "pBox_XepLop";
-            this.pBox_XepLop.Size = new System.Drawing.Size(25, 25);
+            this.pBox_XepLop.Size = new System.Drawing.Size(28, 31);
             this.pBox_XepLop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_XepLop.TabIndex = 3;
             this.pBox_XepLop.TabStop = false;
@@ -643,9 +674,10 @@
             this.pBox_DSHV.BackColor = System.Drawing.Color.Transparent;
             this.pBox_DSHV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_DSHV.Image = global::DemoDoAn.Properties.Resources.Dark_DSHocVien;
-            this.pBox_DSHV.Location = new System.Drawing.Point(33, 25);
+            this.pBox_DSHV.Location = new System.Drawing.Point(37, 31);
+            this.pBox_DSHV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_DSHV.Name = "pBox_DSHV";
-            this.pBox_DSHV.Size = new System.Drawing.Size(25, 25);
+            this.pBox_DSHV.Size = new System.Drawing.Size(28, 31);
             this.pBox_DSHV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_DSHV.TabIndex = 3;
             this.pBox_DSHV.TabStop = false;
@@ -661,12 +693,13 @@
             this.btn_XepLop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_XepLop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_XepLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XepLop.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XepLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XepLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_XepLop.Location = new System.Drawing.Point(3, 69);
+            this.btn_XepLop.Location = new System.Drawing.Point(3, 86);
+            this.btn_XepLop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_XepLop.Name = "btn_XepLop";
-            this.btn_XepLop.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_XepLop.Size = new System.Drawing.Size(271, 52);
+            this.btn_XepLop.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_XepLop.Size = new System.Drawing.Size(305, 65);
             this.btn_XepLop.TabIndex = 1;
             this.btn_XepLop.Text = "Quản lí nhóm";
             this.btn_XepLop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -682,12 +715,13 @@
             this.btn_DSHocSinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_DSHocSinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_DSHocSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DSHocSinh.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DSHocSinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DSHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_DSHocSinh.Location = new System.Drawing.Point(3, 11);
+            this.btn_DSHocSinh.Location = new System.Drawing.Point(3, 14);
+            this.btn_DSHocSinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_DSHocSinh.Name = "btn_DSHocSinh";
-            this.btn_DSHocSinh.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_DSHocSinh.Size = new System.Drawing.Size(271, 52);
+            this.btn_DSHocSinh.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_DSHocSinh.Size = new System.Drawing.Size(305, 65);
             this.btn_DSHocSinh.TabIndex = 1;
             this.btn_DSHocSinh.Text = "List";
             this.btn_DSHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -709,10 +743,11 @@
             this.btn_QLHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.btn_QLHocSinh.Image = global::DemoDoAn.Properties.Resources.angle_down;
             this.btn_QLHocSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLHocSinh.Location = new System.Drawing.Point(0, 699);
+            this.btn_QLHocSinh.Location = new System.Drawing.Point(0, 873);
+            this.btn_QLHocSinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QLHocSinh.Name = "btn_QLHocSinh";
-            this.btn_QLHocSinh.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLHocSinh.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLHocSinh.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.btn_QLHocSinh.Size = new System.Drawing.Size(284, 65);
             this.btn_QLHocSinh.TabIndex = 3;
             this.btn_QLHocSinh.Text = "Học viên";
             this.btn_QLHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -727,9 +762,10 @@
             this.pnl_QLHocTap.Controls.Add(this.btn_EmailBox);
             this.pnl_QLHocTap.Controls.Add(this.btn_DiemSo);
             this.pnl_QLHocTap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_QLHocTap.Location = new System.Drawing.Point(0, 570);
+            this.pnl_QLHocTap.Location = new System.Drawing.Point(0, 712);
+            this.pnl_QLHocTap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLHocTap.Name = "pnl_QLHocTap";
-            this.pnl_QLHocTap.Size = new System.Drawing.Size(255, 129);
+            this.pnl_QLHocTap.Size = new System.Drawing.Size(284, 161);
             this.pnl_QLHocTap.TabIndex = 3;
             // 
             // panel3
@@ -737,8 +773,9 @@
             this.panel3.BackColor = System.Drawing.Color.Gainsboro;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(255, 1);
+            this.panel3.Size = new System.Drawing.Size(284, 1);
             this.panel3.TabIndex = 7;
             // 
             // pBox_EmailBox
@@ -746,9 +783,10 @@
             this.pBox_EmailBox.BackColor = System.Drawing.Color.Transparent;
             this.pBox_EmailBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_EmailBox.Image = global::DemoDoAn.Properties.Resources.eye;
-            this.pBox_EmailBox.Location = new System.Drawing.Point(33, 83);
+            this.pBox_EmailBox.Location = new System.Drawing.Point(37, 104);
+            this.pBox_EmailBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_EmailBox.Name = "pBox_EmailBox";
-            this.pBox_EmailBox.Size = new System.Drawing.Size(25, 25);
+            this.pBox_EmailBox.Size = new System.Drawing.Size(28, 31);
             this.pBox_EmailBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_EmailBox.TabIndex = 3;
             this.pBox_EmailBox.TabStop = false;
@@ -759,9 +797,10 @@
             this.pBox_DiemSo.BackColor = System.Drawing.Color.Transparent;
             this.pBox_DiemSo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_DiemSo.Image = global::DemoDoAn.Properties.Resources.Dark_DiemSo;
-            this.pBox_DiemSo.Location = new System.Drawing.Point(33, 25);
+            this.pBox_DiemSo.Location = new System.Drawing.Point(37, 31);
+            this.pBox_DiemSo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_DiemSo.Name = "pBox_DiemSo";
-            this.pBox_DiemSo.Size = new System.Drawing.Size(25, 25);
+            this.pBox_DiemSo.Size = new System.Drawing.Size(28, 31);
             this.pBox_DiemSo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_DiemSo.TabIndex = 3;
             this.pBox_DiemSo.TabStop = false;
@@ -775,12 +814,13 @@
             this.btn_EmailBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_EmailBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_EmailBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_EmailBox.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_EmailBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_EmailBox.Location = new System.Drawing.Point(3, 69);
+            this.btn_EmailBox.Location = new System.Drawing.Point(3, 86);
+            this.btn_EmailBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_EmailBox.Name = "btn_EmailBox";
-            this.btn_EmailBox.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_EmailBox.Size = new System.Drawing.Size(271, 52);
+            this.btn_EmailBox.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_EmailBox.Size = new System.Drawing.Size(305, 65);
             this.btn_EmailBox.TabIndex = 1;
             this.btn_EmailBox.Text = "Email Box";
             this.btn_EmailBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -797,12 +837,13 @@
             this.btn_DiemSo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_DiemSo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_DiemSo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DiemSo.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DiemSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DiemSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_DiemSo.Location = new System.Drawing.Point(3, 11);
+            this.btn_DiemSo.Location = new System.Drawing.Point(3, 14);
+            this.btn_DiemSo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_DiemSo.Name = "btn_DiemSo";
-            this.btn_DiemSo.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_DiemSo.Size = new System.Drawing.Size(271, 52);
+            this.btn_DiemSo.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_DiemSo.Size = new System.Drawing.Size(305, 65);
             this.btn_DiemSo.TabIndex = 1;
             this.btn_DiemSo.Text = "Điểm số";
             this.btn_DiemSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -823,10 +864,11 @@
             this.btn_QLHocTap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.btn_QLHocTap.Image = global::DemoDoAn.Properties.Resources.angle_down;
             this.btn_QLHocTap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLHocTap.Location = new System.Drawing.Point(0, 518);
+            this.btn_QLHocTap.Location = new System.Drawing.Point(0, 647);
+            this.btn_QLHocTap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QLHocTap.Name = "btn_QLHocTap";
-            this.btn_QLHocTap.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLHocTap.Size = new System.Drawing.Size(255, 52);
+            this.btn_QLHocTap.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.btn_QLHocTap.Size = new System.Drawing.Size(284, 65);
             this.btn_QLHocTap.TabIndex = 4;
             this.btn_QLHocTap.Text = "Học tập";
             this.btn_QLHocTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -845,9 +887,10 @@
             this.pnl_QLManagement.Controls.Add(this.btn_Class);
             this.pnl_QLManagement.Controls.Add(this.btn_LichHoc);
             this.pnl_QLManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_QLManagement.Location = new System.Drawing.Point(0, 285);
+            this.pnl_QLManagement.Location = new System.Drawing.Point(0, 356);
+            this.pnl_QLManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_QLManagement.Name = "pnl_QLManagement";
-            this.pnl_QLManagement.Size = new System.Drawing.Size(255, 233);
+            this.pnl_QLManagement.Size = new System.Drawing.Size(284, 291);
             this.pnl_QLManagement.TabIndex = 1;
             // 
             // pBox_Course
@@ -856,9 +899,10 @@
             this.pBox_Course.BackColor = System.Drawing.Color.Transparent;
             this.pBox_Course.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Course.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Course;
-            this.pBox_Course.Location = new System.Drawing.Point(33, 189);
+            this.pBox_Course.Location = new System.Drawing.Point(37, 236);
+            this.pBox_Course.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_Course.Name = "pBox_Course";
-            this.pBox_Course.Size = new System.Drawing.Size(25, 25);
+            this.pBox_Course.Size = new System.Drawing.Size(28, 31);
             this.pBox_Course.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_Course.TabIndex = 3;
             this.pBox_Course.TabStop = false;
@@ -868,8 +912,9 @@
             this.pnl_NgangManagement.BackColor = System.Drawing.Color.Gainsboro;
             this.pnl_NgangManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_NgangManagement.Location = new System.Drawing.Point(0, 0);
+            this.pnl_NgangManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_NgangManagement.Name = "pnl_NgangManagement";
-            this.pnl_NgangManagement.Size = new System.Drawing.Size(255, 1);
+            this.pnl_NgangManagement.Size = new System.Drawing.Size(284, 1);
             this.pnl_NgangManagement.TabIndex = 7;
             // 
             // pBox_Room
@@ -878,9 +923,10 @@
             this.pBox_Room.BackColor = System.Drawing.Color.Transparent;
             this.pBox_Room.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Room.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Room;
-            this.pBox_Room.Location = new System.Drawing.Point(33, 131);
+            this.pBox_Room.Location = new System.Drawing.Point(37, 164);
+            this.pBox_Room.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_Room.Name = "pBox_Room";
-            this.pBox_Room.Size = new System.Drawing.Size(25, 25);
+            this.pBox_Room.Size = new System.Drawing.Size(28, 31);
             this.pBox_Room.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_Room.TabIndex = 3;
             this.pBox_Room.TabStop = false;
@@ -891,9 +937,10 @@
             this.pBox_Class.BackColor = System.Drawing.Color.Transparent;
             this.pBox_Class.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_Class.Image = global::DemoDoAn.Properties.Resources.Dark_QLChung_Class;
-            this.pBox_Class.Location = new System.Drawing.Point(33, 73);
+            this.pBox_Class.Location = new System.Drawing.Point(37, 91);
+            this.pBox_Class.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_Class.Name = "pBox_Class";
-            this.pBox_Class.Size = new System.Drawing.Size(25, 25);
+            this.pBox_Class.Size = new System.Drawing.Size(28, 31);
             this.pBox_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_Class.TabIndex = 3;
             this.pBox_Class.TabStop = false;
@@ -904,13 +951,13 @@
             this.pBox_LichHoc.BackColor = System.Drawing.Color.Transparent;
             this.pBox_LichHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pBox_LichHoc.Image = global::DemoDoAn.Properties.Resources.QLChung_INFOMATION;
-            this.pBox_LichHoc.Location = new System.Drawing.Point(33, 15);
+            this.pBox_LichHoc.Location = new System.Drawing.Point(37, 19);
+            this.pBox_LichHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_LichHoc.Name = "pBox_LichHoc";
-            this.pBox_LichHoc.Size = new System.Drawing.Size(25, 25);
+            this.pBox_LichHoc.Size = new System.Drawing.Size(28, 31);
             this.pBox_LichHoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBox_LichHoc.TabIndex = 3;
             this.pBox_LichHoc.TabStop = false;
-            this.pBox_LichHoc.Visible = false;
             // 
             // btn_Course
             // 
@@ -922,12 +969,13 @@
             this.btn_Course.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_Course.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_Course.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Course.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Course.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_Course.Location = new System.Drawing.Point(3, 175);
+            this.btn_Course.Location = new System.Drawing.Point(3, 219);
+            this.btn_Course.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Course.Name = "btn_Course";
-            this.btn_Course.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_Course.Size = new System.Drawing.Size(271, 52);
+            this.btn_Course.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_Course.Size = new System.Drawing.Size(305, 65);
             this.btn_Course.TabIndex = 1;
             this.btn_Course.Text = "Khóa học";
             this.btn_Course.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -944,12 +992,13 @@
             this.btn_Room.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_Room.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_Room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Room.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Room.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Room.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_Room.Location = new System.Drawing.Point(3, 117);
+            this.btn_Room.Location = new System.Drawing.Point(3, 146);
+            this.btn_Room.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Room.Name = "btn_Room";
-            this.btn_Room.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_Room.Size = new System.Drawing.Size(271, 52);
+            this.btn_Room.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_Room.Size = new System.Drawing.Size(305, 65);
             this.btn_Room.TabIndex = 1;
             this.btn_Room.Text = "Lớp học";
             this.btn_Room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -966,12 +1015,13 @@
             this.btn_Class.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_Class.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_Class.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Class.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Class.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Class.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btn_Class.Location = new System.Drawing.Point(3, 59);
+            this.btn_Class.Location = new System.Drawing.Point(3, 74);
+            this.btn_Class.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Class.Name = "btn_Class";
-            this.btn_Class.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_Class.Size = new System.Drawing.Size(271, 52);
+            this.btn_Class.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_Class.Size = new System.Drawing.Size(305, 65);
             this.btn_Class.TabIndex = 1;
             this.btn_Class.Text = "Nhóm học";
             this.btn_Class.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -988,17 +1038,17 @@
             this.btn_LichHoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_LichHoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_LichHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LichHoc.Font = new System.Drawing.Font("Lato", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LichHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.762711F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LichHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.btn_LichHoc.Location = new System.Drawing.Point(3, 1);
+            this.btn_LichHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_LichHoc.Name = "btn_LichHoc";
-            this.btn_LichHoc.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_LichHoc.Size = new System.Drawing.Size(271, 52);
+            this.btn_LichHoc.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btn_LichHoc.Size = new System.Drawing.Size(305, 65);
             this.btn_LichHoc.TabIndex = 1;
-            this.btn_LichHoc.Text = "Schedule";
+            this.btn_LichHoc.Text = "Tài khoản";
             this.btn_LichHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_LichHoc.UseVisualStyleBackColor = false;
-            this.btn_LichHoc.Visible = false;
             this.btn_LichHoc.Click += new System.EventHandler(this.btn_LichHoc_Click);
             // 
             // btn_QLChung
@@ -1015,10 +1065,11 @@
             this.btn_QLChung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(70)))));
             this.btn_QLChung.Image = global::DemoDoAn.Properties.Resources.angle_down;
             this.btn_QLChung.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_QLChung.Location = new System.Drawing.Point(0, 226);
+            this.btn_QLChung.Location = new System.Drawing.Point(0, 282);
+            this.btn_QLChung.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QLChung.Name = "btn_QLChung";
-            this.btn_QLChung.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btn_QLChung.Size = new System.Drawing.Size(255, 59);
+            this.btn_QLChung.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.btn_QLChung.Size = new System.Drawing.Size(284, 74);
             this.btn_QLChung.TabIndex = 6;
             this.btn_QLChung.Text = "Quản lí chung";
             this.btn_QLChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1035,12 +1086,13 @@
             this.btn_DSLop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.btn_DSLop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.btn_DSLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DSLop.Font = new System.Drawing.Font("Lato", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DSLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.98305F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DSLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.btn_DSLop.Location = new System.Drawing.Point(0, 162);
+            this.btn_DSLop.Location = new System.Drawing.Point(0, 202);
+            this.btn_DSLop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_DSLop.Name = "btn_DSLop";
-            this.btn_DSLop.Padding = new System.Windows.Forms.Padding(15, 15, 0, 0);
-            this.btn_DSLop.Size = new System.Drawing.Size(255, 64);
+            this.btn_DSLop.Padding = new System.Windows.Forms.Padding(17, 19, 0, 0);
+            this.btn_DSLop.Size = new System.Drawing.Size(284, 80);
             this.btn_DSLop.TabIndex = 2;
             this.btn_DSLop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DSLop.UseVisualStyleBackColor = false;
@@ -1050,9 +1102,10 @@
             // 
             this.pnl_NgangLogo.BackColor = System.Drawing.Color.Gainsboro;
             this.pnl_NgangLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_NgangLogo.Location = new System.Drawing.Point(0, 161);
+            this.pnl_NgangLogo.Location = new System.Drawing.Point(0, 201);
+            this.pnl_NgangLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_NgangLogo.Name = "pnl_NgangLogo";
-            this.pnl_NgangLogo.Size = new System.Drawing.Size(255, 1);
+            this.pnl_NgangLogo.Size = new System.Drawing.Size(284, 1);
             this.pnl_NgangLogo.TabIndex = 5;
             // 
             // picBoxLogo
@@ -1061,8 +1114,9 @@
             this.picBoxLogo.Image = global::DemoDoAn.Properties.Resources.LOGO_3x;
             this.picBoxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBoxLogo.InitialImage")));
             this.picBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.picBoxLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picBoxLogo.Name = "picBoxLogo";
-            this.picBoxLogo.Size = new System.Drawing.Size(255, 161);
+            this.picBoxLogo.Size = new System.Drawing.Size(284, 201);
             this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxLogo.TabIndex = 4;
             this.picBoxLogo.TabStop = false;
@@ -1073,9 +1127,10 @@
             this.pnl_Title.Controls.Add(this.flowLayoutPanel1);
             this.pnl_Title.Controls.Add(this.pBox_Logout);
             this.pnl_Title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Title.Location = new System.Drawing.Point(276, 0);
+            this.pnl_Title.Location = new System.Drawing.Point(310, 0);
+            this.pnl_Title.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Title.Name = "pnl_Title";
-            this.pnl_Title.Size = new System.Drawing.Size(1456, 52);
+            this.pnl_Title.Size = new System.Drawing.Size(1610, 65);
             this.pnl_Title.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -1085,10 +1140,11 @@
             this.flowLayoutPanel1.Controls.Add(this.guna2Button1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1266, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1396, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 9, 5, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 52);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 11, 6, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(214, 65);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // picBox_Exit
@@ -1097,9 +1153,10 @@
             this.picBox_Exit.BackColor = System.Drawing.Color.Transparent;
             this.picBox_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBox_Exit.Image = global::DemoDoAn.Properties.Resources.exit;
-            this.picBox_Exit.Location = new System.Drawing.Point(158, 12);
+            this.picBox_Exit.Location = new System.Drawing.Point(178, 15);
+            this.picBox_Exit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picBox_Exit.Name = "picBox_Exit";
-            this.picBox_Exit.Size = new System.Drawing.Size(24, 24);
+            this.picBox_Exit.Size = new System.Drawing.Size(27, 30);
             this.picBox_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picBox_Exit.TabIndex = 0;
             this.picBox_Exit.TabStop = false;
@@ -1111,11 +1168,11 @@
             this.picBox_Minisize.BackColor = System.Drawing.Color.Transparent;
             this.picBox_Minisize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBox_Minisize.Image = global::DemoDoAn.Properties.Resources.minus1;
-            this.picBox_Minisize.Location = new System.Drawing.Point(131, 9);
+            this.picBox_Minisize.Location = new System.Drawing.Point(148, 11);
             this.picBox_Minisize.Margin = new System.Windows.Forms.Padding(0);
             this.picBox_Minisize.Name = "picBox_Minisize";
             this.picBox_Minisize.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.picBox_Minisize.Size = new System.Drawing.Size(24, 27);
+            this.picBox_Minisize.Size = new System.Drawing.Size(27, 34);
             this.picBox_Minisize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox_Minisize.TabIndex = 0;
             this.picBox_Minisize.TabStop = false;
@@ -1134,11 +1191,11 @@
             this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.guna2Button1.Location = new System.Drawing.Point(34, 9);
+            this.guna2Button1.Location = new System.Drawing.Point(39, 11);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 3);
-            this.guna2Button1.Size = new System.Drawing.Size(97, 30);
+            this.guna2Button1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 4);
+            this.guna2Button1.Size = new System.Drawing.Size(109, 38);
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Log out";
             this.guna2Button1.Click += new System.EventHandler(this.pBox_Logout_Click);
@@ -1148,9 +1205,10 @@
             this.pBox_Logout.BackColor = System.Drawing.Color.Transparent;
             this.pBox_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pBox_Logout.Image = global::DemoDoAn.Properties.Resources.shutdow;
-            this.pBox_Logout.Location = new System.Drawing.Point(311, 23);
+            this.pBox_Logout.Location = new System.Drawing.Point(350, 29);
+            this.pBox_Logout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBox_Logout.Name = "pBox_Logout";
-            this.pBox_Logout.Size = new System.Drawing.Size(23, 23);
+            this.pBox_Logout.Size = new System.Drawing.Size(26, 29);
             this.pBox_Logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBox_Logout.TabIndex = 0;
             this.pBox_Logout.TabStop = false;
@@ -1162,10 +1220,11 @@
             this.pnl_Page.AutoScroll = true;
             this.pnl_Page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.pnl_Page.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Page.Location = new System.Drawing.Point(276, 52);
+            this.pnl_Page.Location = new System.Drawing.Point(310, 65);
+            this.pnl_Page.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Page.Name = "pnl_Page";
             this.pnl_Page.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.pnl_Page.Size = new System.Drawing.Size(1456, 902);
+            this.pnl_Page.Size = new System.Drawing.Size(1610, 1128);
             this.pnl_Page.TabIndex = 3;
             // 
             // imgList_Icon
@@ -1215,15 +1274,16 @@
             // 
             // F_Addmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1732, 954);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
             this.Controls.Add(this.pnl_Page);
             this.Controls.Add(this.pnl_Title);
             this.Controls.Add(this.pnl_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "F_Addmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_Addmin";

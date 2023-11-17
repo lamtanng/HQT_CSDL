@@ -20,6 +20,9 @@ namespace DemoDoAn.HOCVIEN
 
         DataTable dt = new DataTable();
 
+        HocSinh hs = new HocSinh();
+        GiaoVien gv = new GiaoVien();
+
         public UC_THONGTINHOCVIEN(int chucVu)
         {
             InitializeComponent();
@@ -38,13 +41,14 @@ namespace DemoDoAn.HOCVIEN
             if (chucVu == 1) //la hoc vien
             {
                 dt = hsDao.LoadThongTin(hvID);
-                HocSinh hs = new HocSinh(dt.Rows[0]["MaHocVien"].ToString(), dt.Rows[0]["TenHocVien"].ToString(), dt.Rows[0]["GioiTinh"].ToString(), (DateTime)dt.Rows[0]["NgaySinh"], dt.Rows[0]["DiaChi"].ToString(), dt.Rows[0]["SoDienThoai"].ToString(), dt.Rows[0]["CCCD"].ToString(), dt.Rows[0]["TenDangNhap"].ToString());
+                hs = new HocSinh(dt.Rows[0]["MaHocVien"].ToString(), dt.Rows[0]["TenHocVien"].ToString(), dt.Rows[0]["GioiTinh"].ToString(), (DateTime)dt.Rows[0]["NgaySinh"], dt.Rows[0]["DiaChi"].ToString(), dt.Rows[0]["SoDienThoai"].ToString(), dt.Rows[0]["CCCD"].ToString(), dt.Rows[0]["TenDangNhap"].ToString());
                 //
                 dPTime_NgaySinhUpd.Value = hs.NGAYSINH;
-                //btn_Email.Text = hs.EMAIL.ToString().Trim();
-                btn_CCCD.Text = hs.CCCD.ToString().Trim();
+                btn_Email.Text = hs.CCCD.ToString().Trim();
+                btn_NgaySinh.Text = hs.NGAYSINH.ToString("dd/MM/yyyy").Trim();
+                btn_CCCD.Text = hs.DIACHI.ToString().Trim();
                 btn_SDT.Text = hs.SDT.ToString().Trim();
-                btn_DiaChi.Text = hs.DIACHI.ToString().Trim();
+                //btn_DiaChi.Text = hs.DIACHI.ToString().Trim();
                 lbl_HoTen.Text = hs.HOTEN.ToString().Trim();
                 lbl_GioiTinh.Text = hs.GIOITINH.ToString().Trim();
                 lbl_MaHV.Text = hs.HSID.ToString().Trim();
@@ -60,20 +64,14 @@ namespace DemoDoAn.HOCVIEN
             }
             else if (chucVu == 2)//la giang vien
             {
-                dt = gvDao.LayDanhSachGiaoVien();
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    DataRow row = dt.Rows[i];
-                    if (row["MaGiaoVien"].ToString().Trim() == hvID.ToString())
-                    {
-                        GiaoVien gv = new GiaoVien(dt.Rows[0]["MaGiaoVien"].ToString(), dt.Rows[0]["HoTen"].ToString(), 
-                                                    (DateTime)dt.Rows[0]["NgaySinh"], dt.Rows[0]["GioiTinh"].ToString(), dt.Rows[0]["DiaChi"].ToString(), dt.Rows[0]["SoDienThoai"].ToString(),
-                                                    dt.Rows[0]["Email"].ToString(), dt.Rows[0]["TenDangNhap"].ToString());
+                dt = gvDao.LoadThongTin(hvID);
+                gv = new GiaoVien(dt.Rows[0]["MaGiaoVien"].ToString(), dt.Rows[0]["HoTen"].ToString(), (DateTime)dt.Rows[0]["NgaySinh"], dt.Rows[0]["GioiTinh"].ToString(), dt.Rows[0]["SoDienThoai"].ToString(), dt.Rows[0]["DiaChi"].ToString(),dt.Rows[0]["Email"].ToString(), dt.Rows[0]["TenDangNhap"].ToString());
                         dPTime_NgaySinhUpd.Value = gv.NGAYSINH;
-                        //btn_Email.Text = hs.EMAIL.ToString().Trim();
-                        btn_CCCD.Text = gv.EMAIL.ToString().Trim();
+                        btn_NgaySinh.Text = gv.NGAYSINH.ToString("dd/MM/yyyy").Trim();
+                        btn_Email.Text = gv.EMAIL.ToString().Trim();
+                        btn_CCCD.Text = gv.DIACHI.ToString().Trim();
                         btn_SDT.Text = gv.SDT.ToString().Trim();
-                        btn_DiaChi.Text = gv.DIACHI.ToString().Trim();
+                        //btn_DiaChi.Text = gv.DIACHI.ToString().Trim();
                         lbl_HoTen.Text = gv.HOTEN.ToString().Trim();
                         lbl_GioiTinh.Text = gv.GIOITINH.ToString().Trim();
                         lbl_MaHV.Text = gv.GVID.ToString().Trim();
@@ -88,6 +86,47 @@ namespace DemoDoAn.HOCVIEN
                         txt_NameUpd.Text = gv.HOTEN.ToString().Trim();
                     }
                 }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+            if (chucVu == 1)
+            {
+                try
+                {
+                    hs.HOTEN = txt_NameUpd.Text.ToString().Trim();
+                    hs.GIOITINH = txt_GioiTinhUpd.Text.ToString().Trim();
+                    hs.DIACHI = txt_DiaChiUpd.Text.ToString().Trim();
+                    hs.NGAYSINH = dPTime_NgaySinhUpd.Value;
+                    hs.SDT = txt_SDTUpd.Text.ToString().Trim();
+                    hs.CCCD = txt_CCCDUpd.Text.ToString().Trim();
+                    hsDao.CapNhatThongTinHocVien(hs);
+                    MessageBox.Show("Đã cập nhật thành công!");
+                    UC_THONGTINHOCVIEN_Load(sender,e);
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.Message);
+                }
+            }
+            if (chucVu == 2)
+            {
+                try
+                {
+                    gv.HOTEN = txt_NameUpd.Text.ToString().Trim();
+                    gv.GIOITINH = txt_GioiTinhUpd.Text.ToString().Trim();
+                    gv.DIACHI = txt_DiaChiUpd.Text.ToString().Trim();
+                    gv.NGAYSINH = dPTime_NgaySinhUpd.Value;
+                    gv.SDT = txt_SDTUpd.Text.ToString().Trim();
+                    gv.EMAIL = txt_CCCDUpd.Text.ToString().Trim();
+                    gvDao.CapNhatThongTinGiaoVien(gv);
+                    MessageBox.Show("Đã cập nhật thành công!");
+                    UC_THONGTINHOCVIEN_Load(sender, e);
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.Message);
+                }
+                
             }
         }
     }

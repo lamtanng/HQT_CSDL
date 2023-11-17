@@ -18,7 +18,8 @@ namespace DemoDoAn.FORM
         public F_HOCVIEN(int chucVu)
         {
             InitializeComponent();
-            this.chucVu = chucVu;   
+            this.chucVu = chucVu;
+            btn_QLChung_Visible();
         }
 
         //ẩn menu con
@@ -91,6 +92,13 @@ namespace DemoDoAn.FORM
         {
             UC_DANGKILOP dsLop = new UC_DANGKILOP(chucVu);
             selectButton(dsLop);
+        }
+        private void btn_QLChung_Visible()
+        {
+            if (chucVu == 1)
+            {
+                btn_QLChung.Visible = false;
+            }    
         }
     }
 }

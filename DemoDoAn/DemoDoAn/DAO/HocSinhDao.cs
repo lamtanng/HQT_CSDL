@@ -81,6 +81,13 @@ namespace DemoDoAn
                                             hs.HOTEN, hs.GIOITINH, hs.NGAYSINH, hs.DIACHI, hs.SDT, hs.CCCD, hs.USERNAME, hs.HSID);
             dbConn.ThucThi(sqlStr);
         }
+        public void CapNhatThongTinHocVien(HocSinh hs)
+        {
+            string sqlStr = string.Format("Exec dbo.proc_SuaThongTinHocVien @MaHocVien = '{0}', @TenHocVien = N'{1}', @NgaySinh = '{2}'," +
+                                            " @GioiTinh  = N'{3}', @DiaChi = N'{4}', @SoDienThoai = '{5}', @CCCD = '{6}'",
+                                            hs.HSID, hs.HOTEN, hs.NGAYSINH, hs.GIOITINH, hs.DIACHI, hs.SDT, hs.CCCD);
+            dbConn.ThucThi(sqlStr);
+        }
 
         //cap nhat tai khoan hv
         public void CapNhatTaiKhoan(HocSinh hv)

@@ -26,7 +26,7 @@ namespace DemoDoAn
 
         enum roles
         {
-            role_Admin,
+            //role_Admin,
             role_HocVien, 
             role_GiaoVien
         }
@@ -143,24 +143,22 @@ namespace DemoDoAn
                 if (r >= 0)
                 {
                     String quyenNguoiDung = dtTaiKhoan.Rows[0]["Role"].ToString().Trim();
-                    if (quyenNguoiDung == Enum.GetName(typeof(roles), roles.role_Admin))
+                    if (quyenNguoiDung == Enum.GetName(typeof(roles), roles.role_GiaoVien))
                     {
-                        F_Addmin admin = new F_Addmin();
-                        admin.Show();
+                        F_HOCVIEN gv = new F_HOCVIEN(2);
+                        gv.Show();
                         this.Hide();
-
                     }
                     else if (quyenNguoiDung == Enum.GetName(typeof(roles), roles.role_HocVien))
                     {
                         F_HOCVIEN hv = new F_HOCVIEN(1);
                         hv.Show();
                         this.Hide();
-
                     }
                     else
                     {
-                        F_HOCVIEN gv = new F_HOCVIEN(2);
-                        gv.Show();
+                        F_Addmin admin = new F_Addmin();
+                        admin.Show();
                         this.Hide();
                     }
                 }

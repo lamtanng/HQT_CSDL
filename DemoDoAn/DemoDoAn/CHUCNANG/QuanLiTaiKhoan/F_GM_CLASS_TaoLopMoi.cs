@@ -18,6 +18,7 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         NhomHocDao lopHocDao = new NhomHocDao();
         KhoaHocDao khoaHocDao = new KhoaHocDao();
         DataTable dtKhoaHoc = new DataTable("KhoaHoc");
+        LoginDAO loginDao = new LoginDAO();
 
         public F_GM_CLASS_TaoLopMoi()
         {
@@ -38,17 +39,19 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         //load khoa hoc len cbb
         private void loadCbbKhoaHoc()
         {
-            dtKhoaHoc.Rows.Clear();
-            dtKhoaHoc = khoaHocDao.LayKhoaHoc();
-            //duyet lui chứ mỗi lần xóa bị lỗi
-            int rows = dtKhoaHoc.Rows.Count;
-            for (int r = rows - 1; r >= 0; r--)
-            {
-                DataRow row = dtKhoaHoc.Rows[r];
-                if (Convert.ToInt32(row["TrangThaiKH"]) == 0)
-                    dtKhoaHoc.Rows.Remove(row);
-            }
-            loadCombobox(gCbb_KhoaHoc, dtKhoaHoc, "TenKH", "MaKH");
+            DataTable dtQuyen = loginDao.loadRole();
+            loadCombobox(gCbb_Role, dtQuyen, "TenQuyen", "QuyenNguoiDung");
+            //dtKhoaHoc.Rows.Clear();
+            //dtKhoaHoc = khoaHocDao.LayKhoaHoc();
+            ////duyet lui chứ mỗi lần xóa bị lỗi
+            //int rows = dtKhoaHoc.Rows.Count;
+            //for (int r = rows - 1; r >= 0; r--)
+            //{
+            //    DataRow row = dtKhoaHoc.Rows[r];
+            //    if (Convert.ToInt32(row["TrangThaiKH"]) == 0)
+            //        dtKhoaHoc.Rows.Remove(row);
+            //}
+            //loadCombobox(gCbb_KhoaHoc, dtKhoaHoc, "TenKH", "MaKH");
         }
 
         //load combobox
@@ -110,10 +113,8 @@ namespace DemoDoAn.ChildPage.General_Management.UC_GM_CLASS
         //them
         private void btn_HoanThanh_Click(object sender, EventArgs e)
         {
-            string maKH = ((DataRowView)gCbb_KhoaHoc.SelectedItem)["MaKH"].ToString();
-            string tengon = rutGonTen(txt_TenLopMoi.Text.ToString());
-            NhomHoc lop = new NhomHoc(maKH, txt_TenLopMoi.Text.ToString(), txt_HocPhi.Text.ToString());
-            //lopHocDao.themLopHoc(lop, tengon);
+            TaiKhoan taiKhoan = new TaiKhoan(null, txt_Password.Text.ToString().Trim(), ((DataRowView)gCbb_Role.SelectedItem)["QuyenNguoiDung"].ToString());
+            loginDao.themTaiKhoan(taiKhoan);
             this.Close();
         }
 

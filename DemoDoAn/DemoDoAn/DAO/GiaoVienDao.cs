@@ -19,7 +19,11 @@ namespace DemoDoAn
             string sqlStr = string.Format("SELECT AccID_Tea FROM ACCOUNTS_TEACHER WHERE username = '{0}'", userName);
             return dbConn.LayDanhSach(sqlStr);
         }
-
+        public DataTable LoadThongTin(string AccID)
+        {
+            string sqlStr = string.Format("SELECT *FROM GIAOVIEN WHERE MaGiaoVien = '{0}'", AccID);
+            return dbConn.LayDanhSach(sqlStr);
+        }
         //gv xac nhan lop day 
         public void xacNhanDay(string malop, int xacnhan)
         {
@@ -77,7 +81,13 @@ namespace DemoDoAn
             dbConn.ThucThi(sqlStr);
             dbConn.ThucThi(sqlStr1);
         }
-
+        public void CapNhatThongTinGiaoVien (GiaoVien gv)
+        {
+            string sqlStr = string.Format("Exec dbo.proc_SuaThongTinGiaoVien @MaGiaoVien = '{0}', @HoTen = N'{1}', @NgaySinh = '{2}'," +
+                                            " @GioiTinh  = N'{3}', @DiaChi = N'{4}', @SoDienThoai = '{5}', @Email = '{6}'", 
+                                            gv.GVID, gv.HOTEN, gv.NGAYSINH, gv.GIOITINH, gv.DIACHI, gv.SDT, gv.EMAIL);
+            dbConn.ThucThi(sqlStr);
+        }
         //them bang luong
         public void ThemBangLuong(GiaoVien gv, int a)
         {

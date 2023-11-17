@@ -45,7 +45,6 @@
             this.NgayKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.rjButton11 = new CustomControls.RJControls.RJButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.lbl_LopHoc = new System.Windows.Forms.Label();
             this.btn_BangDiem = new CustomControls.RJControls.RJButton();
@@ -93,7 +92,6 @@
             this.pnl_BangDiem.Controls.Add(this.dataGrView_DSLop);
             this.pnl_BangDiem.Controls.Add(this.pictureBox9);
             this.pnl_BangDiem.Controls.Add(this.rjButton11);
-            this.pnl_BangDiem.Controls.Add(this.label1);
             this.pnl_BangDiem.Controls.Add(this.label18);
             this.pnl_BangDiem.Controls.Add(this.lbl_LopHoc);
             this.pnl_BangDiem.Controls.Add(this.btn_BangDiem);
@@ -277,19 +275,6 @@
             this.rjButton11.UseVisualStyleBackColor = false;
             this.rjButton11.Click += new System.EventHandler(this.rjButton11_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(171, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 27);
-            this.label1.TabIndex = 195;
-            this.label1.Text = "50 staffs";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -298,9 +283,9 @@
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(113)))), ((int)(((byte)(245)))));
             this.label18.Location = new System.Drawing.Point(54, 52);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(120, 48);
+            this.label18.Size = new System.Drawing.Size(366, 48);
             this.label18.TabIndex = 194;
-            this.label18.Text = "Staffs";
+            this.label18.Text = "Danh sách nhóm học";
             this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // lbl_LopHoc
@@ -584,7 +569,6 @@
         private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.PictureBox pictureBox9;
         private CustomControls.RJControls.RJButton rjButton11;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lbl_LopHoc;
         private System.Windows.Forms.Label lbl_TenLopHoc;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DemoDoAn.MODELS;
 
 namespace DemoDoAn
 {
@@ -27,7 +28,21 @@ namespace DemoDoAn
             string sqlStr = string.Format("Select * from TAIKHOAN");
             return dbConn.LayDanhSach(sqlStr);
         }
-
+        public void themTaiKhoan(TaiKhoan taiKhoan)
+        {
+            string sqlStr = string.Format("Exec dbo.proc_ThemTaiKhoan @MatKhau = '{0}', @QuyenNguoiDung ='{1}'", taiKhoan.MatKhau, taiKhoan.QuyenNguoiDung);
+            dbConn.ThucThi(sqlStr);
+        }
+        public DataTable loadChiTietTaiKhoan()
+        {
+            string sqlStr = string.Format("Select * from V_LIENLAC");
+            return dbConn.LayDanhSach(sqlStr);
+        }
+        public DataTable loadRole()
+        {
+            string sqlStr = string.Format("Select * from QUYENNGUOIDUNG");
+            return dbConn.LayDanhSach(sqlStr);
+        }
         //check acc
         public DataTable Login(string username, string password)
         {
